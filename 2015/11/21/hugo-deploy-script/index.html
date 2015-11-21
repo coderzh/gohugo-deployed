@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Maxthjax">
+        <meta name="keywords" content="Hugo, 自动化, 部署">
+        <meta name="description" content="hugo 自动化部署脚本 deploy.py">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
-        <title>Maxthjax - Hugo中文文档</title>
+        <title>Hugo 自动化部署脚本 deploy.py - Hugo中文文档</title>
         <link rel="stylesheet" href="http://www.gohugo.org/css/highlight.js.min.css">
         <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap-theme.css">
@@ -66,297 +67,344 @@
     </nav>
 
 
+
 <div class="container">
 <div class="row">
-    <div class="col-xs-12 col-sm-9">
+    <div class="col-xs-12 col-sm-11 doc-main">
         <main role="main">
-            <div class="doc-list-header">
-                <h1 id="title">Maxthjax</h1>
-            </div>
-            <div class="doc-list-entry">
-            
-            <div class="media">
-    <div class = "pull-left">
-        <a href="http://www.gohugo.org/theme/hugo-icarus/">
-        
-        <img class="img-thumbnail" style="width:135px;height:80px;" src="http://www.gohugo.org/images/hugo-icarus.tn.png" alt="">
-        </a>
-    </div>
-    <div class="media-body">
-        <h4 class="media-heading">
-            <a href="http://www.gohugo.org/theme/hugo-icarus/"></a>
-        </h4>
-    </div>
-    <p class="doc-entry-meta small"><time datetime="0001-01-01">0001-01-01</time> by map[name:Digitalcraftsman homepage://github.com/digitalcraftsman] </p>
-</div>
+            <article>
+                <a id="title"></a>
+                <h1 class="doc-entry-title">Hugo 自动化部署脚本 deploy.py</h1>
+                
+                <div class="doc-entry-meta small">
+                    <span><time datetime="2015-11-21">2015-11-21</time> by CoderZh </span>
+                </div>
+                
+                <section>
+                    
 
-            
-            </div>
-            <br><br>
-            如果想把你的文章加进来，欢迎<a href="http://www.gohugo.org/contribute/"> 投稿 </a>。
+<p>之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。</p>
+
+<p>脚本路径：<a href="https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py">https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py</a></p>
+
+<h3 id="原理:6a170d4fd06501091e3c20d557c2e35c">原理</h3>
+
+<p><code>deploy.py</code> 会自动执行 hugo 命令生成静态站点，然后将生成的文件拷贝到上层的一个目录里，然后，在那个目录里将文件 push 到你指定的 Git Repository 里。</p>
+
+<h3 id="使用方法:6a170d4fd06501091e3c20d557c2e35c">使用方法</h3>
+
+<ol>
+<li>将 <code>deploy.py</code> 放到你的 Hugo 站点目录。（和 config.yaml 等文件放一起）</li>
+
+<li><p>编辑 <code>deploy.py</code> 文件，修改你要部署到的 Git Repository：</p>
+
+<pre><code class="language-python">GIT_REPO = [
+    # [别名,   分支名,     Git Repo 路径]
+    ['origin',  'gh-pages', 'git@github.com:coderzh/hugo-blog-deployed.git'],
+    ['gitcafe', 'gh-pages', 'git@gitcafe.com:coderzh/coderzh-hugo-blog.git'],
+]
+# 部署到哪里，相对上一级目录。比如下面的配置，会部署到 ../gh-pages 目录里
+DEPLOY_DIR = 'gh-pages'
+</code></pre></li>
+
+<li><p>如果你的网站需要指定皮肤，需要在 config 文件中指定 <code>theme</code> 。因为我的脚本在生成静态文件时并不会指定皮肤。</p>
+
+<pre><code class="language-yaml">theme: &quot;rapid&quot;
+</code></pre></li>
+
+<li><p>第一次执行，使用 <code>first</code> 参数，它会做一些初始化的操作。并使用 <code>-t</code> 表示只是测试一下，并不会真的 push 。</p>
+
+<pre><code>python deploy.py first -t
+</code></pre></li>
+
+<li><p>中间可能需要输入密码，如果是自动化部署，可在 Git Repo 里添加一个没有密码的 SSH Key 。</p></li>
+
+<li><p>如果一切正常，切换到 <code>DEPLOY_DIR</code> 目录，<code>git log</code> 看看 commit 记录是否正常。如果一切也如你所愿。则可以把 <code>-t</code> 参数去掉重新执行一遍，执行真的 push 操作：</p>
+
+<pre><code>python deploy.py first
+</code></pre></li>
+
+<li><p>执行完成后，应该已经将生成的静态页面自动 push 到了你指定的 <code>GIT_REPO</code> 里。</p></li>
+
+<li><p>之后如需再次手工部署，只需要使用 <code>manual</code> 参数，速度会快很多：</p>
+
+<pre><code>python deploy.py manual
+</code></pre></li>
+
+<li><p>如果你想通过 <code>webhook</code> 来自动部署，使用 <code>auto</code> 参数，这样在执行 deploy.py 时，会使用 Git 自动更新你当前的 Hugo 站点目录 ，然后部署：</p>
+
+<pre><code>python deploy.py auto
+</code></pre></li>
+</ol>
+
+<p>That&rsquo;s all, 祝你好运！</p>
+
+                </section>
+            </article>
         </main>
-    </div>
+    </div> 
     
 <div class="col-xs-12 col-sm-3 doc-sidebar">
-    <div class="sidebar-module">
-        <h4>Categories</h4>
-        <ul class="list-unstyled">
+	<div class="sidebar-module">
+		<div class="sidebar-toc">
+			<h4>Table of Contents</h4>
+			<ul>
+				<li><strong><a href="#title">Hugo 自动化部署脚本 deploy.py</a></strong></li>
+			</ul>
+			<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#原理:6a170d4fd06501091e3c20d557c2e35c">原理</a></li>
+<li><a href="#使用方法:6a170d4fd06501091e3c20d557c2e35c">使用方法</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+		</div>
+	</div>
+	<div class="sidebar-module">
+		<h4>Tags</h4>
+		<div class="tag-box">
+		
         
+		
         
+		
         
+		
         
-            <li><a class="tag-item" href="http://www.gohugo.org/categories/%E5%8A%9F%E8%83%BD%E6%94%B9%E8%BF%9B">功能改进</a></li>
+		
         
+		
         
+		
         
-            <li><a class="tag-item" href="http://www.gohugo.org/categories/%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97">搭建指南</a></li>
+		
         
+		
         
+		
         
-            <li><a class="tag-item" href="http://www.gohugo.org/categories/%E9%83%A8%E7%BD%B2%E4%B8%8A%E7%BA%BF">部署上线</a></li>
+		
         
+		
         
-        </ul>
-    </div>
-    <div class="sidebar-module">
-        <h4>Tags</h4>
-        <div class="tag-box">
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		<a class="tag-item" href="http://www.gohugo.org/tags/jekyll">jekyll</a>
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		<a class="tag-item" href="http://www.gohugo.org/tags/pullrequest">pullrequest</a>
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
+		
         
-        <a class="tag-item" href="http://www.gohugo.org/tags/jekyll">jekyll</a>
+		<a class="tag-item" href="http://www.gohugo.org/tags/%E5%85%A5%E9%97%A8">入门</a>
         
+		
         
+		<a class="tag-item" href="http://www.gohugo.org/tags/%E8%BF%81%E7%A7%BB">迁移</a>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a class="tag-item" href="http://www.gohugo.org/tags/pullrequest">pullrequest</a>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <a class="tag-item" href="http://www.gohugo.org/tags/%E5%85%A5%E9%97%A8">入门</a>
-        
-        
-        
-        <a class="tag-item" href="http://www.gohugo.org/tags/%E8%BF%81%E7%A7%BB">迁移</a>
-        
-        
-        </div>
-    </div>
+		
+		</div>
+	</div>
 </div>
 
 </div> 
+
 
 
 <hr />

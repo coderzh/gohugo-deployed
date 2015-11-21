@@ -156,5 +156,71 @@ disablePathToLower: true
 </description>
         </item>
         
+        <item>
+            <title>Hugo 自动化部署脚本 deploy.py</title>
+            <link>http://www.gohugo.org/2015/11/21/hugo-deploy-script/</link>
+            <pubDate>Sat, 21 Nov 2015 17:48:04 CST</pubDate>
+            <author>CoderZh</author>
+            <guid>http://www.gohugo.org/2015/11/21/hugo-deploy-script/</guid>
+            <description>
+
+&lt;p&gt;之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。&lt;/p&gt;
+
+&lt;p&gt;脚本路径：&lt;a href=&#34;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&#34;&gt;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;原理:6a170d4fd06501091e3c20d557c2e35c&#34;&gt;原理&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;deploy.py&lt;/code&gt; 会自动执行 hugo 命令生成静态站点，然后将生成的文件拷贝到上层的一个目录里，然后，在那个目录里将文件 push 到你指定的 Git Repository 里。&lt;/p&gt;
+
+&lt;h3 id=&#34;使用方法:6a170d4fd06501091e3c20d557c2e35c&#34;&gt;使用方法&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;将 &lt;code&gt;deploy.py&lt;/code&gt; 放到你的 Hugo 站点目录。（和 config.yaml 等文件放一起）&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;编辑 &lt;code&gt;deploy.py&lt;/code&gt; 文件，修改你要部署到的 Git Repository：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;GIT_REPO = [
+    # [别名,   分支名,     Git Repo 路径]
+    [&#39;origin&#39;,  &#39;gh-pages&#39;, &#39;git@github.com:coderzh/hugo-blog-deployed.git&#39;],
+    [&#39;gitcafe&#39;, &#39;gh-pages&#39;, &#39;git@gitcafe.com:coderzh/coderzh-hugo-blog.git&#39;],
+]
+# 部署到哪里，相对上一级目录。比如下面的配置，会部署到 ../gh-pages 目录里
+DEPLOY_DIR = &#39;gh-pages&#39;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果你的网站需要指定皮肤，需要在 config 文件中指定 &lt;code&gt;theme&lt;/code&gt; 。因为我的脚本在生成静态文件时并不会指定皮肤。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-yaml&#34;&gt;theme: &amp;quot;rapid&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;第一次执行，使用 &lt;code&gt;first&lt;/code&gt; 参数，它会做一些初始化的操作。并使用 &lt;code&gt;-t&lt;/code&gt; 表示只是测试一下，并不会真的 push 。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;python deploy.py first -t
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;中间可能需要输入密码，如果是自动化部署，可在 Git Repo 里添加一个没有密码的 SSH Key 。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果一切正常，切换到 &lt;code&gt;DEPLOY_DIR&lt;/code&gt; 目录，&lt;code&gt;git log&lt;/code&gt; 看看 commit 记录是否正常。如果一切也如你所愿。则可以把 &lt;code&gt;-t&lt;/code&gt; 参数去掉重新执行一遍，执行真的 push 操作：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;python deploy.py first
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;执行完成后，应该已经将生成的静态页面自动 push 到了你指定的 &lt;code&gt;GIT_REPO&lt;/code&gt; 里。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;之后如需再次手工部署，只需要使用 &lt;code&gt;manual&lt;/code&gt; 参数，速度会快很多：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;python deploy.py manual
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;如果你想通过 &lt;code&gt;webhook&lt;/code&gt; 来自动部署，使用 &lt;code&gt;auto&lt;/code&gt; 参数，这样在执行 deploy.py 时，会使用 Git 自动更新你当前的 Hugo 站点目录 ，然后部署：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;python deploy.py auto
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That&amp;rsquo;s all, 祝你好运！&lt;/p&gt;
+</description>
+        </item>
+        
     </channel>
 </rss>
