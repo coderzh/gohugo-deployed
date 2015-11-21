@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Documentation on Hugo中文文档</title>
+        <link>http://www.gohugo.org/tags/documentation/</link>
+        <language>zh-CN</language>
+        <author>CoderZh</author>
+        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
+        <updated>Wed, 09 Sep 2015 21:42:00 -0400</updated>
+        
+    </channel>
+</rss>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="the theme formerly know as s***show">
+        <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
+        <link rel="icon" href="http://www.gohugo.org/favicon.ico">
+        <title> - Hugo中文文档</title>
+        <link rel="stylesheet" href="http://www.gohugo.org/css/highlight.js.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="http://www.gohugo.org/css/theme.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/hugo-org.css">
+    </head>
+
+<body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.gohugo.org/">Hugo中文文档</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="http://www.gohugo.org/">主页</a></li>
+                    
+                    
+                    <li ><a href="http://www.gohugo.org/post/">文章列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/theme/">皮肤列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/showcase/">示例网站</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/donate/">关于</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">常用链接<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://github.com/spf13/hugo">官方GitHub</a></li>
+                        
+                            <li><a href="https://github.com/coderzh/gohugo.org">本站GitHub</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">官方文档<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://gohugo.io/overview/introduction/">英文文档</a></li>
+                        
+                            <li><a href="http://www.gohugo.org/doc/">中文文档</a></li>
+                        
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<div class="container">
+    <div id="theme-header">
+        <img src="http://www.gohugo.org/images/poopshow.screenshot.png" class="screenshot-blurred" />
+        <div class="dark-overlay"></div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 screenshot-container"><img src="http://www.gohugo.org/images/poopshow.screenshot.png" class="screenshot-normal" /></div>
+            <div class="col-md-6 col-sm-6 theme-details">
+                <h1>poopshow</h1>
+                <p class="description">the theme formerly know as s***show</p>
+                <ul class="theme-meta">
+                    
+                        
+                            <li><span class="label">Author:</span> <a href="http://github.com/esell/">esell</a></li>
+                        
+                    
+                    
+                        <li><span class="label">Minimum Hugo Version:</span> <span class="value">0.12</span></li>
+                    
+                    
+                        <li><span class="label">License:</span> <a href="http://opensource.org/licenses/MIT">MIT</a></li>
+                    
+                    
+                        <li>
+                            <span class="label">Tags:</span>
+                            
+                            <a href="http://www.gohugo.org/tags/blog">blog</a>
+                            
+                        </li>
+                    
+                </ul>
+            </div>
+
+            <div class="theme-buttons">
+
+                
+                <a class="btn btn-info btn-lg" href="https://github.com/esell/poopshow.git"><i class="fa fa-download"></i> Download</a>
+                
+
+                
+                <a class="btn btn-success btn-lg" href="http://www.gohugo.org/theme/poopshow/"><i class="fa fa-road"></i> Demo</a>
+                
+
+                
+                <a class="btn btn-dark btn-lg" href="http://github.com/esell/poopshow"><i class="fa fa-home"></i> Homepage</a>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        
+
+<p>The theme formerly know as s***show, re-branded to be more family friendly.<br />
+None of the existing hugo themes fit what I wanted so I created my own. I feel this is a very lightweight theme without being super boring.<br />
+This theme uses the <a href="http://getskeleton.com/">Skeleton CSS framework</a></p>
+
+<h1 id="configuration:2b418a8cb633b945782c9b7765c31a47">Configuration</h1>
+
+<p>This theme will not work (well, it won&rsquo;t work correctly) out of the box, there are a few parameters you&rsquo;ll have to add/set in your main hugo config file.</p>
+
+<p><strong>config.toml</strong></p>
+
+<pre><code class="language-toml">baseurl = &quot;http://hugo.spf13.com/&quot;
+title = &quot;Hugo Themes&quot;
+author = &quot;Steve Francia&quot;
+copyright = &quot;Copyright (c) 2008 - 2014, Steve Francia; all rights reserved.&quot;
+canonifyurls = true
+
+[params]
+	headerimg = &quot;your header image, this should live in static/img/&quot;
+	blogHeader = &quot;HTMLized &lt;b&gt;blog&lt;/b&gt; header&quot;
+    tagline = &quot;shows up next to your title&quot;
+    githubUrl = &quot;your Github URL&quot;
+    contactEmail = &quot;email address to use with the contact link&quot;
+	aboutLink = &quot;relative path to your about page&quot;
+</code></pre>
+
+<h1 id="demo:2b418a8cb633b945782c9b7765c31a47">Demo</h1>
+
+<p>You can see a live version of this template at <a href="http://esheavyindustries.com">http://esheavyindustries.com</a></p>
+
+    </div>
+
+
+
+<hr />
+
+<div class="row">
+    <div class="col-sm-12">
+        
+	    <div class="text-center">
+        
+		    <p class="doc-footer-em"><a href="#">回到顶部↑</a></p>
+	    </div>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+    <p>Copyright © <a href="http://blog.coderzh.com/">CoderZh</a> 2015. Generated by <a href="http://gohugo.io/">Hugo</a></p>
+</footer>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-10147768-3', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="http://www.gohugo.org/js/jquery-1.11.2.min.js"></script>
+<script src="http://www.gohugo.org/js/bootstrap.min.js"></script>
+
+<script src="http://www.gohugo.org/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="http://www.gohugo.org/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
+

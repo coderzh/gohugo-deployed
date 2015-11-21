@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="移动静态内容到 static 文件夹 Jekyll 有一条规则，任何不以 _ 开始的文件夹都会被原样复制到 _site 文件夹中。Hugo 把所有的静态内容放在 static 文件夹中。因此你需要把它">
+        <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
+        <link rel="icon" href="http://www.gohugo.org/favicon.ico">
+        <title>Migrate to Hugo from Jekyll - Hugo中文文档</title>
+        <link rel="stylesheet" href="http://www.gohugo.org/css/highlight.js.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/font-awesome/css/font-awesome.min.css" />
+        
+        <link rel="stylesheet" href="http://www.gohugo.org/css/hugo-org.css">
+    </head>
+
+<body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.gohugo.org/">Hugo中文文档</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="http://www.gohugo.org/">主页</a></li>
+                    
+                    
+                    <li ><a href="http://www.gohugo.org/post/">文章列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/theme/">皮肤列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/showcase/">示例网站</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/donate/">关于</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">常用链接<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://github.com/spf13/hugo">官方GitHub</a></li>
+                        
+                            <li><a href="https://github.com/coderzh/gohugo.org">本站GitHub</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">官方文档<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://gohugo.io/overview/introduction/">英文文档</a></li>
+                        
+                            <li><a href="http://www.gohugo.org/doc/">中文文档</a></li>
+                        
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<div class="container-fluid">
+
+<div class="row">
+    <div class="col-xs-12 col-sm-3">
+        
+<aside>
+    <div class="well">
+        
+        <div class="pull-right">Hugo v0.14.0(翻译中...)</div>
+        <ul class="nav nav-list">
+            
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">快速开始</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">关于 Hugo</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">快速开始</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">安装 Hugo</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">使用 Hugo</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">配置文件</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">目录结构</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">Hugo命令</label>
+                <ul class="nav nav-list">
+                    <li>
+                        <a href="http://www.gohugo.org/doc/commands/">Hugo命令</a>
+                    </li>
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">内容(Content)</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/organization/">Organization</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/supported-formats/">Supported Formats</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/front-matter/">Front Matter</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/sections/">Sections</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/types/">Types</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/archetypes/">Archetypes</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/ordering/">Ordering</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/summaries/">Summaries</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/example/">Example</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">皮肤(Themes)</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/overview/">Themes Overview</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/installing/">Installing Themes</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/usage/">Using a Theme</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/customizing/">Customizing a Theme</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/creation/">Creating a Theme</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">模板(Templates)</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">概述</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template 入门</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/ace/">Ace templates</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/amber/">Amber templates</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">函数</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">变量</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/content/">内容模板</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/list/">列表模板</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">首页模板</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/terms/">Taxonomy Terms</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/views/">Content Views</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">复用模板</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/rss/">RSS</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/sitemap/">Sitemap</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/404/">自定义404页面</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">调试</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">分类(Taxonomies)</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/overview/">Overview</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/usage/">Usage</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/displaying/">Displaying</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/templates/">Templates</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/ordering/">Ordering</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/methods/">Structure &amp; Methods</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">其他</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/builders/">Builders</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/comments/">Comments</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/crossreferences/">Cross-References</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/livereload/">LiveReload</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/menus/">Menus</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/permalinks/">Permalinks</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/pagination/">Pagination</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/scratch/">Scratch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/shortcodes/">Shortcodes</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/datafiles/">Data Files</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/highlighting/">Syntax Highlighting</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/datadrivencontent/">Data-driven Content</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/urls/">URLs</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">工具</label>
+                <ul class="nav nav-list">
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tools/">工具</a>
+                    </li>
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">社区</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/community/mailing-list/">Mailing List</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/community/contributing/">Contributing to Hugo</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://discuss.gohugo.io">讨论社区</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">指南</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/automated-deployments/">Automated deployments</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/creating-a-new-theme/">Creating a New Theme</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">Hosting on GitHub</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/installing-on-mac/">Installing on Mac</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/installing-on-windows/">Installing on Windows</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/mathjax/">MathJax Support</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/migrate-from-jekyll/">Migrating from Jekyll</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/create-a-multilingual-site/">Multilingual Site</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">常见问题</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/troubleshooting/overview/">Troubleshooting Overview</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/troubleshooting/strange-eof-error/">Strange EOF error</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/troubleshooting/categories-with-accented-characters/">Accented Categories</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">关于Hugo</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/meta/release-notes/">Release Notes</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/meta/roadmap/">Hugo Roadmap</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/meta/license/">License</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+              
+            <li>
+                <a href="https://github.com/coderzh/gohugo.org/edit/master/content/doc/tutorials/migrate-from-jekyll.md" target="blank">
+                <i class='fa fa-edit'></i>修改此文章</a>
+            </li>
+            
+            
+        </ul>
+    </div>
+</aside>
+
+
+    </div>
+    <div class="col-xs-12 col-sm-9 doc-main">
+        <main role="main">
+            <article>
+                <a id="title"></a>
+                <h1 class="doc-entry-title">Migrate to Hugo from Jekyll</h1>
+                <section>
+                    
+
+<h2 id="移动静态内容到-static-文件夹:964c172ef5e837f03573891408d8d631">移动静态内容到 <code>static</code> 文件夹</h2>
+
+<p>Jekyll 有一条规则，任何不以 <code>_</code> 开始的文件夹都会被原样复制到 <code>_site</code> 文件夹中。Hugo 把所有的静态内容放在 <code>static</code> 文件夹中。因此你需要把它们都移动到那里去。
+使用 Jekyll，看起来这样的路径</p>
+
+<pre><code>▾ &lt;root&gt;/
+    ▾ images/
+        logo.png
+</code></pre>
+
+<p>应该变为</p>
+
+<pre><code>▾ &lt;root&gt;/
+    ▾ static/
+        ▾ images/
+            logo.png
+</code></pre>
+
+<p>另外，你也想要让那些放在根目录下的文件（比如 <code>CNAME</code>）也移动到 <code>static</code> 中。</p>
+
+<h2 id="创建-hugo-配置文件:964c172ef5e837f03573891408d8d631">创建 Hugo 配置文件</h2>
+
+<p>Hugo 可以 JSON、YAML 或者 TOML 格式读入你的配置。Hugo 也支持自定义参数的配置。详细内容可以参考 <a href="http://www.gohugo.org/doc/overview/configuration/">Hugo 配置文档</a>。</p>
+
+<h2 id="把发布文件夹配置为-site:964c172ef5e837f03573891408d8d631">把发布文件夹配置为 <code>_site</code></h2>
+
+<p>Jekyll 的默认发布文件夹是 <code>_site</code>，而 Hugo 的是 <code>public</code>。如果，你和我一样，把 <a href="http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html"><code>_site</code> 文件夹映射为 <code>gh-pages</code> 分支的 git 子模块</a>，下面两种方法，你需要做其中之一：</p>
+
+<ol>
+<li><p>修改指向 <code>gh-pages</code> 的子模块，由 <code>_site</code> 指向 public （推荐）。</p>
+
+<pre><code>git submodule deinit _site
+git rm _site
+git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
+</code></pre></li>
+
+<li><p>或者，修改 Hugo 的配置，使用 <code>_site</code>，而不是 <code>public</code>。</p>
+
+<pre><code>{
+    ..
+    &quot;publishdir&quot;: &quot;_site&quot;,
+    ..
+}
+</code></pre></li>
+</ol>
+
+<h2 id="把-jekyll-模板转换为-hugo-的模板:964c172ef5e837f03573891408d8d631">把 Jekyll 模板转换为 Hugo 的模板</h2>
+
+<p>主要工作就在这里。文档是你的朋友。如果你需要重新记起如何构建博客的话，应该参考 <a href="http://jekyllrb.com/docs/templates/">Jekyll 模板文档</a> 并参考 <a href="http://www.gohugo.org/doc/layout/templates/">Hugo 模板</a> 来学习 Hugo 的方式。</p>
+
+<p>作为一个参考数据，为 <a href="http://heyitsalex.net/">heyitsalex.net</a> 转换模板花费我不超过几个小时的时间。</p>
+
+<h2 id="把-jekyll-插件转换为-hugo-的短代码:964c172ef5e837f03573891408d8d631">把 Jekyll 插件转换为 Hugo 的短代码</h2>
+
+<p>Jekyll 有<a href="http://jekyllrb.com/docs/plugins/">插件</a>；Hugo 有<a href="http://www.gohugo.org/doc/shortcodes/">短代码</a>。转换是非常琐碎的。</p>
+
+<h3 id="实现:964c172ef5e837f03573891408d8d631">实现</h3>
+
+<p>作为一个例子，我使用一个自定义的 <a href="https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb"><code>image_tag</code></a> 插件，在运行 Jekyll 时生成带标题的图片。当我阅读短代码的时候，我发现 Hugo 有一个内建的好用的短代码，可以完成同样的功能。</p>
+
+<p>Jekyll 的插件：</p>
+
+<pre><code>module Jekyll
+  class ImageTag &lt; Liquid::Tag
+    @url = nil
+    @caption = nil
+    @class = nil
+    @link = nil
+    // Patterns
+    IMAGE_URL_WITH_CLASS_AND_CAPTION =
+    IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s*)/i
+    IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;/i
+    IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i
+    IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
+    def initialize(tag_name, markup, tokens)
+      super
+      if markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK
+        @class   = $1
+        @url     = $3
+        @caption = $7
+        @link = $9
+      elsif markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION
+        @class   = $1
+        @url     = $3
+        @caption = $7
+      elsif markup =~ IMAGE_URL_WITH_CAPTION
+        @url     = $1
+        @caption = $5
+      elsif markup =~ IMAGE_URL_WITH_CLASS
+        @class = $1
+        @url   = $3
+      elsif markup =~ IMAGE_URL
+        @url = $1
+      end
+    end
+    def render(context)
+      if @class
+        source = &quot;&lt;figure class='#{@class}'&gt;&quot;
+      else
+        source = &quot;&lt;figure&gt;&quot;
+      end
+      if @link
+        source += &quot;&lt;a href=\&quot;#{@link}\&quot;&gt;&quot;
+      end
+      source += &quot;&lt;img src=\&quot;#{@url}\&quot;&gt;&quot;
+      if @link
+        source += &quot;&lt;/a&gt;&quot;
+      end
+      source += &quot;&lt;figcaption&gt;#{@caption}&lt;/figcaption&gt;&quot; if @caption
+      source += &quot;&lt;/figure&gt;&quot;
+      source
+    end
+  end
+end
+Liquid::Template.register_tag('image', Jekyll::ImageTag)
+</code></pre>
+
+<p>写成 Hugo 的短代码是这种形式：</p>
+
+<pre><code>&lt;!-- image --&gt;
+&lt;figure {{ with .Get &quot;class&quot; }}class=&quot;{{.}}&quot;{{ end }}&gt;
+    {{ with .Get &quot;link&quot;}}&lt;a href=&quot;{{.}}&quot;&gt;{{ end }}
+        &lt;img src=&quot;{{ .Get &quot;src&quot; }}&quot; {{ if or (.Get &quot;alt&quot;) (.Get &quot;caption&quot;) }}alt=&quot;{{ with .Get &quot;alt&quot;}}{{.}}{{else}}{{ .Get &quot;caption&quot; }}{{ end }}&quot;{{ end }} /&gt;
+    {{ if .Get &quot;link&quot;}}&lt;/a&gt;{{ end }}
+    {{ if or (or (.Get &quot;title&quot;) (.Get &quot;caption&quot;)) (.Get &quot;attr&quot;)}}
+    &lt;figcaption&gt;{{ if isset .Params &quot;title&quot; }}
+        {{ .Get &quot;title&quot; }}{{ end }}
+        {{ if or (.Get &quot;caption&quot;) (.Get &quot;attr&quot;)}}&lt;p&gt;
+        {{ .Get &quot;caption&quot; }}
+        {{ with .Get &quot;attrlink&quot;}}&lt;a href=&quot;{{.}}&quot;&gt; {{ end }}
+            {{ .Get &quot;attr&quot; }}
+        {{ if .Get &quot;attrlink&quot;}}&lt;/a&gt; {{ end }}
+        &lt;/p&gt; {{ end }}
+    &lt;/figcaption&gt;
+    {{ end }}
+&lt;/figure&gt;
+&lt;!-- image --&gt;
+</code></pre>
+
+<h3 id="使用:964c172ef5e837f03573891408d8d631">使用</h3>
+
+<p>我简单的修改：</p>
+
+<pre><code>{% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg &quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were &quot;having fun&quot; and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; -&gt;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
+</code></pre>
+
+<p>成这个样子（这个例子使用了扩展版本的命名 <code>fig</code>，和内建的 <code>figure</code> 不同）：</p>
+
+<pre><code>{{% fig class=&quot;full&quot; src=&quot;http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&quot; title=&quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; link=&quot;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&quot; %}}
+</code></pre>
+
+<p>这么做的好处是，命名参数的短代码，相对而言，更加易读。</p>
+
+<h2 id="收尾工作:964c172ef5e837f03573891408d8d631">收尾工作</h2>
+
+<h3 id="修改内容:964c172ef5e837f03573891408d8d631">修改内容</h3>
+
+<p>依据 Jekyll 生成的每篇博文的自定义数量，这个步骤将或多或少需要一些精力。除了 <code>hugo server --watch</code> 是你的朋友外，没有其他直接快速的规则。测试你的修改，并根据需要修改错误。</p>
+
+<h3 id="清除:964c172ef5e837f03573891408d8d631">清除</h3>
+
+<p>这时你将需要移除 Jekyll 的配置。如果还有其他不再使用的东西，也删除掉。</p>
+
+<h2 id="一个-diff-形式的实际例子:964c172ef5e837f03573891408d8d631">一个 diff 形式的实际例子</h2>
+
+<p><a href="http://heyitsalex.net/">Hey, it&rsquo;s Alex</a> 从 Jekyll 移植到 Hugo 花费了不到一个_带孩子的爸爸的一天_。查看这个 <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>，你可以看到所有的修改（和所犯的错误）。</p>
+
+                </section>
+            </article>
+        </main>
+        <br />
+        
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 text-center">
+                
+                <a href="http://www.gohugo.org/doc/tutorials/mathjax">&lt; 上一篇</a>
+                
+            </div>
+            <div class="col-xs-6 col-sm-6 text-center">
+                
+                <a href="http://www.gohugo.org/doc/tutorials/create-a-multilingual-site">下一篇 &gt;</a>
+                
+            </div>
+        </div>
+        
+    </div> 
+</div>
+
+
+
+<hr />
+
+<div class="row">
+    <div class="col-sm-12">
+        
+	    <div class="text-center">
+        
+		    <p class="doc-footer-em"><a href="#">回到顶部↑</a></p>
+	    </div>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+    <p>Copyright © <a href="http://blog.coderzh.com/">CoderZh</a> 2015. Generated by <a href="http://gohugo.io/">Hugo</a></p>
+</footer>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-10147768-3', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="http://www.gohugo.org/js/jquery-1.11.2.min.js"></script>
+<script src="http://www.gohugo.org/js/bootstrap.min.js"></script>
+
+<script src="http://www.gohugo.org/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="http://www.gohugo.org/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
+

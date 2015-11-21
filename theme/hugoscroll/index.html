@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A single page theme for hugo">
+        <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
+        <link rel="icon" href="http://www.gohugo.org/favicon.ico">
+        <title> - Hugo中文文档</title>
+        <link rel="stylesheet" href="http://www.gohugo.org/css/highlight.js.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="http://www.gohugo.org/css/theme.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/hugo-org.css">
+    </head>
+
+<body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.gohugo.org/">Hugo中文文档</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="http://www.gohugo.org/">主页</a></li>
+                    
+                    
+                    <li ><a href="http://www.gohugo.org/post/">文章列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/theme/">皮肤列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/showcase/">示例网站</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/donate/">关于</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">常用链接<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://github.com/spf13/hugo">官方GitHub</a></li>
+                        
+                            <li><a href="https://github.com/coderzh/gohugo.org">本站GitHub</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">官方文档<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://gohugo.io/overview/introduction/">英文文档</a></li>
+                        
+                            <li><a href="http://www.gohugo.org/doc/">中文文档</a></li>
+                        
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<div class="container">
+    <div id="theme-header">
+        <img src="http://www.gohugo.org/images/hugoscroll.screenshot.png" class="screenshot-blurred" />
+        <div class="dark-overlay"></div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 screenshot-container"><img src="http://www.gohugo.org/images/hugoscroll.screenshot.png" class="screenshot-normal" /></div>
+            <div class="col-md-6 col-sm-6 theme-details">
+                <h1>Hugo-scroll</h1>
+                <p class="description">A single page theme for hugo</p>
+                <ul class="theme-meta">
+                    
+                        
+                            <li><span class="label">Author:</span> <a href="http://fredrikloch.me">Fredrik Loch</a></li>
+                        
+                    
+                    
+                        <li><span class="label">Minimum Hugo Version:</span> <span class="value">0.14</span></li>
+                    
+                    
+                        <li><span class="label">License:</span> <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a></li>
+                    
+                    
+                        <li>
+                            <span class="label">Tags:</span>
+                            
+                            <a href="http://www.gohugo.org/tags/responsive">responsive</a>
+                            
+                            <a href="http://www.gohugo.org/tags/awesome-fonts">awesome fonts</a>
+                            
+                            <a href="http://www.gohugo.org/tags/single-page">single page</a>
+                            
+                        </li>
+                    
+                </ul>
+            </div>
+
+            <div class="theme-buttons">
+
+                
+                <a class="btn btn-info btn-lg" href="https://github.com/SenjinDarashiva/hugoscroll.git"><i class="fa fa-download"></i> Download</a>
+                
+
+                
+                <a class="btn btn-success btn-lg" href="http://www.gohugo.org/theme/hugoscroll/"><i class="fa fa-road"></i> Demo</a>
+                
+
+                
+                <a class="btn btn-dark btn-lg" href="https://github.com/SenjinDarashiva/hugoscroll"><i class="fa fa-home"></i> Homepage</a>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        
+
+<h1 id="hugo-scroll:7230c67c8bbf4fac4cafd061bb01d12f">Hugo Scroll</h1>
+
+<p>A live example of this theme is running at this site <a href="http://hugoscroll.fredrikloch.me">hugoscroll.fredrikloch.me</a></p>
+
+<h2 id="using-scroll:7230c67c8bbf4fac4cafd061bb01d12f">Using scroll</h2>
+
+<p>To get started with hugo you first need to download the <a href="http://gohugo.io">binaries</a>, whith these in place it is easy to get started.</p>
+
+<pre><code># Init site
+hugo new site My_New_Cool_Venture
+cd My_New_Cool_Venture
+
+# Get this cool theme
+git clone https://github.com/SenjinDarashiva/hugoscroll themes/hugoscroll
+
+# Start the watching your folder
+hugo --buildDrafts --theme=&quot;hugoscroll&quot; --watch server
+</code></pre>
+
+<p>With this done you can start creating posts, for this theme theme there is some specific information that needs to be added to your
+post header. For the first and the last post you need to add a class definition, the headers for this page look like this:</p>
+
+<pre><code>+++
+title = &quot;What is this&quot;
+description = &quot;First post&quot;
+weight = 1
+type = &quot;post&quot;
+class=&quot;post first&quot;
++++
+
++++
+title = &quot;Finaly!&quot;
+description = &quot;Last Post&quot;
+weight = 100
+type = &quot;post&quot;
+class=&quot;post last&quot;
++++
+</code></pre>
+
+<p>Every standard post must contain a weight between the weight of the first and the last to ensure correct ordering, in this case this
+allows us to use any number between 2 &ndash; 99</p>
+
+<h2 id="site-config:7230c67c8bbf4fac4cafd061bb01d12f">Site config</h2>
+
+<p>Apart from the regular config you can specify the following parameters to get extra features in the theme</p>
+
+<pre><code>[Params]
+  github = &quot;Senjindarashiva&quot;
+  bitbucket = &quot;floch&quot;
+  flickr = &quot;senjin&quot;
+  twitter = &quot;senjindarshiva&quot;
+  email = &quot;fredrik.loch@outlook.com&quot;
+  description = &quot;&quot;
+  linkedin = &quot;fredrikloch&quot;
+  cover = &quot;/images/background-cover.jpg&quot;
+  logo = &quot;/img/logo-1.jpg&quot;
+</code></pre>
+
+<h1 id="developing-hugoscroll:7230c67c8bbf4fac4cafd061bb01d12f">Developing hugoscroll</h1>
+
+<p>In order to develop or make changes to the theme you will need to have the sass compiler and bourbon both installed.</p>
+
+<p>To check installation run the following commands from a terminal and you should see the <code>&gt; cli output</code> but your version numbers may vary.</p>
+
+<h4 id="sass:7230c67c8bbf4fac4cafd061bb01d12f">SASS</h4>
+
+<pre><code class="language-bash">sass -v
+&gt; Sass 3.3.4 (Maptastic Maple)
+</code></pre>
+
+<p>If for some reason SASS isn&rsquo;t installed follow the instructions from the <a href="http://sass-lang.com/install">Sass install page</a></p>
+
+<h4 id="bourbon:7230c67c8bbf4fac4cafd061bb01d12f">Bourbon</h4>
+
+<pre><code class="language-bash">bourbon help
+&gt; Bourbon 3.1.8
+</code></pre>
+
+<p>If Bourbon isn&rsquo;t installed follow the installation instructions on the <a href="http://bourbon.io">Bourbon website</a></p>
+
+<p>Once installation is verified we will need to go mount the bourbon mixins into the <code>scss</code> folder.</p>
+
+<p>From the project root run <code>bourbon install</code> with the correct path</p>
+
+<pre><code class="language-bash">bourbon install --path static/scss
+&gt; bourbon files installed to static/scss/bourbon/
+</code></pre>
+
+<p>Now that we have the bourbon mixins inside of the <code>scss</code> src folder we can now use the sass cli command to watch the scss files for changes and recompile them.</p>
+
+<pre><code class="language-bash">sass --watch static/scss:static/css
+&gt;&gt;&gt;&gt; Sass is watching for changes. Press Ctrl-C to stop.
+</code></pre>
+
+<p>To minify the css files use the following command in the statics folder</p>
+
+<pre><code class="language-bash">curl -X POST -s --data-urlencode 'input@css/base.css' http://cssminifier.com/raw &gt; css/base.min.css
+</code></pre>
+
+<h2 id="font-awesome-icons:7230c67c8bbf4fac4cafd061bb01d12f">Font-awesome icons</h2>
+
+<p>For more information on available icons: <a href="http://fortawesome.github.io/Font-Awesome/">font-awesome</a>
+The files supplied with this theme have a minor alteration to work around an issue with adblocks and social icons.
+The changes means that the following classes is used:</p>
+
+<ul>
+<li>fa-tt &ndash; twitter</li>
+<li>fa-fb &ndash; facebook</li>
+<li>fa-ll &ndash; linkedin</li>
+</ul>
+
+    </div>
+
+
+
+<hr />
+
+<div class="row">
+    <div class="col-sm-12">
+        
+	    <div class="text-center">
+        
+		    <p class="doc-footer-em"><a href="#">回到顶部↑</a></p>
+	    </div>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+    <p>Copyright © <a href="http://blog.coderzh.com/">CoderZh</a> 2015. Generated by <a href="http://gohugo.io/">Hugo</a></p>
+</footer>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-10147768-3', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="http://www.gohugo.org/js/jquery-1.11.2.min.js"></script>
+<script src="http://www.gohugo.org/js/bootstrap.min.js"></script>
+
+<script src="http://www.gohugo.org/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="http://www.gohugo.org/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
+

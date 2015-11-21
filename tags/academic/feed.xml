@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Academic on Hugo中文文档</title>
+        <link>http://www.gohugo.org/tags/academic/</link>
+        <language>zh-CN</language>
+        <author>CoderZh</author>
+        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
+        <updated>Wed, 11 Feb 2015 13:21:27 &#43;1100</updated>
+        
+    </channel>
+</rss>

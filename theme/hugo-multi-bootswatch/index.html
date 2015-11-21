@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Hugo BootSwatch Theme is a single column theme for [hugo](http://hugo.spf13.com/) based on [Twitter Bootstrap](http://getbootstrap.com/) and a css styling from [Bootswatch](http://bootswatch.com/).">
+        <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
+        <link rel="icon" href="http://www.gohugo.org/favicon.ico">
+        <title> - Hugo中文文档</title>
+        <link rel="stylesheet" href="http://www.gohugo.org/css/highlight.js.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="http://www.gohugo.org/css/theme.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/hugo-org.css">
+    </head>
+
+<body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.gohugo.org/">Hugo中文文档</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="http://www.gohugo.org/">主页</a></li>
+                    
+                    
+                    <li ><a href="http://www.gohugo.org/post/">文章列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/theme/">皮肤列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/showcase/">示例网站</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/donate/">关于</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">常用链接<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://github.com/spf13/hugo">官方GitHub</a></li>
+                        
+                            <li><a href="https://github.com/coderzh/gohugo.org">本站GitHub</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">官方文档<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://gohugo.io/overview/introduction/">英文文档</a></li>
+                        
+                            <li><a href="http://www.gohugo.org/doc/">中文文档</a></li>
+                        
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<div class="container">
+    <div id="theme-header">
+        <img src="http://www.gohugo.org/images/hugo-multi-bootswatch.screenshot.png" class="screenshot-blurred" />
+        <div class="dark-overlay"></div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 screenshot-container"><img src="http://www.gohugo.org/images/hugo-multi-bootswatch.screenshot.png" class="screenshot-normal" /></div>
+            <div class="col-md-6 col-sm-6 theme-details">
+                <h1>hugo-multi-bootswatch</h1>
+                <p class="description">Hugo BootSwatch Theme is a single column theme for [hugo](http://hugo.spf13.com/) based on [Twitter Bootstrap](http://getbootstrap.com/) and a css styling from [Bootswatch](http://bootswatch.com/).</p>
+                <ul class="theme-meta">
+                    
+                        
+                            <li><span class="label">Author:</span> <span class="value">Marco Pas</span></li>
+                        
+                    
+                    
+                        <li><span class="label">Minimum Hugo Version:</span> <span class="value">0.14</span></li>
+                    
+                    
+                        <li><span class="label">License:</span> <a href="http://sm.mit-license.org/">MIT</a></li>
+                    
+                    
+                        <li>
+                            <span class="label">Tags:</span>
+                            
+                            <a href="http://www.gohugo.org/tags/post">post</a>
+                            
+                            <a href="http://www.gohugo.org/tags/category">category</a>
+                            
+                        </li>
+                    
+                </ul>
+            </div>
+
+            <div class="theme-buttons">
+
+                
+                <a class="btn btn-info btn-lg" href="https://github.com/mpas/hugo-multi-bootswatch.git"><i class="fa fa-download"></i> Download</a>
+                
+
+                
+                <a class="btn btn-success btn-lg" href="http://www.gohugo.org/theme/hugo-multi-bootswatch/"><i class="fa fa-road"></i> Demo</a>
+                
+
+                
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        
+
+<h1 id="hugo-multi-bootswatch-theme:f2d3cffea931ee856af6fdd328d1ef78">Hugo Multi Bootswatch Theme</h1>
+
+<p>Hugo Multi BootSwatch Theme is a single column theme for <a href="http://hugo.spf13.com/">hugo</a> based on <a href="http://getbootstrap.com/">Twitter Bootstrap</a> and a css styling from <a href="http://bootswatch.com/">Bootswatch</a>.</p>
+
+<p>It is a simple template containing a nice header menu bar and content area. Default the theme support 2 types of content.</p>
+
+<ul>
+<li>pages (used for About/Resume pages)</li>
+<li>posts (used for standard blogposts)</li>
+</ul>
+
+<hr />
+
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#colour-themes">Built-in colour themes</a></li>
+<li><a href="#screenshots">Screenshots</a></li>
+
+<li><p><a href="#themed-screenshots">Themed screenshots</a></p>
+
+<ul>
+<li><a href="#cerulean">Cerulean</a></li>
+<li><a href="#cosmo">Cosmo</a></li>
+<li><a href="#cyborg">Cyborg</a></li>
+<li><a href="#default">Default</a></li>
+<li><a href="#flatly">Flatly</a></li>
+<li><a href="#journal">Journal</a></li>
+<li><a href="#lumen">Lumen</a></li>
+<li><a href="#paper">Paper</a></li>
+<li><a href="#readable">Readable</a></li>
+<li><a href="#sandstone">Sandstone</a></li>
+<li><a href="#simplex">Simplex</a></li>
+<li><a href="#slate">Slate</a></li>
+<li><a href="#spacelab">Spacelab</a></li>
+<li><a href="#superhero">Superhero</a></li>
+<li><a href="#united">United</a></li>
+<li><a href="#yeti">Yeti</a></li>
+</ul></li>
+
+<li><p><a href="#questions-ideas-bugs-pull-requests">Questions, ideas, bugs, pull requests?</a></p></li>
+
+<li><p><a href="#license">License</a></p></li>
+</ul>
+
+<hr />
+
+<h2 id="installation:f2d3cffea931ee856af6fdd328d1ef78">Installation</h2>
+
+<pre><code>$ cd your_site_repo/
+$ mkdir themes
+$ cd themes
+$ git clone https://github.com/mpas/hugo-multi-bootswatch.git
+</code></pre>
+
+<p>See the <a href="http://gohugo.io/themes/installing">official Hugo themes documentation</a> for more info.</p>
+
+<h2 id="usage:f2d3cffea931ee856af6fdd328d1ef78">Usage</h2>
+
+<p>This theme expects a relatively standard Hugo blog/personal site layout:</p>
+
+<pre><code>.
+└── content
+    ├── post
+    |   ├── post1.md
+    |   └── post2.md
+    └── page
+        ├── license.md      // this is used in the footer link
+        ├── about.md        // used in the header
+        └── resume.md       // used in the header
+</code></pre>
+
+<p>Just run <code>hugo --theme=hugo-multi-bootswatch</code> to generate your site!</p>
+
+<h2 id="configuration:f2d3cffea931ee856af6fdd328d1ef78">Configuration</h2>
+
+<p>An example of what your site&rsquo;s <code>config.toml</code> could look like. All theme-specific parameters are under <code>[params]</code> and standard Hugo parameters are used where possible.</p>
+
+<pre><code>baseurl     = &quot;http://example.com&quot;  # the baseurl for your website
+title       = &quot;Your site title&quot;     # blog title
+paginate    = 10                    # the number of posts on a page
+
+[permalinks]
+    # Optional. Change the permalink format for the 'post' content type.
+    # The format shown here is the same one Jekyll/Octopress uses by default.
+    post = &quot;/blog/:year/:month/:day/:title/&quot;
+
+[params]
+    # name of the site author; used in header meta information
+    author = &quot;&lt;authorname&gt;&quot;
+
+    # social links, used in footer, these must be full URLs.
+    twitter = &quot;https://twitter.com/&lt;username&gt;&quot;
+    github = &quot;https://github.com/&lt;username&gt;&quot;
+    facebook = &quot;https://www.facebook.com/&lt;username&gt;&quot;
+    delicious = &quot;https://delicious.com/&lt;username&gt;&quot;
+
+[params.theme]
+    inverse = false     # indicating if the theme should use inversed colors
+    name = &quot;cerulean&quot;   # name of the theme to use
+
+    # list of possible theme names that can be used
+    # name = &quot;cerulean&quot;
+    # name = &quot;cosmo&quot;
+    # name = &quot;cyborg&quot;
+    # name = &quot;default&quot;
+    # name = &quot;flatly&quot;
+    # name = &quot;journal&quot;
+    # name = &quot;lumen&quot;
+    # name = &quot;paper&quot;
+    # name = &quot;readable&quot;
+    # name = &quot;sandstone&quot;
+    # name = &quot;simplex&quot;
+    # name = &quot;slate&quot;
+    # name = &quot;spacelabs&quot;
+    # name = &quot;superhero&quot;
+    # name = &quot;united&quot;
+    # name = &quot;yeti&quot;
+
+</code></pre>
+
+<h2 id="colour-themes:f2d3cffea931ee856af6fdd328d1ef78">Colour themes</h2>
+
+<p>All the available color themes from <a href="http://bootswatch.com/">Bootswatch</a> are available. Please checkout Bootswatch to see what theme you want to use.</p>
+
+<h2 id="screenshots:f2d3cffea931ee856af6fdd328d1ef78">Screenshots</h2>
+
+<h3 id="index-page:f2d3cffea931ee856af6fdd328d1ef78">Index Page</h3>
+
+<p><img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/index.png" alt="index" /></p>
+
+<h3 id="post-page:f2d3cffea931ee856af6fdd328d1ef78">Post Page</h3>
+
+<p><img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/post.png" alt="post" /></p>
+
+<h3 id="list-page:f2d3cffea931ee856af6fdd328d1ef78">List Page</h3>
+
+<p><img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/list.png" alt="list" /></p>
+
+<h2 id="themed-screenshots:f2d3cffea931ee856af6fdd328d1ef78">Themed Screenshots</h2>
+
+<h3 id="cerulean:f2d3cffea931ee856af6fdd328d1ef78">Cerulean</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/cerulean.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/cerulean.png" alt="index" /></p>
+
+<h3 id="cosmo:f2d3cffea931ee856af6fdd328d1ef78">Cosmo</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/cosmo.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/cosmo.png" alt="index" /></p>
+
+<h3 id="cyborg:f2d3cffea931ee856af6fdd328d1ef78">Cyborg</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/cyborg.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/cyborg.png" alt="index" /></p>
+
+<h3 id="default:f2d3cffea931ee856af6fdd328d1ef78">Default</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/default.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/default.png" alt="index" /></p>
+
+<h3 id="flatly:f2d3cffea931ee856af6fdd328d1ef78">Flatly</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/flatly.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/flatly.png" alt="index" /></p>
+
+<h3 id="journal:f2d3cffea931ee856af6fdd328d1ef78">Journal</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/journal.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/journal.png" alt="index" /></p>
+
+<h3 id="lumen:f2d3cffea931ee856af6fdd328d1ef78">Lumen</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/lumen.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/lumen.png" alt="index" /></p>
+
+<h3 id="paper:f2d3cffea931ee856af6fdd328d1ef78">Paper</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/paper.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/paper.png" alt="index" /></p>
+
+<h3 id="readable:f2d3cffea931ee856af6fdd328d1ef78">Readable</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/readable.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/readable.png" alt="index" /></p>
+
+<h3 id="sandstone:f2d3cffea931ee856af6fdd328d1ef78">Sandstone</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/sandstone.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/sandstone.png" alt="index" /></p>
+
+<h3 id="simplex:f2d3cffea931ee856af6fdd328d1ef78">Simplex</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/simplex.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/simplex.png" alt="index" /></p>
+
+<h3 id="slate:f2d3cffea931ee856af6fdd328d1ef78">Slate</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/slate.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/slate.png" alt="index" /></p>
+
+<h3 id="spacelab:f2d3cffea931ee856af6fdd328d1ef78">Spacelab</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/spacelab.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/spacelab.png" alt="index" /></p>
+
+<h3 id="superhero:f2d3cffea931ee856af6fdd328d1ef78">Superhero</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/superhero.png" alt="index" />
+<em>inversed:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/superhero.png" alt="index" /></p>
+
+<h3 id="united:f2d3cffea931ee856af6fdd328d1ef78">United</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/united.png" alt="index" />
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/united.png" alt="index" /></p>
+
+<h3 id="yeti:f2d3cffea931ee856af6fdd328d1ef78">Yeti</h3>
+
+<p><em>normal:</em>
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_false/yeti.png" alt="index" />
+<img src="https://raw.githubusercontent.com/mpas/hugo-multi-bootswatch/master/images/inverse_true/yeti.png" alt="index" /></p>
+
+<h2 id="questions-ideas-bugs-pull-requests:f2d3cffea931ee856af6fdd328d1ef78">Questions, ideas, bugs, pull requests?</h2>
+
+<p>All feedback is welcome! Head over to the <a href="https://github.com/mpas/hugo-multi-bootswatch/issues">issue tracker</a>.</p>
+
+<h2 id="license:f2d3cffea931ee856af6fdd328d1ef78">License</h2>
+
+<p>Open sourced under the <a href="https://github.com/mpas/hugo-multi-bootswatch/blob/master/LICENSE.md">MIT license</a>.</p>
+
+    </div>
+
+
+
+<hr />
+
+<div class="row">
+    <div class="col-sm-12">
+        
+	    <div class="text-center">
+        
+		    <p class="doc-footer-em"><a href="#">回到顶部↑</a></p>
+	    </div>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+    <p>Copyright © <a href="http://blog.coderzh.com/">CoderZh</a> 2015. Generated by <a href="http://gohugo.io/">Hugo</a></p>
+</footer>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-10147768-3', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="http://www.gohugo.org/js/jquery-1.11.2.min.js"></script>
+<script src="http://www.gohugo.org/js/bootstrap.min.js"></script>
+
+<script src="http://www.gohugo.org/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="http://www.gohugo.org/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
+

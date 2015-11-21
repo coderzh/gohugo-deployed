@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="An elegant open source and mobile first theme, extended with new integrations and layout improvements">
+        <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
+        <link rel="icon" href="http://www.gohugo.org/favicon.ico">
+        <title> - Hugo中文文档</title>
+        <link rel="stylesheet" href="http://www.gohugo.org/css/highlight.js.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="http://www.gohugo.org/css/theme.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/hugo-org.css">
+    </head>
+
+<body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.gohugo.org/">Hugo中文文档</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="http://www.gohugo.org/">主页</a></li>
+                    
+                    
+                    <li ><a href="http://www.gohugo.org/post/">文章列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/theme/">皮肤列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/showcase/">示例网站</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/donate/">关于</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">常用链接<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://github.com/spf13/hugo">官方GitHub</a></li>
+                        
+                            <li><a href="https://github.com/coderzh/gohugo.org">本站GitHub</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">官方文档<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://gohugo.io/overview/introduction/">英文文档</a></li>
+                        
+                            <li><a href="http://www.gohugo.org/doc/">中文文档</a></li>
+                        
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<div class="container">
+    <div id="theme-header">
+        <img src="http://www.gohugo.org/images/hyde-x.screenshot.png" class="screenshot-blurred" />
+        <div class="dark-overlay"></div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6 screenshot-container"><img src="http://www.gohugo.org/images/hyde-x.screenshot.png" class="screenshot-normal" /></div>
+            <div class="col-md-6 col-sm-6 theme-details">
+                <h1>Hyde-X</h1>
+                <p class="description">An elegant open source and mobile first theme, extended with new integrations and layout improvements</p>
+                <ul class="theme-meta">
+                    
+                        
+                            <li><span class="label">Author:</span> <a href="http://andreimihu.com">Andrei Mihu</a></li>
+                        
+                    
+                    
+                        <li><span class="label">Minimum Hugo Version:</span> <span class="value">0.14</span></li>
+                    
+                    
+                        <li><span class="label">License:</span> <a href="https://github.com/zyro/hyde-x/LICENSE">MIT</a></li>
+                    
+                    
+                        <li>
+                            <span class="label">Tags:</span>
+                            
+                            <a href="http://www.gohugo.org/tags/blog">blog</a>
+                            
+                            <a href="http://www.gohugo.org/tags/technical">technical</a>
+                            
+                            <a href="http://www.gohugo.org/tags/personal">personal</a>
+                            
+                        </li>
+                    
+                </ul>
+            </div>
+
+            <div class="theme-buttons">
+
+                
+                <a class="btn btn-info btn-lg" href="https://github.com/zyro/hyde-x.git"><i class="fa fa-download"></i> Download</a>
+                
+
+                
+                <a class="btn btn-success btn-lg" href="http://www.gohugo.org/theme/hyde-x/"><i class="fa fa-road"></i> Demo</a>
+                
+
+                
+                <a class="btn btn-dark btn-lg" href="https://github.com/zyro/hyde-x"><i class="fa fa-home"></i> Homepage</a>
+                
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        
+
+<h1 id="hyde-x:2e1296e1a9b50ce7382edbcbf035d943">Hyde-X</h1>
+
+<p>Enhanced port of the Jekyll &ldquo;<a href="https://github.com/poole/hyde">Hyde</a>&rdquo; theme to the <a href="http://gohugo.io">Hugo</a> site generator. Check below for a list of enhancements.</p>
+
+<p>You can find a live site using this theme <a href="http://andreimihu.com">here</a> and the corresponding source code <a href="https://github.com/zyro/andreimihu.com">here</a>.</p>
+
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#built-in-colour-themes">Built-in colour themes</a></li>
+<li><a href="#tips">Tips</a></li>
+<li><a href="#changes-and-enhancements-from-the-original-theme">Changes and enhancements from the original theme</a></li>
+<li><a href="#attribution">Attribution</a></li>
+<li><a href="#questions-ideas-bugs-pull-requests">Questions, ideas, bugs, pull requests?</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+
+<h3 id="installation:2e1296e1a9b50ce7382edbcbf035d943">Installation</h3>
+
+<pre><code>$ cd your_site_repo/
+$ mkdir themes
+$ cd themes
+$ git clone https://github.com/zyro/hyde-x
+</code></pre>
+
+<p>See the <a href="http://gohugo.io/themes/installing">official Hugo themes documentation</a> for more info.</p>
+
+<h3 id="usage:2e1296e1a9b50ce7382edbcbf035d943">Usage</h3>
+
+<p>This theme expects a relatively standard Hugo blog/personal site layout:</p>
+
+<pre><code>.
+└── content
+    ├── post
+    |   ├── post1.md
+    |   └── post2.md
+    ├── license.md        // this is used in the sidebar footer link
+    └── other_page.md
+</code></pre>
+
+<p>Just run <code>hugo --theme=hyde-x</code> to generate your site!</p>
+
+<h3 id="configuration:2e1296e1a9b50ce7382edbcbf035d943">Configuration</h3>
+
+<p>An example of what your site&rsquo;s <code>config.toml</code> could look like. All theme-specific parameters are under <code>[params]</code> and standard Hugo parameters are used where possible.</p>
+
+<pre><code class="language-toml">baseurl = &quot;http://example.com/&quot;
+title = &quot;Your site title&quot;
+languageCode = &quot;en-us&quot;
+disqusShortname = &quot;your_disqus_shortname&quot; # Optional, enable Disqus integration
+MetaDataFormat = &quot;toml&quot;
+theme = &quot;hyde-x&quot;
+paginate = 10
+
+[author]
+    name = &quot;Your Name&quot;
+
+[permalinks]
+    # Optional. Change the permalink format for the 'post' content type.
+    # The format shown here is the same one Jekyll/Octopress uses by default.
+    post = &quot;/blog/:year/:month/:day/:title/&quot;
+
+[taxonomies]
+    # Optional. Use if you want tags and lists.
+    category = &quot;categories&quot;
+
+#
+# All parameters below here are optional and can be mixed and matched.
+#
+[params]
+    # If false display full article contents in blog index.
+    # Otherwise show description and 'read on' link to individual blog post page.
+    # Default (if omitted) is true.
+    truncate = true
+
+    # Used when a given page doesn't set its own.
+    defaultDescription = &quot;Your default page description&quot;
+    defaultKeywords = &quot;your,default,page,keywords&quot;
+
+    # Changes sidebar background and link/accent colours.
+    # See below for more colour options.
+    # This also works: &quot;theme-base-08 layout-reverse&quot;, or just &quot;layout-reverse&quot;.
+    theme = &quot;theme-base-08&quot;
+
+    # Select a syntax highight.
+    # Check the static/css/highlight directory for options.
+    highlight = &quot;sunburst&quot;
+
+    # Displays under the author name in the sidebar, keep it short.
+    # You can use markdown here.
+    tagline = &quot;Your favourite quote or soundbite.&quot;
+
+    # Text for the top menu link, which goes the root URL for the site.
+    # Default (if omitted) is &quot;Blog&quot;.
+    home = &quot;Blog&quot;
+
+    # Metadata used to drive integrations.
+    googleAuthorship = &quot;Your Google+ profile ID&quot;
+    googleAnalytics = &quot;Your Google Analytics tracking code&quot;
+    gravatarHash = &quot;MD5 hash of your Gravatar email address&quot;
+
+    # Sidebar social links, these must be full URLs.
+    github = &quot;&quot;
+    bitbucket = &quot;&quot;
+    linkedin = &quot;&quot;
+    googleplus = &quot;&quot;
+    facebook = &quot;&quot;
+    twitter = &quot;&quot;
+    youtube = &quot;&quot;
+
+    # Other social-like sidebar links
+    rss = false  # switch to true to enable RSS icon link
+    flattr = &quot;&quot;  # populate with your flattr uid
+</code></pre>
+
+<h3 id="built-in-colour-themes:2e1296e1a9b50ce7382edbcbf035d943">Built-in colour themes</h3>
+
+<p>Hyde-X provides 8 built-in colour themes by default, with the option to define more in your own custom CSS.</p>
+
+<p><img src="https://raw.githubusercontent.com/zyro/hyde-x/master/images/theme-colours.png" alt="Hyde-X theme classes" /></p>
+
+<h3 id="tips:2e1296e1a9b50ce7382edbcbf035d943">Tips</h3>
+
+<ul>
+<li>If you&rsquo;ve added <code>theme = &quot;hyde-x&quot;</code> to your <code>config.toml</code>, you don&rsquo;t need to keep using the <code>--theme=hyde-x</code> flag!</li>
+<li>Pages where you specify <code>menu = &quot;main&quot;</code> in the front matter will be linked in the sidebar just below the <code>Blog</code> link.</li>
+<li>Use the exact permalink format above to maintain old links if migrating from Jekyll/Octopress.</li>
+<li>Although all of the syntax highlight CSS files under the theme&rsquo;s <code>static/css/highlight</code> are bundled with the site, only the one you choose will be included in the page and delivered to the browser.</li>
+<li>Change the favicon by providing your own as <code>static/favicon.png</code> in your site directory.</li>
+<li>Hugo makes it easy to override theme layout and behaviour, read about it <a href="http://gohugo.io/themes/customizing">here</a>.</li>
+<li>Pagination is set to 10 items by default, change it by updating <code>paginate = 10</code> in your <code>config.toml</code>.</li>
+<li>Set <code>truncate = false</code> in the <code>[params]</code> section of your <code>config.toml</code> to display full blog post contents in the index page, like the <a href="https://github.com/poole/hyde">base Hyde theme</a> did.</li>
+</ul>
+
+<h3 id="changes-and-enhancements-from-the-original-theme:2e1296e1a9b50ce7382edbcbf035d943">Changes and enhancements from the original theme</h3>
+
+<ul>
+<li>Category labels and lists.</li>
+<li>Client-side syntax highlighting through <a href="https://highlightjs.org/">highlight.js</a>, sane fallback if disabled or no JS - infinitely more flexible than the standard Hugo highlighting.</li>
+<li>Disqus integration: comment counts listed under blog entry names in post list, comments displayed at the bottom of each post.</li>
+<li>Gravatar image in sidebar.</li>
+<li>Google Analytics integration.</li>
+<li>Google Authorship metadata.</li>
+<li>Sidebar link layout and footer format changes.</li>
+<li>Blog post list now contains only the post description, not the full contents.</li>
+<li>Paginated blog listing.</li>
+<li><a href="http://fortawesome.github.io/Font-Awesome">FontAwesome</a> social links.</li>
+<li>&hellip;many other small layout tweaks!</li>
+</ul>
+
+<h3 id="attribution:2e1296e1a9b50ce7382edbcbf035d943">Attribution</h3>
+
+<p>Obviously largely a port of the awesome <a href="https://github.com/poole/hyde">Hyde</a> theme.</p>
+
+<h3 id="questions-ideas-bugs-pull-requests:2e1296e1a9b50ce7382edbcbf035d943">Questions, ideas, bugs, pull requests?</h3>
+
+<p>All feedback is welcome! Head over to the <a href="https://github.com/zyro/hyde-x/issues">issue tracker</a>.</p>
+
+<h3 id="license:2e1296e1a9b50ce7382edbcbf035d943">License</h3>
+
+<p>Open sourced under the <a href="https://github.com/zyro/hyde-x/blob/master/LICENSE">MIT license</a>.</p>
+
+    </div>
+
+
+
+<hr />
+
+<div class="row">
+    <div class="col-sm-12">
+        
+	    <div class="text-center">
+        
+		    <p class="doc-footer-em"><a href="#">回到顶部↑</a></p>
+	    </div>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+    <p>Copyright © <a href="http://blog.coderzh.com/">CoderZh</a> 2015. Generated by <a href="http://gohugo.io/">Hugo</a></p>
+</footer>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-10147768-3', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="http://www.gohugo.org/js/jquery-1.11.2.min.js"></script>
+<script src="http://www.gohugo.org/js/bootstrap.min.js"></script>
+
+<script src="http://www.gohugo.org/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="http://www.gohugo.org/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
+
