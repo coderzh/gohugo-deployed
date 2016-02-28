@@ -75,7 +75,7 @@
 <aside>
     <div class="well">
         
-        <div class="pull-right">Hugo v0.14.0(翻译中...)</div>
+        <div class="pull-right">Hugo v0.15.0(翻译中...)</div>
         <ul class="nav nav-list">
             
             
@@ -85,27 +85,27 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/introduction/">关于 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">Introduction</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/quickstart/">快速开始</a>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">Quickstart</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/installing/">安装 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">Installing Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/usage/">使用 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">Using Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/configuration/">配置文件</a>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">Configuration</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/source-directory/">目录结构</a>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">Source Organization</a>
                     </li>
                     
                 </ul>
@@ -203,11 +203,11 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/overview/">概述</a>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">Overview</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template 入门</a>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template Primer</a>
                     </li>
                     
                     <li>
@@ -219,23 +219,23 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/functions/">函数</a>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">Functions</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/variables/">变量</a>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">Variables</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/content/">内容模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/content/">Single Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/list/">列表模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/list/">List of Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/homepage/">首页模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">Homepage</a>
                     </li>
                     
                     <li>
@@ -247,7 +247,7 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/partials/">复用模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">Partial Templates</a>
                     </li>
                     
                     <li>
@@ -259,11 +259,11 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/404/">自定义404页面</a>
+                        <a href="http://www.gohugo.org/doc/templates/404/">Custom 404 page</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/debugging/">调试</a>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">Debugging</a>
                     </li>
                     
                 </ul>
@@ -310,6 +310,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/analytics/">Analytics</a>
                     </li>
                     
                     <li>
@@ -362,6 +366,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/localfiles/">Traversing Local Files</a>
                     </li>
                     
                     <li>
@@ -533,7 +541,7 @@ in Hugo and is used as the <a href="http://www.gohugo.org/doc/content/sections/"
         └── second.md      // &lt;- http://1.com/quote/second/
 </code></pre>
 
-<p><strong>Here&rsquo;s the same organization run with <code>hugo --uglyUrls</code></strong></p>
+<p><strong>Here&rsquo;s the same organization run with <code>hugo --uglyURLs</code></strong></p>
 
 <pre><code>.
 └── content
@@ -595,7 +603,7 @@ path. Includes <a href="http://www.gohugo.org/doc/content/sections/">section</a>
 <p>A complete URL can be provided. This will override all the above as it pertains
 to the end destination. This must be the path from the baseURL (starting with a &ldquo;/&rdquo;).
 When a <code>url</code> is provided, it will be used exactly. Using <code>url</code> will ignore the
-<code>--uglyUrls</code> setting.</p>
+<code>--uglyURLs</code> setting.</p>
 
 <h2 id="path-breakdown-in-hugo:19db6eb03b89c4dee67501d629682824">Path breakdown in Hugo</h2>
 
@@ -603,17 +611,17 @@ When a <code>url</code> is provided, it will be used exactly. Using <code>url</c
 
 <pre><code>.             path           slug
 .       ⊢-------^----⊣ ⊢------^-------⊣
-content/extras/indexes/category-example/index.html
+doc/content/doc/extras/indexes/category-example/index.html
 
 
 .       section              slug
 .       ⊢--^--⊣        ⊢------^-------⊣
-content/extras/indexes/category-example/index.html
+doc/content/doc/extras/indexes/category-example/index.html
 
 
 .       section  slug
 .       ⊢--^--⊣⊢--^--⊣
-content/extras/indexes/index.html
+doc/content/doc/extras/indexes/index.html
 </code></pre>
 
 <h3 id="destination:19db6eb03b89c4dee67501d629682824">Destination</h3>
@@ -630,12 +638,12 @@ http://spf13.com/projects/hugo
 
    baseURL       section          slug
 ⊢-----^--------⊣ ⊢--^--⊣        ⊢--^--⊣
-http://spf13.com/extras/indexes/example
+http://spf13.com/doc/extras/indexes/example
 
 
    baseURL            path       slug
 ⊢-----^--------⊣ ⊢------^-----⊣ ⊢--^--⊣
-http://spf13.com/extras/indexes/example
+http://spf13.com/doc/extras/indexes/example
 
 
    baseURL            url
@@ -645,7 +653,7 @@ http://spf13.com/projects/hugo
 
    baseURL               url
 ⊢-----^--------⊣ ⊢--------^-----------⊣
-http://spf13.com/extras/indexes/example
+http://spf13.com/doc/extras/indexes/example
 </code></pre>
 
 <p><strong>section</strong> = which type the content is by default</p>

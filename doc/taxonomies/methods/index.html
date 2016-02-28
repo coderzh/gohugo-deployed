@@ -75,7 +75,7 @@
 <aside>
     <div class="well">
         
-        <div class="pull-right">Hugo v0.14.0(翻译中...)</div>
+        <div class="pull-right">Hugo v0.15.0(翻译中...)</div>
         <ul class="nav nav-list">
             
             
@@ -85,27 +85,27 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/introduction/">关于 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">Introduction</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/quickstart/">快速开始</a>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">Quickstart</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/installing/">安装 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">Installing Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/usage/">使用 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">Using Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/configuration/">配置文件</a>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">Configuration</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/source-directory/">目录结构</a>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">Source Organization</a>
                     </li>
                     
                 </ul>
@@ -203,11 +203,11 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/overview/">概述</a>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">Overview</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template 入门</a>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template Primer</a>
                     </li>
                     
                     <li>
@@ -219,23 +219,23 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/functions/">函数</a>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">Functions</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/variables/">变量</a>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">Variables</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/content/">内容模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/content/">Single Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/list/">列表模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/list/">List of Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/homepage/">首页模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">Homepage</a>
                     </li>
                     
                     <li>
@@ -247,7 +247,7 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/partials/">复用模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">Partial Templates</a>
                     </li>
                     
                     <li>
@@ -259,11 +259,11 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/404/">自定义404页面</a>
+                        <a href="http://www.gohugo.org/doc/templates/404/">Custom 404 page</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/debugging/">调试</a>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">Debugging</a>
                     </li>
                     
                 </ul>
@@ -310,6 +310,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/analytics/">Analytics</a>
                     </li>
                     
                     <li>
@@ -362,6 +366,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/localfiles/">Traversing Local Files</a>
                     </li>
                     
                     <li>
@@ -515,37 +523,53 @@
 
 <p>A Taxonomy is a <code>map[string]WeightedPages</code>.</p>
 
-<p><strong>.Get(term)</strong> Returns the WeightedPages for a term. <br>
-<strong>.Count(term)</strong> The number of pieces of content assigned to this term.<br>
-<strong>.Alphabetical</strong> Returns an OrderedTaxonomy (slice) ordered by Term. <br>
-<strong>.ByCount</strong> Returns an OrderedTaxonomy (slice) ordered by number of entries. <br></p>
+<dl>
+<dt>.Get(term)</dt>
+<dd>Returns the WeightedPages for a term.</dd>
+<dt>.Count(term)</dt>
+<dd>The number of pieces of content assigned to this term.</dd>
+<dt>.Alphabetical</dt>
+<dd>Returns an OrderedTaxonomy (slice) ordered by Term.</dd>
+<dt>.ByCount</dt>
+<dd>Returns an OrderedTaxonomy (slice) ordered by number of entries.</dd>
+</dl>
 
 <h2 id="orderedtaxonomy:8f7fb4fc4dd3d9d669ba80ed8a1fb3a7">OrderedTaxonomy</h2>
 
 <p>Since Maps are unordered, an OrderedTaxonomy is a special structure that has a defined order.</p>
 
-<pre><code>[]struct {
-    Name          string
-    WeightedPages WeightedPages
+<pre><code class="language-go">[]struct {
+	Name          string
+	WeightedPages WeightedPages
 }
 </code></pre>
 
 <p>Each element of the slice has:</p>
 
-<p><strong>.Term</strong>  The Term used.<br>
-<strong>.WeightedPages</strong>  A slice of Weighted Pages.<br>
-<strong>.Count</strong> The number of pieces of content assigned to this term.<br>
-<strong>.Pages</strong>  All Pages assigned to this term. All <a href="http://www.gohugo.org/doc/templates/list/">list methods</a> are available to this.<br></p>
+<dl>
+<dt>.Term</dt>
+<dd>The Term used.</dd>
+<dt>.WeightedPages</dt>
+<dd>A slice of Weighted Pages.</dd>
+<dt>.Count</dt>
+<dd>The number of pieces of content assigned to this term.</dd>
+<dt>.Pages</dt>
+<dd>All Pages assigned to this term. All <a href="http://www.gohugo.org/doc/templates/list/">list methods</a> are available to this.</dd>
+</dl>
 
 <h2 id="weightedpages:8f7fb4fc4dd3d9d669ba80ed8a1fb3a7">WeightedPages</h2>
 
 <p>WeightedPages is simply a slice of WeightedPage.</p>
 
-<pre><code>type WeightedPages []WeightedPage
+<pre><code class="language-go">type WeightedPages []WeightedPage
 </code></pre>
 
-<p><strong>.Count(term)</strong> The number of pieces of content assigned to this term.<br>
-<strong>.Pages</strong> Returns a slice of pages, which then can be ordered using any of the <a href="http://www.gohugo.org/doc/templates/list/">list methods</a>. <br></p>
+<dl>
+<dt>.Count(term)</dt>
+<dd>The number of pieces of content assigned to this term.</dd>
+<dt>.Pages</dt>
+<dd>Returns a slice of pages, which then can be ordered using any of the <a href="http://www.gohugo.org/doc/templates/list/">list methods</a>.</dd>
+</dl>
 
                 </section>
             </article>

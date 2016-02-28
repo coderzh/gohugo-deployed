@@ -75,7 +75,7 @@
 <aside>
     <div class="well">
         
-        <div class="pull-right">Hugo v0.14.0(翻译中...)</div>
+        <div class="pull-right">Hugo v0.15.0(翻译中...)</div>
         <ul class="nav nav-list">
             
             
@@ -85,27 +85,27 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/introduction/">关于 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">Introduction</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/quickstart/">快速开始</a>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">Quickstart</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/installing/">安装 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">Installing Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/usage/">使用 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">Using Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/configuration/">配置文件</a>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">Configuration</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/source-directory/">目录结构</a>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">Source Organization</a>
                     </li>
                     
                 </ul>
@@ -203,11 +203,11 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/overview/">概述</a>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">Overview</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template 入门</a>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template Primer</a>
                     </li>
                     
                     <li>
@@ -219,23 +219,23 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/functions/">函数</a>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">Functions</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/variables/">变量</a>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">Variables</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/content/">内容模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/content/">Single Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/list/">列表模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/list/">List of Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/homepage/">首页模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">Homepage</a>
                     </li>
                     
                     <li>
@@ -247,7 +247,7 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/partials/">复用模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">Partial Templates</a>
                     </li>
                     
                     <li>
@@ -259,11 +259,11 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/404/">自定义404页面</a>
+                        <a href="http://www.gohugo.org/doc/templates/404/">Custom 404 page</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/debugging/">调试</a>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">Debugging</a>
                     </li>
                     
                 </ul>
@@ -310,6 +310,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/analytics/">Analytics</a>
                     </li>
                     
                     <li>
@@ -362,6 +366,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/localfiles/">Traversing Local Files</a>
                     </li>
                     
                     <li>
@@ -531,7 +539,7 @@ like good names to use for inclusion in your other templates.</p>
       footer.html
 </code></pre>
 
-<p>By ensuring that we only reference <a href="http://www.gohugo.org/doc/layout/variables/">variables</a>
+<p>By ensuring that we only reference <a href="http://www.gohugo.org/layout/variables/">variables</a>
 used for both nodes and pages, we can use the same partials for both.</p>
 
 <h2 id="partial-vs-template:60445d32b6d7b7ead61b36cd70256d44">Partial vs Template</h2>
@@ -609,8 +617,24 @@ the ability to have users override the partial theme file with local layouts.</p
 
 <p>Note that the subdirectories you create under /layout/partials can be named whatever you like.</p>
 
-<p><strong>For more examples of referencing these templates, see <a href="http://www.gohugo.org/doc/templates/content/">single content
-templates</a>, <a href="http://www.gohugo.org/doc/templates/list/">list templates</a> and <a href="http://www.gohugo.org/doc/templates/homepage/">homepage templates</a>.</strong></p>
+<p>For more examples of referencing these templates, see
+<a href="http://www.gohugo.org/doc/templates/doc/content/">single content templates</a>,
+<a href="http://www.gohugo.org/doc/templates/list/">list templates</a> and
+<a href="http://www.gohugo.org/doc/templates/homepage/">homepage templates</a>.</p>
+
+<h2 id="variable-scoping:60445d32b6d7b7ead61b36cd70256d44">Variable scoping</h2>
+
+<p>As you might have noticed, <code>partial</code> calls receive two paramters.</p>
+
+<ol>
+<li>The first is the name of the partial and determines the file
+location to be read.</li>
+<li>The second is the variables to be passed down to the partial.</li>
+</ol>
+
+<p>This means the partial <em>only</em> be able to access those variables. It is
+isolated and has no access to the outer scope. From within the
+partial, <code>$.Var</code> is equivalent to <code>.Var</code></p>
 
                 </section>
             </article>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Drawings on Hugo中文文档</title>
+        <link>http://www.gohugo.org/tags/drawings/</link>
+        <language>zh-CN</language>
+        <author>CoderZh</author>
+        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
+        <updated>Sat, 13 Feb 2016 21:47:27 &#43;0100</updated>
+        
+    </channel>
+</rss>

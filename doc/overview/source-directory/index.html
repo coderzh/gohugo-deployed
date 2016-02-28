@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Hugo 使用一个单一的目录用来生成完整的站点。 源目录的顶层一般有以下一些元素： ▸ archetypes/ ▸ content/ ▸ data/ ▸ layouts/ ▸ static/ ▸ themes/ config.toml 学习更多这些不同的目录和他们的目的： config data archetypes">
+        <meta name="description" content="Hugo takes a single directory and uses it as the input for creating a complete website. The top level of a source directory will typically have the following elements: ▸ archetypes/ ▸ doc/content/ ▸ data/ ▸ layouts/ ▸ static/ ▸ doc/themes/ config.toml Learn more about the different directories and what their purpose is: config data archetypes content layouts static themes Example An example directory may look like: . ├── config.toml ├── archetypes | └── default.md ├── content | ├── post | | ├── firstpost.md | | └── secondpost.md | └── quote | | ├── first.md | | └── second.md ├── data ├── layouts | ├── _default | | ├── single.html | | └── list.html | ├── partials | | ├── header.html | | └── footer.html | ├── taxonomies | | ├── category.html | | ├── post.html | | ├── quote.html | | └── tag.html | ├── post | | ├── li.html | | ├── single.html | | └── summary.html | ├── quote | | ├── li.html | | ├── single.html | | └── summary.html | ├── shortcodes | | ├── img.html | | ├── vimeo.html | | └── youtube.html | ├── index.html | └── sitemap.xml ├── themes | ├── hyde | └── doc └── static ├── css └── js This directory structure tells us a lot about this site: The website intends to have two different types of content: posts and quotes.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
-        <title>源文件组织 - Hugo中文文档</title>
+        <title>Source Organization - Hugo中文文档</title>
         <link rel="stylesheet" href="http://www.gohugo.org/css/highlight.js.min.css">
         <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap-theme.css">
@@ -75,7 +75,7 @@
 <aside>
     <div class="well">
         
-        <div class="pull-right">Hugo v0.14.0(翻译中...)</div>
+        <div class="pull-right">Hugo v0.15.0(翻译中...)</div>
         <ul class="nav nav-list">
             
             
@@ -85,27 +85,27 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/introduction/">关于 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">Introduction</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/quickstart/">快速开始</a>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">Quickstart</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/installing/">安装 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">Installing Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/usage/">使用 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">Using Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/configuration/">配置文件</a>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">Configuration</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/source-directory/">目录结构</a>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">Source Organization</a>
                     </li>
                     
                 </ul>
@@ -203,11 +203,11 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/overview/">概述</a>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">Overview</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template 入门</a>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template Primer</a>
                     </li>
                     
                     <li>
@@ -219,23 +219,23 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/functions/">函数</a>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">Functions</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/variables/">变量</a>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">Variables</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/content/">内容模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/content/">Single Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/list/">列表模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/list/">List of Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/homepage/">首页模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">Homepage</a>
                     </li>
                     
                     <li>
@@ -247,7 +247,7 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/partials/">复用模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">Partial Templates</a>
                     </li>
                     
                     <li>
@@ -259,11 +259,11 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/404/">自定义404页面</a>
+                        <a href="http://www.gohugo.org/doc/templates/404/">Custom 404 page</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/debugging/">调试</a>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">Debugging</a>
                     </li>
                     
                 </ul>
@@ -310,6 +310,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/analytics/">Analytics</a>
                     </li>
                     
                     <li>
@@ -362,6 +366,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/localfiles/">Traversing Local Files</a>
                     </li>
                     
                     <li>
@@ -505,38 +513,39 @@
         <main role="main">
             <article>
                 <a id="title"></a>
-                <h1 class="doc-entry-title">源文件组织</h1>
+                <h1 class="doc-entry-title">Source Organization</h1>
                 <section>
                     
 
-<p>Hugo 使用一个单一的目录用来生成完整的站点。</p>
+<p>Hugo takes a single directory and uses it as the input for creating a complete
+website.</p>
 
-<p>源目录的顶层一般有以下一些元素：</p>
+<p>The top level of a source directory will typically have the following elements:</p>
 
 <pre><code>▸ archetypes/
-▸ content/
+▸ doc/content/
 ▸ data/
 ▸ layouts/
 ▸ static/
-▸ themes/
+▸ doc/themes/
   config.toml
 </code></pre>
 
-<p>学习更多这些不同的目录和他们的目的：</p>
+<p>Learn more about the different directories and what their purpose is:</p>
 
 <ul>
 <li><a href="http://www.gohugo.org/doc/overview/configuration/">config</a></li>
 <li><a href="http://www.gohugo.org/doc/extras/datafiles/">data</a></li>
 <li><a href="http://www.gohugo.org/doc/content/archetypes/">archetypes</a></li>
 <li><a href="http://www.gohugo.org/doc/content/organization/">content</a></li>
-<li><a href="http://www.gohugo.org/doc/layout/overview/">layouts</a></li>
+<li><a href="http://www.gohugo.org/layout/doc/overview/">layouts</a></li>
 <li><a href="http://www.gohugo.org/doc/themes/creation#toc_4">static</a></li>
-<li><a href="http://www.gohugo.org/doc/themes/overview/">themes</a></li>
+<li><a href="http://www.gohugo.org/doc/themes/doc/overview/">themes</a></li>
 </ul>
 
-<h2 id="例子:eda897de2e1d9fdedc0a3929693cea10">例子</h2>
+<h2 id="example:eda897de2e1d9fdedc0a3929693cea10">Example</h2>
 
-<p>一个目录的例子：</p>
+<p>An example directory may look like:</p>
 
 <pre><code>.
 ├── config.toml
@@ -584,12 +593,12 @@
     └── js
 </code></pre>
 
-<p>这个目录结构告诉了我们一些关于这个站点的信息：</p>
+<p>This directory structure tells us a lot about this site:</p>
 
 <ol>
-<li>这个网站打算有两个不同类型的文章内容：<em>posts</em> 和 <em>quotes</em> 。</li>
-<li>它将在文章内容里应用两个不同的分类：<em>categories</em> 和 <em>tags</em> 。</li>
-<li>它将在三种不同的视图里呈现这些内容：列表、摘要和完整的内容。</li>
+<li>The website intends to have two different types of content: <em>posts</em> and <em>quotes</em>.</li>
+<li>It will also apply two different taxonomies to that content: <em>categories</em> and <em>tags</em>.</li>
+<li>It will be displaying content in 3 different views: a list, a summary and a full page view.</li>
 </ol>
 
                 </section>

@@ -75,7 +75,7 @@
 <aside>
     <div class="well">
         
-        <div class="pull-right">Hugo v0.14.0(翻译中...)</div>
+        <div class="pull-right">Hugo v0.15.0(翻译中...)</div>
         <ul class="nav nav-list">
             
             
@@ -85,27 +85,27 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/introduction/">关于 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">Introduction</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/quickstart/">快速开始</a>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">Quickstart</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/installing/">安装 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">Installing Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/usage/">使用 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">Using Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/configuration/">配置文件</a>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">Configuration</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/source-directory/">目录结构</a>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">Source Organization</a>
                     </li>
                     
                 </ul>
@@ -203,11 +203,11 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/overview/">概述</a>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">Overview</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template 入门</a>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template Primer</a>
                     </li>
                     
                     <li>
@@ -219,23 +219,23 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/functions/">函数</a>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">Functions</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/variables/">变量</a>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">Variables</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/content/">内容模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/content/">Single Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/list/">列表模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/list/">List of Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/homepage/">首页模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">Homepage</a>
                     </li>
                     
                     <li>
@@ -247,7 +247,7 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/partials/">复用模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">Partial Templates</a>
                     </li>
                     
                     <li>
@@ -259,11 +259,11 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/404/">自定义404页面</a>
+                        <a href="http://www.gohugo.org/doc/templates/404/">Custom 404 page</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/debugging/">调试</a>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">Debugging</a>
                     </li>
                     
                 </ul>
@@ -310,6 +310,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/analytics/">Analytics</a>
                     </li>
                     
                     <li>
@@ -362,6 +366,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/localfiles/">Traversing Local Files</a>
                     </li>
                     
                     <li>
@@ -527,7 +535,7 @@ We will use ‘tags’ and ‘categories’ for our taxonomies, so let&rsquo;s c
 
 <h4 id="archetypes-default-md:07fa24dbf391d975a05d4ef88e247309">archetypes/default.md</h4>
 
-<pre><code>+++
+<pre><code class="language-toml">+++
 tags = [&quot;x&quot;, &quot;y&quot;]
 categories = [&quot;x&quot;, &quot;y&quot;]
 +++
@@ -546,9 +554,9 @@ categories = [&quot;x&quot;, &quot;y&quot;]
 
 <p>Hugo would create the file with the following contents:</p>
 
-<h4 id="content-post-my-new-post-md:07fa24dbf391d975a05d4ef88e247309">content/post/my-new-post.md</h4>
+<h4 id="doc-content-post-my-new-post-md:07fa24dbf391d975a05d4ef88e247309">doc/content/post/my-new-post.md</h4>
 
-<pre><code>+++
+<pre><code class="language-toml">+++
 title = &quot;my new post&quot;
 date = &quot;2015-01-12T19:20:04-07:00&quot;
 tags = [&quot;x&quot;, &quot;y&quot;]
@@ -562,11 +570,11 @@ categories = [&quot;x&quot;, &quot;y&quot;]
 
 <h3 id="creating-custom-archetypes:07fa24dbf391d975a05d4ef88e247309">Creating custom archetypes</h3>
 
-<p>Earlier you created a new content type by adding a new subfolder to the content directory. In our case it&rsquo;s name would be <code>content/musician</code>. To use the corresponding archetype you just need to create a file named after the content type called <code>musician.md</code> in the <code>archetypes</code> directory, similar to the one below.</p>
+<p>Earlier you created a new content type by adding a new subfolder to the content directory. In our case it&rsquo;s name would be <code>doc/content/musician</code>. To use the corresponding archetype you just need to create a file named after the content type called <code>musician.md</code> in the <code>archetypes</code> directory, similar to the one below.</p>
 
 <h4 id="archetypes-musician-md:07fa24dbf391d975a05d4ef88e247309">archetypes/musician.md</h4>
 
-<pre><code>+++
+<pre><code class="language-toml">+++
 name = &quot;&quot;
 bio = &quot;&quot;
 genre = &quot;&quot;
@@ -580,9 +588,9 @@ genre = &quot;&quot;
 
 <p>This time, Hugo recognizes the custom archetype and uses it instead of the default one. So the generated file&rsquo;s frontmatter now includes the variables <code>name</code>, <code>bio</code> and <code>genre</code>.</p>
 
-<h4 id="content-musician-mozart-md:07fa24dbf391d975a05d4ef88e247309">content/musician/mozart.md</h4>
+<h4 id="doc-content-musician-mozart-md:07fa24dbf391d975a05d4ef88e247309">doc/content/musician/mozart.md</h4>
 
-<pre><code>+++
+<pre><code class="language-toml">+++
 title = &quot;mozart&quot;
 date = &quot;2015-08-24T13:04:37+02:00&quot;
 name = &quot;&quot;

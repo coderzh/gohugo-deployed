@@ -75,7 +75,7 @@
 <aside>
     <div class="well">
         
-        <div class="pull-right">Hugo v0.14.0(翻译中...)</div>
+        <div class="pull-right">Hugo v0.15.0(翻译中...)</div>
         <ul class="nav nav-list">
             
             
@@ -85,27 +85,27 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/introduction/">关于 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">Introduction</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/quickstart/">快速开始</a>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">Quickstart</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/installing/">安装 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">Installing Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/usage/">使用 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">Using Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/configuration/">配置文件</a>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">Configuration</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/source-directory/">目录结构</a>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">Source Organization</a>
                     </li>
                     
                 </ul>
@@ -203,11 +203,11 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/overview/">概述</a>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">Overview</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template 入门</a>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template Primer</a>
                     </li>
                     
                     <li>
@@ -219,23 +219,23 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/functions/">函数</a>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">Functions</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/variables/">变量</a>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">Variables</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/content/">内容模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/content/">Single Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/list/">列表模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/list/">List of Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/homepage/">首页模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">Homepage</a>
                     </li>
                     
                     <li>
@@ -247,7 +247,7 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/partials/">复用模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">Partial Templates</a>
                     </li>
                     
                     <li>
@@ -259,11 +259,11 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/404/">自定义404页面</a>
+                        <a href="http://www.gohugo.org/doc/templates/404/">Custom 404 page</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/debugging/">调试</a>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">Debugging</a>
                     </li>
                     
                 </ul>
@@ -310,6 +310,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/analytics/">Analytics</a>
                     </li>
                     
                     <li>
@@ -362,6 +366,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/localfiles/">Traversing Local Files</a>
                     </li>
                     
                     <li>
@@ -529,10 +537,10 @@ or <code><strong>singular key</strong>: &quot;<em>plural value</em>&quot;</code>
 </thead>
 <tbody>
 <tr valign="top">
-<td><pre><code>[taxonomies]
-  tag = "tags"
-  category = "categories"
-  series = "series"
+<td><pre><code class="language-toml">[taxonomies]
+tag = "tags"
+category = "categories"
+series = "series"
 </code></pre></td>
 <td><pre><code class="language-yaml">taxonomies:
   tag: "tags"
@@ -552,11 +560,23 @@ can be assigned to it regardless of content type or section.</p>
 Simply create a variable with the <em>plural</em> name of the taxonomy
 and assign all terms you want to apply to this content.</p>
 
-<p><strong>taxonomy values are case insensitive</strong></p>
+<h2 id="preserving-taxonomy-values:dc32fe45042973266ca60588597e0b66">Preserving taxonomy values</h2>
+
+<p>By default, taxonomy names are hyphenated, lower-cased and normalized, and then
+fixed and titleized on the archive page.</p>
+
+<p>However, if you want to have a taxonomy value with special characters
+such as <code>Gérard Depardieu</code> instead of <code>Gerard Depardieu</code>,
+you need to set the <code>preserveTaxonomyNames</code> <a href="http://www.gohugo.org/doc/overview/configuration/">site configuration</a> variable to <code>true</code>.
+Hugo will then preserve special characters in taxonomy values
+but will still titleize the values for titles and normalize them in URLs.</p>
+
+<p>Note that if you use <code>preserveTaxonomyNames</code> and intend to manually construct URLs to the archive pages,
+you will need to pass the taxonomy values through the <code>urlize</code> template function.</p>
 
 <h3 id="front-matter-example-in-toml:dc32fe45042973266ca60588597e0b66">Front Matter Example (in TOML)</h3>
 
-<pre><code>+++
+<pre><code class="language-toml">+++
 title = &quot;Hugo: A fast and flexible static site generator&quot;
 tags = [ &quot;Development&quot;, &quot;Go&quot;, &quot;fast&quot;, &quot;Blogging&quot; ]
 categories = [ &quot;Development&quot; ]
@@ -568,7 +588,7 @@ project_url = &quot;https://github.com/spf13/hugo&quot;
 
 <h3 id="front-matter-example-in-json:dc32fe45042973266ca60588597e0b66">Front Matter Example (in JSON)</h3>
 
-<pre><code>{
+<pre><code class="language-json">{
     &quot;title&quot;: &quot;Hugo: A fast and flexible static site generator&quot;,
     &quot;tags&quot;: [
         &quot;Development&quot;,

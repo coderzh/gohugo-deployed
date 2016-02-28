@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Make sure either hugo is in your PATH or provide a path to it. $ hugo help Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go. Complete documentation is available at http://gohugo.io Usage: hugo [flags] hugo [command] Available Commands: server Hugo runs its own webserver to render the files version Print the version number of Hugo config Print the site configuration check Check content in the source directory benchmark Benchmark hugo by building a site a number of times new Create new content for your site undraft Undraft changes the content&#39;s draft status from &#39;True&#39; to &#39;False&#39; genautocomplete Generate shell autocompletion script for Hugo gendoc Generate Markdown documentation for the Hugo CLI.">
+        <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
+        <link rel="icon" href="http://www.gohugo.org/favicon.ico">
+        <title>Using Hugo - Hugo中文文档</title>
+        <link rel="stylesheet" href="http://www.gohugo.org/css/highlight.js.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/font-awesome/css/font-awesome.min.css" />
+        
+        <link rel="stylesheet" href="http://www.gohugo.org/css/hugo-org.css">
+    </head>
+
+<body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.gohugo.org/">Hugo中文文档</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="http://www.gohugo.org/">主页</a></li>
+                    
+                    
+                    <li ><a href="http://www.gohugo.org/post/">文章列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/theme/">皮肤列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/showcase/">示例网站</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/donate/">关于</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">常用链接<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://github.com/spf13/hugo">官方GitHub</a></li>
+                        
+                            <li><a href="https://github.com/coderzh/gohugo.org">本站GitHub</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">官方文档<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://gohugo.io/overview/introduction/">英文文档</a></li>
+                        
+                            <li><a href="http://www.gohugo.org/doc/">中文文档</a></li>
+                        
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<div class="container-fluid">
+
+<div class="row">
+    <div class="col-xs-12 col-sm-3">
+        
+<aside>
+    <div class="well">
+        
+        <div class="pull-right">Hugo v0.15.0(翻译中...)</div>
+        <ul class="nav nav-list">
+            
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">快速开始</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">Introduction</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">Quickstart</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">Installing Hugo</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">Using Hugo</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">Configuration</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">Source Organization</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">Hugo命令</label>
+                <ul class="nav nav-list">
+                    <li>
+                        <a href="http://www.gohugo.org/doc/commands/">Hugo命令</a>
+                    </li>
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">内容(Content)</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/organization/">Organization</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/supported-formats/">Supported Formats</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/front-matter/">Front Matter</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/sections/">Sections</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/types/">Types</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/archetypes/">Archetypes</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/ordering/">Ordering</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/summaries/">Summaries</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/example/">Example</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">皮肤(Themes)</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/overview/">Themes Overview</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/installing/">Installing Themes</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/usage/">Using a Theme</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/customizing/">Customizing a Theme</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/creation/">Creating a Theme</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">模板(Templates)</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">Overview</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template Primer</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/ace/">Ace templates</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/amber/">Amber templates</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">Functions</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">Variables</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/content/">Single Content</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/list/">List of Content</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">Homepage</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/terms/">Taxonomy Terms</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/views/">Content Views</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">Partial Templates</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/rss/">RSS</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/sitemap/">Sitemap</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/404/">Custom 404 page</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">Debugging</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">分类(Taxonomies)</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/overview/">Overview</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/usage/">Usage</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/displaying/">Displaying</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/templates/">Templates</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/ordering/">Ordering</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/methods/">Structure &amp; Methods</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">其他</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/analytics/">Analytics</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/builders/">Builders</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/comments/">Comments</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/crossreferences/">Cross-References</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/livereload/">LiveReload</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/menus/">Menus</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/permalinks/">Permalinks</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/pagination/">Pagination</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/scratch/">Scratch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/shortcodes/">Shortcodes</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/datafiles/">Data Files</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/highlighting/">Syntax Highlighting</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/datadrivencontent/">Data-driven Content</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/localfiles/">Traversing Local Files</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/urls/">URLs</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">工具</label>
+                <ul class="nav nav-list">
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tools/">工具</a>
+                    </li>
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">社区</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/community/mailing-list/">Mailing List</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/community/contributing/">Contributing to Hugo</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://discuss.gohugo.io">讨论社区</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">指南</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/automated-deployments/">Automated deployments</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/creating-a-new-theme/">Creating a New Theme</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">Hosting on GitHub</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/installing-on-mac/">Installing on Mac</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/installing-on-windows/">Installing on Windows</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/mathjax/">MathJax Support</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/migrate-from-jekyll/">Migrating from Jekyll</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/create-a-multilingual-site/">Multilingual Site</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">常见问题</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/troubleshooting/overview/">Troubleshooting Overview</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/troubleshooting/strange-eof-error/">Strange EOF error</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/troubleshooting/categories-with-accented-characters/">Accented Categories</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">关于Hugo</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/meta/release-notes/">Release Notes</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/meta/roadmap/">Hugo Roadmap</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/meta/license/">License</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+              
+            <li>
+                <a href="https://github.com/coderzh/gohugo.org/edit/master/content/doc/overview/usage_en.md" target="blank">
+                <i class='fa fa-edit'></i>修改此文章</a>
+            </li>
+            
+            
+        </ul>
+    </div>
+</aside>
+
+
+    </div>
+    <div class="col-xs-12 col-sm-9 doc-main">
+        <main role="main">
+            <article>
+                <a id="title"></a>
+                <h1 class="doc-entry-title">Using Hugo</h1>
+                <section>
+                    
+
+<p>Make sure either <code>hugo</code> is in your <code>PATH</code> or provide a path to it.</p>
+
+<pre><code class="hljs nohighlight">$ hugo help
+
+Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go.
+
+Complete documentation is available at http://gohugo.io
+
+Usage:
+  hugo [flags]
+  hugo [command]
+
+Available Commands:
+  server          Hugo runs its own webserver to render the files
+  version         Print the version number of Hugo
+  config          Print the site configuration
+  check           Check content in the source directory
+  benchmark       Benchmark hugo by building a site a number of times
+  new             Create new content for your site
+  undraft         Undraft changes the content's draft status from 'True' to 'False'
+  genautocomplete Generate shell autocompletion script for Hugo
+  gendoc          Generate Markdown documentation for the Hugo CLI.
+  help            Help about any command
+
+Flags:
+  -b, --baseURL="": hostname (and path) to the root, e.g. http://spf13.com/
+  -D, --buildDrafts=false: include content marked as draft
+  -F, --buildFuture=false: include content with publishdate in the future
+      --cacheDir="": filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/
+      --config="": config file (default is path/config.yaml|json|toml)
+  -d, --destination="": filesystem path to write files to
+      --disableRSS=false: Do not build RSS files
+      --disableSitemap=false: Do not build Sitemap file
+      --editor="": edit new content with this editor, if provided
+  -h, --help=false: help for hugo
+      --ignoreCache=false: Ignores the cache directory for reading but still writes to it
+      --log=false: Enable Logging
+      --logFile="": Log File path (if set, logging enabled automatically)
+      --noTimes=false: Don't sync modification time of files
+      --pluralizeListTitles=true: Pluralize titles in lists using inflect
+  -s, --source="": filesystem path to read files relative from
+      --stepAnalysis=false: display memory and timing of different steps of the program
+  -t, --theme="": theme to use (located in /doc/themes/THEMENAME/)
+      --uglyURLs=false: if true, use /filename.html instead of /filename/
+  -v, --verbose=false: verbose output
+      --verboseLog=false: verbose logging
+  -w, --watch=false: watch filesystem for changes and recreate as needed
+
+
+Additional help topics:
+ hugo convert         Convert will modify your content to different formats hugo list            Listing out various types of content
+
+Use "hugo help [command]" for more information about a command.
+</code></pre>
+
+
+<h2 id="common-usage-example:4ff1829990c610956e7d73e7e41cf1fe">Common Usage Example</h2>
+
+<p>The most common use is probably to run <code>hugo</code> with your current directory being the input directory:</p>
+
+<pre><code class="hljs nohighlight">$ hugo
+0 draft content
+0 future content
+99 pages created
+0 paginator pages created
+16 tags created
+0 groups created
+in 120 ms
+</code></pre>
+
+
+<p>This generates your web site to the <code>public/</code> directory,
+ready to be deployed to your web server.</p>
+
+<h2 id="instant-feedback-as-you-develop-your-web-site:4ff1829990c610956e7d73e7e41cf1fe">Instant feedback as you develop your web site</h2>
+
+<p>If you are working on things and want to see the changes immediately, tell Hugo to watch for changes.
+Hugo will watch the filesystem for changes, and rebuild your site as soon as a file is saved:</p>
+
+<pre><code class="hljs nohighlight">$ hugo -s ~/Code/hugo/docs
+0 draft content
+0 future content
+99 pages created
+0 paginator pages created
+16 tags created
+0 groups created
+in 120 ms
+Watching for changes in /Users/spf13/Code/hugo/docs/content
+Press Ctrl+C to stop
+</code></pre>
+
+
+<p>Hugo can even run a server and create a site preview at the same time!
+Hugo implements <a href="http://www.gohugo.org/doc/extras/livereload/">LiveReload</a> technology to automatically
+reload any open pages in all JavaScript-enabled browsers, including mobile.
+This is the easiest and most common way to develop a Hugo web site:</p>
+
+<pre><code class="hljs nohighlight">$ hugo server -ws ~/Code/hugo/docs
+0 draft content
+0 future content
+99 pages created
+0 paginator pages created
+16 tags created
+0 groups created
+in 120 ms
+Watching for changes in /Users/spf13/Code/hugo/docs/content
+Serving pages from /Users/spf13/Code/hugo/docs/public
+Web Server is available at http://localhost:1313/
+Press Ctrl+C to stop
+</code></pre>
+
+
+<h2 id="deploying-your-web-site:4ff1829990c610956e7d73e7e41cf1fe">Deploying your web site</h2>
+
+<p>After running <code>hugo server</code> for local web development,
+you need to do a final <code>hugo</code> run <strong>without the <code>server</code> command</strong> to rebuild your site. You may then <strong>deploy your site</strong> by copying the <code>public/</code> directory
+(by FTP, SFTP, WebDAV, Rsync, git push, etc.) to your production web server.</p>
+
+<p>Since Hugo generates a static website, your site can be hosted anywhere,
+including <a href="https://www.heroku.com/">Heroku</a>, <a href="https://www.godaddy.com/">GoDaddy</a>, <a href="http://www.dreamhost.com/">DreamHost</a>, <a href="https://pages.github.com/">GitHub Pages</a>,
+<a href="http://aws.amazon.com/s3/">Amazon S3</a> and <a href="http://aws.amazon.com/cloudfront/" title="Amazon CloudFront">CloudFront</a>, or any other cheap or even free
+static web hosting services.</p>
+
+<p><a href="http://httpd.apache.org/" title="Apache HTTP Server">Apache</a>, <a href="http://nginx.org/">nginx</a>, <a href="http://www.iis.net/">IIS</a>&hellip;  Any web server software would do!</p>
+
+<h3 id="a-note-about-deployment:4ff1829990c610956e7d73e7e41cf1fe">A note about deployment</h3>
+
+<p>Running <code>hugo</code> <em>does not</em> remove generated files before building. This means that you should delete your <code>public/</code> directory (or the directory you specified with <code>-d</code>/<code>--destination</code>) before running the <code>hugo</code> command, or you run the risk of the wrong files (e.g. drafts and/or future posts) being left in the generated site.</p>
+
+<p>An easy way to work around this is to use different directories for development and production.</p>
+
+<p>To start a server that builds draft content (helpful for editing), you can specify a different destination: the <code>dev/</code> dir.</p>
+
+<p><pre><code class="hljs nohighlight">$ hugo server -wDs ~/Code/hugo/docs -d dev
+</code></pre>
+</p>
+
+<p>When the content is ready for publishing, use the default <code>public/</code> dir:</p>
+
+<p><pre><code class="hljs nohighlight">$ hugo -s ~/Code/hugo/docs
+</code></pre>
+</p>
+
+<p>This prevents content you&rsquo;re not ready to share yet from accidentally becoming available.</p>
+
+<h3 id="alternatively-serve-your-web-site-with-hugo:4ff1829990c610956e7d73e7e41cf1fe">Alternatively, serve your web site with Hugo!</h3>
+
+<p>Yes, that&rsquo;s right!  Because Hugo is so blazingly fast both in web site creation
+<em>and</em> in web serving (thanks to its concurrent and multi-threaded design and
+its Go heritage), some users actually prefer using Hugo itself to serve their
+web site <em>on their production server</em>!</p>
+
+<p>No other web server software (Apache, nginx, IIS&hellip;) is necessary.</p>
+
+<p>Here is the command:</p>
+
+<p><pre><code class="hljs nohighlight">$ hugo server --baseURL=http://yoursite.org/ \
+              --port=80 \
+              --appendPort=false \
+              --bind=87.245.198.50
+</code></pre>
+</p>
+
+<p>Note the <code>bind</code> option, which is the interface to which the server will bind (defaults to <code>127.0.0.1</code>, which is fine for most development use cases). Some hosts, like Amazon Web Services, runs network address translation and it can sometimes be hard to figure out the actual IP address. Using <code>--bind=0.0.0.0</code> will bind to all interfaces.</p>
+
+<p>This way, you may actually deploy just the source files,
+and Hugo on your server will generate the resulting web site
+on-the-fly and serve them at the same time.</p>
+
+<p>You may optionally add <code>--disableLiveReload=true</code> if you do not want
+the JavaScript code for LiveReload to be added to your web pages.</p>
+
+<p>Interested? Here are some great tutorials contributed by Hugo users:</p>
+
+<ul>
+<li><a href="http://fredix.xyz/2014/10/hugo-syncthing/">hugo, syncthing</a> (French) by Frédéric Logier (@fredix)</li>
+</ul>
+
+                </section>
+            </article>
+        </main>
+        <br />
+        
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 text-center">
+                
+                <a href="http://www.gohugo.org/doc/overview/installing">&lt; 上一篇</a>
+                
+            </div>
+            <div class="col-xs-6 col-sm-6 text-center">
+                
+                <a href="http://www.gohugo.org/doc/overview/configuration">下一篇 &gt;</a>
+                
+            </div>
+        </div>
+        
+    </div> 
+</div>
+
+
+
+<hr />
+
+<div class="row">
+    <div class="col-sm-12">
+        
+	    <div class="text-center">
+        
+		    <p class="doc-footer-em"><a href="#">回到顶部↑</a></p>
+	    </div>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+    <p>Copyright © <a href="http://blog.coderzh.com/">CoderZh</a> 2015. Generated by <a href="http://gohugo.io/">Hugo</a></p>
+</footer>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-10147768-3', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="http://www.gohugo.org/js/jquery-1.11.2.min.js"></script>
+<script src="http://www.gohugo.org/js/bootstrap.min.js"></script>
+
+<script src="http://www.gohugo.org/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="http://www.gohugo.org/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
+

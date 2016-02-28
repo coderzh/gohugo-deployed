@@ -75,7 +75,7 @@
 <aside>
     <div class="well">
         
-        <div class="pull-right">Hugo v0.14.0(翻译中...)</div>
+        <div class="pull-right">Hugo v0.15.0(翻译中...)</div>
         <ul class="nav nav-list">
             
             
@@ -85,27 +85,27 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/introduction/">关于 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">Introduction</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/quickstart/">快速开始</a>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">Quickstart</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/installing/">安装 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">Installing Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/usage/">使用 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">Using Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/configuration/">配置文件</a>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">Configuration</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/source-directory/">目录结构</a>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">Source Organization</a>
                     </li>
                     
                 </ul>
@@ -203,11 +203,11 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/overview/">概述</a>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">Overview</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template 入门</a>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template Primer</a>
                     </li>
                     
                     <li>
@@ -219,23 +219,23 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/functions/">函数</a>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">Functions</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/variables/">变量</a>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">Variables</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/content/">内容模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/content/">Single Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/list/">列表模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/list/">List of Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/homepage/">首页模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">Homepage</a>
                     </li>
                     
                     <li>
@@ -247,7 +247,7 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/partials/">复用模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">Partial Templates</a>
                     </li>
                     
                     <li>
@@ -259,11 +259,11 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/404/">自定义404页面</a>
+                        <a href="http://www.gohugo.org/doc/templates/404/">Custom 404 page</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/debugging/">调试</a>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">Debugging</a>
                     </li>
                     
                 </ul>
@@ -310,6 +310,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/analytics/">Analytics</a>
                     </li>
                     
                     <li>
@@ -362,6 +366,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/localfiles/">Traversing Local Files</a>
                     </li>
                     
                     <li>
@@ -533,7 +541,6 @@ matter, content or derived from file location.</p>
 <strong>.Permalink</strong> The Permanent link for this page.<br>
 <strong>.RelPermalink</strong> The Relative permanent link for this page.<br>
 <strong>.LinkTitle</strong> Access when creating links to this content. Will use <code>linktitle</code> if set in front matter, else <code>title</code>.<br>
-<strong>.Taxonomies</strong> These will use the field name of the plural form of the taxonomy (see tags and categories below).<br>
 <strong>.RSSLink</strong> Link to the taxonomies&rsquo; RSS link.<br>
 <strong>.TableOfContents</strong> The rendered table of contents for this content.<br>
 <strong>.Prev</strong> Pointer to the previous content (based on pub date).<br>
@@ -544,6 +551,8 @@ matter, content or derived from file location.</p>
 <strong>.WordCount</strong> The number of words in the content.<br>
 <strong>.ReadingTime</strong> The estimated time it takes to read the content in minutes.<br>
 <strong>.Weight</strong> Assigned weight (in the front matter) to this content, used in sorting.<br>
+<strong>.RawContent</strong> Raw Markdown content without the metadata header. Useful with <a href="http://remarkjs.com">remarkjs.com</a><br>
+<strong>.Draft</strong> A boolean, <code>true</code> if the content is marked as a draft in the front matter.<br>
 <strong>.IsNode</strong> Always false for pages.<br>
 <strong>.IsPage</strong> Always true for page.<br>
 <strong>.Site</strong> See <a href="#site-variables:2b8b8ac4006be88c769f5e3fd99b009a">Site Variables</a> below.<br>
@@ -552,7 +561,7 @@ matter, content or derived from file location.</p>
 <h2 id="page-params:2b8b8ac4006be88c769f5e3fd99b009a">Page Params</h2>
 
 <p>Any other value defined in the front matter, including taxonomies, will be made available under <code>.Params</code>.
-Take for example I&rsquo;m using <em>tags</em> and <em>categories</em> as my taxonomies. The following would be how I would access them:</p>
+For example, the <em>tags</em> and <em>categories</em> taxonomies are accessed with:</p>
 
 <ul>
 <li><strong>.Params.tags</strong></li>
@@ -560,6 +569,38 @@ Take for example I&rsquo;m using <em>tags</em> and <em>categories</em> as my tax
 </ul>
 
 <p><strong>All Params are only accessible using all lowercase characters.</strong></p>
+
+<p>This is particularly useful for the introduction of user defined fields in content files. For example, a Hugo website on book reviews could have in the front matter of <code>/doc/content/review/book01.md</code></p>
+
+<pre><code>---
+...
+affiliatelink: &quot;http://www.my-book-link.here&quot;
+recommendedby: &quot;my Mother&quot;
+---
+</code></pre>
+
+<p>Which would then be accessible to a template at <code>/doc/themes/yourtheme/layouts/review/single.html</code> through <code>.Params.affiliatelink</code> and <code>.Params.recommendedby</code>, respectively. Two common situations where these could be introduced are as a value of a certain attribute (like <code>href=&quot;&quot;</code> below) or by itself to be displayed. Sample syntaxes include:</p>
+
+<pre><code>&lt;h3&gt;&lt;a href={{ printf &quot;%s&quot; $.Params.affiliatelink }}&gt;Buy this book&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;It was recommended by {{ .Params.recommendedby }}.&lt;/p&gt;
+</code></pre>
+
+<p>which would render</p>
+
+<pre><code>&lt;h3&gt;&lt;a href=&quot;http://www.my-book-link.here&quot;&gt;Buy this book&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;It was recommended by my Mother.&lt;/p&gt;
+</code></pre>
+
+<p><strong>See also:</strong> <a href="http://www.gohugo.org/doc/content/archetypes/">Archetypes</a> for consistency of <code>Params</code> across pieces of content.</p>
+
+<h3 id="param-method:2b8b8ac4006be88c769f5e3fd99b009a">Param method</h3>
+
+<p>In Hugo you can declare params both for the site and the individual page.  A common use case is to have a general value for the site and a more specific value for some of the pages (i.e. an image).</p>
+
+<p>With the <code>Param</code> method the most specific value will be selected for you, and it is safe to use it in any template (it&rsquo;s defined on both Page and Node):</p>
+
+<pre><code>$.Param(&quot;image&quot;)
+</code></pre>
 
 <h2 id="node-variables:2b8b8ac4006be88c769f5e3fd99b009a">Node Variables</h2>
 
@@ -576,6 +617,7 @@ includes taxonomies, lists and the homepage.</p>
 <strong>.RelRef(ref)</strong> Returns the relative permalink for <code>ref</code>. See <a href="http://www.gohugo.org/doc/extras/crossreferences/">cross-references</a>. Does not handle in-page fragments correctly.<br>
 <strong>.RSSLink</strong> Link to the taxonomies&rsquo; RSS link.<br>
 <strong>.Data</strong> The data specific to this type of node.<br>
+<strong>.IsHome</strong> True if the node is the site home page.<br>
 <strong>.IsNode</strong> Always true for nodes.<br>
 <strong>.IsPage</strong> Always false for nodes.<br>
 <strong>.Site</strong> See <a href="#site-variables:2b8b8ac4006be88c769f5e3fd99b009a">Site Variables</a> below.<br>
@@ -599,6 +641,7 @@ includes taxonomies, lists and the homepage.</p>
 <p>Also available is <code>.Site</code> which has the following:</p>
 
 <p><strong>.Site.BaseURL</strong> The base URL for the site as defined in the site configuration file.<br>
+<strong>.Site.RSSLink</strong> The URL for the site RSS.<br>
 <strong>.Site.Taxonomies</strong> The <a href="http://www.gohugo.org/doc/taxonomies/usage/">taxonomies</a> for the entire site.  Replaces the now-obsolete <code>.Site.Indexes</code> since v0.11.<br>
 <strong>.Site.Pages</strong> Array of all content ordered by Date, newest first.  Replaces the now-deprecated <code>.Site.Recent</code> starting v0.13.<br>
 <strong>.Site.Params</strong> A container holding the values from the <code>params</code> section of your site configuration file. For example, a TOML config file might look like this:</p>
@@ -617,6 +660,7 @@ includes taxonomies, lists and the homepage.</p>
 <strong>.Site.Author</strong> A map of the authors as defined in the site configuration.<br>
 <strong>.Site.LanguageCode</strong> A string representing the language as defined in the site configuration.<br>
 <strong>.Site.DisqusShortname</strong> A string representing the shortname of the Disqus shortcode as defined in the site configuration.<br>
+<strong>.Site.GoogleAnalytics</strong> A string representing your tracking code for Google Analytics as defined in the site configuration.<br>
 <strong>.Site.Copyright</strong> A string representing the copyright of your web site as defined in the site configuration.<br>
 <strong>.Site.LastChange</strong> A string representing the date/time of the most recent change to your site, based on the <a href="http://www.gohugo.org/doc/content/front-matter/#required-variables:d8a1b1beb27369de117e34d907999758"><code>date</code> variable</a> in the front matter of your content pages.<br>
 <strong>.Site.Permalinks</strong> A string to override the default permalink format. Defined in the site configuration.<br>

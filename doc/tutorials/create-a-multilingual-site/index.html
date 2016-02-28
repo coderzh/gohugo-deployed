@@ -75,7 +75,7 @@
 <aside>
     <div class="well">
         
-        <div class="pull-right">Hugo v0.14.0(翻译中...)</div>
+        <div class="pull-right">Hugo v0.15.0(翻译中...)</div>
         <ul class="nav nav-list">
             
             
@@ -85,27 +85,27 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/introduction/">关于 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">Introduction</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/quickstart/">快速开始</a>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">Quickstart</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/installing/">安装 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">Installing Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/usage/">使用 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">Using Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/configuration/">配置文件</a>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">Configuration</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/source-directory/">目录结构</a>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">Source Organization</a>
                     </li>
                     
                 </ul>
@@ -203,11 +203,11 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/overview/">概述</a>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">Overview</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template 入门</a>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template Primer</a>
                     </li>
                     
                     <li>
@@ -219,23 +219,23 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/functions/">函数</a>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">Functions</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/variables/">变量</a>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">Variables</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/content/">内容模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/content/">Single Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/list/">列表模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/list/">List of Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/homepage/">首页模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">Homepage</a>
                     </li>
                     
                     <li>
@@ -247,7 +247,7 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/partials/">复用模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">Partial Templates</a>
                     </li>
                     
                     <li>
@@ -259,11 +259,11 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/404/">自定义404页面</a>
+                        <a href="http://www.gohugo.org/doc/templates/404/">Custom 404 page</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/debugging/">调试</a>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">Debugging</a>
                     </li>
                     
                 </ul>
@@ -310,6 +310,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/analytics/">Analytics</a>
                     </li>
                     
                     <li>
@@ -362,6 +366,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/localfiles/">Traversing Local Files</a>
                     </li>
                     
                     <li>
@@ -529,7 +537,7 @@
 
 <pre><code class="language-toml">baseurl = &quot;http://acme.com/&quot;
 title = &quot;Acme Inc.&quot;
-contentdir = &quot;content/en&quot;
+contentdir = &quot;doc/content/en&quot;
 publishdir = &quot;public/en&quot;
 
 [params]
@@ -540,7 +548,7 @@ publishdir = &quot;public/en&quot;
 
 <pre><code class="language-toml">baseurl = &quot;http://acme.jp/&quot;
 title = &quot;有限会社アクミー&quot;
-contentdir = &quot;content/ja&quot;
+contentdir = &quot;doc/content/ja&quot;
 publishdir = &quot;public/ja&quot;
 
 [params]
@@ -621,7 +629,7 @@ topsubslogan: キット勝つぞ
 
 <h2 id="create-multilingual-content:3ab7ea48cc84829bac833a8a28ca00f8">Create Multilingual Content</h2>
 
-<p>Now you can create markdown content in your languages, in the <code>content/en</code> and <code>content/ja</code> folders. The frontmatter stays the same on the key side, but the values would be set in each of the languages.</p>
+<p>Now you can create markdown content in your languages, in the <code>doc/content/en</code> and <code>doc/content/ja</code> folders. The frontmatter stays the same on the key side, but the values would be set in each of the languages.</p>
 
 <h2 id="run-hugo-server-or-deploy-commands:3ab7ea48cc84829bac833a8a28ca00f8">Run Hugo Server or Deploy Commands</h2>
 
@@ -631,11 +639,11 @@ topsubslogan: キット勝つぞ
 
 <pre><code class="language-shell">function hugoserver-com {
   cd /Users/me/dev/mainsite
-  hugo server --buildDrafts --watch --verbose --source=&quot;/Users/me/dev/mainsite&quot; --config=&quot;/Users/me/dev/mainsite/config_en.toml&quot; --port=1377
+  hugo server --buildDrafts --verbose --source=&quot;/Users/me/dev/mainsite&quot; --config=&quot;/Users/me/dev/mainsite/config_en.toml&quot; --port=1377
 }
 function hugoserver-jp {
   cd /Users/me/dev/mainsite
-  hugo server --buildDrafts --watch --verbose --source=&quot;/Users/me/dev/mainsite&quot; --config=&quot;/Users/me/dev/mainsite/config_ja.toml&quot; --port=1399
+  hugo server --buildDrafts --verbose --source=&quot;/Users/me/dev/mainsite&quot; --config=&quot;/Users/me/dev/mainsite/config_ja.toml&quot; --port=1399
 }
 </code></pre>
 

@@ -75,7 +75,7 @@
 <aside>
     <div class="well">
         
-        <div class="pull-right">Hugo v0.14.0(翻译中...)</div>
+        <div class="pull-right">Hugo v0.15.0(翻译中...)</div>
         <ul class="nav nav-list">
             
             
@@ -85,27 +85,27 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/introduction/">关于 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">Introduction</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/quickstart/">快速开始</a>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">Quickstart</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/installing/">安装 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">Installing Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/usage/">使用 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">Using Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/configuration/">配置文件</a>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">Configuration</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/source-directory/">目录结构</a>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">Source Organization</a>
                     </li>
                     
                 </ul>
@@ -203,11 +203,11 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/overview/">概述</a>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">Overview</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template 入门</a>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template Primer</a>
                     </li>
                     
                     <li>
@@ -219,23 +219,23 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/functions/">函数</a>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">Functions</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/variables/">变量</a>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">Variables</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/content/">内容模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/content/">Single Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/list/">列表模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/list/">List of Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/homepage/">首页模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">Homepage</a>
                     </li>
                     
                     <li>
@@ -247,7 +247,7 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/partials/">复用模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">Partial Templates</a>
                     </li>
                     
                     <li>
@@ -259,11 +259,11 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/404/">自定义404页面</a>
+                        <a href="http://www.gohugo.org/doc/templates/404/">Custom 404 page</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/debugging/">调试</a>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">Debugging</a>
                     </li>
                     
                 </ul>
@@ -310,6 +310,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/analytics/">Analytics</a>
                     </li>
                     
                     <li>
@@ -362,6 +366,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/localfiles/">Traversing Local Files</a>
                     </li>
                     
                     <li>
@@ -548,6 +556,31 @@ Tags: {{ delimit .Params.tags &quot;, &quot; &quot; and &quot; }}
 // Outputs Tags: tag1, tag2 and tag3
 </code></pre>
 
+<h3 id="dict:904d9cf85d985550c869e6d9741448cc">dict</h3>
+
+<p>Creates a dictionary <code>(map[string, interface{})</code>, expects parameters added in value:object fasion.
+Invalid combinations like keys that are not strings or uneven number of parameters, will result in an exception thrown.
+Useful for passing maps to partials when adding to a template.</p>
+
+<p>e.g. Pass into &ldquo;foo.html&rdquo; a map with the keys &ldquo;important, content&rdquo;</p>
+
+<pre><code>{{$important := .Site.Params.SomethingImportant }}
+{{range .Site.Params.Bar}}
+    {{partial &quot;foo&quot; (dict &quot;content&quot; . &quot;important&quot; $important)}}
+{{end}}
+</code></pre>
+
+<p>&ldquo;foo.html&rdquo;</p>
+
+<pre><code>Important {{.important}}
+{{.content}}
+</code></pre>
+
+<p>or Create a map on the fly to pass into</p>
+
+<pre><code>{{partial &quot;foo&quot; (dict &quot;important&quot; &quot;Smiles&quot; &quot;content&quot; &quot;You should do more&quot;)}}
+</code></pre>
+
 <h3 id="echoparam:904d9cf85d985550c869e6d9741448cc">echoParam</h3>
 
 <p>Prints a parameter if it is set.</p>
@@ -573,6 +606,33 @@ Tags: {{ delimit .Params.tags &quot;, &quot; &quot; and &quot; }}
 
 <pre><code>{{ range first 10 .Data.Pages }}
     {{ .Render &quot;summary&quot; }}
+{{ end }}
+</code></pre>
+
+<h3 id="last:904d9cf85d985550c869e6d9741448cc">last</h3>
+
+<p>Slices an array to only the last <em>N</em> elements.</p>
+
+<p>Works on <a href="http://www.gohugo.org/doc/templates/list/">lists</a>, <a href="http://www.gohugo.org/doc/taxonomies/displaying/">taxonomies</a>, <a href="http://www.gohugo.org/doc/templates/terms/">terms</a>, <a href="http://www.gohugo.org/doc/templates/list/">groups</a></p>
+
+<p>e.g.</p>
+
+<pre><code>{{ range last 10 .Data.Pages }}
+    {{ .Render &quot;summary&quot; }}
+{{ end }}
+</code></pre>
+
+<h3 id="after:904d9cf85d985550c869e6d9741448cc">after</h3>
+
+<p>Slices an array to only the items after the <em>N</em>th item. Use this in combination
+with <code>first</code> to use both halves of an array split at item <em>N</em>.</p>
+
+<p>Works on <a href="http://www.gohugo.org/doc/templates/list/">lists</a>, <a href="http://www.gohugo.org/doc/taxonomies/displaying/">taxonomies</a>, <a href="http://www.gohugo.org/doc/templates/terms/">terms</a>, <a href="http://www.gohugo.org/doc/templates/list/">groups</a></p>
+
+<p>e.g.</p>
+
+<pre><code>{{ range after 10 .Data.Pages }}
+    {{ .Render &quot;title&quot; }}
 {{ end }}
 </code></pre>
 
@@ -619,7 +679,7 @@ Create a list of links to posts where any of the tags in the current post match 
 <pre><code>&lt;ul&gt;
 {{ $page_link := .Permalink }}
 {{ $tags := .Params.tags }}
-{{ range .Site.Recent }}
+{{ range .Site.Pages }}
     {{ $page := . }}
     {{ $has_common_tags := intersect $tags .Params.tags | len | lt 0 }}
     {{ if and $has_common_tags (ne $page_link $page.Permalink) }}
@@ -723,7 +783,7 @@ Authors: {{ range sort .Site.Params.authors &quot;lastName&quot; &quot;desc&quot
 series: golang
 +++
 
-{{ range where .Site.Recent &quot;Params.series&quot; &quot;golang&quot; }}
+{{ range where .Site.Pages &quot;Params.series&quot; &quot;golang&quot; }}
    {{ .Content }}
 {{ end }}
 </code></pre>
@@ -753,6 +813,26 @@ series: golang
 <p><em><code>where</code> and <code>first</code> can be stacked, e.g.:</em></p>
 
 <pre><code>{{ range first 5 (where .Data.Pages &quot;Section&quot; &quot;post&quot;) }}
+   {{ .Content }}
+{{ end }}
+</code></pre>
+
+<h3 id="unset-field:904d9cf85d985550c869e6d9741448cc">Unset field</h3>
+
+<p>Filter only work for set fields. To check whether a field is set or exist, use operand <code>nil</code>.</p>
+
+<p>This can be useful to filter a small amount of pages from a large pool. Instead of set field on all pages, you can set field on required pages only.</p>
+
+<p>Only following operators are available for <code>nil</code></p>
+
+<ul>
+<li><code>=</code>, <code>==</code>, <code>eq</code>: True if the given field is not set.</li>
+<li><code>!=</code>, <code>&lt;&gt;</code>, <code>ne</code>: True if the given field is set.</li>
+</ul>
+
+<p>e.g.</p>
+
+<pre><code>{{ range where .Data.Pages &quot;.Params.specialpost&quot; &quot;!=&quot; nil }}
    {{ .Content }}
 {{ end }}
 </code></pre>
@@ -814,14 +894,14 @@ series: golang
 
 <p>Removes any trailing newline characters. Useful in a pipeline to remove newlines added by other processing (including <code>markdownify</code>).</p>
 
-<p>e.g., <code>{{chomp &quot;&lt;p&gt;Blockhead&lt;/p&gt;\n&quot;</code> → <code>&quot;&lt;p&gt;Blockhead&lt;/p&gt;&quot;</code></p>
+<p>e.g., <code>{{chomp &quot;&lt;p&gt;Blockhead&lt;/p&gt;\n&quot;}}</code> → <code>&quot;&lt;p&gt;Blockhead&lt;/p&gt;&quot;</code></p>
 
 <h3 id="dateformat:904d9cf85d985550c869e6d9741448cc">dateFormat</h3>
 
 <p>Converts the textual representation of the datetime into the other form or returns it of Go <code>time.Time</code> type value.
 These are formatted with the layout string.</p>
 
-<p>e.g. <code>{{ dateFormat &quot;Monday, Jan 2, 2006&quot; &quot;2015-01-21&quot; }}</code> →&rdquo;Wednesday, Jan 21, 2015&rdquo;</p>
+<p>e.g. <code>{{ dateFormat &quot;Monday, Jan 2, 2006&quot; &quot;2015-01-21&quot; }}</code> → &ldquo;Wednesday, Jan 21, 2015&rdquo;</p>
 
 <h3 id="highlight:904d9cf85d985550c869e6d9741448cc">highlight</h3>
 
@@ -836,9 +916,15 @@ Used in the <a href="http://www.gohugo.org/doc/extras/highlighting/">highlight s
 
 <h3 id="markdownify:904d9cf85d985550c869e6d9741448cc">markdownify</h3>
 
-<p>Runs the string through the Markdown processesor. The result will be declared as &ldquo;safe&rdquo; so Go templates will not filter it.</p>
+<p>Runs the string through the Markdown processor. The result will be declared as &ldquo;safe&rdquo; so Go templates will not filter it.</p>
 
 <p>e.g. <code>{{ .Title | markdownify }}</code></p>
+
+<h3 id="pluralize:904d9cf85d985550c869e6d9741448cc">pluralize</h3>
+
+<p>Pluralize the given word with a set of common English pluralization rules.</p>
+
+<p>e.g. <code>{{ &quot;cat&quot; | pluralize }}</code> → &ldquo;cats&rdquo;</p>
 
 <h3 id="replace:904d9cf85d985550c869e6d9741448cc">replace</h3>
 
@@ -909,6 +995,29 @@ so Go html/templates will not filter it.
 
 <p>Note: &ldquo;ZgotmplZ&rdquo; is a special value that indicates that unsafe content reached a
 CSS or URL context.</p>
+
+<h3 id="safejs:904d9cf85d985550c869e6d9741448cc">safeJS</h3>
+
+<p>Declares the provided string as a known &ldquo;safe&rdquo; Javascript string so Go
+html/templates will not escape it.  &ldquo;Safe&rdquo; means the string encapsulates a known
+safe EcmaScript5 Expression, for example, <code>(x + y * z())</code>. Template authors
+are responsible for ensuring that typed expressions do not break the intended
+precedence and that there is no statement/expression ambiguity as when passing
+an expression like <code>{ foo:bar() }\n['foo']()</code>, which is both a valid Expression
+and a valid Program with a very different meaning.</p>
+
+<p>Example: Given <code>hash = &quot;619c16f&quot;</code> defined in the front matter of your <code>.md</code> file:</p>
+
+<ul>
+<li><code>&lt;script&gt;var form_{{ .Params.hash | safeJS }};…&lt;/script&gt;</code> ⇒ <code>&lt;script&gt;var form_619c16f;…&lt;/script&gt;</code> (Good!)</li>
+<li><code>&lt;script&gt;var form_{{ .Params.hash }};…&lt;/script&gt;</code> ⇒ <code>&lt;script&gt;var form_&quot;619c16f&quot;;…&lt;/script&gt;</code> (Bad!)</li>
+</ul>
+
+<h3 id="singularize:904d9cf85d985550c869e6d9741448cc">singularize</h3>
+
+<p>Singularize the given word with a set of common English singularization rules.</p>
+
+<p>e.g. <code>{{ &quot;cats&quot; | singularize }}</code> → &ldquo;cat&rdquo;</p>
 
 <h3 id="slicestr:904d9cf85d985550c869e6d9741448cc">slicestr</h3>
 
@@ -1105,7 +1214,7 @@ names: [ &quot;Derek Perkins&quot;, &quot;Joe Bergevin&quot;, &quot;Tanner Linsl
 <p>This is Hugo. We have a better way. If this were your &ldquo;post/tag/list.html&rdquo; instead, all of those problems are fixed automatically (this first version separates all of the operations for ease of reading; the combined version will be shown after the explanation).</p>
 
 <pre><code>&lt;!-- post/tag/list.html --&gt;
-{{ with.Params.tags }}
+{{ with .Params.tags }}
 &lt;div class=&quot;tags-list&quot;&gt;
   Tags:
   {{ $sort := sort . }}
@@ -1119,7 +1228,7 @@ names: [ &quot;Derek Perkins&quot;, &quot;Joe Bergevin&quot;, &quot;Tanner Linsl
 <p>In this version, we are now sorting the tags, converting them to links with &ldquo;post/tag/link.html&rdquo;, cleaning off stray newlines, and joining them together in a delimited list for presentation. That can also be written as:</p>
 
 <pre><code>&lt;!-- post/tag/list.html --&gt;
-{{ with.Params.tags }}
+{{ with .Params.tags }}
 &lt;div class=&quot;tags-list&quot;&gt;
   Tags:
   {{ delimit (apply (apply (sort .) &quot;partial&quot; &quot;post/tag/link&quot; &quot;.&quot;) &quot;chomp&quot; &quot;.&quot;) &quot;, &quot; }}
@@ -1128,6 +1237,35 @@ names: [ &quot;Derek Perkins&quot;, &quot;Joe Bergevin&quot;, &quot;Tanner Linsl
 </code></pre>
 
 <p><code>apply</code> does not work when receiving the sequence as an argument through a pipeline.</p>
+
+<hr />
+
+<h3 id="base64encode-and-base64decode:904d9cf85d985550c869e6d9741448cc">base64Encode and base64Decode</h3>
+
+<p><code>base64Encode</code> and <code>base64Decode</code> let you easily decode content with a base64 encoding and vice versa through pipes. Let&rsquo;s take a look at an example:</p>
+
+<pre><code>{{ &quot;Hello world&quot; | base64Encode }}
+&lt;!-- will output &quot;SGVsbG8gd29ybGQ=&quot; and --&gt;
+
+{{ &quot;SGVsbG8gd29ybGQ=&quot; | base64Decode }}
+&lt;!-- becomes &quot;Hello world&quot; again. --&gt;
+</code></pre>
+
+<p>You can also pass other datatypes as argument to the template function which tries
+to convert them. Now we use an integer instead of a string:</p>
+
+<pre><code>{{ 42 | base64Encode | base64Decode }}
+&lt;!-- will output &quot;42&quot;. Both functions always return a string. --&gt;
+</code></pre>
+
+<p><strong>Tip:</strong> Using base64 to decode and encode becomes really powerful if we have to handle
+responses of APIs.</p>
+
+<pre><code>{{ $resp := getJSON &quot;https://api.github.com/repos/spf13/hugo/readme&quot;  }}
+{{ $resp.content | base64Decode | markdownify }}
+</code></pre>
+
+<p>The response of the GitHub API contains the base64-encoded version of the <a href="https://github.com/spf13/hugo/blob/master/README.md">README.md</a> in the Hugo repository. Now we can decode it and parse the Markdown. The final output will look similar to the rendered version on GitHub.</p>
 
                 </section>
             </article>

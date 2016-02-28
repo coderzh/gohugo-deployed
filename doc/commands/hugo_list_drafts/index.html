@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="hugo list drafts List all drafts Synopsis List all of the drafts in your content directory. hugo list drafts Options -h, --help[=false]: help for drafts Options inherited from parent commands -b, --baseUrl=&quot;&quot;: hostname (and path) to the root eg. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&quot;&quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --config=&quot;&quot;: config file (default is path/config.yaml|json|toml)">
+        <meta name="description" content="hugo list drafts List all drafts Synopsis List all of the drafts in your content directory. hugo list drafts Options inherited from parent commands -b, --baseURL=&quot;&quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&quot;&quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&quot;&quot;:">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>hugo list drafts - Hugo中文文档</title>
@@ -75,7 +75,7 @@
 <aside>
     <div class="well">
         
-        <div class="pull-right">Hugo v0.14.0(翻译中...)</div>
+        <div class="pull-right">Hugo v0.15.0(翻译中...)</div>
         <ul class="nav nav-list">
             
             
@@ -85,27 +85,27 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/introduction/">关于 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">Introduction</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/quickstart/">快速开始</a>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">Quickstart</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/installing/">安装 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">Installing Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/usage/">使用 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">Using Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/configuration/">配置文件</a>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">Configuration</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/source-directory/">目录结构</a>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">Source Organization</a>
                     </li>
                     
                 </ul>
@@ -203,11 +203,11 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/overview/">概述</a>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">Overview</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template 入门</a>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template Primer</a>
                     </li>
                     
                     <li>
@@ -219,23 +219,23 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/functions/">函数</a>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">Functions</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/variables/">变量</a>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">Variables</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/content/">内容模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/content/">Single Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/list/">列表模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/list/">List of Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/homepage/">首页模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">Homepage</a>
                     </li>
                     
                     <li>
@@ -247,7 +247,7 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/partials/">复用模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">Partial Templates</a>
                     </li>
                     
                     <li>
@@ -259,11 +259,11 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/404/">自定义404页面</a>
+                        <a href="http://www.gohugo.org/doc/templates/404/">Custom 404 page</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/debugging/">调试</a>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">Debugging</a>
                     </li>
                     
                 </ul>
@@ -310,6 +310,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/analytics/">Analytics</a>
                     </li>
                     
                     <li>
@@ -362,6 +366,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/localfiles/">Traversing Local Files</a>
                     </li>
                     
                     <li>
@@ -490,7 +498,7 @@
             
               
             <li>
-                <a href="https://github.com/coderzh/gohugo.org/edit/master/content/doc/commands/hugo_list_drafts.md" target="blank">
+                <a href="https://github.com/coderzh/gohugo.org/edit/master/content/doc/commands/hugo_list_drafts_en.md" target="blank">
                 <i class='fa fa-edit'></i>修改此文章</a>
             </li>
             
@@ -509,28 +517,24 @@
                 <section>
                     
 
-<h2 id="hugo-list-drafts:5174da9c5d85eece5d412c36fffb77d7">hugo list drafts</h2>
+<h2 id="hugo-list-drafts:35d49e8f6aa3c74eb5b710588b463579">hugo list drafts</h2>
 
 <p>List all drafts</p>
 
-<h3 id="synopsis:5174da9c5d85eece5d412c36fffb77d7">Synopsis</h3>
+<h3 id="synopsis:35d49e8f6aa3c74eb5b710588b463579">Synopsis</h3>
 
 <p>List all of the drafts in your content directory.</p>
 
 <pre><code>hugo list drafts
 </code></pre>
 
-<h3 id="options:5174da9c5d85eece5d412c36fffb77d7">Options</h3>
+<h3 id="options-inherited-from-parent-commands:35d49e8f6aa3c74eb5b710588b463579">Options inherited from parent commands</h3>
 
-<pre><code>  -h, --help[=false]: help for drafts
-</code></pre>
-
-<h3 id="options-inherited-from-parent-commands:5174da9c5d85eece5d412c36fffb77d7">Options inherited from parent commands</h3>
-
-<pre><code>  -b, --baseUrl=&quot;&quot;: hostname (and path) to the root eg. http://spf13.com/
+<pre><code>  -b, --baseURL=&quot;&quot;: hostname (and path) to the root, e.g. http://spf13.com/
   -D, --buildDrafts[=false]: include content marked as draft
   -F, --buildFuture[=false]: include content with publishdate in the future
       --cacheDir=&quot;&quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/
+      --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL
       --config=&quot;&quot;: config file (default is path/config.yaml|json|toml)
   -d, --destination=&quot;&quot;: filesystem path to write files to
       --disableRSS[=false]: Do not build RSS files
@@ -543,19 +547,19 @@
       --preserveTaxonomyNames[=false]: Preserve taxonomy names as written (&quot;Gérard Depardieu&quot; vs &quot;gerard-depardieu&quot;)
   -s, --source=&quot;&quot;: filesystem path to read files relative from
       --stepAnalysis[=false]: display memory and timing of different steps of the program
-  -t, --theme=&quot;&quot;: theme to use (located in /themes/THEMENAME/)
-      --uglyUrls[=false]: if true, use /filename.html instead of /filename/
+  -t, --theme=&quot;&quot;: theme to use (located in /doc/themes/THEMENAME/)
+      --uglyURLs[=false]: if true, use /filename.html instead of /filename/
   -v, --verbose[=false]: verbose output
       --verboseLog[=false]: verbose logging
 </code></pre>
 
-<h3 id="see-also:5174da9c5d85eece5d412c36fffb77d7">SEE ALSO</h3>
+<h3 id="see-also:35d49e8f6aa3c74eb5b710588b463579">SEE ALSO</h3>
 
 <ul>
 <li><a href="http://www.gohugo.org/doc/commands/hugo_list/">hugo list</a>  - Listing out various types of content</li>
 </ul>
 
-<h6 id="auto-generated-by-spf13-cobra-at-2015-08-04-09-11-10-030650499-0000-utc:5174da9c5d85eece5d412c36fffb77d7">Auto generated by spf13/cobra at 2015-08-04 09:11:10.030650499 +0000 UTC</h6>
+<h6 id="auto-generated-by-spf13-cobra-on-25-nov-2015:35d49e8f6aa3c74eb5b710588b463579">Auto generated by spf13/cobra on 25-Nov-2015</h6>
 
                 </section>
             </article>

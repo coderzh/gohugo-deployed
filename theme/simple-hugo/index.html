@@ -133,22 +133,22 @@
 <h4 id="params:8d1f2caafa94aaa38e7023b71e462665">Params</h4>
 
 <ul>
-<li>For add new links on navbar see <code>[params.links]</code>.</li>
+<li>For add new links on navbar see <code>[params.links]</code>.
+<code>toml
+[params]
+github = &quot;username&quot;
+twitter = &quot;username&quot;
+email = &quot;email&quot;
+shortDescription = &quot;yada yada yada&quot;
+[params.links]
+[params.links.About]
+  &quot;url&quot; = &quot;/about/&quot;
+  &quot;title&quot; = &quot;About&quot;
+[params.links.ContactMe]
+  &quot;url&quot; = &quot;/contact/&quot;
+  &quot;title&quot; = &quot;Contact Me&quot;
+</code></li>
 </ul>
-
-<pre><code class="language-toml">[params]
-  github = &quot;username&quot;
-  twitter = &quot;username&quot;
-  email = &quot;email&quot;
-  shortDescription = &quot;yada yada yada&quot;
-  [params.links]
-    [params.links.About]
-      &quot;url&quot; = &quot;/about/&quot;
-      &quot;title&quot; = &quot;About&quot;
-    [params.links.ContactMe]
-      &quot;url&quot; = &quot;/contact/&quot;
-      &quot;title&quot; = &quot;Contact Me&quot;
-</code></pre>
 
     </div>
 

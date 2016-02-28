@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Online Compile And Run on Hugo中文文档</title>
+        <link>http://www.gohugo.org/tags/online-compile-and-run/</link>
+        <language>zh-CN</language>
+        <author>CoderZh</author>
+        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
+        <updated>Wed, 20 Jan 2016 01:28:16 CST</updated>
+        
+    </channel>
+</rss>

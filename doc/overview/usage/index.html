@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="确保 Hugo 在你的 PATH 路径下或者提供一个它的路径。 $ hugo help Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go. Complete documentation is available at http://gohugo.io Usage: hugo [flags] hugo [command] Available Commands: server Hugo runs its own webserver to render the files version Print the version number">
+        <meta name="description" content="Make sure either hugo is in your PATH or provide a path to it. $ hugo help Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go. Complete documentation is available at http://gohugo.io Usage: hugo [flags] hugo [command] Available Commands: server Hugo runs its own webserver to render the files version Print the version number of Hugo config Print the site configuration check Check content in the source directory benchmark Benchmark hugo by building a site a number of times new Create new content for your site undraft Undraft changes the content&#39;s draft status from &#39;True&#39; to &#39;False&#39; genautocomplete Generate shell autocompletion script for Hugo gendoc Generate Markdown documentation for the Hugo CLI.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
-        <title>使用 Hugo - Hugo中文文档</title>
+        <title>Using Hugo - Hugo中文文档</title>
         <link rel="stylesheet" href="http://www.gohugo.org/css/highlight.js.min.css">
         <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap-theme.css">
@@ -75,7 +75,7 @@
 <aside>
     <div class="well">
         
-        <div class="pull-right">Hugo v0.14.0(翻译中...)</div>
+        <div class="pull-right">Hugo v0.15.0(翻译中...)</div>
         <ul class="nav nav-list">
             
             
@@ -85,27 +85,27 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/introduction/">关于 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">Introduction</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/quickstart/">快速开始</a>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">Quickstart</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/installing/">安装 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">Installing Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/usage/">使用 Hugo</a>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">Using Hugo</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/configuration/">配置文件</a>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">Configuration</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/overview/source-directory/">目录结构</a>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">Source Organization</a>
                     </li>
                     
                 </ul>
@@ -203,11 +203,11 @@
                 <ul class="nav nav-list">
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/overview/">概述</a>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">Overview</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template 入门</a>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template Primer</a>
                     </li>
                     
                     <li>
@@ -219,23 +219,23 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/functions/">函数</a>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">Functions</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/variables/">变量</a>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">Variables</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/content/">内容模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/content/">Single Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/list/">列表模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/list/">List of Content</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/homepage/">首页模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">Homepage</a>
                     </li>
                     
                     <li>
@@ -247,7 +247,7 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/partials/">复用模板</a>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">Partial Templates</a>
                     </li>
                     
                     <li>
@@ -259,11 +259,11 @@
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/404/">自定义404页面</a>
+                        <a href="http://www.gohugo.org/doc/templates/404/">Custom 404 page</a>
                     </li>
                     
                     <li>
-                        <a href="http://www.gohugo.org/doc/templates/debugging/">调试</a>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">Debugging</a>
                     </li>
                     
                 </ul>
@@ -310,6 +310,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/analytics/">Analytics</a>
                     </li>
                     
                     <li>
@@ -362,6 +366,10 @@
                     
                     <li>
                         <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/localfiles/">Traversing Local Files</a>
                     </li>
                     
                     <li>
@@ -505,11 +513,11 @@
         <main role="main">
             <article>
                 <a id="title"></a>
-                <h1 class="doc-entry-title">使用 Hugo</h1>
+                <h1 class="doc-entry-title">Using Hugo</h1>
                 <section>
                     
 
-<p>确保 <code>Hugo</code> 在你的 <code>PATH</code> 路径下或者提供一个它的路径。</p>
+<p>Make sure either <code>hugo</code> is in your <code>PATH</code> or provide a path to it.</p>
 
 <pre><code class="hljs nohighlight">$ hugo help
 
@@ -534,7 +542,7 @@ Available Commands:
   help            Help about any command
 
 Flags:
-  -b, --baseUrl="": hostname (and path) to the root eg. http://spf13.com/
+  -b, --baseURL="": hostname (and path) to the root, e.g. http://spf13.com/
   -D, --buildDrafts=false: include content marked as draft
   -F, --buildFuture=false: include content with publishdate in the future
       --cacheDir="": filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/
@@ -551,8 +559,8 @@ Flags:
       --pluralizeListTitles=true: Pluralize titles in lists using inflect
   -s, --source="": filesystem path to read files relative from
       --stepAnalysis=false: display memory and timing of different steps of the program
-  -t, --theme="": theme to use (located in /themes/THEMENAME/)
-      --uglyUrls=false: if true, use /filename.html instead of /filename/
+  -t, --theme="": theme to use (located in /doc/themes/THEMENAME/)
+      --uglyURLs=false: if true, use /filename.html instead of /filename/
   -v, --verbose=false: verbose output
       --verboseLog=false: verbose logging
   -w, --watch=false: watch filesystem for changes and recreate as needed
@@ -564,11 +572,12 @@ Additional help topics:
 Use "hugo help [command]" for more information about a command.
 </code></pre>
 
-<h2 id="一般用法:dc32fe45042973266ca60588597e0b66">一般用法</h2>
 
-<p>最常见的用法是在你的当前站点目录里执行 <code>hugo</code> ：</p>
+<h2 id="common-usage-example:dc32fe45042973266ca60588597e0b66">Common Usage Example</h2>
 
-<pre><code>$ hugo
+<p>The most common use is probably to run <code>hugo</code> with your current directory being the input directory:</p>
+
+<pre><code class="hljs nohighlight">$ hugo
 0 draft content
 0 future content
 99 pages created
@@ -578,14 +587,16 @@ Use "hugo help [command]" for more information about a command.
 in 120 ms
 </code></pre>
 
-<p>你的站点将会生成到 <code>public</code> 目录，用来部署到你的 Web 服务器。</p>
 
-<h2 id="开发你的站点时获得实时的反馈:dc32fe45042973266ca60588597e0b66">开发你的站点时获得实时的反馈</h2>
+<p>This generates your web site to the <code>public/</code> directory,
+ready to be deployed to your web server.</p>
 
-<p>如果你想立即查看到新的内容改动，告诉 Hugo 让它监控这些改动。
-Hugo 将会监控文件系统的变化，在文件保存时会立即重新构建你的站点：</p>
+<h2 id="instant-feedback-as-you-develop-your-web-site:dc32fe45042973266ca60588597e0b66">Instant feedback as you develop your web site</h2>
 
-<pre><code>$ hugo -s ~/Code/hugo/docs --watch
+<p>If you are working on things and want to see the changes immediately, tell Hugo to watch for changes.
+Hugo will watch the filesystem for changes, and rebuild your site as soon as a file is saved:</p>
+
+<pre><code class="hljs nohighlight">$ hugo -s ~/Code/hugo/docs
 0 draft content
 0 future content
 99 pages created
@@ -597,11 +608,13 @@ Watching for changes in /Users/spf13/Code/hugo/docs/content
 Press Ctrl+C to stop
 </code></pre>
 
-<p>Hugo 甚至可以运行一个 Server ，并且同时创建一个预览的站点！
-Hugo 实现了 <a href="http://www.gohugo.org/doc/extras/livereload/">LiveReload</a> 技术用来自动重新加载打开的页面，只要是支持 JavaScript 的浏览器，包括移动设备。
-这是最简单也是最常见的开发 Hugo 站点的方法：</p>
 
-<pre><code>$ hugo server -ws ~/Code/hugo/docs
+<p>Hugo can even run a server and create a site preview at the same time!
+Hugo implements <a href="http://www.gohugo.org/doc/extras/livereload/">LiveReload</a> technology to automatically
+reload any open pages in all JavaScript-enabled browsers, including mobile.
+This is the easiest and most common way to develop a Hugo web site:</p>
+
+<pre><code class="hljs nohighlight">$ hugo server -ws ~/Code/hugo/docs
 0 draft content
 0 future content
 99 pages created
@@ -615,64 +628,71 @@ Web Server is available at http://localhost:1313/
 Press Ctrl+C to stop
 </code></pre>
 
-<h2 id="部署你的站点:dc32fe45042973266ca60588597e0b66">部署你的站点</h2>
 
-<p>本地开发并执行完 <code>hugo server</code> 之后，你需要最后执行一次 <code>hugo</code> 命令 <strong>不带 <code>server</code> 参数</strong> ，
-同时 <strong>不带 <code>--watch</code> 或 <code>-w</code> 参数</strong> 重新生成你的站点。
-然后你就可以通过拷贝 <code>public</code> 目录（通过 FTP 、 SFTP 、 WebDAV 、 Rsync 、 git push 等等）到你的生产环境的 Web 服务器来 <strong>部署你的站点</strong>。</p>
+<h2 id="deploying-your-web-site:dc32fe45042973266ca60588597e0b66">Deploying your web site</h2>
 
-<p>由于 Hugo 生成的是一个静态站点，你的站点可以托管到任何地方，包括 <a href="https://www.heroku.com/">Heroku</a> 、 <a href="https://www.godaddy.com/">GoDaddy</a> 、 <a href="http://www.dreamhost.com/">DreamHost</a> 、 <a href="https://pages.github.com/">GitHub Pages</a> 、 <a href="http://aws.amazon.com/s3/">Amazon S3</a> 和 <a href="http://aws.amazon.com/cloudfront/" title="Amazon CloudFront">CloudFront</a> ，
-或者任何便宜甚至免费的静态网站托管服务。</p>
+<p>After running <code>hugo server</code> for local web development,
+you need to do a final <code>hugo</code> run <strong>without the <code>server</code> command</strong> to rebuild your site. You may then <strong>deploy your site</strong> by copying the <code>public/</code> directory
+(by FTP, SFTP, WebDAV, Rsync, git push, etc.) to your production web server.</p>
 
-<p><a href="http://httpd.apache.org/" title="Apache HTTP Server">Apache</a>, <a href="http://nginx.org/">nginx</a>, <a href="http://www.iis.net/">IIS</a>&hellip;  任何 Web 服务器都支持！</p>
+<p>Since Hugo generates a static website, your site can be hosted anywhere,
+including <a href="https://www.heroku.com/">Heroku</a>, <a href="https://www.godaddy.com/">GoDaddy</a>, <a href="http://www.dreamhost.com/">DreamHost</a>, <a href="https://pages.github.com/">GitHub Pages</a>,
+<a href="http://aws.amazon.com/s3/">Amazon S3</a> and <a href="http://aws.amazon.com/cloudfront/" title="Amazon CloudFront">CloudFront</a>, or any other cheap or even free
+static web hosting services.</p>
 
-<h3 id="关于部署的说明:dc32fe45042973266ca60588597e0b66">关于部署的说明</h3>
+<p><a href="http://httpd.apache.org/" title="Apache HTTP Server">Apache</a>, <a href="http://nginx.org/">nginx</a>, <a href="http://www.iis.net/">IIS</a>&hellip;  Any web server software would do!</p>
 
-<p>运行 <code>hugo</code> 命令 <em>并不会</em> 删除之前生成的文件。这意味着你必须在运行 <code>hugo</code> 命令之前删除你的 <code>public/</code> 目录（或者你通过 <code>-d</code>/<code>--destination</code> 指定的目录）。
-不然的话，你可能有运行遗留在生成目录的错误文件的风险（比如草稿或者未来的文章）。</p>
+<h3 id="a-note-about-deployment:dc32fe45042973266ca60588597e0b66">A note about deployment</h3>
 
-<p>一个简单的处理方法是使用不同的目录用于开发和部署环境。</p>
+<p>Running <code>hugo</code> <em>does not</em> remove generated files before building. This means that you should delete your <code>public/</code> directory (or the directory you specified with <code>-d</code>/<code>--destination</code>) before running the <code>hugo</code> command, or you run the risk of the wrong files (e.g. drafts and/or future posts) being left in the generated site.</p>
 
-<p>启动一个会生成草稿内容（有助于编辑）的 Server ，指定一个不同的目标目录： <code>dev/</code> 目录</p>
+<p>An easy way to work around this is to use different directories for development and production.</p>
 
-<pre><code>hugo server -wDs ~/Code/hugo/docs -d dev
+<p>To start a server that builds draft content (helpful for editing), you can specify a different destination: the <code>dev/</code> dir.</p>
+
+<p><pre><code class="hljs nohighlight">$ hugo server -wDs ~/Code/hugo/docs -d dev
 </code></pre>
+</p>
 
-<p>当内容准备好发布时，使用默认的 <code>public/</code> 目录：</p>
+<p>When the content is ready for publishing, use the default <code>public/</code> dir:</p>
 
-<pre><code>hugo -s ~/Code/hugo/docs
+<p><pre><code class="hljs nohighlight">$ hugo -s ~/Code/hugo/docs
 </code></pre>
+</p>
 
-<p>这将防止你不小心发布了还未准备好的内容。</p>
+<p>This prevents content you&rsquo;re not ready to share yet from accidentally becoming available.</p>
 
-<h3 id="或者-直接用-hugo-作为你的-web-服务器:dc32fe45042973266ca60588597e0b66">或者, 直接用 Hugo 作为你的 Web 服务器！</h3>
+<h3 id="alternatively-serve-your-web-site-with-hugo:dc32fe45042973266ca60588597e0b66">Alternatively, serve your web site with Hugo!</h3>
 
-<p>是的，没错！由于 Hugo 运行的非常快，不仅在生成站点时，<em>也</em> 在运行 Web 服务时（得益于 Go 语言关于并发和多线程的良好设计）。
-有些用户事实上选择使用 Hugo 本身作为 Web 服务器<strong>用于他的生产环境服务器</strong>。</p>
+<p>Yes, that&rsquo;s right!  Because Hugo is so blazingly fast both in web site creation
+<em>and</em> in web serving (thanks to its concurrent and multi-threaded design and
+its Go heritage), some users actually prefer using Hugo itself to serve their
+web site <em>on their production server</em>!</p>
 
-<p>不再需要其他的 Web 服务器了 （Apache 、 nginx 、 IIS ……）。</p>
+<p>No other web server software (Apache, nginx, IIS&hellip;) is necessary.</p>
 
-<p>下面是执行的命令：</p>
+<p>Here is the command:</p>
 
-<pre><code>hugo server --watch \
-            --baseUrl=http://yoursite.org/ --port=80 \
-            --appendPort=false \
-            --bind=87.245.198.50
+<p><pre><code class="hljs nohighlight">$ hugo server --baseURL=http://yoursite.org/ \
+              --port=80 \
+              --appendPort=false \
+              --bind=87.245.198.50
 </code></pre>
+</p>
 
-<p>注意 <code>bind</code> 选项，指定了服务器绑定到哪个网络接口（默认是 <code>127.0.0.1</code> ，适用于大多数开发的时候）。
-有些服务器，比如 Amazon WS ，使用网络地址转换（NAT）导致你有时很难找到实际使用的 IP 地址。
-使用 <code>--bind=0.0.0.0</code> 将可以绑定到所有接口。</p>
+<p>Note the <code>bind</code> option, which is the interface to which the server will bind (defaults to <code>127.0.0.1</code>, which is fine for most development use cases). Some hosts, like Amazon Web Services, runs network address translation and it can sometimes be hard to figure out the actual IP address. Using <code>--bind=0.0.0.0</code> will bind to all interfaces.</p>
 
-<p>通过这种方法，实际上你可以只部署你的源文件了，因为 Hugo 会在你的服务器上及时的生成 Web 站点。</p>
+<p>This way, you may actually deploy just the source files,
+and Hugo on your server will generate the resulting web site
+on-the-fly and serve them at the same time.</p>
 
-<p>你可以添加 <code>--disableLiveReload=true</code> 可选选项，如果你不希望将 LiveReload 相关的 JavaScript 代码添加到你的页面。</p>
+<p>You may optionally add <code>--disableLiveReload=true</code> if you do not want
+the JavaScript code for LiveReload to be added to your web pages.</p>
 
-<p>是不是很有趣？这里有一些 Hugo 用户贡献的不错的指引：</p>
+<p>Interested? Here are some great tutorials contributed by Hugo users:</p>
 
 <ul>
-<li><a href="http://fredix.ovh/2014/10/hugo-syncthing/">hugo, syncthing</a> (French) by Frédéric Logier (@fredix)</li>
-<li><a href="http://hucsmn.com/post/hugo-tutorial-make-it-work/">服务器上 hugo 的安装和配置 <small>(Installing and configuring Hugo on the server)</small></a> (Chinese) by hucsmn</li>
+<li><a href="http://fredix.xyz/2014/10/hugo-syncthing/">hugo, syncthing</a> (French) by Frédéric Logier (@fredix)</li>
 </ul>
 
                 </section>

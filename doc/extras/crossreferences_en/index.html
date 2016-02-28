@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Hugo makes it easy to link documents together with the ref and relref shortcodes. These shortcodes are also used to safely provide links to headings inside of your content, whether across documents or within a document. The only difference between ref and relref is whether the resulting URL is absolute (http://1.com/about/) or relative (/about/). Using ref and relref {{&lt; ref &quot;document&quot; &gt;}} {{&lt; ref &quot;#anchor&quot; &gt;}} {{&lt; ref &quot;document#anchor&quot; &gt;}} {{&lt; relref &quot;document&quot; &gt;}} {{&lt; relref &quot;#anchor&quot; &gt;}} {{&lt; relref &quot;document#anchor&quot; &gt;}} The single parameter to ref is a string with a content document name (about.md), an in-document anchor (#who), or both (about.md#who).">
+        <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
+        <link rel="icon" href="http://www.gohugo.org/favicon.ico">
+        <title>Cross-References - Hugo中文文档</title>
+        <link rel="stylesheet" href="http://www.gohugo.org/css/highlight.js.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/font-awesome/css/font-awesome.min.css" />
+        
+        <link rel="stylesheet" href="http://www.gohugo.org/css/hugo-org.css">
+    </head>
+
+<body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.gohugo.org/">Hugo中文文档</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="http://www.gohugo.org/">主页</a></li>
+                    
+                    
+                    <li ><a href="http://www.gohugo.org/post/">文章列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/theme/">皮肤列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/showcase/">示例网站</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/donate/">关于</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">常用链接<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://github.com/spf13/hugo">官方GitHub</a></li>
+                        
+                            <li><a href="https://github.com/coderzh/gohugo.org">本站GitHub</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">官方文档<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://gohugo.io/overview/introduction/">英文文档</a></li>
+                        
+                            <li><a href="http://www.gohugo.org/doc/">中文文档</a></li>
+                        
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<div class="container-fluid">
+
+<div class="row">
+    <div class="col-xs-12 col-sm-3">
+        
+<aside>
+    <div class="well">
+        
+        <div class="pull-right">Hugo v0.15.0(翻译中...)</div>
+        <ul class="nav nav-list">
+            
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">快速开始</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/introduction/">Introduction</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/quickstart/">Quickstart</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/installing/">Installing Hugo</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/usage/">Using Hugo</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/configuration/">Configuration</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/overview/source-directory/">Source Organization</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">Hugo命令</label>
+                <ul class="nav nav-list">
+                    <li>
+                        <a href="http://www.gohugo.org/doc/commands/">Hugo命令</a>
+                    </li>
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">内容(Content)</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/organization/">Organization</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/supported-formats/">Supported Formats</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/front-matter/">Front Matter</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/sections/">Sections</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/types/">Types</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/archetypes/">Archetypes</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/ordering/">Ordering</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/summaries/">Summaries</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/content/example/">Example</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">皮肤(Themes)</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/overview/">Themes Overview</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/installing/">Installing Themes</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/usage/">Using a Theme</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/customizing/">Customizing a Theme</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/themes/creation/">Creating a Theme</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">模板(Templates)</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/overview/">Overview</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/go-templates/">Go Template Primer</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/ace/">Ace templates</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/amber/">Amber templates</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/functions/">Functions</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/variables/">Variables</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/content/">Single Content</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/list/">List of Content</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/homepage/">Homepage</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/terms/">Taxonomy Terms</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/views/">Content Views</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/partials/">Partial Templates</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/rss/">RSS</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/sitemap/">Sitemap</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/404/">Custom 404 page</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/templates/debugging/">Debugging</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">分类(Taxonomies)</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/overview/">Overview</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/usage/">Usage</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/displaying/">Displaying</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/templates/">Templates</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/ordering/">Ordering</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/taxonomies/methods/">Structure &amp; Methods</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">其他</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/aliases/">Aliases</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/analytics/">Analytics</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/builders/">Builders</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/comments/">Comments</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/crossreferences/">Cross-References</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/livereload/">LiveReload</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/menus/">Menus</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/permalinks/">Permalinks</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/pagination/">Pagination</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/scratch/">Scratch</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/shortcodes/">Shortcodes</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/datafiles/">Data Files</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/highlighting/">Syntax Highlighting</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/datadrivencontent/">Data-driven Content</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/toc/">Table of Contents</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/localfiles/">Traversing Local Files</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/extras/urls/">URLs</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">工具</label>
+                <ul class="nav nav-list">
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tools/">工具</a>
+                    </li>
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">社区</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/community/mailing-list/">Mailing List</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/community/contributing/">Contributing to Hugo</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://discuss.gohugo.io">讨论社区</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">指南</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/automated-deployments/">Automated deployments</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/creating-a-new-theme/">Creating a New Theme</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/github-pages-blog/">Hosting on GitHub</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/installing-on-mac/">Installing on Mac</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/installing-on-windows/">Installing on Windows</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/mathjax/">MathJax Support</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/migrate-from-jekyll/">Migrating from Jekyll</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/tutorials/create-a-multilingual-site/">Multilingual Site</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">常见问题</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/troubleshooting/overview/">Troubleshooting Overview</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/troubleshooting/strange-eof-error/">Strange EOF error</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/troubleshooting/categories-with-accented-characters/">Accented Categories</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+            <li>
+                <label class="tree-toggle nav-header">关于Hugo</label>
+                <ul class="nav nav-list">
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/meta/release-notes/">Release Notes</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/meta/roadmap/">Hugo Roadmap</a>
+                    </li>
+                    
+                    <li>
+                        <a href="http://www.gohugo.org/doc/meta/license/">License</a>
+                    </li>
+                    
+                </ul>
+            
+            </li>
+            
+            
+              
+            <li>
+                <a href="https://github.com/coderzh/gohugo.org/edit/master/content/doc/extras/crossreferences_en.md" target="blank">
+                <i class='fa fa-edit'></i>修改此文章</a>
+            </li>
+            
+            
+        </ul>
+    </div>
+</aside>
+
+
+    </div>
+    <div class="col-xs-12 col-sm-9 doc-main">
+        <main role="main">
+            <article>
+                <a id="title"></a>
+                <h1 class="doc-entry-title">Cross-References</h1>
+                <section>
+                    
+
+<p>Hugo makes it easy to link documents together with the <code>ref</code> and <code>relref</code> shortcodes. These shortcodes are also used to safely provide links to headings inside of your content, whether across documents or within a document. The only difference between <code>ref</code> and <code>relref</code> is whether the resulting URL is absolute (<code>http://1.com/about/</code>) or relative (<code>/about/</code>).</p>
+
+<h2 id="using-ref-and-relref:384270d39f774a5e7395f3426bd85391">Using <code>ref</code> and <code>relref</code></h2>
+
+<pre><code class="language-django">{{&lt; ref &quot;document&quot; &gt;}}
+{{&lt; ref &quot;#anchor&quot; &gt;}}
+{{&lt; ref &quot;document#anchor&quot; &gt;}}
+{{&lt; relref &quot;document&quot; &gt;}}
+{{&lt; relref &quot;#anchor&quot; &gt;}}
+{{&lt; relref &quot;document#anchor&quot; &gt;}}
+</code></pre>
+
+<p>The single parameter to <code>ref</code> is a string with a content <em>document name</em> (<code>about.md</code>), an in-document <em>anchor</em> (<code>#who</code>), or both (<code>about.md#who</code>).</p>
+
+<h3 id="document-names:384270d39f774a5e7395f3426bd85391">Document Names</h3>
+
+<p>The <em>document name</em> is the name of a document including the format extension; this may be just the filename, or the relative path from the <code>doc/content/</code> directory. With a document <code>doc/content/blog/post.md</code>, either format will produce the same result.</p>
+
+<pre><code>{{&lt; relref &quot;blog/post.md&quot; &gt;}} ⇒ `/blog/post/`
+{{&lt; relref &quot;post.md&quot; &gt;}} ⇒ `/blog/post/`
+</code></pre>
+
+<p>If you have multiple sections with the same filename, you should only use the relative path format, because the behaviour is <em>undefined</em>. So, if I also have a document <code>link/post.md</code>, the output of <code>ref</code> is unknown for <code>post.md</code>.</p>
+
+<pre><code>{{&lt; relref &quot;blog/post.md&quot; &gt;}} ⇒ `/blog/post/`
+{{&lt; relref &quot;post.md&quot; &gt;}} ⇒ `/blog/post/` (maybe)
+{{&lt; relref &quot;post.md&quot; &gt;}} ⇒ `/link/post/` (maybe)
+{{&lt; relref &quot;link/post.md&quot; &gt;}} ⇒ `/link/post/`
+</code></pre>
+
+<p>A relative document name must <em>not</em> begin with a slash (<code>/</code>).</p>
+
+<pre><code>{{&lt; relref &quot;/blog/post.md&quot; &gt;}} ⇒ `&quot;&quot;`
+</code></pre>
+
+<h3 id="anchors:384270d39f774a5e7395f3426bd85391">Anchors</h3>
+
+<p>When an <em>anchor</em> is provided by itself, the current page’s unique identifier will be appended; when an <em>anchor</em> is provided with a document name, the found page&rsquo;s unique identifier will be appended.</p>
+
+<pre><code>{{&lt; relref &quot;#who&quot; &gt;}} ⇒ `#who:9decaf7`
+{{&lt; relref &quot;blog/post.md#who&quot; &gt;}} ⇒ `/blog/post/#who:badcafe`
+</code></pre>
+
+<p>More information about document unique identifiers and headings can be found <a href="#hugo-heading-anchors:384270d39f774a5e7395f3426bd85391">below</a>.</p>
+
+<h3 id="examples:384270d39f774a5e7395f3426bd85391">Examples</h3>
+
+<ul>
+<li><code>{{&lt; ref &quot;blog/post.md&quot; &gt;}}</code> ⇒ <code>http://1.com/blog/post/</code></li>
+<li><code>{{&lt; ref &quot;post.md#tldr&quot; &gt;}}</code> ⇒ <code>http://1.com/blog/post/#tldr:caffebad</code></li>
+<li><code>{{&lt; relref &quot;post.md&quot; &gt;}}</code> ⇒ <code>/blog/post/</code></li>
+<li><code>{{&lt; relref &quot;blog/post.md#tldr&quot; &gt;}}</code> ⇒ <code>/blog/post/#tldr:caffebad</code></li>
+<li><code>{{&lt; ref &quot;#tldr&quot; &gt;}}</code> ⇒ <code>#tldr:badcaffe</code></li>
+<li><code>{{&lt; relref &quot;#tldr&quot; &gt;}}</code> ⇒ <code>#tldr:badcaffe</code></li>
+</ul>
+
+<h2 id="hugo-heading-anchors:384270d39f774a5e7395f3426bd85391">Hugo Heading Anchors</h2>
+
+<p>When using Markdown document types, Hugo generates heading anchors automatically. The generated anchor for this section is <code>hugo-heading-anchors</code>. Because the heading anchors are generated automatically, Hugo takes some effort to ensure that heading anchors are unique both inside a document and across the entire site.</p>
+
+<p>Ensuring heading uniqueness across the site is accomplished with a unique identifier for each document based on its path. Unless a document is renamed or moved between sections <em>in the filesystem</em>, the unique identifier for the document will not change: <code>blog/post.md</code> will always have a unique identifier of <code>81df004c333b392d34a49fd3a91ba720</code>.</p>
+
+<p><code>ref</code> and <code>relref</code> were added so you can make these reference links without having to know the document’s unique identifier. (The links in document tables of contents are automatically up-to-date with this value.)</p>
+
+<pre><code>{{&lt; relref &quot;doc/extras/crossreferences.md#hugo-heading-anchors&quot; &gt;}}
+/doc/extras/crossreferences/#hugo-heading-anchors:77cd9ea530577debf4ce0f28c8dca242
+</code></pre>
+
+<blockquote>
+<p>What follows is a deeper discussion of <em>why</em> and <em>how</em> Hugo generates heading anchors. It is not necessary to know this to use <code>ref</code> and <code>relref</code>, but it may be useful in understanding how some anchors may not match your expectations.</p>
+</blockquote>
+
+<h3 id="how-to-generate-a-heading-anchor:384270d39f774a5e7395f3426bd85391">How to Generate a Heading Anchor</h3>
+
+<p>Convert the text of the heading to lowercase.</p>
+
+<pre><code>Hugo: A Fast &amp; Modern Static Web Engine
+hugo: a fast &amp; modern static web engine
+</code></pre>
+
+<p>Replace anything that isn&rsquo;t an ASCII letter (<code>a-z</code>) or number (<code>0-9</code>) with a dash (<code>-</code>).</p>
+
+<pre><code>hugo: a fast &amp; modern static web engine
+hugo--a-fast---modern-static-web-engine
+</code></pre>
+
+<p>Get rid of extra dashes.</p>
+
+<pre><code>hugo--a-fast---modern-static-web-engine
+hugo-a-fast-modern-static-web-engine
+</code></pre>
+
+<p>You have just converting the text of a heading to a suitable anchor. If your document has unique heading text, all of the anchors will be unique, too.</p>
+
+<h4 id="specifying-heading-anchors:384270d39f774a5e7395f3426bd85391">Specifying Heading Anchors</h4>
+
+<p>You can also tell Hugo to use a particular heading anchor.</p>
+
+<pre><code># Hugo: A Fast &amp; Modern Static Web Engine {#hugo-main}
+</code></pre>
+
+<p>Hugo will use <code>hugo-main</code> as the heading anchor.</p>
+
+<h3 id="what-about-duplicate-heading-anchors:384270d39f774a5e7395f3426bd85391">What About Duplicate Heading Anchors?</h3>
+
+<p>The technique outlined above works well enough, but some documents have headings with identical text, like the <a href="http://www.gohugo.org/doc/extras/shortcodes/">shortcodes</a> page—there are three headings with the text &ldquo;Example&rdquo;. You can specify heading anchors manually:</p>
+
+<pre><code>### Example {#example-1}
+### Example {#example-2}
+### Example {#example-3}
+</code></pre>
+
+<p>It’s easy to forget to do that all the time, and Hugo is smart enough to do it for you. It just adds <code>-x</code> to the end of each heading it has already seen.</p>
+
+<ul>
+<li><code>### Example</code> ⇒ <code>example</code></li>
+<li><code>### Example</code> ⇒ <code>example-1</code></li>
+<li><code>### Example</code> ⇒ <code>example-2</code></li>
+</ul>
+
+<p>Sometimes it&rsquo;s a little harder, but Hugo can recover from those, too, by adding more suffixes:</p>
+
+<ul>
+<li><code># Heading</code> ⇒ <code>heading</code></li>
+<li><code># Heading 1</code> ⇒ <code>heading-1</code></li>
+<li><code># Heading</code> ⇒ <code>heading-1-1</code></li>
+<li><code># Heading</code> ⇒ <code>heading-1-2</code></li>
+<li><code># Heading 1</code> ⇒ <code>heading-2</code></li>
+</ul>
+
+<p>This can even affect specified heading anchors that come after a generated heading anchor.</p>
+
+<ul>
+<li><code># My Heading</code> ⇒ <code>my-heading</code></li>
+<li><code># My Heading {#my-heading}</code> ⇒ <code>my-heading-1</code></li>
+</ul>
+
+<blockquote>
+<p>This particular collision and override is unfortunate, but unavoidable because Hugo processes each heading for collision detection as it sees it during conversion.</p>
+</blockquote>
+
+<p>This technique works well for documents rendered on individual pages, like blog posts. What about on Hugo list pages?</p>
+
+<h3 id="unique-heading-anchors-in-lists:384270d39f774a5e7395f3426bd85391">Unique Heading Anchors in Lists</h3>
+
+<p>Hugo converts each document from Markdown independently. it doesn’t know that <code>blog/post.md</code> has an &ldquo;Example&rdquo; heading that will collide with the &ldquo;Example&rdquo; heading in <code>blog/post2.md</code>. Even if it did know this, the addition of <code>blog/post3.md</code> should not cause the anchors for the headings in the other blog posts to change.</p>
+
+<p>Enter the document’s unique identifier. To prevent this sort of collision on
+list pages, Hugo always appends the document&rsquo;s to a generated heading anchor.
+So, the &ldquo;Example&rdquo; heading in <code>blog/post.md</code> actually turns into
+<code>#example:81df004…</code>, and the &ldquo;Example&rdquo; heading in <code>blog/post2.md</code> actually
+turns into <code>#example:8cf1599…</code>. All you have to know is the heading anchor that
+was generated, not the document identifier; <code>ref</code> and <code>relref</code> take care of the
+rest for you.</p>
+
+<pre><code>&lt;a href='{{&lt; relref &quot;blog/post.md#example&quot; &gt;}}'&gt;Post Example&lt;/a&gt;
+&lt;a href='http://www.gohugo.org/blog/post.md#81df004…'&gt;Post Example&lt;/a&gt;
+
+[Post Two Example]({{&lt; relref &quot;blog/post2.md#example&quot; &gt;}})
+&lt;a href='http://www.gohugo.org/blog/post2.md#8cf1599…'&gt;Post Two Example&lt;/a&gt;
+</code></pre>
+
+<p>Now you know.</p>
+
+                </section>
+            </article>
+        </main>
+        <br />
+        
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 text-center">
+                
+                <a href="http://www.gohugo.org/doc/extras/comments">&lt; 上一篇</a>
+                
+            </div>
+            <div class="col-xs-6 col-sm-6 text-center">
+                
+                <a href="http://www.gohugo.org/doc/extras/livereload">下一篇 &gt;</a>
+                
+            </div>
+        </div>
+        
+    </div> 
+</div>
+
+
+
+<hr />
+
+<div class="row">
+    <div class="col-sm-12">
+        
+	    <div class="text-center">
+        
+		    <p class="doc-footer-em"><a href="#">回到顶部↑</a></p>
+	    </div>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+    <p>Copyright © <a href="http://blog.coderzh.com/">CoderZh</a> 2015. Generated by <a href="http://gohugo.io/">Hugo</a></p>
+</footer>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-10147768-3', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="http://www.gohugo.org/js/jquery-1.11.2.min.js"></script>
+<script src="http://www.gohugo.org/js/bootstrap.min.js"></script>
+
+<script src="http://www.gohugo.org/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="http://www.gohugo.org/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
+
