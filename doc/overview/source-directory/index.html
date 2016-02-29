@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Hugo takes a single directory and uses it as the input for creating a complete website. The top level of a source directory will typically have the following elements: ▸ archetypes/ ▸ doc/content/ ▸ data/ ▸ layouts/ ▸ static/ ▸ doc/themes/ config.toml Learn more about the different directories and what their purpose is: config data archetypes content layouts static themes Example An example directory may look like: . ├── config.toml ├── archetypes | └── default.md ├── content | ├── post | | ├── firstpost.md | | └── secondpost.md | └── quote | | ├── first.md | | └── second.md ├── data ├── layouts | ├── _default | | ├── single.html | | └── list.html | ├── partials | | ├── header.html | | └── footer.html | ├── taxonomies | | ├── category.html | | ├── post.html | | ├── quote.html | | └── tag.html | ├── post | | ├── li.html | | ├── single.html | | └── summary.html | ├── quote | | ├── li.html | | ├── single.html | | └── summary.html | ├── shortcodes | | ├── img.html | | ├── vimeo.html | | └── youtube.html | ├── index.html | └── sitemap.xml ├── themes | ├── hyde | └── doc └── static ├── css └── js This directory structure tells us a lot about this site: The website intends to have two different types of content: posts and quotes.">
+        <meta name="description" content="Hugo 使用一个单一的目录用来生成完整的站点。 源目录的顶层一般有以下一些元素： ▸ archetypes/ ▸ content/ ▸ data/ ▸ layouts/ ▸ static/ ▸ themes/ config.toml 学习更多这些不同的目录和他们的目的： config data archetypes">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Source Organization - Hugo中文文档</title>
@@ -517,35 +517,34 @@
                 <section>
                     
 
-<p>Hugo takes a single directory and uses it as the input for creating a complete
-website.</p>
+<p>Hugo 使用一个单一的目录用来生成完整的站点。</p>
 
-<p>The top level of a source directory will typically have the following elements:</p>
+<p>源目录的顶层一般有以下一些元素：</p>
 
 <pre><code>▸ archetypes/
-▸ doc/content/
+▸ content/
 ▸ data/
 ▸ layouts/
 ▸ static/
-▸ doc/themes/
+▸ themes/
   config.toml
 </code></pre>
 
-<p>Learn more about the different directories and what their purpose is:</p>
+<p>学习更多这些不同的目录和他们的目的：</p>
 
 <ul>
 <li><a href="http://www.gohugo.org/doc/overview/configuration/">config</a></li>
 <li><a href="http://www.gohugo.org/doc/extras/datafiles/">data</a></li>
 <li><a href="http://www.gohugo.org/doc/content/archetypes/">archetypes</a></li>
 <li><a href="http://www.gohugo.org/doc/content/organization/">content</a></li>
-<li><a href="http://www.gohugo.org/layout/doc/overview/">layouts</a></li>
+<li><a href="http://www.gohugo.org/doc/layout/overview/">layouts</a></li>
 <li><a href="http://www.gohugo.org/doc/themes/creation#toc_4">static</a></li>
-<li><a href="http://www.gohugo.org/doc/themes/doc/overview/">themes</a></li>
+<li><a href="http://www.gohugo.org/doc/themes/overview/">themes</a></li>
 </ul>
 
-<h2 id="example:eda897de2e1d9fdedc0a3929693cea10">Example</h2>
+<h2 id="例子:eda897de2e1d9fdedc0a3929693cea10">例子</h2>
 
-<p>An example directory may look like:</p>
+<p>一个目录的例子：</p>
 
 <pre><code>.
 ├── config.toml
@@ -593,12 +592,12 @@ website.</p>
     └── js
 </code></pre>
 
-<p>This directory structure tells us a lot about this site:</p>
+<p>这个目录结构告诉了我们一些关于这个站点的信息：</p>
 
 <ol>
-<li>The website intends to have two different types of content: <em>posts</em> and <em>quotes</em>.</li>
-<li>It will also apply two different taxonomies to that content: <em>categories</em> and <em>tags</em>.</li>
-<li>It will be displaying content in 3 different views: a list, a summary and a full page view.</li>
+<li>这个网站打算有两个不同类型的文章内容：<em>posts</em> 和 <em>quotes</em> 。</li>
+<li>它将在文章内容里应用两个不同的分类：<em>categories</em> 和 <em>tags</em> 。</li>
+<li>它将在三种不同的视图里呈现这些内容：列表、摘要和完整的内容。</li>
 </ol>
 
                 </section>
