@@ -570,7 +570,7 @@ For example, the <em>tags</em> and <em>categories</em> taxonomies are accessed w
 
 <p><strong>All Params are only accessible using all lowercase characters.</strong></p>
 
-<p>This is particularly useful for the introduction of user defined fields in content files. For example, a Hugo website on book reviews could have in the front matter of <code>/doc/content/review/book01.md</code></p>
+<p>This is particularly useful for the introduction of user defined fields in content files. For example, a Hugo website on book reviews could have in the front matter of <code>/content/review/book01.md</code></p>
 
 <pre><code>---
 ...
@@ -579,7 +579,7 @@ recommendedby: &quot;my Mother&quot;
 ---
 </code></pre>
 
-<p>Which would then be accessible to a template at <code>/doc/themes/yourtheme/layouts/review/single.html</code> through <code>.Params.affiliatelink</code> and <code>.Params.recommendedby</code>, respectively. Two common situations where these could be introduced are as a value of a certain attribute (like <code>href=&quot;&quot;</code> below) or by itself to be displayed. Sample syntaxes include:</p>
+<p>Which would then be accessible to a template at <code>/themes/yourtheme/layouts/review/single.html</code> through <code>.Params.affiliatelink</code> and <code>.Params.recommendedby</code>, respectively. Two common situations where these could be introduced are as a value of a certain attribute (like <code>href=&quot;&quot;</code> below) or by itself to be displayed. Sample syntaxes include:</p>
 
 <pre><code>&lt;h3&gt;&lt;a href={{ printf &quot;%s&quot; $.Params.affiliatelink }}&gt;Buy this book&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;It was recommended by {{ .Params.recommendedby }}.&lt;/p&gt;
