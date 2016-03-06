@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Installing Hugo on Windows This tutorial aims to be a complete guide to installing Hugo on your Windows computer. Assumptions You know how to open a command prompt window. You&rsquo;re running a 64-bit version of Windows. Your website is example.com. You will use D:\Hugo\Sites as the starting point for your site. You will use D:\Hugo\bin to store executable files. Setup Your Directories You will need a place to store the Hugo executable, your content (the files that you build), and the generated files (the HTML that Hugo builds for you).">
+        <meta name="description" content="在 Windows 上安装 Hugo 本篇教程的目标是详细讲解在 Windows 电脑上安装 Hugo 的方法。 假设 你知道如何打开一个命令提示窗口。 你运行的是一个现代64位的 Windows。 你">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Installing on Windows - Hugo中文文档</title>
@@ -517,100 +517,94 @@
                 <section>
                     
 
-<h1 id="installing-hugo-on-windows:03043c30033231787da6500681bc16fe">Installing Hugo on Windows</h1>
+<h1 id="在-windows-上安装-hugo:03043c30033231787da6500681bc16fe">在 Windows 上安装 Hugo</h1>
 
-<p>This tutorial aims to be a complete guide to installing Hugo on your Windows computer.</p>
+<p>本篇教程的目标是详细讲解在 Windows 电脑上安装 Hugo 的方法。</p>
 
-<h2 id="assumptions:03043c30033231787da6500681bc16fe">Assumptions</h2>
+<h2 id="假设:03043c30033231787da6500681bc16fe">假设</h2>
 
 <ol>
-<li>You know how to open a command prompt window.</li>
-<li>You&rsquo;re running a 64-bit version of Windows.</li>
-<li>Your website is <code>example.com</code>.</li>
-<li>You will use <code>D:\Hugo\Sites</code> as the starting point for your site.</li>
-<li>You will use <code>D:\Hugo\bin</code> to store executable files.</li>
+<li>你知道如何打开一个命令提示窗口。</li>
+<li>你运行的是一个现代64位的 Windows。</li>
+<li>你的网站地址是 <code>example.com</code>。</li>
+<li>你将使用 <code>D:\Hugo\Sites</code> 作为网站的起点。</li>
+<li>你将使用 <code>D:\Hugo\bin</code> 存储可执行文件。</li>
 </ol>
 
-<h2 id="setup-your-directories:03043c30033231787da6500681bc16fe">Setup Your Directories</h2>
+<h2 id="设置你的文件夹:03043c30033231787da6500681bc16fe">设置你的文件夹</h2>
 
-<p>You will need a place to store the Hugo executable, your content (the files that you build), and the generated files (the HTML that Hugo builds for you).</p>
+<p>你将需要一个存储 Hugo 可执行文件、博客内容（你创建的的那些文件），以及生成文件（Hugo 为你创建的 HTML）的地方。</p>
 
 <ol>
-<li>Open up Windows Explorer.</li>
-<li>Create a new folder, <code>D:\Hugo</code>.</li>
-<li>Create a new folder, <code>D:\Hugo\bin</code>.</li>
-<li>Create a new folder, <code>D:\Hugo\Sites</code>.</li>
+<li>打开 Windows Explorer。</li>
+<li>创建一个新的文件夹，<code>D:\Hugo</code>。</li>
+<li>创建一个新的文件夹，<code>D:\Hugo\bin</code>。</li>
+<li>创建一个新的文件夹，<code>D:\Hugo\Sites</code>。</li>
 </ol>
 
-<h2 id="download-the-pre-built-hugo-executable-for-windows:03043c30033231787da6500681bc16fe">Download the pre-built Hugo executable for Windows</h2>
+<h2 id="下载预先编译好的-windows-版本的-hugo-可执行文件:03043c30033231787da6500681bc16fe">下载预先编译好的 Windows 版本的 Hugo 可执行文件</h2>
 
-<p>One advantage of building Hugo in go is that there is just a single binary file to use. You don&rsquo;t need to run an installer to use it. Instead, you need to copy the binary to your hard drive. I&rsquo;m assuming that you&rsquo;ll put it in <code>D:\Hugo\bin</code>. If you chose to place it somewhere else, you&rsquo;ll need to substitute that path in the commands.</p>
+<p>使用 go 编译 Hugo 的一个优势就是仅有一个二进制文件。你不需要运行安装程序来使用它。相反，你需要把这个二进制文件复制到你的硬盘上。我假设你将把它放在 <code>D:\Hugo\bin</code> 文件夹内。如果你选择放在其它的位置，你需要在下面的命令中替换为那些路径。</p>
 
 <ol>
-<li>Open <a href="https://github.com/spf13/hugo/releases">https://github.com/spf13/hugo/releases</a> in your browser.</li>
-<li>The current version is hugo_0.15_windows_amd64.zip.</li>
-<li>Download that ZIP file and save it in your <code>D:\Hugo\bin</code> folder.</li>
-<li>Find that ZIP file in Windows Explorer and extract all the files from it.</li>
-<li>You should see a <code>hugo_0.13_windows_amd64.exe</code> file.</li>
-<li>Rename that file to <code>hugo.exe</code>.</li>
-<li>Verify that the <code>hugo.exe</code> file is in the <code>D:\Hugo\bin</code> folder. (It&rsquo;s possible that the extract put it in a sub-directory. If it did, use Windows Explorer to move it to <code>D:\Hugo\bin</code>.)</li>
-<li>Add the hugo.exe executable to your PATH with: <code>D:\Hugo\bin&gt;set PATH=%PATH%;D:\Hugo\bin</code></li>
+<li>在浏览器中打开 <a href="https://github.com/spf13/hugo/releases。">https://github.com/spf13/hugo/releases。</a></li>
+<li>当前的版本是 hugo_0.13_windows_amd64.zip。</li>
+<li>下载那个 ZIP 文件，并保存到 <code>D:\Hugo\bin</code> 文件夹中。</li>
+<li>在 Windows Explorer 中找到那个 ZIP 文件，并从中提取所有的文件。</li>
+<li>你应该可以看到一个 <code>hugo_0.13_windows_amd64.exe</code> 文件。</li>
+<li>把那个文件重命名为 <code>hugo.exe</code>。</li>
+<li>确保 <code>hugo.exe</code> 文件在 <code>D:\Hugo\bin</code> 文件夹。（有可能提取过程会把它放在一个子文件夹中。如果确实这样的话，使用 Windows Explorer 把它移动到 <code>D:\Hugo\bin</code>。）</li>
+<li>使用 <code>D:\Hugo\bin&gt;set PATH=%PATH%;D:\Hugo\bin</code> 把 hugo.exe 可执行文件添加到你的 PATH路径中。</li>
 </ol>
 
-<h2 id="verify-the-executable:03043c30033231787da6500681bc16fe">Verify the executable</h2>
+<h2 id="验证可执行文件:03043c30033231787da6500681bc16fe">验证可执行文件</h2>
 
-<p>Run a few commands to verify that the executable is ready to run and then build a sample site to get started.</p>
+<p>运行几个命令来验证可执行命令可以运行，然后构建一个示例网站作为起点。</p>
 
 <ol>
-<li><p>Open a command prompt window.</p></li>
-
-<li><p>At the prompt, type <code>hugo help</code> and press the Enter key. You should see output that starts with:</p>
-
+<li>打开一个命令提示符窗口。</li>
+<li>在提示符中，输入 <code>hugo help</code> 并按下 Enter 键。你看到的输出应该以下面的文字开始：
 <pre><code class="hljs nohighlight">A Fast and Flexible Static Site Generator built with love by spf13 and friends in Go. Complete documentation is available at http://gohugo.io
 </code></pre>
 
-
-<p>If you do, then the installation is complete. If you don&rsquo;t, double-check the path that you placed the <code>hugo.exe</code> file in and that you typed that path correctly when you added it to your PATH variable. If you&rsquo;re still not getting the output, post a note on the Hugo discussion list (in the <code>Support</code> topic) with your command and the output.</p></li>
-
-<li><p>At the prompt, change your directory to the <code>Sites</code> directory.</p>
-
+如果你看到了，那么安装就完成了。如果你没有看到，仔细检查下你放置 <code>hugo.exe</code> 文件的路径，在 PATH 变量中输入了正确的路径。如果你依旧没有得到那个输出结果，在 Hugo 讨论列表中把你的命令和输出贴出来。</li>
+<li>在命令提示符中，跳转当前目录到 <code>Sites</code> 文件夹。
 <pre><code class="hljs nohighlight">C:\Program Files> cd D:\Hugo\Sites
 C:\Program Files> D:
 D:\Hugo\Sites>
 </code></pre>
 </li>
 
-<li><p>Run the command to generate a new site. I&rsquo;m using <code>example.com</code> as the name of the site.</p>
-
+<li><p>运行命令来生成一个新的网站。我使用 <code>example.com</code> 作为网站的名字。
 <pre><code class="hljs nohighlight">D:\Hugo\Sites> hugo new site example.com
 </code></pre>
-</li>
+</p></li>
 
-<li><p>You should now have a directory at <code>D:\Hugo\Sites\example.com</code>.  Change into that directory and list the contents. You should get output similar to the following:</p>
+<li><p>你现在应该拥有一个叫做 D:\Hugo\Sites\example.com 的文件夹。进入这个文件夹，并列出文件夹中的内容。你应该得到类似下面的输出内容：
+<pre><code class="hljs nohighlight">D:\Hugo\Sites>cd example.com
+D:\Hugo\Sites\example.com>dir
+ Directory of D:\hugo\sites\example.com
 
-<pre><code class="hljs nohighlight">D:\Hugo\Sites&gt;cd example.com
-D:\Hugo\Sites\example.com&gt;dir
-&nbsp;Directory of D:\hugo\sites\example.com
-&nbsp;
-04/13/2015  10:44 PM    &lt;DIR&gt;          .
-04/13/2015  10:44 PM    &lt;DIR&gt;          ..
-04/13/2015  10:44 PM    &lt;DIR&gt;          archetypes
+04/13/2015  10:44 PM    <DIR>          .
+04/13/2015  10:44 PM    <DIR>          ..
+04/13/2015  10:44 PM    <DIR>          archetypes
 04/13/2015  10:44 PM                83 config.toml
-04/13/2015  10:44 PM    &lt;DIR&gt;          content
-04/13/2015  10:44 PM    &lt;DIR&gt;          data
-04/13/2015  10:44 PM    &lt;DIR&gt;          layouts
-04/13/2015  10:44 PM    &lt;DIR&gt;          static
+04/13/2015  10:44 PM    <DIR>          content
+04/13/2015  10:44 PM    <DIR>          data
+04/13/2015  10:44 PM    <DIR>          layouts
+04/13/2015  10:44 PM    <DIR>          static
                1 File(s)             83 bytes
                7 Dir(s)   6,273,331,200 bytes free
+
 </code></pre>
-</li>
+</p></li>
 </ol>
 
-<p>You now have Hugo installed and a site to work with. You need to add a layout (or theme), then create some content. Go to <a href="http://gohugo.io/doc/overview/quickstart/">http://gohugo.io/doc/overview/quickstart/</a> for steps on doing that.</p>
+<p>现在你就拥有了安装好的 Hugo 和工作的网站。你需要添加一个布局（或者主题），然后创建一些博客内容。前往 <a href="http://gohugo.io/overview/quickstart/">http://gohugo.io/overview/quickstart/</a> 了解相关的步骤。</p>
 
-<h2 id="troubleshooting:03043c30033231787da6500681bc16fe">Troubleshooting</h2>
+<h2 id="故障排查:03043c30033231787da6500681bc16fe">故障排查</h2>
 
-<p>@dhersam has a nice video on common issues at <a href="https://www.youtube.com/watch?v=c8fJIRNChmU">https://www.youtube.com/watch?v=c8fJIRNChmU</a></p>
+<p>@dhersam 录制了一个常见问题的不错的视频，地址在 <a href="https://www.youtube.com/watch?v=c8fJIRNChmU">https://www.youtube.com/watch?v=c8fJIRNChmU</a></p>
 
                 </section>
             </article>
