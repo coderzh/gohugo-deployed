@@ -683,19 +683,5 @@ DEPLOY_DIR = &#39;gh-pages&#39;
 </description>
         </item>
         
-        <item>
-            <title>Hugo静态网站生成器中文教程</title>
-            <link>http://www.gohugo.org/post/nanshu-wang-hugo/</link>
-            <pubDate>Sat, 31 Jan 2015 00:00:00 UTC</pubDate>
-            <author>CoderZh</author>
-            <guid>http://www.gohugo.org/post/nanshu-wang-hugo/</guid>
-            <description>&lt;p&gt;Hugo是一种通用的网站框架。严格来说，Hugo应该被称作静态网站生成器。&lt;/p&gt;
-
-&lt;p&gt;静态网站生成器从字面上来理解，就是将你的内容生成静态网站。所谓“静态”的含义其实反映在网站页面的生成的时间。一般的web服务器（WordPress, Ghost, Drupal等等）在收到页面请求时，需要调用数据库生成页面（也就是HTML代码），再返回给用户请求。而静态网站则不需要在收到请求后生成页面，而是在整个网站建立起之前就将所有的页面全部生成完成，页面一经生成便称为静态文件，访问时直接返回现成的静态页面，不需要数据库的参与。&lt;/p&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-        </item>
-        
     </channel>
 </rss>
