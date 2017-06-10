@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="LetsEncrypt, Caddy, Blog">
+        <meta name="description" content="介绍
+
+Hugo是一个强大的静态博客生成器，由spf13使用Golang开发。在性能和生成文章的速度上都不错。目前的版本是0.20.6，依然没有迈出1.0的大版本号。一直在用Hugo进行博客的写作。（半年多没有更新博客了，逃
+
+Caddy同样也是一个由Golang开发的HTTP server，其最大的亮点就是内建了HTTPS和HTTP2的支持，同时自动能够向Let&rsquo;s Encrypt申请证书。同时，支持Middleware的功能，使用Golang撰写的Middleware能够支持各种各样的功能，同时任何人都可以撰写自己的Middleware，个性化这个HTTP Server。  ">
+        <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
+        <link rel="icon" href="http://www.gohugo.org/favicon.ico">
+        <title>使用Caddy和Hugo构建个人博客 - Hugo中文文档</title>
+        <link rel="stylesheet" href="http://www.gohugo.org/css/highlight.js.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/bootstrap-theme.css">
+        <link rel="stylesheet" href="http://www.gohugo.org/css/font-awesome/css/font-awesome.min.css" />
+        
+        <link rel="stylesheet" href="http://www.gohugo.org/css/hugo-org.css">
+    </head>
+
+<body role="document">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="http://www.gohugo.org/">Hugo中文文档</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="http://www.gohugo.org/">主页</a></li>
+                    
+                    
+                    <li ><a href="http://www.gohugo.org/post/">文章列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/theme/">皮肤列表</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/showcase/">示例网站</a></li>
+                    
+                    <li ><a href="http://www.gohugo.org/donate/">关于</a></li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">常用链接<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://github.com/spf13/hugo">官方GitHub</a></li>
+                        
+                            <li><a href="https://github.com/coderzh/gohugo.org">本站GitHub</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">官方文档<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                        
+                            <li><a href="https://gohugo.io/overview/introduction/">英文文档</a></li>
+                        
+                            <li><a href="http://www.gohugo.org/doc/">中文文档</a></li>
+                        
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<div class="container">
+<div class="row">
+    <div class="col-xs-12 col-sm-11 doc-main">
+        <main role="main">
+            <article>
+                <a id="title"></a>
+                <h1 class="doc-entry-title">使用Caddy和Hugo构建个人博客</h1>
+                
+                <div class="doc-entry-meta small">
+                    <span><time datetime="2017-04-30">2017-04-30</time> by qhsong </span>
+                </div>
+                
+                <section>
+                    <h2 id="介绍">介绍</h2>
+
+<p><a href="http://gohugo.io/">Hugo</a>是一个强大的静态博客生成器，由spf13使用Golang开发。在性能和生成文章的速度上都不错。目前的版本是0.20.6，依然没有迈出1.0的大版本号。一直在用Hugo进行博客的写作。（半年多没有更新博客了，逃</p>
+
+<p><a href="https://caddyserver.com/">Caddy</a>同样也是一个由Golang开发的HTTP server，其最大的亮点就是内建了HTTPS和HTTP2的支持，同时自动能够向Let&rsquo;s Encrypt申请证书。同时，支持Middleware的功能，使用Golang撰写的Middleware能够支持各种各样的功能，同时任何人都可以撰写自己的Middleware，个性化这个HTTP Server。  </p>
+
+<h2 id="使用背景">使用背景</h2>
+
+<p>我自己的博客项目是托管在Github上，每一次撰写完成后，需要Push到Github上，然后再到Host上Pull下来，然后本地Hugo自动更新。之前的证书呢是定期去Let&rsquo;s Encrypt申请，一到证书过期日子就非常的麻烦。
+在学长的介绍下，认识了Caddy。Caddy有Hugo和Git插件，通过各种组合实现Hugo的自动更新和Github的webhook自动拉取，这样只要将博客文章push到了Github之后，剩下的事情就靠Caddy的中间件来完成，极大的自动化了这个过程。</p>
+
+<h2 id="过程">过程</h2>
+
+<h3 id="安装caddy和hugo">安装Caddy和Hugo</h3>
+
+<p>Caddy和Hugo的安装参见对应的安装文档，因为都是Golang编译出来的，所以只要把二进制Down下来就能够运行。安装Caddy的时候，一定要选择http.git和http.hugo这两个Middleware，否则之后的功能都不能实现。<br />
+Hugo安装后，一定要放在<code>$PATH</code>中供Caddy调用。</p>
+
+<h3 id="设置caddy配置文件">设置Caddy配置文件</h3>
+
+<p>Caddy的配置文件比较简单，下面是我使用的一个配置文件</p>
+
+<pre><code>https://sqh.me {
+    tls you@example.com
+    gzip
+    root /home/qhsong/sqh.me/public
+    git github.com/qhsong/sqh.me {
+        path /home/qhsong/sqh.me
+        then hugo --destination=/home/qhsong/sqh.me/public
+        hook /webhook GitHubSecretKey
+        hook_type github
+        clone_args --recursive
+        pull_args --recurse-submodules
+    }
+    hugo
+}
+</code></pre>
+
+<p>这个配置文件里面，tls设置了给Let&rsquo;s Encrypt证书申请的Email，root设置Hugo生成后的静态网站网址。
+git 配置里面，填入了我的github地址。同时，指定了Clone的路径Path，使用then语句来指定克隆完成后做的事情。
+最后，在hook和hook_type中分别webhook的路径和type，这个一定要写，否则webhook不能正常调用。更详细的参数说明，详见<a href="https://caddyserver.com/docs/http.git">http.git</a>。</p>
+
+<h3 id="设置github的webhook">设置Github的Webhook</h3>
+
+<p>Github的WebHook设置比较简单，设置好你的SecretKey，同时选择Content-Type为<code>application/json</code>，这样Caddy才能正常解析。</p>
+
+<h3 id="设置systemd自动开机启动">设置Systemd自动开机启动</h3>
+
+<p>Caddy同时提供了各种各样的启动脚本，见<a href="https://github.com/mholt/caddy/tree/master/dist/init">caddy/dist/init</a>。选择一个适合你的系统的，然后复制到对应目录下，并进行修改就能使用。
+考虑使用Supervisord，Systemd的配置有点繁琐。。</p>
+
+<h3 id="done">Done</h3>
+
+<p>至此就可以完整的搞定这一切了</p>
+
+<h2 id="结束">结束</h2>
+
+<p>Golang催生了很多有意思的东西，貌似Caddy已经商业化了。Golang社区也在蓬勃发展当中,还是有一些有意思的事情等待我们去发现的~ 虽然现在还在写C++。。。</p>
+                </section>
+            </article>
+        </main>
+    </div> 
+    
+<div class="col-xs-12 col-sm-3 doc-sidebar">
+	<div class="sidebar-module">
+		<div class="sidebar-toc">
+			<h4>Table of Contents</h4>
+			<ul>
+				<li><strong><a href="#title">使用Caddy和Hugo构建个人博客</a></strong></li>
+			</ul>
+			<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#介绍">介绍</a></li>
+<li><a href="#使用背景">使用背景</a></li>
+<li><a href="#过程">过程</a>
+<ul>
+<li><a href="#安装caddy和hugo">安装Caddy和Hugo</a></li>
+<li><a href="#设置caddy配置文件">设置Caddy配置文件</a></li>
+<li><a href="#设置github的webhook">设置Github的Webhook</a></li>
+<li><a href="#设置systemd自动开机启动">设置Systemd自动开机启动</a></li>
+<li><a href="#done">Done</a></li>
+</ul></li>
+<li><a href="#结束">结束</a></li>
+</ul></li>
+</ul>
+</nav>
+		</div>
+	</div>
+	<div class="sidebar-module">
+		<h4>Tags</h4>
+		<div class="tag-box">
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		<a class="tag-item" href="http://www.gohugo.org/tags/jekyll">jekyll</a>
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		<a class="tag-item" href="http://www.gohugo.org/tags/pullrequest">pullrequest</a>
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		
+        
+		<a class="tag-item" href="http://www.gohugo.org/tags/%E5%85%A5%E9%97%A8">入门</a>
+        
+		
+        
+		<a class="tag-item" href="http://www.gohugo.org/tags/%E8%BF%81%E7%A7%BB">迁移</a>
+        
+		
+		</div>
+	</div>
+</div>
+
+</div> 
+
+
+
+<hr />
+
+<div class="row">
+    <div class="col-sm-12">
+        
+	    <div class="text-center">
+        
+		    <p class="doc-footer-em"><a href="#">回到顶部↑</a></p>
+	    </div>
+	</div>
+</div>
+
+</div> 
+
+<footer class="doc-footer">
+	
+    <p>Copyright © <a href="http://blog.coderzh.com/">CoderZh</a> 2015. Generated by <a href="http://gohugo.io/">Hugo</a></p>
+</footer>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-10147768-3', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="http://www.gohugo.org/js/jquery-1.11.2.min.js"></script>
+<script src="http://www.gohugo.org/js/bootstrap.min.js"></script>
+
+<script src="http://www.gohugo.org/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="http://www.gohugo.org/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+</html>
+

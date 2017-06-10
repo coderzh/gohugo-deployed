@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Trouble: hugo new aborts with cryptic EOF error I&rsquo;m running into an issue where I cannot get archetypes working, when running hugo new doc/showcase/test.md, for example, I see an EOF error thrown by Hugo. I have set up this test repository to show exactly what I&rsquo;ve done, but it is essentially a vanilla installation of Hugo. https://github.com/polds/hugo-archetypes-test When in that repository, using Hugo v0.12 to run hugo new -v doc/showcase/test.md, I see the following output: INFO: 2015/01/04 Using config file: /private/tmp/test/config.toml INFO: 2015/01/04 attempting to create doc/showcase/test.md of showcase INFO: 2015/01/04 curpath: /private/tmp/test/archetypes/showcase.md ERROR: 2015/01/04 EOF Is there something that I am blatantly missing?">
+        <meta name="description" content="Trouble: hugo new aborts with cryptic EOF error  I&rsquo;m running into an issue where I cannot get archetypes working, when running hugo new doc/showcase/test.md, for example, I see an EOF error thrown by Hugo.
+I have set up this test repository to show exactly what I&rsquo;ve done, but it is essentially a vanilla installation of Hugo. https://github.com/polds/hugo-archetypes-test
+When in that repository, using Hugo v0.12 to run hugo new -v doc/showcase/test.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Strange EOF error - Hugo中文文档</title>
@@ -517,7 +519,7 @@
                 <section>
                     
 
-<h2 id="trouble-hugo-new-aborts-with-cryptic-eof-error:45da4fa15a14f08362c502ea0b4283a1">Trouble: <code>hugo new</code> aborts with cryptic EOF error</h2>
+<h2 id="trouble-hugo-new-aborts-with-cryptic-eof-error">Trouble: <code>hugo new</code> aborts with cryptic EOF error</h2>
 
 <blockquote>
 <p>I&rsquo;m running into an issue where I cannot get archetypes working, when running <code>hugo new doc/showcase/test.md</code>, for example, I see an <code>EOF</code> error thrown by Hugo.</p>
@@ -535,7 +537,7 @@ ERROR: 2015/01/04 EOF
 <p>Is there something that I am blatantly missing?</p>
 </blockquote>
 
-<h2 id="solution:45da4fa15a14f08362c502ea0b4283a1">Solution</h2>
+<h2 id="solution">Solution</h2>
 
 <p>Thank you for reporting this issue.  The solution is to add a final newline (i.e. EOL) to the end of your default.md archetype file of your theme.  More discussions happened on the forum here:</p>
 
@@ -551,7 +553,7 @@ in the upcoming v0.13 release,</p>
 
 <p>Until then, for us running the stable v0.12 release, please remember to add the final EOL diligently.  <i class="fa fa-smile-o"></i></p>
 
-<h2 id="references:45da4fa15a14f08362c502ea0b4283a1">References</h2>
+<h2 id="references">References</h2>
 
 <ul>
 <li><a href="https://github.com/spf13/hugo/issues/776">https://github.com/spf13/hugo/issues/776</a></li>

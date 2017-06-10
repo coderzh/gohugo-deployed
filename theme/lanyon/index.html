@@ -120,7 +120,7 @@
     <div class="content">
         
 
-<h1 id="lanyon-for-hugo:0a831255e139f1295a11f0e77d4a8f44">Lanyon for Hugo</h1>
+<h1 id="lanyon-for-hugo">Lanyon for Hugo</h1>
 
 <p><a href="http://github.com/poole/lanyon">Lanyon</a> is a great theme for <a href="http://jekyllrb.com">Jekyll</a>. This is a port of that theme, but to another static site generator, <a href="http://github.com/spf13/hugo">Hugo</a>. I&rsquo;m aiming to get the same look and interactions as the original Lanyon.</p>
 
@@ -128,7 +128,7 @@
 
 <p>Lanyon-Hugo is a theme designed for blogging. While Hugo is flexible enough to turn almost any static content into a website, this theme is focused on blog-like use cases. Lanyon-Hugo retains the CSS, and therefore the look and feel, of the parent theme, Lanyon. This includes a sidebar that is hidden by default, and can be toggled with a button (implemented entirely in CSS). The sidebar gives some convenient navigation links, but when it is hidden, Lanyon-Hugo, just like Lanyon, is discreet and puts your content front and center.</p>
 
-<h2 id="usage:0a831255e139f1295a11f0e77d4a8f44">Usage</h2>
+<h2 id="usage">Usage</h2>
 
 <p>To begin authoring content, all you have to do is clone this repository and start writing Markdown files in <a href="content/post"><code>content/post</code></a>. Front matter for Hugo can be written in JSON, YAML or TOML. I am using JSON out of preference, but it&rsquo;s your content - use whatever language you want. Two example posts are already provided (lifted from the parent Lanyon, with links fixed for Hugo) as an example of the front matter you need.</p>
 
@@ -136,13 +136,13 @@
 
 <p>Hugo&rsquo;s universal config file is <a href="config.json"><code>config.json</code></a> (or YAML, or TOML). You can change the base URL of your site, the title, and the tagline from this file. The link to your GitHub repository (for whatever the site represents, say a dev blog, or a personal GitHub Page) can also be changed here. If you are familiar with Hugo, you already know that you can add more parameters to the <code>params</code> object to introduce more variables.</p>
 
-<h3 id="fixed-pages:0a831255e139f1295a11f0e77d4a8f44">Fixed Pages</h3>
+<h3 id="fixed-pages">Fixed Pages</h3>
 
 <p>The original Lanyon had a layout for &ldquo;pages&rdquo;, fixed content that didn&rsquo;t have a date. Lanyon-Hugo retains this concept, and refers to these pages as &ldquo;fixed&rdquo; (that&rsquo;s the content type, if you&rsquo;re familiar with Hugo concepts). Fixed pages will not display a date, only a title, and they will not be listed on the homepage of your site. Pages such as About (an example <code>about.md</code> has been lifted from the parent Lanyon) should generally be fixed.</p>
 
 <p>You can alter the content of the custom 404 via <a href="content/fixed/404.md"><code>fixed/404.md</code></a>. This is useful if you want a custom 404 for your GitHub Page.</p>
 
-<h3 id="sidebar-links:0a831255e139f1295a11f0e77d4a8f44">Sidebar Links</h3>
+<h3 id="sidebar-links">Sidebar Links</h3>
 
 <p>To indicate that a given piece of content should be linked in the sidebar, add a key <code>sidebar</code> to the front matter, and set it to <code>true</code>. See <a href="content/fixed/about.md"><code>about.md</code></a> for an example of this. You can pin content to the sidebar regardless of whether it is a post, or if it is fixed.</p>
 
@@ -152,22 +152,22 @@
 
 <p>Lanyon-Hugo generates a post list at <code>/post/</code>. By default, Lanyon doesn&rsquo;t actually have a post list, so there is no link for it anywhere in the theme. In my opinion, there are two sensible places to put it: in between the pagination buttons, and on the sidebar. You could conceivably do both. I&rsquo;ve added a sidebar entry for it. If you want to add a button between the pagination buttons, take a look at my Lanyon fork; it has an example of how to do such a thing.</p>
 
-<h3 id="look-and-feel:0a831255e139f1295a11f0e77d4a8f44">Look and Feel</h3>
+<h3 id="look-and-feel">Look and Feel</h3>
 
 <p>The CSS from the original Lanyon is unchanged, and you can find it in <a href="static/css"><code>static/css</code></a>. Any of the modifications suggested for Lanyon can also be applied to Lanyon-Hugo, by changing the CSS here.</p>
 
 <p>You can use syntax highlighting, if you have <a href="http://pygments.org/">Pygments</a>. See the &ldquo;example content&rdquo; post for an example. Lanyon has a color scheme of some kind for Pygments in <code>css/syntax.css</code>, but right now Hugo doesn&rsquo;t know how to use it (everything will be higlighted in Monokai). When Hugo implements this feature, I will also add it to Lanyon-Hugo. More detail on Hugo&rsquo;s syntax highlighting shortcode can be found <a href="http://hugo.spf13.com/extras/highlighting">here</a>.</p>
 
-<h2 id="to-do:0a831255e139f1295a11f0e77d4a8f44">To Do</h2>
+<h2 id="to-do">To Do</h2>
 
 <p>While Lanyon-Hugo is aiming for functional compatibility with Lanyon (ie all the old functionality is available and looks similar), there are still some things I&rsquo;m missing:
 - pagination. Lanyon-Hugo does not have next/previous buttons (well they&rsquo;re there, but as you can see, they don&rsquo;t have any links). Jekyll&rsquo;s pagination feature is quite good, but Hugo&rsquo;s pagination is still on the roadmap for now. I may implement a hackish solution in the meantime, but ideally I&rsquo;d rather wait until Hugo has a solid solution for this problem.</p>
 
-<h2 id="contributing:0a831255e139f1295a11f0e77d4a8f44">Contributing</h2>
+<h2 id="contributing">Contributing</h2>
 
 <p>If you&rsquo;re interested in hacking on this theme, please check out <a href="CONTRIBUTING.md">CONTRIBUTING</a>.</p>
 
-<h2 id="license:0a831255e139f1295a11f0e77d4a8f44">License</h2>
+<h2 id="license">License</h2>
 
 <p>MIT, see <a href="LICENSE.md">LICENSE.md</a>.</p>
 

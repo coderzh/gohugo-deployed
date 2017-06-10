@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Hugo uses Markdown for its simple content format. However, there are a lot of things that Markdown doesn’t support well. We are unwilling to accept being constrained by our simple format. Also unacceptable is writing raw HTML in our Markdown every time we want to include unsupported content such as a video. To do so is in complete opposition to the intent of using a bare-bones format for our content and utilizing templates to apply styling for display.">
+        <meta name="description" content="Hugo uses Markdown for its simple content format. However, there are a lot of things that Markdown doesn’t support well.
+We are unwilling to accept being constrained by our simple format. Also unacceptable is writing raw HTML in our Markdown every time we want to include unsupported content such as a video. To do so is in complete opposition to the intent of using a bare-bones format for our content and utilizing templates to apply styling for display.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Shortcodes - Hugo中文文档</title>
@@ -537,7 +538,7 @@ want a <a href="http://www.gohugo.org/doc/templates/partials/">partial template<
 techniques, and upon generation, Hugo will easily merge in your changes. You
 avoid a possibly complicated search and replace operation.</p>
 
-<h2 id="using-a-shortcode:a1b7b75004d101a4406de06449077619">Using a shortcode</h2>
+<h2 id="using-a-shortcode">Using a shortcode</h2>
 
 <p>In your content files, a shortcode can be called by using the <code>{{% name parameters
 %}}</code> form. Shortcode parameters are space delimited.  Parameters with spaces
@@ -559,35 +560,35 @@ shortcodes match (name only), the closing being prepended with a slash.</p>
 
 <p>The examples above use two different delimiters, the difference being the <code>%</code> and the <code>&lt;</code> character:</p>
 
-<h3 id="shortcodes-with-markdown:a1b7b75004d101a4406de06449077619">Shortcodes with Markdown</h3>
+<h3 id="shortcodes-with-markdown">Shortcodes with Markdown</h3>
 
 <p>The <code>%</code> characters indicates that the shortcode&rsquo;s inner content needs further processing by the page&rsquo;s rendering processor (i.e. Markdown), needed to get the <strong>bold</strong> text in the example below:</p>
 
 <pre><code>{{% myshortcode %}}Hello **World!**{{% /myshortcode %}}
 </code></pre>
 
-<h3 id="shortcodes-without-markdown:a1b7b75004d101a4406de06449077619">Shortcodes without Markdown</h3>
+<h3 id="shortcodes-without-markdown">Shortcodes without Markdown</h3>
 
 <p>The <code>&lt;</code> character indicates that the shortcode&rsquo;s inner content doesn&rsquo;t need any further rendering, this will typically be pure HTML:</p>
 
 <pre><code>{{&lt; myshortcode &gt;}}&lt;p&gt;Hello &lt;strong&gt;World!&lt;/strong&gt;&lt;/p&gt;{{&lt; /myshortcode &gt;}}
 </code></pre>
 
-<h2 id="built-in-shortcodes:a1b7b75004d101a4406de06449077619">Built-in Shortcodes</h2>
+<h2 id="built-in-shortcodes">Built-in Shortcodes</h2>
 
 <p>Hugo ships with a set of predefined shortcodes.</p>
 
-<h3 id="highlight:a1b7b75004d101a4406de06449077619">highlight</h3>
+<h3 id="highlight">highlight</h3>
 
 <p>This shortcode will convert the source code provided into syntax highlighted
 HTML. Read more on <a href="http://www.gohugo.org/doc/extras/highlighting/">highlighting</a>.</p>
 
-<h4 id="usage:a1b7b75004d101a4406de06449077619">Usage</h4>
+<h4 id="usage">Usage</h4>
 
 <p><code>highlight</code> takes exactly one required parameter of <em>language</em> and requires a
 closing shortcode.</p>
 
-<h4 id="example:a1b7b75004d101a4406de06449077619">Example</h4>
+<h4 id="example">Example</h4>
 
 <pre><code>{{&lt; highlight html &gt;}}
 &lt;section id=&quot;main&quot;&gt;
@@ -601,7 +602,7 @@ closing shortcode.</p>
 {{&lt; /highlight &gt;}}
 </code></pre>
 
-<h4 id="example-output:a1b7b75004d101a4406de06449077619">Example Output</h4>
+<h4 id="example-output">Example Output</h4>
 
 <pre><code>&lt;span style=&quot;color: #f92672&quot;&gt;&amp;lt;section&lt;/span&gt; &lt;span style=&quot;color: #a6e22e&quot;&gt;id=&lt;/span&gt;&lt;span style=&quot;color: #e6db74&quot;&gt;&amp;quot;main&amp;quot;&lt;/span&gt;&lt;span style=&quot;color: #f92672&quot;&gt;&amp;gt;&lt;/span&gt;
   &lt;span style=&quot;color: #f92672&quot;&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
@@ -613,12 +614,12 @@ closing shortcode.</p>
 &lt;span style=&quot;color: #f92672&quot;&gt;&amp;lt;/section&amp;gt;&lt;/span&gt;
 </code></pre>
 
-<h3 id="figure:a1b7b75004d101a4406de06449077619">figure</h3>
+<h3 id="figure">figure</h3>
 
 <p><code>figure</code> is simply an extension of the image capabilities present with Markdown.
 <code>figure</code> provides the ability to add captions, CSS classes, alt text, links etc.</p>
 
-<h4 id="usage-1:a1b7b75004d101a4406de06449077619">Usage</h4>
+<h4 id="usage-1">Usage</h4>
 
 <p><code>figure</code> can use the following named parameters:</p>
 
@@ -633,12 +634,12 @@ closing shortcode.</p>
 <li>alt</li>
 </ul>
 
-<h4 id="example-1:a1b7b75004d101a4406de06449077619">Example</h4>
+<h4 id="example-1">Example</h4>
 
 <pre><code>{{&lt; figure src=&quot;/media/spf13.jpg&quot; title=&quot;Steve Francia&quot; &gt;}}
 </code></pre>
 
-<h4 id="example-output-1:a1b7b75004d101a4406de06449077619">Example output</h4>
+<h4 id="example-output-1">Example output</h4>
 
 <pre><code>&lt;figure&gt;
     &lt;img src=&quot;/media/spf13.jpg&quot;  /&gt;
@@ -648,7 +649,7 @@ closing shortcode.</p>
 &lt;/figure&gt;
 </code></pre>
 
-<h3 id="ref-relref:a1b7b75004d101a4406de06449077619">ref, relref</h3>
+<h3 id="ref-relref">ref, relref</h3>
 
 <p>These shortcodes will look up the pages by their relative path (e.g.,
 <code>blog/post.md</code>) or their logical name (<code>post.md</code>) and return the permalink
@@ -659,17 +660,17 @@ for the header links generated by Hugo.</p>
 
 <p>Read more on <a href="http://www.gohugo.org/doc/extras/crossreferences/">cross-references</a>.</p>
 
-<h4 id="usage-2:a1b7b75004d101a4406de06449077619">Usage</h4>
+<h4 id="usage-2">Usage</h4>
 
 <p><code>ref</code> and <code>relref</code> take exactly one required parameter of <em>reference</em>.</p>
 
-<h4 id="example-2:a1b7b75004d101a4406de06449077619">Example</h4>
+<h4 id="example-2">Example</h4>
 
 <pre><code>[Neat]({{&lt; ref &quot;blog/neat.md&quot; &gt;}})
 [Who]({{&lt; relref &quot;about.md#who&quot; &gt;}})
 </code></pre>
 
-<h4 id="example-output-2:a1b7b75004d101a4406de06449077619">Example Output</h4>
+<h4 id="example-output-2">Example Output</h4>
 
 <p>Assuming that standard Hugo pretty URLs are turned on.</p>
 
@@ -677,7 +678,7 @@ for the header links generated by Hugo.</p>
 &lt;a href=&quot;/about/#who:c28654c202e73453784cfd2c5ab356c0&quot;&gt;Who&lt;/a&gt;
 </code></pre>
 
-<h3 id="twitter:a1b7b75004d101a4406de06449077619">Twitter</h3>
+<h3 id="twitter">Twitter</h3>
 
 <p>You want to include a single tweet into your blog post? Everything you need is the URL of the tweet, e.g.:</p>
 
@@ -690,7 +691,7 @@ for the header links generated by Hugo.</p>
 <pre><code>{{&lt; tweet 666616452582129664 &gt;}}
 </code></pre>
 
-<h3 id="youtube:a1b7b75004d101a4406de06449077619">YouTube</h3>
+<h3 id="youtube">YouTube</h3>
 
 <p>This shortcode embeds a responsive video player for <a href="https://www.youtube.com/">YouTube</a> videos. Only the ID of the video is required, e.g.:</p>
 
@@ -703,7 +704,7 @@ for the header links generated by Hugo.</p>
 <pre><code>{{&lt; youtube w7Ft2ymGmfc &gt;}}
 </code></pre>
 
-<h3 id="vimeo:a1b7b75004d101a4406de06449077619">Vimeo</h3>
+<h3 id="vimeo">Vimeo</h3>
 
 <p>Adding a video from <a href="https://vimeo.com/">Vimeo</a> is equivalent to the YouTube shortcode above. Extract the ID from the URL, e.g.:</p>
 
@@ -716,7 +717,7 @@ for the header links generated by Hugo.</p>
 <pre><code>{{&lt; vimeo 146022717 &gt;}}
 </code></pre>
 
-<h3 id="github-gists:a1b7b75004d101a4406de06449077619">GitHub gists</h3>
+<h3 id="github-gists">GitHub gists</h3>
 
 <p>Including code snippets with GitHub gists while writing a tutorial is common situation bloggers face. With a given URL of the gist, e.g.:</p>
 
@@ -729,7 +730,7 @@ for the header links generated by Hugo.</p>
 <pre><code>{{&lt; gist spf13 7896402 &gt;}}
 </code></pre>
 
-<h3 id="speaker-deck:a1b7b75004d101a4406de06449077619">Speaker Deck</h3>
+<h3 id="speaker-deck">Speaker Deck</h3>
 
 <p>To embed slides from <a href="https://speakerdeck.com/">Speaker Deck</a>, click on &ldquo;&lt;&#8239;/&gt;&nbsp;Embed&rdquo; (under Share right next to the template on Speaker Deck) and copy the URL, e.g.:</p>
 
@@ -741,7 +742,7 @@ for the header links generated by Hugo.</p>
 <pre><code>{{&lt; speakerdeck 4e8126e72d853c0060001f97 &gt;}}
 </code></pre>
 
-<h2 id="creating-your-own-shortcodes:a1b7b75004d101a4406de06449077619">Creating your own shortcodes</h2>
+<h2 id="creating-your-own-shortcodes">Creating your own shortcodes</h2>
 
 <p>To create a shortcode, place a template in the layouts/shortcodes directory. The
 template name will be the name of the shortcode.</p>
@@ -797,7 +798,7 @@ such as <code>{{ if .IsNamedParams }}...{{ else }}...{{ end }}</code>.  See the
 
 <p>You can also use the variable <code>.Page</code> to access all the normal <a href="http://www.gohugo.org/doc/templates/variables/">Page Variables</a>.</p>
 
-<h2 id="single-positional-example-youtube:a1b7b75004d101a4406de06449077619">Single Positional Example: youtube</h2>
+<h2 id="single-positional-example-youtube">Single Positional Example: youtube</h2>
 
 <pre><code>{{&lt; youtube 09jf3ow9jfw &gt;}}
 </code></pre>
@@ -821,7 +822,7 @@ such as <code>{{ if .IsNamedParams }}...{{ else }}...{{ end }}</code>.  See the
 &lt;/div&gt;
 </code></pre>
 
-<h2 id="single-named-example-image-with-caption:a1b7b75004d101a4406de06449077619">Single Named Example: image with caption</h2>
+<h2 id="single-named-example-image-with-caption">Single Named Example: image with caption</h2>
 
 <pre><code>{{&lt; img src=&quot;/media/spf13.jpg&quot; title=&quot;Steve Francia&quot; &gt;}}
 </code></pre>
@@ -858,7 +859,7 @@ such as <code>{{ if .IsNamedParams }}...{{ else }}...{{ end }}</code>.  See the
 &lt;/figure&gt;
 </code></pre>
 
-<h2 id="single-flexible-example-vimeo-with-defaults:a1b7b75004d101a4406de06449077619">Single Flexible Example: vimeo with defaults</h2>
+<h2 id="single-flexible-example-vimeo-with-defaults">Single Flexible Example: vimeo with defaults</h2>
 
 <pre><code>{{&lt; vimeo 49718712 &gt;}}
 {{&lt; vimeo id=&quot;49718712&quot; class=&quot;flex-video&quot; &gt;}}
@@ -887,7 +888,7 @@ such as <code>{{ if .IsNamedParams }}...{{ else }}...{{ end }}</code>.  See the
 &lt;/div&gt;
 </code></pre>
 
-<h2 id="paired-example-highlight:a1b7b75004d101a4406de06449077619">Paired Example: Highlight</h2>
+<h2 id="paired-example-highlight">Paired Example: Highlight</h2>
 
 <p><em>Hugo already ships with the <code>highlight</code> shortcode</em></p>
 
@@ -914,7 +915,7 @@ such as <code>{{ if .IsNamedParams }}...{{ else }}...{{ end }}</code>.  See the
 <p>Please notice that this template makes use of a Hugo-specific template function
 called <code>highlight</code> which uses Pygments to add the highlighting code.</p>
 
-<h2 id="simple-single-word-example-year:a1b7b75004d101a4406de06449077619">Simple Single-word Example: Year</h2>
+<h2 id="simple-single-word-example-year">Simple Single-word Example: Year</h2>
 
 <p>Let&rsquo;s assume you would like to have a shortcode to be replaced by the current year in your Markdown content files, for a license or copyright statement. Calling a shortcode like this:</p>
 

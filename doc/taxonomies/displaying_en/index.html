@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="There are four common ways you can display the data in your taxonomies in addition to the automatic taxonomy pages created by hugo using the list templates: For a given piece of content, you can list the terms attached For a given piece of content, you can list other content with the same term You can list all terms for a taxonomy You can list all taxonomies (with their terms) 1.">
+        <meta name="description" content="There are four common ways you can display the data in your taxonomies in addition to the automatic taxonomy pages created by hugo using the list templates:
+ For a given piece of content, you can list the terms attached For a given piece of content, you can list other content with the same term You can list all terms for a taxonomy You can list all taxonomies (with their terms)  1.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Displaying Taxonomies - Hugo中文文档</title>
@@ -529,7 +530,7 @@ term</li>
 <li>You can list all taxonomies (with their terms)</li>
 </ol>
 
-<h2 id="1-displaying-taxonomy-terms-assigned-to-this-content:f5ecb3dbd59fb644abdfa2fc745d6cc9">1. Displaying taxonomy terms assigned to this content</h2>
+<h2 id="1-displaying-taxonomy-terms-assigned-to-this-content">1. Displaying taxonomy terms assigned to this content</h2>
 
 <p>Within your content templates, you may wish to display
 the taxonomies that that piece of content is assigned to.</p>
@@ -539,7 +540,7 @@ define taxonomies for content, the taxonomies assigned to
 each content piece are located in the usual place
 (.Params.<code>plural</code>).</p>
 
-<h3 id="example:f5ecb3dbd59fb644abdfa2fc745d6cc9">Example</h3>
+<h3 id="example">Example</h3>
 
 <pre><code>&lt;ul id=&quot;tags&quot;&gt;
   {{ range .Params.tags }}
@@ -548,14 +549,14 @@ each content piece are located in the usual place
 &lt;/ul&gt;
 </code></pre>
 
-<h2 id="2-listing-content-with-the-same-taxonomy-term:f5ecb3dbd59fb644abdfa2fc745d6cc9">2. Listing content with the same taxonomy term</h2>
+<h2 id="2-listing-content-with-the-same-taxonomy-term">2. Listing content with the same taxonomy term</h2>
 
 <p>First, you may be asking why you would use this. If you are using a
 taxonomy for something like a series of posts, this is exactly how you
 would do it. It’s also an quick and dirty way to show some related
 content.</p>
 
-<h3 id="example-1:f5ecb3dbd59fb644abdfa2fc745d6cc9">Example</h3>
+<h3 id="example-1">Example</h3>
 
 <pre><code>&lt;ul&gt;
   {{ range .Site.Taxonomies.series.golang }}
@@ -564,13 +565,13 @@ content.</p>
 &lt;/ul&gt;
 </code></pre>
 
-<h2 id="3-listing-all-content-in-a-given-taxonomy:f5ecb3dbd59fb644abdfa2fc745d6cc9">3. Listing all content in a given taxonomy</h2>
+<h2 id="3-listing-all-content-in-a-given-taxonomy">3. Listing all content in a given taxonomy</h2>
 
 <p>This would be very useful in a sidebar as “featured content”. You could
 even have different sections of “featured content” by assigning
 different terms to the content.</p>
 
-<h3 id="example-2:f5ecb3dbd59fb644abdfa2fc745d6cc9">Example</h3>
+<h3 id="example-2">Example</h3>
 
 <pre><code>&lt;section id=&quot;menu&quot;&gt;
     &lt;ul&gt;
@@ -586,7 +587,7 @@ different terms to the content.</p>
 &lt;/section&gt;
 </code></pre>
 
-<h2 id="4-rendering-a-site-s-taxonomies:f5ecb3dbd59fb644abdfa2fc745d6cc9">4. Rendering a Site&rsquo;s Taxonomies</h2>
+<h2 id="4-rendering-a-site-s-taxonomies">4. Rendering a Site&rsquo;s Taxonomies</h2>
 
 <p>If you wish to display the list of all keys for a taxonomy, you can find retrieve
 them from the <code>.Site</code> variable which is available on every page.</p>
@@ -595,7 +596,7 @@ them from the <code>.Site</code> variable which is available on every page.</p>
 
 <p>The following example displays all tag keys:</p>
 
-<h3 id="example-3:f5ecb3dbd59fb644abdfa2fc745d6cc9">Example</h3>
+<h3 id="example-3">Example</h3>
 
 <pre><code>&lt;ul id=&quot;all-tags&quot;&gt;
   {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
@@ -604,7 +605,7 @@ them from the <code>.Site</code> variable which is available on every page.</p>
 &lt;/ul&gt;
 </code></pre>
 
-<h3 id="complete-example:f5ecb3dbd59fb644abdfa2fc745d6cc9">Complete Example</h3>
+<h3 id="complete-example">Complete Example</h3>
 
 <p>This example will list all taxonomies, each of their keys and all the content assigned to each key.</p>
 

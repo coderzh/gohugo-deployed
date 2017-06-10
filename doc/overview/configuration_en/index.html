@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="The directory structure and templates provide the majority of the configuration for a site. In fact, a config file isn&rsquo;t even needed for many websites since the defaults follow commonly used patterns. Hugo expects to find the config file in the root of the source directory and will look there first for a config.toml file. If none is present, it will then look for a config.yaml file, followed by a config.json file.">
+        <meta name="description" content="The directory structure and templates provide the majority of the configuration for a site. In fact, a config file isn&rsquo;t even needed for many websites since the defaults follow commonly used patterns.
+Hugo expects to find the config file in the root of the source directory and will look there first for a config.toml file. If none is present, it will then look for a config.yaml file, followed by a config.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Configuring Hugo - Hugo中文文档</title>
@@ -528,7 +529,7 @@ then look for a <code>config.yaml</code> file, followed by a <code>config.json</
 <p>The config file is a site-wide config. The config file provides directions to
 hugo on how to build the site as well as site-wide parameters and menus.</p>
 
-<h2 id="examples:84728ff4238ea284c5b463d9fd59c0a9">Examples</h2>
+<h2 id="examples">Examples</h2>
 
 <p>The following is an example of a typical yaml config file:</p>
 
@@ -575,7 +576,7 @@ params:
 ...
 </code></pre>
 
-<h2 id="configuration-variables:84728ff4238ea284c5b463d9fd59c0a9">Configuration variables</h2>
+<h2 id="configuration-variables">Configuration variables</h2>
 
 <p>Following is a list of Hugo-defined variables that you can configure and their current default values:</p>
 
@@ -656,7 +657,7 @@ watch:                      true
 ---
 </code></pre>
 
-<h2 id="ignore-files-on-build:84728ff4238ea284c5b463d9fd59c0a9">Ignore files on build</h2>
+<h2 id="ignore-files-on-build">Ignore files on build</h2>
 
 <p>The following inside <code>config.toml</code> will ignore files ending with <code>.foo</code> and <code>.boo</code> when building with <code>hugo</code>:</p>
 
@@ -665,7 +666,7 @@ watch:                      true
 
 <p>The above is a list of Regular Expressions, but note the escaping of the <code>\</code> to make TOML happy.</p>
 
-<h2 id="configure-blackfriday-rendering:84728ff4238ea284c5b463d9fd59c0a9">Configure Blackfriday rendering</h2>
+<h2 id="configure-blackfriday-rendering">Configure Blackfriday rendering</h2>
 
 <p><a href="https://github.com/russross/blackfriday">Blackfriday</a> is the <a href="http://daringfireball.net/projects/markdown/">Markdown</a> rendering engine used in Hugo. The Blackfriday configuration in Hugo is mostly a set of sane defaults that should fit most use cases.</p>
 

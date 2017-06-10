@@ -3,7 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Data-driven content with a static site generator? Yes, it is possible! In addition to the data files feature, we have also implemented the feature &ldquo;Data-driven Content&rdquo;, which lets you load any JSON or CSV file from nearly any resource. &ldquo;Data-driven Content&rdquo; currently consists of two functions, getJSON and getCSV, which are available in all template files. Implementation details Calling the functions with an URL In any HTML template or Markdown document, call the functions like this: {{ $dataJ := getJSON &quot;url&quot; }} {{ $dataC := getCSV &quot;separator&quot; &quot;url&quot; }} or, if you use a prefix or postfix for the URL, the functions accept variadic arguments: {{ $dataJ := getJSON &quot;url prefix&quot; &quot;arg1&quot; &quot;arg2&quot; &quot;arg n&quot; }} {{ $dataC := getCSV &quot;separator&quot; &quot;url prefix&quot; &quot;arg1&quot; &quot;arg2&quot; &quot;arg n&quot; }} The separator for getCSV must be put in the first position and can only be one character long.">
+        <meta name="description" content="Data-driven content with a static site generator? Yes, it is possible!
+In addition to the data files feature, we have also implemented the feature &ldquo;Data-driven Content&rdquo;, which lets you load any JSON or CSV file from nearly any resource.
+&ldquo;Data-driven Content&rdquo; currently consists of two functions, getJSON and getCSV, which are available in all template files.
+Implementation details Calling the functions with an URL In any HTML template or Markdown document, call the functions like this:">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Data-driven Content - Hugo中文文档</title>
@@ -528,9 +531,9 @@ from nearly any resource.</p>
 <p>&ldquo;Data-driven Content&rdquo; currently consists of two functions, <code>getJSON</code>
 and <code>getCSV</code>, which are available in <strong>all template files</strong>.</p>
 
-<h2 id="implementation-details:53a307f845b42397fddcceecaf40b15b">Implementation details</h2>
+<h2 id="implementation-details">Implementation details</h2>
 
-<h3 id="calling-the-functions-with-an-url:53a307f845b42397fddcceecaf40b15b">Calling the functions with an URL</h3>
+<h3 id="calling-the-functions-with-an-url">Calling the functions with an URL</h3>
 
 <p>In any HTML template or Markdown document, call the functions like this:</p>
 
@@ -573,7 +576,7 @@ first 5 gists for a GitHub user:</p>
 &lt;/ul&gt;
 </code></pre>
 
-<h3 id="example-for-csv-files:53a307f845b42397fddcceecaf40b15b">Example for CSV files</h3>
+<h3 id="example-for-csv-files">Example for CSV files</h3>
 
 <p>For <code>getCSV</code>, the one-character long separator must be placed in the
 first position followed by the URL.</p>
@@ -603,7 +606,7 @@ first position followed by the URL.</p>
 <p>The expression <code>{{index $r number}}</code> must be used to output the nth-column from
 the current row.</p>
 
-<h3 id="caching-of-urls:53a307f845b42397fddcceecaf40b15b">Caching of URLs</h3>
+<h3 id="caching-of-urls">Caching of URLs</h3>
 
 <p>Each downloaded URL will be cached in the default folder <code>$TMPDIR/hugo_cache/</code>.
 The variable <code>$TMPDIR</code> will be resolved to your system-dependent
@@ -616,13 +619,13 @@ your system as a caching directory.</p>
 cache with the command line flag <code>--ignoreCache</code>. However, Hugo will always
 write, on each build of the site, to the cache folder (silent backup).</p>
 
-<h3 id="authentication-when-using-rest-urls:53a307f845b42397fddcceecaf40b15b">Authentication when using REST URLs</h3>
+<h3 id="authentication-when-using-rest-urls">Authentication when using REST URLs</h3>
 
 <p>Currently, you can only use those authentication methods that can
 be put into an URL. <a href="http://en.wikipedia.org/wiki/OAuth">OAuth</a> or
 other authentication methods are not implemented.</p>
 
-<h3 id="loading-local-files:53a307f845b42397fddcceecaf40b15b">Loading local files</h3>
+<h3 id="loading-local-files">Loading local files</h3>
 
 <p>To load local files with the two functions <code>getJSON</code> and <code>getCSV</code>, the
 source files must reside within Hugo&rsquo;s working directory. The file
@@ -630,7 +633,7 @@ extension does not matter but the content.</p>
 
 <p>It applies the same output logic as in the topic: <em>Calling the functions with an URL</em>.</p>
 
-<h2 id="livereload:53a307f845b42397fddcceecaf40b15b">LiveReload</h2>
+<h2 id="livereload">LiveReload</h2>
 
 <p>There is no chance to trigger a <a href="http://www.gohugo.org/doc/extras/livereload/">LiveReload</a> when
 the content of an URL changes. However, when a local JSON/CSV file changes,
@@ -644,7 +647,7 @@ This can create huge traffic and you may also reach API limits quickly.</p>
 <p>As downloading of content takes a while, Hugo stops with processing
 your Markdown files until the content has been downloaded.</p>
 
-<h2 id="examples:53a307f845b42397fddcceecaf40b15b">Examples</h2>
+<h2 id="examples">Examples</h2>
 
 <ul>
 <li>Photo gallery JSON powered: <a href="https://github.com/pcdummy/hugo-lightslider-example">https://github.com/pcdummy/hugo-lightslider-example</a></li>

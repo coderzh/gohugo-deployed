@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://www.gohugo.org/</loc>
-        <lastmod>2015-08-29T16:52:15+08:00</lastmod>
-        <priority>0</priority>
+        <loc>http://www.gohugo.org/post/qhsong-host-hugo-blog-using-caddy/</loc>
+        <lastmod>2017-04-30T20:55:09+08:00</lastmod>
     </url>
     
     <url>
@@ -24,976 +23,6 @@
     <url>
         <loc>http://www.gohugo.org/post/coderzh-a-hugo-pull-request/</loc>
         <lastmod>2015-09-03T08:55:31+08:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/cdnoverview/</loc>
-        <lastmod>2016-02-17T15:19:08+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/gntech/</loc>
-        <lastmod>2016-02-13T21:47:27+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/jorgennilsson/</loc>
-        <lastmod>2016-02-11T23:41:27+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/shelan/</loc>
-        <lastmod>2016-02-07T10:30:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/datapipelinearchitect/</loc>
-        <lastmod>2016-02-04T18:30:07-05:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/davidrallen/</loc>
-        <lastmod>2016-02-03T11:49:07-05:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/leepenney/</loc>
-        <lastmod>2016-01-24T16:10:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/webstudylist/</loc>
-        <lastmod>2016-01-21T23:33:01+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/rakutentech/</loc>
-        <lastmod>2016-01-20T07:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/javaunion/</loc>
-        <lastmod>2016-01-20T01:28:16+08:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/emilyhorsman.com/</loc>
-        <lastmod>2016-01-09T01:00:10+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/coding-journal/</loc>
-        <lastmod>2015-12-23T11:42:00+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/camunda-blog/</loc>
-        <lastmod>2015-12-01T04:20:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/camunda-docs/</loc>
-        <lastmod>2015-12-01T04:20:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/gadgetplayboy/</loc>
-        <lastmod>2015-11-29T07:16:53-05:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_en</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_benchmark</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_benchmark</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_check</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_check</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_check_ulimit</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_check_ulimit</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_config</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_config</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_convert</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_convert</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_convert_tojson</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_convert_tojson</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_convert_totoml</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_convert_totoml</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_convert_toyaml</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_convert_toyaml</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_gen</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_gen</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_gen_autocomplete</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_gen_autocomplete</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_gen_doc</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_gen_doc</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_gen_man</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_gen_man</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_import</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_import</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_import_jekyll</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_import_jekyll</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_list</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_list</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_list_drafts</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_list_drafts</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_list_future</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_list_future</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_new</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_new</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_new_site</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_new_site</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_new_theme</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_new_theme</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_server</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_server</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_undraft</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_undraft</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_version</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_version</loc>
-        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/2015/11/21/hugo-deploy-script/</loc>
-        <lastmod>2015-11-21T17:48:04+08:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/goin5minutes/</loc>
-        <lastmod>2015-11-20T20:46:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/arresteddevops/</loc>
-        <lastmod>2015-11-20T01:46:33-06:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/readtext/</loc>
-        <lastmod>2015-11-16T08:36:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/losslesslife/</loc>
-        <lastmod>2015-11-15T11:20:00-08:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/bugtrackers.io/</loc>
-        <lastmod>2015-10-27T09:02:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/contribute/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/donate/</loc>
-        <lastmod>2015-10-25T21:09:16+08:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/ninjaducks.in/</loc>
-        <lastmod>2015-10-24T14:06:00+05:30</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/quickstart/</loc>
-        <lastmod>2015-10-10T23:15:45+08:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/maximeguitare/</loc>
-        <lastmod>2015-10-05T17:15:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/ridingbytes/</loc>
-        <lastmod>2015-09-27T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/post/tonybai-intro-of-gohugo/</loc>
-        <lastmod>2015-09-23T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/yulinling.net/</loc>
-        <lastmod>2015-09-09T21:42:00-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/richardsumilang/</loc>
-        <lastmod>2015-09-07T00:12:00-07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/humboldtux/</loc>
-        <lastmod>2015-09-06T18:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/nodesk/</loc>
-        <lastmod>2015-08-26T22:33:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/gig/</loc>
-        <lastmod>2015-08-24T07:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/chinese-grammar/</loc>
-        <lastmod>2015-08-23T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_genautocomplete/</loc>
-        <lastmod>2015-08-04T03:11:10-06:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_gendoc/</loc>
-        <lastmod>2015-08-04T03:11:10-06:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/commands/hugo_help/</loc>
-        <lastmod>2015-08-04T03:11:10-06:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/arqueart/</loc>
-        <lastmod>2015-08-01T09:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/scottcwilson/</loc>
-        <lastmod>2015-07-21T10:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/szymonkatra/</loc>
-        <lastmod>2015-07-10T16:15:00+01:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/samuelbe/</loc>
-        <lastmod>2015-07-08T14:02:16+02:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/esolia-com/</loc>
-        <lastmod>2015-07-07T04:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/esolia-pro/</loc>
-        <lastmod>2015-07-07T04:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/mariosanchez/</loc>
-        <lastmod>2015-06-20T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/learnoverpass/</loc>
-        <lastmod>2015-06-06T12:51:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/kangkona/</loc>
-        <lastmod>2015-06-04T12:51:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/rick-cogley-info/</loc>
-        <lastmod>2015-05-20T04:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/consequently/</loc>
-        <lastmod>2015-02-11T13:21:27+11:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/arianv/</loc>
-        <lastmod>2015-02-06T12:51:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/post/nanshu-wang-hugo/</loc>
-        <lastmod>2015-01-31T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/troubleshooting/overview/</loc>
-        <lastmod>2015-01-18T02:41:52-07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/doc/troubleshooting/overview_en/</loc>
-        <lastmod>2015-01-18T02:41:52-07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/thehome/</loc>
-        <lastmod>2014-12-27T20:00:00+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/stou/</loc>
-        <lastmod>2014-11-23T01:28:16+07:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/launchcode5/</loc>
-        <lastmod>2014-11-01T07:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/fxsitecompat/</loc>
-        <lastmod>2014-08-26T19:40:00-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/ucsb/</loc>
-        <lastmod>2014-08-26T14:12:55-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/nickoneill/</loc>
-        <lastmod>2014-08-26T12:15:48-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/vurt.co/</loc>
-        <lastmod>2014-08-26T12:09:39-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/michaelwhatcott/</loc>
-        <lastmod>2014-08-26T11:47:11-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/devmonk/</loc>
-        <lastmod>2014-08-26T11:31:02-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/peteraba/</loc>
-        <lastmod>2014-08-26T11:30:57-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/chingli/</loc>
-        <lastmod>2014-08-26T11:20:02-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/danmux/</loc>
-        <lastmod>2014-08-26T10:55:23-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/ninya.io/</loc>
-        <lastmod>2014-08-26T09:47:00-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/tendermint/</loc>
-        <lastmod>2014-08-26T09:34:42-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/lk4d4.darth.io/</loc>
-        <lastmod>2014-08-25T18:59:30-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/hackmeeting/</loc>
-        <lastmod>2014-08-25T18:30:40-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/npf/</loc>
-        <lastmod>2014-08-21T12:21:18-04:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/vamp/</loc>
-        <lastmod>2014-06-26T15:45:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/techmadeplain/</loc>
-        <lastmod>2014-05-22T19:54:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/yslow-rules/</loc>
-        <lastmod>2014-04-07T10:45:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/cloudshark/</loc>
-        <lastmod>2014-03-27T09:45:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/heyitsalex/</loc>
-        <lastmod>2014-03-09T06:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/kieranhealy/</loc>
-        <lastmod>2014-02-27T20:35:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/antzucaro/</loc>
-        <lastmod>2014-02-03T20:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/asc/</loc>
-        <lastmod>2014-01-22T07:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/ifup/</loc>
-        <lastmod>2013-11-02T07:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/davidepetilli/</loc>
-        <lastmod>2013-11-01T07:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/gogb/</loc>
-        <lastmod>2013-11-01T07:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/bepsays/</loc>
-        <lastmod>2013-11-01T07:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/chimera-art-space/</loc>
-        <lastmod>2013-10-02T07:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/gophercon/</loc>
-        <lastmod>2013-10-01T07:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/hugo/</loc>
-        <lastmod>2013-07-01T07:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/showcase/spf13/</loc>
-        <lastmod>2013-07-01T07:32:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/agency/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/aglaus/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/air/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/angels-ladder/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/artists/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/beg/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/bootie-docs/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/cactus/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/casper/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/cocoa/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/creative/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/crisp/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/detox/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/freelancer/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/gindoro/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/greyshade/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/grid-side/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/heather-hugo/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/herring-cove/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hikari/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hugo-base-theme/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hugo-bootswatch/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hugo-h5bp/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hugo-icarus/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hugo-incorporated/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hugo-mdl/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hugo-minimalist/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hugo-multi-bootswatch/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hugo-uno/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hugo-zen/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hugoscroll/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hurock/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hyde-x/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hyde-y/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/hyde/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/journal/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/landing-page-hugo/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/lanyon/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/liquorice/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/material-design/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/material-lite/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/next/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/nofancy/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/pixyll/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/polymer/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/poopshow/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/projecthub/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/purehugo/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/redlounge/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/robust/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/shiori/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/simple-a/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/simple-hugo/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/slim/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/startbootstrap-clean-blog/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/steam/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/strata/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/tachyons/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/tinyce/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/twentyfourteen/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>http://www.gohugo.org/theme/vienna/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
     </url>
     
     <url>
@@ -1754,6 +783,1822 @@
     <url>
         <loc>http://www.gohugo.org/doc/tools/index_en/</loc>
         <lastmod>2015-09-12T10:40:31+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/cdnoverview/</loc>
+        <lastmod>2016-02-17T15:19:08+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/gntech/</loc>
+        <lastmod>2016-02-13T21:47:27+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/jorgennilsson/</loc>
+        <lastmod>2016-02-11T23:41:27+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/shelan/</loc>
+        <lastmod>2016-02-07T10:30:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/datapipelinearchitect/</loc>
+        <lastmod>2016-02-04T18:30:07-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/davidrallen/</loc>
+        <lastmod>2016-02-03T11:49:07-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/leepenney/</loc>
+        <lastmod>2016-01-24T16:10:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/webstudylist/</loc>
+        <lastmod>2016-01-21T23:33:01+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/rakutentech/</loc>
+        <lastmod>2016-01-20T07:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/javaunion/</loc>
+        <lastmod>2016-01-20T01:28:16+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/emilyhorsman.com/</loc>
+        <lastmod>2016-01-09T01:00:10+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/coding-journal/</loc>
+        <lastmod>2015-12-23T11:42:00+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/camunda-blog/</loc>
+        <lastmod>2015-12-01T04:20:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/camunda-docs/</loc>
+        <lastmod>2015-12-01T04:20:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/gadgetplayboy/</loc>
+        <lastmod>2015-11-29T07:16:53-05:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_en</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_benchmark</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_benchmark</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_check</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_check</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_check_ulimit</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_check_ulimit</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_config</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_config</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_convert</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_convert</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_convert_tojson</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_convert_tojson</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_convert_totoml</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_convert_totoml</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_convert_toyaml</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_convert_toyaml</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_gen</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_gen</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_gen_autocomplete</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_gen_autocomplete</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_gen_doc</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_gen_doc</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_gen_man</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_gen_man</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_import</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_import</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_import_jekyll</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_import_jekyll</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_list</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_list</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_list_drafts</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_list_drafts</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_list_future</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_list_future</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_new</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_new</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_new_site</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_new_site</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_new_theme</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_new_theme</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_server</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_server</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_undraft</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_undraft</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_version</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_version</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/2015/11/21/hugo-deploy-script/</loc>
+        <lastmod>2015-11-21T17:48:04+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/goin5minutes/</loc>
+        <lastmod>2015-11-20T20:46:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/arresteddevops/</loc>
+        <lastmod>2015-11-20T01:46:33-06:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/readtext/</loc>
+        <lastmod>2015-11-16T08:36:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/losslesslife/</loc>
+        <lastmod>2015-11-15T11:20:00-08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/bugtrackers.io/</loc>
+        <lastmod>2015-10-27T09:02:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/contribute/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/donate/</loc>
+        <lastmod>2015-10-25T21:09:16+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/ninjaducks.in/</loc>
+        <lastmod>2015-10-24T14:06:00+05:30</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/quickstart/</loc>
+        <lastmod>2015-10-10T23:15:45+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/maximeguitare/</loc>
+        <lastmod>2015-10-05T17:15:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/ridingbytes/</loc>
+        <lastmod>2015-09-27T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/post/tonybai-intro-of-gohugo/</loc>
+        <lastmod>2015-09-23T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/yulinling.net/</loc>
+        <lastmod>2015-09-09T21:42:00-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/richardsumilang/</loc>
+        <lastmod>2015-09-07T00:12:00-07:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/humboldtux/</loc>
+        <lastmod>2015-09-06T18:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/nodesk/</loc>
+        <lastmod>2015-08-26T22:33:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/gig/</loc>
+        <lastmod>2015-08-24T07:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/chinese-grammar/</loc>
+        <lastmod>2015-08-23T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_genautocomplete/</loc>
+        <lastmod>2015-08-04T03:11:10-06:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_gendoc/</loc>
+        <lastmod>2015-08-04T03:11:10-06:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/hugo_help/</loc>
+        <lastmod>2015-08-04T03:11:10-06:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/arqueart/</loc>
+        <lastmod>2015-08-01T09:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/scottcwilson/</loc>
+        <lastmod>2015-07-21T10:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/szymonkatra/</loc>
+        <lastmod>2015-07-10T16:15:00+01:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/samuelbe/</loc>
+        <lastmod>2015-07-08T14:02:16+02:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/esolia-com/</loc>
+        <lastmod>2015-07-07T04:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/esolia-pro/</loc>
+        <lastmod>2015-07-07T04:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/mariosanchez/</loc>
+        <lastmod>2015-06-20T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/learnoverpass/</loc>
+        <lastmod>2015-06-06T12:51:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/kangkona/</loc>
+        <lastmod>2015-06-04T12:51:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/rick-cogley-info/</loc>
+        <lastmod>2015-05-20T04:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/consequently/</loc>
+        <lastmod>2015-02-11T13:21:27+11:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/arianv/</loc>
+        <lastmod>2015-02-06T12:51:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/post/nanshu-wang-hugo/</loc>
+        <lastmod>2015-01-31T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/troubleshooting/overview/</loc>
+        <lastmod>2015-01-18T02:41:52-07:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/troubleshooting/overview_en/</loc>
+        <lastmod>2015-01-18T02:41:52-07:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/thehome/</loc>
+        <lastmod>2014-12-27T20:00:00+07:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/stou/</loc>
+        <lastmod>2014-11-23T01:28:16+07:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/launchcode5/</loc>
+        <lastmod>2014-11-01T07:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/fxsitecompat/</loc>
+        <lastmod>2014-08-26T19:40:00-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/ucsb/</loc>
+        <lastmod>2014-08-26T14:12:55-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/nickoneill/</loc>
+        <lastmod>2014-08-26T12:15:48-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/vurt.co/</loc>
+        <lastmod>2014-08-26T12:09:39-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/michaelwhatcott/</loc>
+        <lastmod>2014-08-26T11:47:11-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/devmonk/</loc>
+        <lastmod>2014-08-26T11:31:02-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/peteraba/</loc>
+        <lastmod>2014-08-26T11:30:57-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/chingli/</loc>
+        <lastmod>2014-08-26T11:20:02-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/danmux/</loc>
+        <lastmod>2014-08-26T10:55:23-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/ninya.io/</loc>
+        <lastmod>2014-08-26T09:47:00-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/tendermint/</loc>
+        <lastmod>2014-08-26T09:34:42-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/lk4d4.darth.io/</loc>
+        <lastmod>2014-08-25T18:59:30-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/hackmeeting/</loc>
+        <lastmod>2014-08-25T18:30:40-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/npf/</loc>
+        <lastmod>2014-08-21T12:21:18-04:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/vamp/</loc>
+        <lastmod>2014-06-26T15:45:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/techmadeplain/</loc>
+        <lastmod>2014-05-22T19:54:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/yslow-rules/</loc>
+        <lastmod>2014-04-07T10:45:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/cloudshark/</loc>
+        <lastmod>2014-03-27T09:45:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/heyitsalex/</loc>
+        <lastmod>2014-03-09T06:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/kieranhealy/</loc>
+        <lastmod>2014-02-27T20:35:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/antzucaro/</loc>
+        <lastmod>2014-02-03T20:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/asc/</loc>
+        <lastmod>2014-01-22T07:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/ifup/</loc>
+        <lastmod>2013-11-02T07:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/davidepetilli/</loc>
+        <lastmod>2013-11-01T07:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/gogb/</loc>
+        <lastmod>2013-11-01T07:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/bepsays/</loc>
+        <lastmod>2013-11-01T07:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/chimera-art-space/</loc>
+        <lastmod>2013-10-02T07:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/gophercon/</loc>
+        <lastmod>2013-10-01T07:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/hugo/</loc>
+        <lastmod>2013-07-01T07:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/spf13/</loc>
+        <lastmod>2013-07-01T07:32:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/agency/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/aglaus/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/air/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/angels-ladder/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/artists/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/beg/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/bootie-docs/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/cactus/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/casper/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/cocoa/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/creative/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/crisp/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/detox/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/freelancer/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/gindoro/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/greyshade/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/grid-side/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/heather-hugo/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/herring-cove/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hikari/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hugo-base-theme/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hugo-bootswatch/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hugo-h5bp/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hugo-icarus/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hugo-incorporated/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hugo-mdl/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hugo-minimalist/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hugo-multi-bootswatch/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hugo-uno/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hugo-zen/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hugoscroll/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hurock/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hyde-x/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hyde-y/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/hyde/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/journal/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/landing-page-hugo/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/lanyon/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/liquorice/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/material-design/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/material-lite/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/next/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/nofancy/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/pixyll/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/polymer/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/poopshow/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/projecthub/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/purehugo/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/redlounge/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/robust/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/shiori/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/simple-a/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/simple-hugo/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/slim/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/startbootstrap-clean-blog/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/steam/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/strata/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/tachyons/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/tinyce/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/twentyfourteen/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/vienna/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/academic/</loc>
+        <lastmod>2015-02-11T13:21:27+11:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/alexfinn/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/api/</loc>
+        <lastmod>2014-06-26T15:45:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/articles/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/audiophile/</loc>
+        <lastmod>2015-11-15T11:20:00-08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/awesome-fonts/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/black-white/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/blog/</loc>
+        <lastmod>2016-02-13T21:47:27+01:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/bootstrap/</loc>
+        <lastmod>2016-02-17T15:19:08+01:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/bootswatch/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/business/</loc>
+        <lastmod>2015-08-01T09:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/categories/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/category/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/chart/index.js/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/clean/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/clear/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/clients/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands/</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/commands_en/</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/community/</loc>
+        <lastmod>2015-10-27T09:02:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/company/</loc>
+        <lastmod>2016-02-04T18:30:07-05:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/conference/</loc>
+        <lastmod>2014-08-25T18:30:40-04:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/contact-form/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/corporate/</loc>
+        <lastmod>2015-08-01T09:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/courses/</loc>
+        <lastmod>2016-01-21T23:33:01+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/creative/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/custom-themes/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/customizable/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/dev/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/digital-nomad/</loc>
+        <lastmod>2015-08-26T22:33:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/discuss/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/disqus/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/doc/</loc>
+        <lastmod>2015-11-25T23:10:39+01:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/document/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/documentation/</loc>
+        <lastmod>2015-12-01T04:20:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/drawings/</loc>
+        <lastmod>2016-02-13T21:47:27+01:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/education/</loc>
+        <lastmod>2016-01-21T23:33:01+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/educational/</loc>
+        <lastmod>2014-08-26T11:31:02-04:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/electronics/</loc>
+        <lastmod>2015-11-15T11:20:00-08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/esolia/</loc>
+        <lastmod>2015-07-07T04:32:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/eyecatch/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/categories/featured/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/flat/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/foundation/</loc>
+        <lastmod>2015-06-06T12:51:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/foundation5/</loc>
+        <lastmod>2014-08-25T18:30:40-04:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/freenlancer/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/french/</loc>
+        <lastmod>2015-10-05T17:15:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/gallery/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/ghost/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/google/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/google-analytics/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/google-glus/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/headphones/</loc>
+        <lastmod>2015-11-15T11:20:00-08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/html5/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/hugo/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/</loc>
+        <lastmod>2017-04-30T20:55:09+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/image-gallery/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/interviews/</loc>
+        <lastmod>2015-10-27T09:02:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/japan/</loc>
+        <lastmod>2015-07-07T04:32:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/java/</loc>
+        <lastmod>2016-01-20T01:28:16+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/jekyll/</loc>
+        <lastmod>2015-10-11T10:06:11+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/kube/</loc>
+        <lastmod>2015-02-11T13:21:27+11:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/l10n/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/landing-page/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/learn/</loc>
+        <lastmod>2016-01-21T23:33:01+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/learning/</loc>
+        <lastmod>2015-08-23T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/libre-baskerville/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/lightbox/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/lightweight/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/list/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/lite/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/low-latency/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/many-examples/</loc>
+        <lastmod>2016-01-20T01:28:16+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/material/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/material-design/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/material-design-lite/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/maxthjax/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/mdl/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/minimal/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/minimalistic/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/mobile/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/music/</loc>
+        <lastmod>2016-02-13T21:47:27+01:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/neat/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/octopress/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/online-compile-and-run/</loc>
+        <lastmod>2016-01-20T01:28:16+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/personal/</loc>
+        <lastmod>2016-02-13T21:47:27+01:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/photography/</loc>
+        <lastmod>2013-11-01T07:32:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/podcast/</loc>
+        <lastmod>2015-11-20T01:46:33-06:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/portfolio/</loc>
+        <lastmod>2016-02-17T15:19:08+01:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/post/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/post/</loc>
+        <lastmod>2017-04-30T20:55:09+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/product/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/products/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/project/</loc>
+        <lastmod>2014-08-26T09:47:00-04:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/projecthub/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/projects/</loc>
+        <lastmod>2016-02-13T21:47:27+01:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/proxima-nova/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/pullrequest/</loc>
+        <lastmod>2015-09-03T08:55:31+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/purecss/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/raleway/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/reading/</loc>
+        <lastmod>2015-11-16T08:36:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/red/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/redlounge/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/resources/</loc>
+        <lastmod>2016-01-21T23:33:01+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/responsive/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/reviews/</loc>
+        <lastmod>2015-11-15T11:20:00-08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/rickcogley/</loc>
+        <lastmod>2015-07-07T04:32:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/rss/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/screencasts/</loc>
+        <lastmod>2015-11-20T20:46:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/showcase/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/showcase/</loc>
+        <lastmod>2016-02-17T15:19:08+01:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/simple/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/single-column/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/single-page/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/skills/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/study/</loc>
+        <lastmod>2016-01-21T23:33:01+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/syntax-highlighting/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/tags/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/team/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/tech/</loc>
+        <lastmod>2016-02-17T15:19:08+01:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/technical/</loc>
+        <lastmod>2015-11-15T11:20:00-08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/textfiles/</loc>
+        <lastmod>2015-11-16T08:36:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/theme/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/timeline/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/translation/</loc>
+        <lastmod>2014-08-26T19:40:00-04:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/tutorials/</loc>
+        <lastmod>2016-01-20T01:28:16+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/useful-shortcodes/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/video/</loc>
+        <lastmod>2014-08-26T11:31:02-04:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/web/</loc>
+        <lastmod>2015-08-26T22:33:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/website/</loc>
+        <lastmod>2016-02-04T18:30:07-05:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/white/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/widgets/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/wordpress/</loc>
+        <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/%E5%85%A5%E9%97%A8/</loc>
+        <lastmod>2017-04-30T20:55:09+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/categories/%E5%8A%9F%E8%83%BD%E6%94%B9%E8%BF%9B/</loc>
+        <lastmod>2015-10-11T10:06:11+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/categories/%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</loc>
+        <lastmod>2017-04-30T20:55:09+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/tags/%E8%BF%81%E7%A7%BB/</loc>
+        <lastmod>2015-10-11T10:06:11+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>http://www.gohugo.org/categories/%E9%83%A8%E7%BD%B2%E4%B8%8A%E7%BA%BF/</loc>
+        <lastmod>2015-09-13T08:48:52+08:00</lastmod>
+        <priority>0</priority>
     </url>
     
 </urlset>

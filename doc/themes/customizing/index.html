@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="The following are key concepts for Hugo site customization. Hugo permits you to supplement or override any theme template or static file, with files in your working directory. When you use a theme cloned from its git repository, you do not edit the theme&rsquo;s files directly. Rather, you override them as per the following: Replace Static Files For including a different file than what the theme ships with. For example, if you would like to use a more recent version of jQuery than what the theme happens to include, simply place an identically-named file in the same relative location but in your working directory.">
+        <meta name="description" content="The following are key concepts for Hugo site customization. Hugo permits you to supplement or override any theme template or static file, with files in your working directory.
+When you use a theme cloned from its git repository, you do not edit the theme&rsquo;s files directly. Rather, you override them as per the following:
+Replace Static Files For including a different file than what the theme ships with. For example, if you would like to use a more recent version of jQuery than what the theme happens to include, simply place an identically-named file in the same relative location but in your working directory.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Customizing a Theme - Hugo中文文档</title>
@@ -521,7 +523,7 @@
 
 <p><em>When you use a theme cloned from its git repository, you do not edit the theme&rsquo;s files directly. Rather, you override them as per the following:</em></p>
 
-<h2 id="replace-static-files:0b8b0e4b5279f6824ca9414b485f6c4a">Replace Static Files</h2>
+<h2 id="replace-static-files">Replace Static Files</h2>
 
 <p>For including a different file than what the theme ships with. For example, if you would like to use a more recent version of jQuery than what the theme happens to include, simply place an identically-named file in the same relative location but in your working directory.</p>
 
@@ -535,7 +537,7 @@
 <pre><code>/static/js/jquery.min.js
 </code></pre>
 
-<h2 id="replace-a-single-template-file:0b8b0e4b5279f6824ca9414b485f6c4a">Replace a single template file</h2>
+<h2 id="replace-a-single-template-file">Replace a single template file</h2>
 
 <p>Anytime Hugo looks for a matching template, it will first check the working directory before looking in the theme directory. If you would like to modify a template, simply create that template in your local <code>layouts</code> directory.</p>
 
@@ -555,11 +557,11 @@
 
 <p><strong>Warning</strong>: This only works for templates that Hugo &ldquo;knows about&rdquo; (that follow its convention for folder structure and naming). If the theme imports template files in a creatively-named directory, Hugo won’t know to look for the local <code>/layouts</code> first.</p>
 
-<h2 id="replace-an-archetype:0b8b0e4b5279f6824ca9414b485f6c4a">Replace an archetype</h2>
+<h2 id="replace-an-archetype">Replace an archetype</h2>
 
 <p>If the archetype that ships with the theme for a given content type (or all content types) doesn’t fit with how you are using the theme, feel free to copy it to your <code>/archetypes</code> directory and make modifications as you see fit.</p>
 
-<h2 id="beware-of-the-default:0b8b0e4b5279f6824ca9414b485f6c4a">Beware of the default</h2>
+<h2 id="beware-of-the-default">Beware of the default</h2>
 
 <p><strong>Default</strong> is a very powerful force in Hugo, especially as it pertains to overwriting theme files. If a default is located in the local archetype directory or <code>/layouts/_default/</code> directory, it will be used instead of any of the similar files in the theme.</p>
 

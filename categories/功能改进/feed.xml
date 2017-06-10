@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>功能改进 on Hugo中文文档</title>
-        <link>http://www.gohugo.org/categories/%E5%8A%9F%E8%83%BD%E6%94%B9%E8%BF%9B/</link>
+        <link>http://www.gohugo.org/categories/%E5%8A%9F%E8%83%BD%E6%94%B9%E8%BF%9B/feed/index.xml</link>
         <language>zh-CN</language>
         <author>CoderZh</author>
         <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Sun, 11 Oct 2015 10:06:11 CST</updated>
+        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
         
         <item>
             <title>使用Hugo Import一键迁移Jekyll</title>
@@ -14,9 +14,9 @@
             <pubDate>Sun, 11 Oct 2015 10:06:11 CST</pubDate>
             <author>CoderZh</author>
             <guid>http://www.gohugo.org/post/coderzh-hugo-import-from-jekyll/</guid>
-            <description>
+            <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/HugoImportJekyll.png-wt&#34; alt=&#34;HugoImportJekyll&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/HugoImportJekyll.png-wt&#34; alt=&#34;HugoImportJekyll&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;国庆长假期间，给Hugo提了几个PR，其中最主要的一个是给Hugo增加了内置的Jekyll迁移工具。这样之前的Jekyll用户可以通过一个简单的命令就可以将网站转化成Hugo站点：&lt;/p&gt;
 
@@ -25,7 +25,7 @@
 
 &lt;p&gt;得益于Hugo代码可读性非常好，原来计划需要几天来完成的功能1天左右的时间就完成了。完整的PR过程请见：&lt;a href=&#34;https://github.com/spf13/hugo/pull/1469&#34;&gt;https://github.com/spf13/hugo/pull/1469&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;hugo-import:c436e0c599735e5458236b6fbcd74190&#34;&gt;Hugo Import&lt;/h3&gt;
+&lt;h3 id=&#34;hugo-import&#34;&gt;Hugo Import&lt;/h3&gt;
 
 &lt;p&gt;主要实现了将原来的Jeklly网站一键转换为Hugo网站，具体实现了如下功能：&lt;/p&gt;
 
@@ -47,7 +47,7 @@
   $ hugo server -w --theme=herring-cove
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;markdown文章转换规则:c436e0c599735e5458236b6fbcd74190&#34;&gt;MarkDown文章转换规则&lt;/h3&gt;
+&lt;h3 id=&#34;markdown文章转换规则&#34;&gt;MarkDown文章转换规则&lt;/h3&gt;
 
 &lt;p&gt;Hugo和Jekyll都是使用MarkDown来写文章的，文章内容基本上是兼容的，除了一些FrontMatter的细节和局部细节。Hugo Import Jekyll主要的转换规则如下：&lt;/p&gt;
 
@@ -63,7 +63,7 @@
 &lt;li&gt;替换&lt;code&gt;{% highlight %}{% endhighlight %}&lt;/code&gt;标签为 {{&amp;lt; highlight &amp;gt;}}{{&amp;lt; / highlight &amp;gt;}}&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;代码:c436e0c599735e5458236b6fbcd74190&#34;&gt;代码&lt;/h3&gt;
+&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
 
 &lt;p&gt;import.go:&lt;/p&gt;
 
@@ -77,15 +77,14 @@
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/coderzh/hugo&#34;&gt;https://github.com/coderzh/hugo&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;最后:c436e0c599735e5458236b6fbcd74190&#34;&gt;最后&lt;/h3&gt;
+&lt;h3 id=&#34;最后&#34;&gt;最后&lt;/h3&gt;
 
 &lt;p&gt;这个功能将会在下个正式版推出，现在需要使用的同学自行pull最新的Hugo代码编译吧：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ go get -u -v github.com/spf13/hugo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;欢迎试用，并且提出意见或建议！谢谢！&lt;/p&gt;
-</description>
+&lt;p&gt;欢迎试用，并且提出意见或建议！谢谢！&lt;/p&gt;</description>
         </item>
         
         <item>
@@ -95,6 +94,8 @@
             <author>CoderZh</author>
             <guid>http://www.gohugo.org/post/coderzh-a-hugo-pull-request/</guid>
             <description>&lt;p&gt;给Hugo提交了一个Pull Request，并且通过了，记录一下。PR的内容是在config里增加了disablePathToLower选项，可以配置是否需要阻止Hugo自动将路径转换为小写。在站点从旧的系统里迁移到Hugo中时会非常有用。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;在上一篇博客&lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34;&gt;使用hugo搭建个人博客站点&lt;/a&gt;  里提到，Hugo强制将所有路径都变成了小写。小写路径虽好，但是如果之前你的网站路径不是全小写的，迁移过来路径发生变化，将会导致路径失效，是不可接受的。&lt;/p&gt;
 
@@ -152,8 +153,7 @@ disablePathToLower: true
 
 &lt;p&gt;commit: &lt;a href=&#34;https://github.com/spf13/hugo/commit/52d94fa67578f6b63035e73b236ca8abd40d0006&#34;&gt;https://github.com/spf13/hugo/commit/52d94fa67578f6b63035e73b236ca8abd40d0006&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;这就是开源项目的好处，开源社区的魅力所在：&lt;strong&gt;你可以使用它，修改它，贡献自己的代码，参与其中，让它变好，让所有人受益&lt;/strong&gt;。&lt;/p&gt;
-</description>
+&lt;p&gt;这就是开源项目的好处，开源社区的魅力所在：&lt;strong&gt;你可以使用它，修改它，贡献自己的代码，参与其中，让它变好，让所有人受益&lt;/strong&gt;。&lt;/p&gt;</description>
         </item>
         
         <item>
@@ -162,17 +162,17 @@ disablePathToLower: true
             <pubDate>Sat, 21 Nov 2015 17:48:04 CST</pubDate>
             <author>CoderZh</author>
             <guid>http://www.gohugo.org/2015/11/21/hugo-deploy-script/</guid>
-            <description>
-
-&lt;p&gt;之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。&lt;/p&gt;
+            <description>&lt;p&gt;之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。&lt;/p&gt;
 
 &lt;p&gt;脚本路径：&lt;a href=&#34;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&#34;&gt;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;原理:6a170d4fd06501091e3c20d557c2e35c&#34;&gt;原理&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;原理&#34;&gt;原理&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;deploy.py&lt;/code&gt; 会自动执行 hugo 命令生成静态站点，然后将生成的文件拷贝到上层的一个目录里，然后，在那个目录里将文件 push 到你指定的 Git Repository 里。&lt;/p&gt;
 
-&lt;h3 id=&#34;使用方法:6a170d4fd06501091e3c20d557c2e35c&#34;&gt;使用方法&lt;/h3&gt;
+&lt;h3 id=&#34;使用方法&#34;&gt;使用方法&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;将 &lt;code&gt;deploy.py&lt;/code&gt; 放到你的 Hugo 站点目录。（和 config.yaml 等文件放一起）&lt;/li&gt;
@@ -218,8 +218,7 @@ DEPLOY_DIR = &#39;gh-pages&#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;That&amp;rsquo;s all, 祝你好运！&lt;/p&gt;
-</description>
+&lt;p&gt;That&amp;rsquo;s all, 祝你好运！&lt;/p&gt;</description>
         </item>
         
     </channel>

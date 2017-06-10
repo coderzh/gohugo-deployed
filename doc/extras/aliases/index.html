@@ -3,7 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="For people migrating existing published content to Hugo, there&rsquo;s a good chance you need a mechanism to handle redirecting old URLs. Luckily, redirects can be handled easily with aliases in Hugo. Example Given a post on your current Hugo site, with a path of: content/posts/my-awesome-blog-post.md &hellip; you create an &ldquo;aliases&rdquo; section in the frontmatter of your post, and add previous paths to that. TOML frontmatter &#43;&#43;&#43; ... aliases = [ &quot;/posts/my-original-url/&quot;, &quot;/2010/01/01/even-earlier-url.html&quot; ] ...">
+        <meta name="description" content="For people migrating existing published content to Hugo, there&rsquo;s a good chance you need a mechanism to handle redirecting old URLs.
+Luckily, redirects can be handled easily with aliases in Hugo.
+Example Given a post on your current Hugo site, with a path of:
+content/posts/my-awesome-blog-post.md
+&hellip; you create an &ldquo;aliases&rdquo; section in the frontmatter of your post, and add previous paths to that.
+TOML frontmatter &#43;&#43;&#43; ... aliases = [ &quot;/posts/my-original-url/&quot;, &quot;/2010/01/01/even-earlier-url.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Aliases - Hugo中文文档</title>
@@ -521,7 +526,7 @@
 
 <p>Luckily, redirects can be handled easily with <em>aliases</em> in Hugo.</p>
 
-<h2 id="example:86c3b43f52adb2002b6f349546284b0a">Example</h2>
+<h2 id="example">Example</h2>
 
 <p>Given a post on your current Hugo site, with a path of:</p>
 
@@ -529,7 +534,7 @@
 
 <p>&hellip; you create an &ldquo;aliases&rdquo; section in the frontmatter of your post, and add previous paths to that.</p>
 
-<h3 id="toml-frontmatter:86c3b43f52adb2002b6f349546284b0a">TOML frontmatter</h3>
+<h3 id="toml-frontmatter">TOML frontmatter</h3>
 
 <pre><code class="language-toml">+++
         ...
@@ -541,7 +546,7 @@ aliases = [
 +++
 </code></pre>
 
-<h3 id="yaml-frontmatter:86c3b43f52adb2002b6f349546284b0a">YAML frontmatter</h3>
+<h3 id="yaml-frontmatter">YAML frontmatter</h3>
 
 <pre><code class="language-yaml">---
         ...
@@ -554,7 +559,7 @@ aliases:
 
 <p>Now when you visit any of the locations specified in aliases, <em>assuming the same site domain</em>, you&rsquo;ll be redirected to the page they are specified on.</p>
 
-<h2 id="important-behaviors:86c3b43f52adb2002b6f349546284b0a">Important Behaviors</h2>
+<h2 id="important-behaviors">Important Behaviors</h2>
 
 <ol>
 <li><p><em>Hugo makes no assumptions about aliases. They also don&rsquo;t change based
@@ -565,7 +570,7 @@ and the complete filename or directory.</em></p></li>
 any content with the same location.</em></p></li>
 </ol>
 
-<h2 id="how-hugo-aliases-work:86c3b43f52adb2002b6f349546284b0a">How Hugo Aliases Work</h2>
+<h2 id="how-hugo-aliases-work">How Hugo Aliases Work</h2>
 
 <p>When aliases are specified, Hugo creates a physical folder structure to match the alias entry, and, an html file specifying the canonical URL for the page, and a redirect target.</p>
 

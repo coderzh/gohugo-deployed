@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Hugo provides the ability to both: Order the way the keys for a taxonomy are displayed Order the way taxonomyed content appears Ordering Taxonomies Taxonomies can be ordered by either alphabetical key or by the number of content pieces assigned to that key. Order Alphabetically Example &lt;ul&gt; {{ $data := .Data }} {{ range $key, $value := .Data.Taxonomy.Alphabetical }} &lt;li&gt;&lt;a href=&quot;{{ $data.Plural }}/{{ $value.Name | urlize }}&quot;&gt; {{ $value.Name }} &lt;/a&gt; {{ $value.Count }} &lt;/li&gt; {{ end }} &lt;/ul&gt; Order by Popularity Example &lt;ul&gt; {{ $data := .Data }} {{ range $key, $value := .Data.Taxonomy.ByCount }} &lt;li&gt;&lt;a href=&quot;{{ $data.Plural }}/{{ $value.Name | urlize }}&quot;&gt; {{ $value.Name }} &lt;/a&gt; {{ $value.Count }} &lt;/li&gt; {{ end }} &lt;/ul&gt; See Also Taxonomy Lists Ordering Content within Taxonomies Hugo uses both Date and Weight to order content within taxonomies.">
+        <meta name="description" content="Hugo provides the ability to both:
+ Order the way the keys for a taxonomy are displayed Order the way taxonomyed content appears  Ordering Taxonomies Taxonomies can be ordered by either alphabetical key or by the number of content pieces assigned to that key.
+Order Alphabetically Example &lt;ul&gt; {{ $data := .Data }} {{ range $key, $value := .Data.Taxonomy.Alphabetical }} &lt;li&gt;&lt;a href=&quot;{{ $data.Plural }}/{{ $value.Name | urlize }}&quot;&gt; {{ $value.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Ordering Taxonomies - Hugo中文文档</title>
@@ -524,11 +526,11 @@
 <li>Order the way taxonomyed content appears</li>
 </ol>
 
-<h2 id="ordering-taxonomies:73c19349c2e7e7dc0e10dcc3cac74bba">Ordering Taxonomies</h2>
+<h2 id="ordering-taxonomies">Ordering Taxonomies</h2>
 
 <p>Taxonomies can be ordered by either alphabetical key or by the number of content pieces assigned to that key.</p>
 
-<h3 id="order-alphabetically-example:73c19349c2e7e7dc0e10dcc3cac74bba">Order Alphabetically Example</h3>
+<h3 id="order-alphabetically-example">Order Alphabetically Example</h3>
 
 <pre><code>&lt;ul&gt;
 {{ $data := .Data }}
@@ -538,7 +540,7 @@
 &lt;/ul&gt;
 </code></pre>
 
-<h3 id="order-by-popularity-example:73c19349c2e7e7dc0e10dcc3cac74bba">Order by Popularity Example</h3>
+<h3 id="order-by-popularity-example">Order by Popularity Example</h3>
 
 <pre><code>&lt;ul&gt;
 {{ $data := .Data }}
@@ -550,7 +552,7 @@
 
 <p><a href="http://www.gohugo.org/doc/templates/list/">See Also Taxonomy Lists</a></p>
 
-<h2 id="ordering-content-within-taxonomies:73c19349c2e7e7dc0e10dcc3cac74bba">Ordering Content within Taxonomies</h2>
+<h2 id="ordering-content-within-taxonomies">Ordering Content within Taxonomies</h2>
 
 <p>Hugo uses both <strong>Date</strong> and <strong>Weight</strong> to order content within taxonomies.</p>
 
@@ -559,7 +561,7 @@ It can also be assigned a weight for each taxonomy it is assigned to.</p>
 
 <p>When iterating over content within taxonomies the default sort is first by weight then by date. This means that if the weights for two pieces of content are the same, than the more recent content will be displayed first. The default weight for any piece of content is 0.</p>
 
-<h3 id="assigning-weight:73c19349c2e7e7dc0e10dcc3cac74bba">Assigning Weight</h3>
+<h3 id="assigning-weight">Assigning Weight</h3>
 
 <p>Content can be assigned weight for each taxonomy that it&rsquo;s assigned to.</p>
 

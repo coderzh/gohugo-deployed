@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks, you will find a lot of similarities in Go templates. This document is a brief primer on using Go templates.">
+        <meta name="description" content="Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks, you will find a lot of similarities in Go templates.
+This document is a brief primer on using Go templates.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Go Template Primer - Hugo中文文档</title>
@@ -527,7 +528,7 @@ similarities in Go templates.</p>
 <p>This document is a brief primer on using Go templates. The <a href="http://golang.org/pkg/html/template/">Go docs</a>
 go into more depth and cover features that aren&rsquo;t mentioned here.</p>
 
-<h2 id="introduction-to-go-templates:3ff5d9cde524f044aee9e2f5b8094f77">Introduction to Go Templates</h2>
+<h2 id="introduction-to-go-templates">Introduction to Go Templates</h2>
 
 <p>Go templates provide an extremely simple template language. It adheres to the
 belief that only the most basic of logic belongs in the template or view layer.
@@ -537,7 +538,7 @@ One consequence of this simplicity is that Go templates parse very quickly.</p>
 content will be sanitized depending on the context of where they are used. More
 details can be found in the <a href="http://golang.org/pkg/html/template/">Go docs</a>.</p>
 
-<h2 id="basic-syntax:3ff5d9cde524f044aee9e2f5b8094f77">Basic Syntax</h2>
+<h2 id="basic-syntax">Basic Syntax</h2>
 
 <p>Go lang templates are HTML files with the addition of variables and
 functions.</p>
@@ -568,7 +569,7 @@ functions.</p>
 <pre><code>{{ if or (isset .Params &quot;alt&quot;) (isset .Params &quot;caption&quot;) }} Caption {{ end }}
 </code></pre>
 
-<h2 id="variables:3ff5d9cde524f044aee9e2f5b8094f77">Variables</h2>
+<h2 id="variables">Variables</h2>
 
 <p>Each Go template has a struct (object) made available to it. In Hugo, each
 template is passed either a page or a node struct depending on which type of
@@ -586,7 +587,7 @@ page you are rendering. More details are available on the
 {{ $address }}
 </code></pre>
 
-<h2 id="functions:3ff5d9cde524f044aee9e2f5b8094f77">Functions</h2>
+<h2 id="functions">Functions</h2>
 
 <p>Go template ships with a few functions which provide basic functionality. The Go
 template system also provides a mechanism for applications to extend the
@@ -609,7 +610,7 @@ functions cannot be added without recompiling Hugo.</p>
 <p>(There are more boolean operators, detailed in the
 <a href="http://golang.org/pkg/text/template/#hdr-Functions">template documentation</a>.)</p>
 
-<h2 id="includes:3ff5d9cde524f044aee9e2f5b8094f77">Includes</h2>
+<h2 id="includes">Includes</h2>
 
 <p>When including another template, you will pass to it the data it will be
 able to access. To pass along the current context, please remember to
@@ -627,11 +628,11 @@ for <a href="http://www.gohugo.org/doc/templates/partials/">partial templates</a
 <pre><code>{{ partial &quot;header.html&quot; . }}
 </code></pre>
 
-<h2 id="logic:3ff5d9cde524f044aee9e2f5b8094f77">Logic</h2>
+<h2 id="logic">Logic</h2>
 
 <p>Go templates provide the most basic iteration and conditional logic.</p>
 
-<h3 id="iteration:3ff5d9cde524f044aee9e2f5b8094f77">Iteration</h3>
+<h3 id="iteration">Iteration</h3>
 
 <p>Just like in Go, the Go templates make heavy use of <code>range</code> to iterate over
 a map, array or slice. The following are different examples of how to use
@@ -659,7 +660,7 @@ range.</p>
 {{ end }}
 </code></pre>
 
-<h3 id="conditionals:3ff5d9cde524f044aee9e2f5b8094f77">Conditionals</h3>
+<h3 id="conditionals">Conditionals</h3>
 
 <p><code>if</code>, <code>else</code>, <code>with</code>, <code>or</code> &amp; <code>and</code> provide the framework for handling conditional
 logic in Go Templates. Like <code>range</code>, each statement is closed with <code>end</code>.</p>
@@ -711,7 +712,7 @@ and skips the block if the variable is absent.</p>
 {{ end }}
 </code></pre>
 
-<h2 id="pipes:3ff5d9cde524f044aee9e2f5b8094f77">Pipes</h2>
+<h2 id="pipes">Pipes</h2>
 
 <p>One of the most powerful components of Go templates is the ability to
 stack actions one after another. This is done by using pipes. Borrowed
@@ -765,7 +766,7 @@ Stuff Here
 {{ end }}
 </code></pre>
 
-<h3 id="internet-explorer-conditional-comments-using-pipes:3ff5d9cde524f044aee9e2f5b8094f77">Internet Explorer conditional comments using Pipes</h3>
+<h3 id="internet-explorer-conditional-comments-using-pipes">Internet Explorer conditional comments using Pipes</h3>
 
 <p>By default, Go Templates remove HTML comments from output. This has the unfortunate side effect of removing Internet Explorer conditional comments. As a workaround, use something like this:</p>
 
@@ -779,7 +780,7 @@ Stuff Here
 <pre><code>{{ `&lt;!--[if lt IE 7]&gt;&lt;html class=&quot;no-js lt-ie9 lt-ie8 lt-ie7&quot;&gt;&lt;![endif]--&gt;` | safeHTML }}
 </code></pre>
 
-<h2 id="context-a-k-a-the-dot:3ff5d9cde524f044aee9e2f5b8094f77">Context (a.k.a. the dot)</h2>
+<h2 id="context-a-k-a-the-dot">Context (a.k.a. the dot)</h2>
 
 <p>The most easily overlooked concept to understand about Go templates is that <code>{{ . }}</code>
 always refers to the current context. In the top level of your template, this
@@ -830,7 +831,7 @@ in a global context to reset <code>$</code> to its default value.</p>
 </blockquote></li>
 </ol>
 
-<h1 id="hugo-parameters:3ff5d9cde524f044aee9e2f5b8094f77">Hugo Parameters</h1>
+<h1 id="hugo-parameters">Hugo Parameters</h1>
 
 <p>Hugo provides the option of passing values to the template language
 through the site configuration (for sitewide values), or through the meta
@@ -838,7 +839,7 @@ data of each specific piece of content. You can define any values of any
 type (supported by your front matter/config format) and use them however
 you want to inside of your templates.</p>
 
-<h2 id="using-content-page-parameters:3ff5d9cde524f044aee9e2f5b8094f77">Using Content (page) Parameters</h2>
+<h2 id="using-content-page-parameters">Using Content (page) Parameters</h2>
 
 <p>In each piece of content, you can provide variables to be used by the
 templates. This happens in the <a href="http://www.gohugo.org/doc/content/front-matter/">front matter</a>.</p>
@@ -871,7 +872,7 @@ notoc: true
   {{ end }}
 </code></pre>
 
-<h2 id="using-site-config-parameters:3ff5d9cde524f044aee9e2f5b8094f77">Using Site (config) Parameters</h2>
+<h2 id="using-site-config-parameters">Using Site (config) Parameters</h2>
 
 <p>In your top-level configuration file (e.g., <code>config.yaml</code>) you can define site
 parameters, which are values which will be available to you in partials.</p>
@@ -917,7 +918,7 @@ so, such as in this example:</p>
 &lt;/nav&gt;
 </code></pre>
 
-<h1 id="template-example-show-only-upcoming-events:3ff5d9cde524f044aee9e2f5b8094f77">Template example: Show only upcoming events</h1>
+<h1 id="template-example-show-only-upcoming-events">Template example: Show only upcoming events</h1>
 
 <p>Go allows you to do more than what&rsquo;s shown here.  Using Hugo&rsquo;s
 <a href="http://www.gohugo.org/doc/templates/functions/#toc_4"><code>where</code></a> function and Go built-ins, we can list

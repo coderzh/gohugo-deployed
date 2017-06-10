@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Raleway on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/raleway/</link>
+        <link>http://www.gohugo.org/tags/raleway/feed/index.xml</link>
         <language>zh-CN</language>
         <author>CoderZh</author>
         <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>

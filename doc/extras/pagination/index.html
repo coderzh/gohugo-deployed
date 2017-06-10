@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Hugo supports pagination for the home page, sections and taxonomies. It&rsquo;s built to be easy use, but with loads of flexibility when needed. The real power shines when you combine it with where, with its SQL-like operators, first and others &mdash; you can even order the content the way you&rsquo;ve become used to with Hugo. Configuration Pagination can be configured in the site configuration (e.g. config.toml): Paginate (default 10) (this setting can be overridden in the template) PaginatePath (default page) Setting Paginate to a positive value will split the list pages for the home page, sections and taxonomies into chunks of that size.">
+        <meta name="description" content="Hugo supports pagination for the home page, sections and taxonomies. It&rsquo;s built to be easy use, but with loads of flexibility when needed. The real power shines when you combine it with where, with its SQL-like operators, first and others &mdash; you can even order the content the way you&rsquo;ve become used to with Hugo.
+Configuration Pagination can be configured in the site configuration (e.g. config.toml):
+ Paginate (default 10) (this setting can be overridden in the template) PaginatePath (default page)  Setting Paginate to a positive value will split the list pages for the home page, sections and taxonomies into chunks of that size.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Pagination - Hugo中文文档</title>
@@ -519,7 +521,7 @@
 
 <p>Hugo supports pagination for the home page, sections and taxonomies. It&rsquo;s built to be easy use, but with loads of flexibility when needed. The real power shines when you combine it with <a href="http://www.gohugo.org/doc/templates/functions/"><code>where</code></a>, with its SQL-like operators, <code>first</code> and others &mdash; you can even <a href="http://www.gohugo.org/doc/templates/list/">order the content</a> the way you&rsquo;ve become used to with Hugo.</p>
 
-<h2 id="configuration:8933c44b45493d40d2007cdf0ce43109">Configuration</h2>
+<h2 id="configuration">Configuration</h2>
 
 <p>Pagination can be configured in the site configuration (e.g. <code>config.toml</code>):</p>
 
@@ -532,7 +534,7 @@
 
 <p><code>PaginatePath</code> is used to adapt the <code>URL</code> to the pages in the paginator (the default setting will produce URLs on the form <code>/page/1/</code>.</p>
 
-<h2 id="list-the-pages:8933c44b45493d40d2007cdf0ce43109">List the pages</h2>
+<h2 id="list-the-pages">List the pages</h2>
 
 <p><strong>A <code>.Paginator</code> is provided to help building a pager menu. This is only relevant for the templates for the home page and the list pages (sections and taxonomies).</strong></p>
 
@@ -557,7 +559,7 @@
 <pre><code>{{ range (.Paginate (.Data.Pages.GroupByDate &quot;2006&quot;)).PageGroups  }}
 </code></pre>
 
-<h2 id="build-the-navigation:8933c44b45493d40d2007cdf0ce43109">Build the navigation</h2>
+<h2 id="build-the-navigation">Build the navigation</h2>
 
 <p>The <code>.Paginator</code> contains enough information to build a paginator interface.</p>
 
@@ -602,7 +604,7 @@
 <li><code>TotalNumberOfElements</code>: The number of elements on all pages in this paginator</li>
 </ul>
 
-<h2 id="additional-information:8933c44b45493d40d2007cdf0ce43109">Additional information</h2>
+<h2 id="additional-information">Additional information</h2>
 
 <p>The pages are built on the following form (<code>BLANK</code> means no value):</p>
 

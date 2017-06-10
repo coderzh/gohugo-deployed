@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Defining taxonomies for a site Taxonomies must be defined in the site configuration before they can be used throughout the site. You need to provide both the plural and singular labels for each taxonomy. Here is an example configuration in TOML and YAML that specifies three taxonomies (the default two, plus series). Notice the format is singular key = &quot;plural value&quot; for TOML, or singular key: &quot;plural value&quot; for YAML: config.toml excerpt:config.yaml excerpt: [taxonomies] tag = &#34;tags&#34; category = &#34;categories&#34; series = &#34;series&#34; taxonomies: tag: &#34;tags&#34; category: &#34;categories&#34; series: &#34;series&#34; Assigning taxonomy values to content Once an taxonomy is defined at the site level, any piece of content can be assigned to it regardless of content type or section.">
+        <meta name="description" content="Defining taxonomies for a site Taxonomies must be defined in the site configuration before they can be used throughout the site. You need to provide both the plural and singular labels for each taxonomy.
+Here is an example configuration in TOML and YAML that specifies three taxonomies (the default two, plus series).
+Notice the format is singular key = &quot;plural value&quot; for TOML, or singular key: &quot;plural value&quot; for YAML:">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Using Taxonomies - Hugo中文文档</title>
@@ -517,7 +519,7 @@
                 <section>
                     
 
-<h2 id="defining-taxonomies-for-a-site:dc32fe45042973266ca60588597e0b66">Defining taxonomies for a site</h2>
+<h2 id="defining-taxonomies-for-a-site">Defining taxonomies for a site</h2>
 
 <p>Taxonomies must be defined in the site configuration before they can be
 used throughout the site. You need to provide both the plural and
@@ -551,7 +553,7 @@ series = "series"
 </tbody>
 </table>
 
-<h2 id="assigning-taxonomy-values-to-content:dc32fe45042973266ca60588597e0b66">Assigning taxonomy values to content</h2>
+<h2 id="assigning-taxonomy-values-to-content">Assigning taxonomy values to content</h2>
 
 <p>Once an taxonomy is defined at the site level, any piece of content
 can be assigned to it regardless of content type or section.</p>
@@ -560,7 +562,7 @@ can be assigned to it regardless of content type or section.</p>
 Simply create a variable with the <em>plural</em> name of the taxonomy
 and assign all terms you want to apply to this content.</p>
 
-<h2 id="preserving-taxonomy-values:dc32fe45042973266ca60588597e0b66">Preserving taxonomy values</h2>
+<h2 id="preserving-taxonomy-values">Preserving taxonomy values</h2>
 
 <p>By default, taxonomy names are hyphenated, lower-cased and normalized, and then
 fixed and titleized on the archive page.</p>
@@ -574,7 +576,7 @@ but will still titleize the values for titles and normalize them in URLs.</p>
 <p>Note that if you use <code>preserveTaxonomyNames</code> and intend to manually construct URLs to the archive pages,
 you will need to pass the taxonomy values through the <code>urlize</code> template function.</p>
 
-<h3 id="front-matter-example-in-toml:dc32fe45042973266ca60588597e0b66">Front Matter Example (in TOML)</h3>
+<h3 id="front-matter-example-in-toml">Front Matter Example (in TOML)</h3>
 
 <pre><code class="language-toml">+++
 title = &quot;Hugo: A fast and flexible static site generator&quot;
@@ -586,7 +588,7 @@ project_url = &quot;https://github.com/spf13/hugo&quot;
 +++
 </code></pre>
 
-<h3 id="front-matter-example-in-json:dc32fe45042973266ca60588597e0b66">Front Matter Example (in JSON)</h3>
+<h3 id="front-matter-example-in-json">Front Matter Example (in JSON)</h3>
 
 <pre><code class="language-json">{
     &quot;title&quot;: &quot;Hugo: A fast and flexible static site generator&quot;,

@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Hugo has full support for different types of content. A content type can have a unique set of meta data, template and can be automatically created by the hugo new command through using content archetypes. A good example of when multiple types are needed is to look at Tumblr. A piece of content could be a photo, quote or post, each with different meta data and rendered differently. Assigning a content type Hugo assumes that your site will be organized into sections and each section will use the corresponding type.">
+        <meta name="description" content="Hugo has full support for different types of content. A content type can have a unique set of meta data, template and can be automatically created by the hugo new command through using content archetypes.
+A good example of when multiple types are needed is to look at Tumblr. A piece of content could be a photo, quote or post, each with different meta data and rendered differently.
+Assigning a content type Hugo assumes that your site will be organized into sections and each section will use the corresponding type.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Content Types - Hugo中文文档</title>
@@ -525,7 +527,7 @@ command through using content <a href="http://www.gohugo.org/doc/content/archety
 of content could be a photo, quote or post, each with different meta data and
 rendered differently.</p>
 
-<h2 id="assigning-a-content-type:5bf4b94e0b1e7fbb56b86029b40481a7">Assigning a content type</h2>
+<h2 id="assigning-a-content-type">Assigning a content type</h2>
 
 <p>Hugo assumes that your site will be organized into <a href="http://www.gohugo.org/doc/content/sections/">sections</a>
 and each section will use the corresponding type. If you are taking advantage of
@@ -534,7 +536,7 @@ inherit the type.</p>
 
 <p>Alternatively, you can set the type in the meta data under the key &ldquo;<code>type</code>&rdquo;.</p>
 
-<h2 id="creating-new-content-of-a-specific-type:5bf4b94e0b1e7fbb56b86029b40481a7">Creating new content of a specific type</h2>
+<h2 id="creating-new-content-of-a-specific-type">Creating new content of a specific type</h2>
 
 <p>Hugo has the ability to create a new content file and populate the front matter
 with the data set corresponding to that type. Hugo does this by utilizing
@@ -550,7 +552,7 @@ with the data set corresponding to that type. Hugo does this by utilizing
 <pre><code>hugo new post/my-newest-post.md
 </code></pre>
 
-<h2 id="defining-a-content-type:5bf4b94e0b1e7fbb56b86029b40481a7">Defining a content type</h2>
+<h2 id="defining-a-content-type">Defining a content type</h2>
 
 <p>Creating a new content type is easy in Hugo. You simply provide the templates and archetype
 that the new type will use. You only need to define the templates, archetypes and/or views
@@ -559,19 +561,19 @@ whenever a specific file is not present.</p>
 
 <p><em>Remember, all of the following are optional:</em></p>
 
-<h3 id="create-type-directory:5bf4b94e0b1e7fbb56b86029b40481a7">Create Type Directory</h3>
+<h3 id="create-type-directory">Create Type Directory</h3>
 
 <p>Create a directory with the name of the type in <code>/layouts</code>. Type is always singular.  <em>E.g. <code>/layouts/post</code></em>.</p>
 
-<h3 id="create-single-template:5bf4b94e0b1e7fbb56b86029b40481a7">Create single template</h3>
+<h3 id="create-single-template">Create single template</h3>
 
 <p>Create a file called <code>single.html</code> inside your directory. <em>E.g. <code>/layouts/post/single.html</code></em>.</p>
 
-<h3 id="create-list-template:5bf4b94e0b1e7fbb56b86029b40481a7">Create list template</h3>
+<h3 id="create-list-template">Create list template</h3>
 
 <p>Create a file called <code>list.html</code> inside your directory. <em>E.g. <code>/layouts/post/list.html</code></em>.</p>
 
-<h3 id="create-views:5bf4b94e0b1e7fbb56b86029b40481a7">Create views</h3>
+<h3 id="create-views">Create views</h3>
 
 <p>Many sites support rendering content in a few different ways, for instance,
 a single page view and a summary view to be used when displaying a list
@@ -580,7 +582,7 @@ to display your content, and will support as many different views of a content
 type as your site requires. All that is required for these additional views is
 that a template exists in each <code>/layouts/TYPE</code> directory with the same name.</p>
 
-<h3 id="create-a-corresponding-archetype:5bf4b94e0b1e7fbb56b86029b40481a7">Create a corresponding archetype</h3>
+<h3 id="create-a-corresponding-archetype">Create a corresponding archetype</h3>
 
 <p>Create a file called <code><em>type</em>.md</code> in the <code>/archetypes</code> directory. <em>E.g. <code>/archetypes/post.md</code></em>.</p>
 

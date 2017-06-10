@@ -521,19 +521,19 @@
 <p><em>This tutorial was contributed by <a href="http://sglyon.com/">Spencer Lyon</a>.</em></p>
 </blockquote>
 
-<h2 id="简介:fcefb200141ace3e7bfd6542457b7a72">简介</h2>
+<h2 id="简介">简介</h2>
 
 <p>很多 Hugo 用户表示希望看到关于如何把 Hugo 生成的博客托管在 GitHub Pages 上的教程。这就是本篇教程的目的。我们仅仅需要读者已经正确安装了 Hugo，并且能适应 git 和 GitHub。</p>
 
 <p>在本篇教程中，我将向你讲解我在创建 <a href="http://spencerlyon2.github.io/hugo_gh_blog">http://spencerlyon2.github.io/hugo_gh_blog</a> 这一示例博客过程中的主要步骤。这个博客的源代码位于 <a href="https://github.com/spencerlyon2/hugo_gh_blog">GitHub</a>。希望读者朋友可以下载这个示例仓库代码并跟着我一起操作。</p>
 
-<h3 id="找个地方放你的文件:fcefb200141ace3e7bfd6542457b7a72">找个地方放你的文件</h3>
+<h3 id="找个地方放你的文件">找个地方放你的文件</h3>
 
 <p>因为我们的目标是使用 GitHub Pages 服务来托管网站，那么我们自然就需要在一个 GitHub 仓库中托管页面的内容。因此，第一步要么在 GitHub 上创建一个新的仓库，要么在网站内容所在的仓库中新建一个文件夹。因此，我创建了仓库 <a href="https://github.com/spencerlyon2/hugo_gh_blog">spencerlyon2/hugo_gh_blog</a>。</p>
 
-<h2 id="创建博客:fcefb200141ace3e7bfd6542457b7a72">创建博客</h2>
+<h2 id="创建博客">创建博客</h2>
 
-<h3 id="编写-config-yaml-文件:fcefb200141ace3e7bfd6542457b7a72">编写 <code>config.yaml</code> 文件</h3>
+<h3 id="编写-config-yaml-文件">编写 <code>config.yaml</code> 文件</h3>
 
 <p>创建一个新的 Hugo 站点的第一步是<a href="http://www.gohugo.org/doc/overview/configuration/">编写配置文件</a>。这个配置文件很重要的原因至少有以下两个：（1）这是全站设置的地方，以及（2）这个配置文件在一定程度上规定了 Hugo 生成网站的方式。比如我创建了一个 <code>config.yaml</code>，里面有如下内容：</p>
 
@@ -558,7 +558,7 @@ canonifyurls: true
 <p>更多信息详见<a href="http://www.gohugo.org/doc/extras/urls/">“额外部分：URLs 页面”中的“标准化: 警告”</a>。</p>
 </blockquote>
 
-<h3 id="定义网站结构:fcefb200141ace3e7bfd6542457b7a72">定义网站结构</h3>
+<h3 id="定义网站结构">定义网站结构</h3>
 
 <p>Hugo 假设你以有意义的方式来组织网站的内容，并使用相同的结构来渲染网站。注意我们在配置文件中有这么一行 <code>contentdir: &quot;content&quot;</code>。这表明网站的所有实际内容都应该放在一个叫做 <code>content</code> 的文件夹中。Hugo 把 <code>content</code> 文件夹中所有文件夹都当做子集。比如在我们的例子中，仅需要一个子集：放置我们博客文章的地方。那么我们创建两个新的文件夹：</p>
 
@@ -567,7 +567,7 @@ canonifyurls: true
         ▾ posts/
 </code></pre>
 
-<h3 id="创建-html-模板:fcefb200141ace3e7bfd6542457b7a72">创建 HTML 模板</h3>
+<h3 id="创建-html-模板">创建 HTML 模板</h3>
 
 <p>下一步是要定义这个新网站的界面和外观。因为 Hugo 将使用用户（你）编写的 HTML 模板来生成网站，因此这一步是非常主观的。我将仅仅展示一个可用于生成博客的主题。我决定以一个叫做 <a href="http://lanyon.getpoole.com/">Lanyou</a> 的 Jekyll 主题为基础来构建这个示例项目。Lanyou 主题由纯 CSS 构成，在本示例仓库的 <code>/static/css</code> 文件夹中有一个轻微修改过的版本。如果你正在跟着本教程学习，那么你需要从示例仓库中抓取 <code>static</code> 文件夹，并把它与你刚创建的 <code>content</code> 文件夹放在一起。</p>
 
@@ -598,7 +598,7 @@ canonifyurls: true
 
 <p>示例仓库中的每个文件都有良好的注释，用于从整体上描述文件的作用，同时也解释了文件中所有的主要部件。如果你对使用/不使用 Hugo 进行网站开发不熟悉，我建议你在这些文件中搜寻一番，找到 Hugo 模板工作的原理以及把网站维系在一起的方式。</p>
 
-<h3 id="添加一些内容:fcefb200141ace3e7bfd6542457b7a72">添加一些内容</h3>
+<h3 id="添加一些内容">添加一些内容</h3>
 
 <p>创建博客的最后一步是添加一些实际的博文。为此，简单的为每篇新博文创建一个 Markdown 文件（加上后缀 <code>.md</code>）。在每篇博文的顶部，你应该添加一个元数据部分，来告诉 Hugo 有关博文的一些信息（见 <a href="http://www.gohugo.org/doc/content/front-matter/">docs</a>)。比如，看下示例仓库中的 <code>/content/posts/newest.md</code> 文件顶部的元数据部分：</p>
 
@@ -615,7 +615,7 @@ categories:
 
 <p>这部分的关键在于强制的 <code>title</code> 和 <code>date</code> 信息，也包括可选项 <code>description</code> 和 <code>categories</code> 。这些元素中的每一个都在 <code>/layouts</code> 文件夹中所有模板上使用，也会把网站上其他页面的博文信息提供给 Hugo。</p>
 
-<h2 id="配置-git-工作流:fcefb200141ace3e7bfd6542457b7a72">配置 <code>git</code> 工作流</h2>
+<h2 id="配置-git-工作流">配置 <code>git</code> 工作流</h2>
 
 <p>一旦网站建立起来并可以工作，我们需要把它推到 GitHub 代码仓库上的正确分支，这样网站就可以被 GitHub Pages 服务托管。有很多方法可以达到这个目的。这里我会向你展示我当前用于管理托管在 GitHub Pages 服务上的网站的工作流。</p>
 
@@ -667,7 +667,7 @@ git subtree push --prefix=public git@github.com:spencerlyon2/hugo_gh_blog.git gh
 
 <p>在执行完这些命令后，等待 GitHub 服务器的更新，我们刚才创建的网站 <a href="http://spencerlyon2.github.io/hugo_gh_blog">http://spencerlyon2.github.io/hugo_gh_blog</a> 就可以访问了。</p>
 
-<h3 id="deploy-sh:fcefb200141ace3e7bfd6542457b7a72"><code>deploy.sh</code></h3>
+<h3 id="deploy-sh"><code>deploy.sh</code></h3>
 
 <p>现在，当你要在博客中添加新的博文时，你将需要依照下列步骤执行：</p>
 
@@ -722,7 +722,7 @@ git subtree push --prefix=public git@github.com:spencerlyon2/hugo_gh_blog.git gh
 
 <p>现在我可以把工作流列表中的最后四项改为一个命令 <code>bash deploy.sh</code>。这个脚本可以接收一个可选参数，作为 git 提交改动的信息。如果你想包含一个自定义的提交信息，在使用 bash 运行脚本时，把它放在引号内并放在脚本的后面：<code>bash deploy.sh &quot;&lt;my commit msg&gt;&quot;</code>。如果你选择不指定的话，脚本会使用当前时间生成一个提交信息。</p>
 
-<h2 id="配置-git-工作流的另一种方法:fcefb200141ace3e7bfd6542457b7a72">配置 <code>git</code> 工作流的另一种方法</h2>
+<h2 id="配置-git-工作流的另一种方法">配置 <code>git</code> 工作流的另一种方法</h2>
 
 <p>上面的方法使用 <code>git subtree</code> 来部署 Git 的 <code>gh-pages</code> 分支。这个方法非常有效，但有一个缺点：它需要将生成的内容提交到源分支。</p>
 
@@ -751,7 +751,7 @@ hugo -d dist
 
 <p>关于部署脚本的更多信息，可以看下这个 <a href="https//github.com/X1011/git-directory-deploy">README</a>。</p>
 
-<h2 id="托管个人-组织的页面:fcefb200141ace3e7bfd6542457b7a72">托管个人/组织的页面</h2>
+<h2 id="托管个人-组织的页面">托管个人/组织的页面</h2>
 
 <p>正如 <a href="https://help.github.com/articles/user-organization-and-project-pages/">GitHub 这篇文章中</a>说提到的，除了项目页面，你也可以托管用户/组织的页面。主要的不同之处在于：</p>
 
@@ -808,7 +808,7 @@ cd ..
 
 <p>就是这样！你的个人页面运行在 <a href="http://username.github.io/">http://username.github.io/</a>（在10分钟延迟之后）。</p>
 
-<h2 id="结论:fcefb200141ace3e7bfd6542457b7a72">结论</h2>
+<h2 id="结论">结论</h2>
 
 <p>希望这篇教程可以帮助你开启建立并运行网站的步伐！如果你有任何问题，欢迎通过<a href="http://www.gohugo.org/doc/community/mailing-list/">论坛</a>与社区联系。</p>
 

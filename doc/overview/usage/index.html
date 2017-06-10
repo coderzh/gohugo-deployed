@@ -573,7 +573,7 @@ Use "hugo help [command]" for more information about a command.
 </code></pre>
 
 
-<h2 id="一般用法:dc32fe45042973266ca60588597e0b66">一般用法</h2>
+<h2 id="一般用法">一般用法</h2>
 
 <p>最常见的用法是在你的当前站点目录里执行 <code>hugo</code> ：</p>
 
@@ -590,7 +590,7 @@ in 120 ms
 
 <p>你的站点将会生成到 <code>public</code> 目录，用来部署到你的 Web 服务器。</p>
 
-<h2 id="开发你的站点时获得实时的反馈:dc32fe45042973266ca60588597e0b66">开发你的站点时获得实时的反馈</h2>
+<h2 id="开发你的站点时获得实时的反馈">开发你的站点时获得实时的反馈</h2>
 
 <p>如果你想立即查看到新的内容改动，告诉 Hugo 让它监控这些改动。
 Hugo 将会监控文件系统的变化，在文件保存时会立即重新构建你的站点：</p>
@@ -627,7 +627,7 @@ Press Ctrl+C to stop
 </code></pre>
 
 
-<h2 id="部署你的站点:dc32fe45042973266ca60588597e0b66">部署你的站点</h2>
+<h2 id="部署你的站点">部署你的站点</h2>
 
 <p>本地开发并执行完 <code>hugo server</code> 之后，你需要最后执行一次 <code>hugo</code> 命令 <strong>不带 <code>server</code> 参数</strong> ，
 然后你就可以通过拷贝 <code>public</code> 目录（通过 FTP 、 SFTP 、 WebDAV 、 Rsync 、 git push 等等）到你的生产环境的 Web 服务器来 <strong>部署你的站点</strong>。</p>
@@ -637,7 +637,7 @@ Press Ctrl+C to stop
 
 <p><a href="http://httpd.apache.org/" title="Apache HTTP Server">Apache</a>, <a href="http://nginx.org/">nginx</a>, <a href="http://www.iis.net/">IIS</a>&hellip;  任何 Web 服务器都支持！</p>
 
-<h3 id="关于部署的说明:dc32fe45042973266ca60588597e0b66">关于部署的说明</h3>
+<h3 id="关于部署的说明">关于部署的说明</h3>
 
 <p>运行 <code>hugo</code> 命令 <em>并不会</em> 删除之前生成的文件。这意味着你必须在运行 <code>hugo</code> 命令之前删除你的 <code>public/</code> 目录（或者你通过 <code>-d</code>/<code>--destination</code> 指定的目录）。
 不然的话，你可能有运行遗留在生成目录的错误文件的风险（比如草稿或者未来的文章）。</p>
@@ -646,19 +646,19 @@ Press Ctrl+C to stop
 
 <p>启动一个会生成草稿内容（有助于编辑）的 Server ，指定一个不同的目标目录： <code>dev/</code> 目录</p>
 
-<p><pre><code class="hljs nohighlight">$ hugo server -wDs ~/Code/hugo/docs -d dev
+<pre><code class="hljs nohighlight">$ hugo server -wDs ~/Code/hugo/docs -d dev
 </code></pre>
-</p>
+
 
 <p>当内容准备好发布时，使用默认的 <code>public/</code> 目录：</p>
 
-<p><pre><code class="hljs nohighlight">$ hugo -s ~/Code/hugo/docs
+<pre><code class="hljs nohighlight">$ hugo -s ~/Code/hugo/docs
 </code></pre>
-</p>
+
 
 <p>这将防止你不小心发布了还未准备好的内容。</p>
 
-<h3 id="或者-直接用-hugo-作为你的-web-服务器:dc32fe45042973266ca60588597e0b66">或者, 直接用 Hugo 作为你的 Web 服务器！</h3>
+<h3 id="或者-直接用-hugo-作为你的-web-服务器">或者, 直接用 Hugo 作为你的 Web 服务器！</h3>
 
 <p>是的，没错！由于 Hugo 运行的非常快，不仅在生成站点时，<em>也</em> 在运行 Web 服务时（得益于 Go 语言关于并发和多线程的良好设计）。
 有些用户事实上选择使用 Hugo 本身作为 Web 服务器<strong>用于他的生产环境服务器</strong>。</p>
@@ -667,12 +667,12 @@ Press Ctrl+C to stop
 
 <p>下面是执行的命令：</p>
 
-<p><pre><code class="hljs nohighlight">$ hugo server --baseURL=http://yoursite.org/ \
+<pre><code class="hljs nohighlight">$ hugo server --baseURL=http://yoursite.org/ \
               --port=80 \
               --appendPort=false \
               --bind=87.245.198.50
 </code></pre>
-</p>
+
 
 <p>注意 <code>bind</code> 选项，指定了服务器绑定到哪个网络接口（默认是 <code>127.0.0.1</code> ，适用于大多数开发的时候）。
 有些服务器，比如 Amazon WS ，使用网络地址转换（NAT）导致你有时很难找到实际使用的 IP 地址。

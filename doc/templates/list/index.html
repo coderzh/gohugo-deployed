@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="A list template is any template that will be used to render multiple pieces of content in a single HTML page (with the exception of the homepage which has a dedicated template). We are using the term list in its truest sense, a sequential arrangement of material, especially in alphabetical or numerical order. Hugo uses list templates to render anyplace where content is being listed such as taxonomies and sections. Which Template will be rendered?">
+        <meta name="description" content="A list template is any template that will be used to render multiple pieces of content in a single HTML page (with the exception of the homepage which has a dedicated template).
+We are using the term list in its truest sense, a sequential arrangement of material, especially in alphabetical or numerical order. Hugo uses list templates to render anyplace where content is being listed such as taxonomies and sections.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Content List Template - Hugo中文文档</title>
@@ -526,7 +527,7 @@ of material, especially in alphabetical or numerical order. Hugo uses
 list templates to render anyplace where content is being listed such as
 taxonomies and sections.</p>
 
-<h2 id="which-template-will-be-rendered:8c265e2adc353bedf8022b542a0b78ab">Which Template will be rendered?</h2>
+<h2 id="which-template-will-be-rendered">Which Template will be rendered?</h2>
 
 <p>Hugo uses a set of rules to figure out which template to use when
 rendering a specific page.</p>
@@ -537,7 +538,7 @@ specific layouts when you want to without creating more templates
 than necessary. For most sites only the _default file at the end of
 the list will be needed.</p>
 
-<h3 id="section-lists:8c265e2adc353bedf8022b542a0b78ab">Section Lists</h3>
+<h3 id="section-lists">Section Lists</h3>
 
 <p>A Section will be rendered at /<code>SECTION</code>/ (e.g.&nbsp;<a href="http://spf13.com/project/">http://spf13.com/project/</a>)</p>
 
@@ -550,7 +551,7 @@ the list will be needed.</p>
 <li>/themes/<code>THEME</code>/layouts/_default/list.html</li>
 </ul>
 
-<h3 id="taxonomy-lists:8c265e2adc353bedf8022b542a0b78ab">Taxonomy Lists</h3>
+<h3 id="taxonomy-lists">Taxonomy Lists</h3>
 
 <p>A Taxonomy will be rendered at /<code>PLURAL</code>/<code>TERM</code>/ (e.g.&nbsp;<a href="http://spf13.com/topics/golang/">http://spf13.com/topics/golang/</a>) from:</p>
 
@@ -563,7 +564,7 @@ the list will be needed.</p>
 <li>/themes/<code>THEME</code>/layouts/_default/list.html</li>
 </ul>
 
-<h3 id="section-rss:8c265e2adc353bedf8022b542a0b78ab">Section RSS</h3>
+<h3 id="section-rss">Section RSS</h3>
 
 <p>A Section’s RSS will be rendered at /<code>SECTION</code>/index.xml (e.g.&nbsp;<a href="http://spf13.com/project/index.xml">http://spf13.com/project/index.xml</a>)</p>
 
@@ -581,7 +582,7 @@ can have different RSS files for each section and taxonomy.</p>
 <li>/themes/<code>THEME</code>/layouts/_default/rss.xml</li>
 </ul>
 
-<h3 id="taxonomy-rss:8c265e2adc353bedf8022b542a0b78ab">Taxonomy RSS</h3>
+<h3 id="taxonomy-rss">Taxonomy RSS</h3>
 
 <p>A Taxonomy’s RSS will be rendered at /<code>PLURAL</code>/<code>TERM</code>/index.xml (e.g.&nbsp;<a href="http://spf13.com/topics/golang/index.xml">http://spf13.com/topics/golang/index.xml</a>)</p>
 
@@ -599,7 +600,7 @@ can have different RSS files for each section and taxonomy.</p>
 <li>/themes/<code>THEME</code>/layouts/_default/rss.xml</li>
 </ul>
 
-<h2 id="variables:8c265e2adc353bedf8022b542a0b78ab">Variables</h2>
+<h2 id="variables">Variables</h2>
 
 <p>List pages are of the type &ldquo;node&rdquo; and have all the <a href="http://www.gohugo.org/doc/templates/variables/">node variables</a>
 and <a href="http://www.gohugo.org/doc/templates/variables/">site variables</a> available to use in the templates.</p>
@@ -608,9 +609,9 @@ and <a href="http://www.gohugo.org/doc/templates/variables/">site variables</a> 
 
 <p><strong>.Data.<code>Singular</code></strong> The taxonomy itself.<br></p>
 
-<h2 id="example-list-template-pages:8c265e2adc353bedf8022b542a0b78ab">Example List Template Pages</h2>
+<h2 id="example-list-template-pages">Example List Template Pages</h2>
 
-<h3 id="example-section-template-post-html:8c265e2adc353bedf8022b542a0b78ab">Example section template (post.html)</h3>
+<h3 id="example-section-template-post-html">Example section template (post.html)</h3>
 
 <p>This content template is used for <a href="http://spf13.com/">spf13.com</a>.
 It makes use of <a href="http://www.gohugo.org/doc/templates/partials/">partial templates</a>. All examples use a
@@ -634,7 +635,7 @@ defined.</p>
 {{ partial &quot;footer.html&quot; . }}
 </code></pre>
 
-<h3 id="example-taxonomy-template-tag-html:8c265e2adc353bedf8022b542a0b78ab">Example taxonomy template (tag.html)</h3>
+<h3 id="example-taxonomy-template-tag-html">Example taxonomy template (tag.html)</h3>
 
 <p>This content template is used for <a href="http://spf13.com/">spf13.com</a>.
 It makes use of <a href="http://www.gohugo.org/doc/templates/partials/">partial templates</a>. All examples use a
@@ -656,7 +657,7 @@ defined.</p>
 {{ partial &quot;footer.html&quot; . }}
 </code></pre>
 
-<h2 id="ordering-content:8c265e2adc353bedf8022b542a0b78ab">Ordering Content</h2>
+<h2 id="ordering-content">Ordering Content</h2>
 
 <p>In the case of Hugo, each list will render the content based on metadata provided in the <a href="http://www.gohugo.org/doc/content/front-matter/">front
 matter</a>. See <a href="http://www.gohugo.org/doc/content/ordering/">ordering content</a> for more information.</p>
@@ -664,7 +665,7 @@ matter</a>. See <a href="http://www.gohugo.org/doc/content/ordering/">ordering c
 <p>Here are a variety of different ways you can order the content items in
 your list templates:</p>
 
-<h3 id="order-by-weight-date-default:8c265e2adc353bedf8022b542a0b78ab">Order by Weight -&gt; Date (default)</h3>
+<h3 id="order-by-weight-date-default">Order by Weight -&gt; Date (default)</h3>
 
 <pre><code>{{ range .Data.Pages }}
 &lt;li&gt;
@@ -674,7 +675,7 @@ your list templates:</p>
 {{ end }}
 </code></pre>
 
-<h3 id="order-by-weight-date:8c265e2adc353bedf8022b542a0b78ab">Order by Weight -&gt; Date</h3>
+<h3 id="order-by-weight-date">Order by Weight -&gt; Date</h3>
 
 <pre><code>{{ range .Data.Pages.ByWeight }}
 &lt;li&gt;
@@ -684,7 +685,7 @@ your list templates:</p>
 {{ end }}
 </code></pre>
 
-<h3 id="order-by-date:8c265e2adc353bedf8022b542a0b78ab">Order by Date</h3>
+<h3 id="order-by-date">Order by Date</h3>
 
 <pre><code>{{ range .Data.Pages.ByDate }}
 &lt;li&gt;
@@ -694,7 +695,7 @@ your list templates:</p>
 {{ end }}
 </code></pre>
 
-<h3 id="order-by-publishdate:8c265e2adc353bedf8022b542a0b78ab">Order by PublishDate</h3>
+<h3 id="order-by-publishdate">Order by PublishDate</h3>
 
 <pre><code>{{ range .Data.Pages.ByPublishDate }}
 &lt;li&gt;
@@ -704,7 +705,7 @@ your list templates:</p>
 {{ end }}
 </code></pre>
 
-<h3 id="order-by-length:8c265e2adc353bedf8022b542a0b78ab">Order by Length</h3>
+<h3 id="order-by-length">Order by Length</h3>
 
 <pre><code>{{ range .Data.Pages.ByLength }}
 &lt;li&gt;
@@ -714,7 +715,7 @@ your list templates:</p>
 {{ end }}
 </code></pre>
 
-<h3 id="order-by-title:8c265e2adc353bedf8022b542a0b78ab">Order by Title</h3>
+<h3 id="order-by-title">Order by Title</h3>
 
 <pre><code>{{ range .Data.Pages.ByTitle }}
 &lt;li&gt;
@@ -724,7 +725,7 @@ your list templates:</p>
 {{ end }}
 </code></pre>
 
-<h3 id="order-by-linktitle:8c265e2adc353bedf8022b542a0b78ab">Order by LinkTitle</h3>
+<h3 id="order-by-linktitle">Order by LinkTitle</h3>
 
 <pre><code>{{ range .Data.Pages.ByLinkTitle }}
 &lt;li&gt;
@@ -734,7 +735,7 @@ your list templates:</p>
 {{ end }}
 </code></pre>
 
-<h3 id="reverse-order:8c265e2adc353bedf8022b542a0b78ab">Reverse Order</h3>
+<h3 id="reverse-order">Reverse Order</h3>
 
 <p>Can be applied to any of the above. Using Date for an example.</p>
 
@@ -746,7 +747,7 @@ your list templates:</p>
 {{ end }}
 </code></pre>
 
-<h2 id="grouping-content:8c265e2adc353bedf8022b542a0b78ab">Grouping Content</h2>
+<h2 id="grouping-content">Grouping Content</h2>
 
 <p>Hugo provides some grouping functions for list pages. You can use them to
 group pages by Section, Type, Date etc.</p>
@@ -754,7 +755,7 @@ group pages by Section, Type, Date etc.</p>
 <p>Here are a variety of different ways you can group the content items in
 your list templates:</p>
 
-<h3 id="grouping-by-page-field:8c265e2adc353bedf8022b542a0b78ab">Grouping by Page field</h3>
+<h3 id="grouping-by-page-field">Grouping by Page field</h3>
 
 <pre><code>{{ range .Data.Pages.GroupBy &quot;Section&quot; }}
 &lt;h3&gt;{{ .Key }}&lt;/h3&gt;
@@ -769,7 +770,7 @@ your list templates:</p>
 {{ end }}
 </code></pre>
 
-<h3 id="grouping-by-page-date:8c265e2adc353bedf8022b542a0b78ab">Grouping by Page date</h3>
+<h3 id="grouping-by-page-date">Grouping by Page date</h3>
 
 <pre><code>{{ range .Data.Pages.GroupByDate &quot;2006-01&quot; }}
 &lt;h3&gt;{{ .Key }}&lt;/h3&gt;
@@ -784,7 +785,7 @@ your list templates:</p>
 {{ end }}
 </code></pre>
 
-<h3 id="grouping-by-page-publish-date:8c265e2adc353bedf8022b542a0b78ab">Grouping by Page publish date</h3>
+<h3 id="grouping-by-page-publish-date">Grouping by Page publish date</h3>
 
 <pre><code>{{ range .Data.Pages.GroupByPublishDate &quot;2006-01&quot; }}
 &lt;h3&gt;{{ .Key }}&lt;/h3&gt;
@@ -799,7 +800,7 @@ your list templates:</p>
 {{ end }}
 </code></pre>
 
-<h3 id="grouping-by-page-param:8c265e2adc353bedf8022b542a0b78ab">Grouping by Page param</h3>
+<h3 id="grouping-by-page-param">Grouping by Page param</h3>
 
 <pre><code>{{ range .Data.Pages.GroupByParam &quot;param_key&quot; }}
 &lt;h3&gt;{{ .Key }}&lt;/h3&gt;
@@ -814,7 +815,7 @@ your list templates:</p>
 {{ end }}
 </code></pre>
 
-<h3 id="grouping-by-page-param-in-date-format:8c265e2adc353bedf8022b542a0b78ab">Grouping by Page param in date format</h3>
+<h3 id="grouping-by-page-param-in-date-format">Grouping by Page param in date format</h3>
 
 <pre><code>{{ range .Data.Pages.GroupByParamDate &quot;param_key&quot; &quot;2006-01&quot; }}
 &lt;h3&gt;{{ .Key }}&lt;/h3&gt;
@@ -829,7 +830,7 @@ your list templates:</p>
 {{ end }}
 </code></pre>
 
-<h3 id="reversing-key-order:8c265e2adc353bedf8022b542a0b78ab">Reversing Key Order</h3>
+<h3 id="reversing-key-order">Reversing Key Order</h3>
 
 <p>The ordering of the groups is performed by keys in alphanumeric order (A–Z,
 1–100) and in reverse chronological order (newest first) for dates.</p>
@@ -838,7 +839,7 @@ your list templates:</p>
 are two different syntaxes to change the order; they both work the same way, so
 it’s really just a matter of preference.</p>
 
-<h4 id="reverse-method:8c265e2adc353bedf8022b542a0b78ab">Reverse method</h4>
+<h4 id="reverse-method">Reverse method</h4>
 
 <pre><code>{{ range (.Data.Pages.GroupBy &quot;Section&quot;).Reverse }}
 ...
@@ -847,7 +848,7 @@ it’s really just a matter of preference.</p>
 ...
 </code></pre>
 
-<h4 id="providing-the-alternate-direction:8c265e2adc353bedf8022b542a0b78ab">Providing the (alternate) direction</h4>
+<h4 id="providing-the-alternate-direction">Providing the (alternate) direction</h4>
 
 <pre><code>{{ range .Data.Pages.GroupByDate &quot;2006-01&quot; &quot;asc&quot; }}
 ...
@@ -856,7 +857,7 @@ it’s really just a matter of preference.</p>
 ...
 </code></pre>
 
-<h3 id="ordering-pages-within-group:8c265e2adc353bedf8022b542a0b78ab">Ordering Pages within Group</h3>
+<h3 id="ordering-pages-within-group">Ordering Pages within Group</h3>
 
 <p>Because Grouping returns a key and a slice of pages, all of the ordering methods listed above are available.</p>
 
@@ -876,13 +877,13 @@ within each group in alphabetical order by title.</p>
 {{ end }}
 </code></pre>
 
-<h2 id="filtering-limiting-content:8c265e2adc353bedf8022b542a0b78ab">Filtering &amp; Limiting Content</h2>
+<h2 id="filtering-limiting-content">Filtering &amp; Limiting Content</h2>
 
 <p>Sometimes you only want to list a subset of the available content. A common
 request is to only display “Posts” on the homepage. Using the <code>where</code> function,
 you can do just that.</p>
 
-<h3 id="first:8c265e2adc353bedf8022b542a0b78ab"><code>first</code></h3>
+<h3 id="first"><code>first</code></h3>
 
 <p><code>first</code> works like the <code>limit</code> keyword in SQL. It reduces the array to only the
 first <em>N</em> elements. It takes the array and number of elements as input.</p>
@@ -892,7 +893,7 @@ first <em>N</em> elements. It takes the array and number of elements as input.</
 {{ end }}
 </code></pre>
 
-<h3 id="where:8c265e2adc353bedf8022b542a0b78ab"><code>where</code></h3>
+<h3 id="where"><code>where</code></h3>
 
 <p><code>where</code> works in a similar manner to the <code>where</code> keyword in SQL. It selects all
 elements of the slice that match the provided field and value. It takes three
@@ -904,7 +905,7 @@ value&rsquo;.</p>
 {{ end }}
 </code></pre>
 
-<h3 id="first-where-together:8c265e2adc353bedf8022b542a0b78ab"><code>first</code> &amp; <code>where</code> Together</h3>
+<h3 id="first-where-together"><code>first</code> &amp; <code>where</code> Together</h3>
 
 <p>Using both together can be very powerful.</p>
 

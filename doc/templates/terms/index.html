@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="A unique template is needed to create a list of the terms for a given taxonomy. This is different from the list template as that template is a list of content, whereas this is a list of meta data. Which Template will be rendered? Hugo uses a set of rules to figure out which template to use when rendering a specific page. A Taxonomy Terms List will be rendered at /PLURAL/ (e.g.">
+        <meta name="description" content="A unique template is needed to create a list of the terms for a given taxonomy. This is different from the list template as that template is a list of content, whereas this is a list of meta data.
+Which Template will be rendered? Hugo uses a set of rules to figure out which template to use when rendering a specific page.
+A Taxonomy Terms List will be rendered at /PLURAL/ (e.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Taxonomy Terms Template - Hugo中文文档</title>
@@ -521,7 +523,7 @@
 taxonomy. This is different from the <a href="http://www.gohugo.org/doc/templates/list/">list template</a>
 as that template is a list of content, whereas this is a list of meta data.</p>
 
-<h2 id="which-template-will-be-rendered:9b10c1f64082d3869fd4cb1f85809430">Which Template will be rendered?</h2>
+<h2 id="which-template-will-be-rendered">Which Template will be rendered?</h2>
 
 <p>Hugo uses a set of rules to figure out which template to use when
 rendering a specific page.</p>
@@ -547,7 +549,7 @@ common for people to render taxonomy terms lists on other pages such as
 the homepage or the sidebar (such as a tag cloud) and not have a
 dedicated page for the terms.</p>
 
-<h2 id="variables:9b10c1f64082d3869fd4cb1f85809430">Variables</h2>
+<h2 id="variables">Variables</h2>
 
 <p>Taxonomy Terms pages are of the type &ldquo;node&rdquo; and have all the
 <a href="http://www.gohugo.org/doc/templates/variables/">node variables</a> and
@@ -566,7 +568,7 @@ available to use in the templates.</p>
 
 <p>The last two can also be reversed: <strong>.Data.Terms.Alphabetical.Reverse</strong>, <strong>.Data.Terms.ByCount.Reverse</strong>.</p>
 
-<h3 id="example-terms-html-files:9b10c1f64082d3869fd4cb1f85809430">Example terms.html files</h3>
+<h3 id="example-terms-html-files">Example terms.html files</h3>
 
 <p>List pages are of the type &ldquo;node&rdquo; and have all the
 <a href="http://www.gohugo.org/doc/templates/variables/">node variables</a> and
@@ -627,7 +629,7 @@ content tagged with each tag.</p>
 {{ partial &quot;footer.html&quot; . }}
 </code></pre>
 
-<h2 id="ordering:9b10c1f64082d3869fd4cb1f85809430">Ordering</h2>
+<h2 id="ordering">Ordering</h2>
 
 <p>Hugo can order the meta data in two different ways. It can be ordered:</p>
 
@@ -636,7 +638,7 @@ content tagged with each tag.</p>
 <li>alphabetically.</li>
 </ul>
 
-<h3 id="example-terms-html-file-alphabetical:9b10c1f64082d3869fd4cb1f85809430">Example terms.html file (alphabetical)</h3>
+<h3 id="example-terms-html-file-alphabetical">Example terms.html file (alphabetical)</h3>
 
 <pre><code>{{ partial &quot;header.html&quot; . }}
 {{ partial &quot;subheader.html&quot; . }}
@@ -655,7 +657,7 @@ content tagged with each tag.</p>
 {{ partial &quot;footer.html&quot; . }}
 </code></pre>
 
-<h3 id="example-terms-html-file-ordered-by-popularity:9b10c1f64082d3869fd4cb1f85809430">Example terms.html file (ordered by popularity)</h3>
+<h3 id="example-terms-html-file-ordered-by-popularity">Example terms.html file (ordered by popularity)</h3>
 
 <pre><code>{{ partial &quot;header.html&quot; . }}
 {{ partial &quot;subheader.html&quot; . }}

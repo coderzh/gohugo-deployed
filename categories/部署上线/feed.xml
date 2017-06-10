@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>部署上线 on Hugo中文文档</title>
-        <link>http://www.gohugo.org/categories/%E9%83%A8%E7%BD%B2%E4%B8%8A%E7%BA%BF/</link>
+        <link>http://www.gohugo.org/categories/%E9%83%A8%E7%BD%B2%E4%B8%8A%E7%BA%BF/feed/index.xml</link>
         <language>zh-CN</language>
         <author>CoderZh</author>
         <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Sun, 13 Sep 2015 08:48:52 CST</updated>
+        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
         
         <item>
             <title>通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages</title>
@@ -14,13 +14,13 @@
             <pubDate>Sun, 13 Sep 2015 08:48:52 CST</pubDate>
             <author>CoderZh</author>
             <guid>http://www.gohugo.org/post/coderzh-automated-deploy-hugo/</guid>
-            <description>
+            <description>&lt;p&gt;本文的主要内容如标题所示，通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages。如果你正好有这个需求，看这篇文章正好，可以节省你不少时间。如果不是，了解一下也无妨。&lt;/p&gt;
 
-&lt;p&gt;本文的主要内容如标题所示，通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages。如果你正好有这个需求，看这篇文章正好，可以节省你不少时间。如果不是，了解一下也无妨。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;首先，必须解释一下，为什么需要自动部署，以及为什么需要需要同时部署到GitHub Pages和GitCafe Pages。&lt;/p&gt;
 
-&lt;h3 id=&#34;为什么要自动部署:129785333cd5702aa2a72cbe3e24d903&#34;&gt;为什么要自动部署&lt;/h3&gt;
+&lt;h3 id=&#34;为什么要自动部署&#34;&gt;为什么要自动部署&lt;/h3&gt;
 
 &lt;p&gt;使用Hugo生成的静态页面是在public文件夹里，部署的时候需要把public文件夹里的内容push到GitHub的gh-pages分支里。每次写完文章，除了push markdown格式的文章，还需要单独push生成的public文件夹里的东西，步骤稍显麻烦。&lt;/p&gt;
 
@@ -28,7 +28,7 @@
 
 &lt;p&gt;Hugo生成静态页面和部署的过程应该让机器自动来完成。&lt;strong&gt;写作应该是一个相对单纯的事情，使用Hugo的人应该更专注于写作。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;为什么需要同时部署到github-pages和gitcafe-pages:129785333cd5702aa2a72cbe3e24d903&#34;&gt;为什么需要同时部署到GitHub Pages和GitCafe Pages&lt;/h3&gt;
+&lt;h3 id=&#34;为什么需要同时部署到github-pages和gitcafe-pages&#34;&gt;为什么需要同时部署到GitHub Pages和GitCafe Pages&lt;/h3&gt;
 
 &lt;p&gt;大公司很喜欢的一个词：容灾。GitHub出现不可访问的事情在国内也是常有的，而GitCafe作为国内的代码托管厂商，是否是一个稳定的存在也不好说。所以，将网站同时部署到这两个上面。通过DnsPod里CNAME设置线路“国内”和“国外”，不仅起到了任何一个挂掉，另一个可以继续工作的目的，还起到了CDN就近访问的作用。&lt;/p&gt;
 
@@ -43,7 +43,7 @@ http://gohugo.io/tutorials/automated-deployments/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;由于Wercker还不支持GitCafe的部署，以及我需要使用特定的修改版本的Hugo来生成静态网页，并且希望这些步骤比较可控，所以，还是自己来折腾整个过程吧。&lt;/p&gt;
 
-&lt;h3 id=&#34;webhook:129785333cd5702aa2a72cbe3e24d903&#34;&gt;webhook&lt;/h3&gt;
+&lt;h3 id=&#34;webhook&#34;&gt;webhook&lt;/h3&gt;
 
 &lt;p&gt;webhook是GitHub上提供的Git的一种Hook机制，当代码发生变化时，比如代码被Push到GitHub的Repo时，GitHub会自动请求一个你指定的网页，并且把变更相关的参数都传递过来。入口在Repo的Settings - webhooks &amp;amp; services&lt;/p&gt;
 
@@ -88,7 +88,7 @@ http://gohugo.io/tutorials/automated-deployments/&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;http://yourserver:9876/hooks/redeploy-webhook
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;自动部署:129785333cd5702aa2a72cbe3e24d903&#34;&gt;自动部署&lt;/h3&gt;
+&lt;h3 id=&#34;自动部署&#34;&gt;自动部署&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/AutoDeploy.png-w&#34; alt=&#34;AutoDeploy&#34; /&gt;&lt;/p&gt;
 
@@ -149,8 +149,7 @@ gvm use go1.5.1 --default
 go version
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;最后，Good Luck！&lt;/p&gt;
-</description>
+&lt;p&gt;最后，Good Luck！&lt;/p&gt;</description>
         </item>
         
     </channel>

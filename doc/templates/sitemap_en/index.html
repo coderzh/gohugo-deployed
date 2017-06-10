@@ -3,7 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="A single Sitemap template is used to generate the sitemap.xml file. Hugo automatically comes with this template file. No work is needed on the users&rsquo; part unless they want to customize sitemap.xml. This page is of the type &ldquo;node&rdquo; and have all the node variables available to use in this template along with Sitemap-specific ones: .Sitemap.ChangeFreq The page change frequency .Sitemap.Priority The priority of the page In addition to the standard node variables, the homepage has access to all site pages through .Data.Pages.">
+        <meta name="description" content="A single Sitemap template is used to generate the sitemap.xml file. Hugo automatically comes with this template file. No work is needed on the users&rsquo; part unless they want to customize sitemap.xml.
+This page is of the type &ldquo;node&rdquo; and have all the node variables available to use in this template along with Sitemap-specific ones:
+.Sitemap.ChangeFreq The page change frequency
+.Sitemap.Priority The priority of the page
+In addition to the standard node variables, the homepage has access to all site pages through .">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Sitemap Template - Hugo中文文档</title>
@@ -534,7 +538,7 @@ site pages through <code>.Data.Pages</code>.</p>
 <p>If provided, Hugo will use <code>/layouts/sitemap.xml</code> instead of the internal
 one.</p>
 
-<h2 id="hugo-s-sitemap-xml:da4731077751e435e2985062c42198dd">Hugo’s sitemap.xml</h2>
+<h2 id="hugo-s-sitemap-xml">Hugo’s sitemap.xml</h2>
 
 <p>This template respects the version 0.9 of the <a href="http://www.sitemaps.org/protocol.html">Sitemap
 Protocol</a>.</p>
@@ -557,7 +561,7 @@ on render. Please don&rsquo;t include this in the template as it&rsquo;s not val
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;yes&quot; ?&gt;
 </code></pre>
 
-<h2 id="configuring-sitemap-xml:da4731077751e435e2985062c42198dd">Configuring sitemap.xml</h2>
+<h2 id="configuring-sitemap-xml">Configuring sitemap.xml</h2>
 
 <p>Defaults for <code>&lt;changefreq&gt;</code> and <code>&lt;priority&gt;</code> values can be set in the site&rsquo;s config file, e.g.:</p>
 

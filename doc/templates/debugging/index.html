@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Template Debugging Here are some snippets you can add to your template to answer some common questions. These snippets use the printf function available in all Go templates. This function is an alias to the Go function, fmt.Printf. What type of page is this? Does Hugo consider this page to be a &ldquo;Node&rdquo; or a &ldquo;Page&rdquo;? (Put this snippet at the top level of your template. Don&rsquo;t use it inside of a range loop.) {{ printf &quot;%T&quot; .">
+        <meta name="description" content="Template Debugging Here are some snippets you can add to your template to answer some common questions. These snippets use the printf function available in all Go templates. This function is an alias to the Go function, fmt.Printf.
+What type of page is this? Does Hugo consider this page to be a &ldquo;Node&rdquo; or a &ldquo;Page&rdquo;? (Put this snippet at the top level of your template. Don&rsquo;t use it inside of a range loop.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Template Debugging - Hugo中文文档</title>
@@ -517,13 +518,13 @@
                 <section>
                     
 
-<h1 id="template-debugging:9df68a0e9ceffd0ef168c5e5e50c9f94">Template Debugging</h1>
+<h1 id="template-debugging">Template Debugging</h1>
 
 <p>Here are some snippets you can add to your template to answer some common questions.
 These snippets use the <code>printf</code> function available in all Go templates.  This function is
 an alias to the Go function, <a href="http://golang.org/pkg/fmt/">fmt.Printf</a>.</p>
 
-<h3 id="what-type-of-page-is-this:9df68a0e9ceffd0ef168c5e5e50c9f94">What type of page is this?</h3>
+<h3 id="what-type-of-page-is-this">What type of page is this?</h3>
 
 <p>Does Hugo consider this page to be a &ldquo;Node&rdquo; or a &ldquo;Page&rdquo;? (Put this snippet at
 the top level of your template. Don&rsquo;t use it inside of a <code>range</code> loop.)</p>
@@ -531,7 +532,7 @@ the top level of your template. Don&rsquo;t use it inside of a <code>range</code
 <pre><code>{{ printf &quot;%T&quot; . }}
 </code></pre>
 
-<h3 id="what-variables-are-available-in-this-context:9df68a0e9ceffd0ef168c5e5e50c9f94">What variables are available in this context?</h3>
+<h3 id="what-variables-are-available-in-this-context">What variables are available in this context?</h3>
 
 <p>You can use the template syntax, <code>$.</code>, to get the top-level template context
 from anywhere in your template.  This will print out all the values under, <code>.Site</code>.</p>

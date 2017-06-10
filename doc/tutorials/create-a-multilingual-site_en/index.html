@@ -517,7 +517,7 @@
                 <section>
                     
 
-<h2 id="introduction:6339fe256213f20f20dcc34404e46a10">Introduction</h2>
+<h2 id="introduction">Introduction</h2>
 
 <p>Hugo allows you to create a multilingual site from its built-in tools. This tutorial will show one way to do it, and assumes:</p>
 
@@ -529,7 +529,7 @@
 <li>You&rsquo;ll use a subfolder for each language under <code>content</code> and <code>public</code></li>
 </ul>
 
-<h2 id="site-configs:6339fe256213f20f20dcc34404e46a10">Site Configs</h2>
+<h2 id="site-configs">Site Configs</h2>
 
 <p>Create your site configs in the root of your repository, for example for an English and Japanese site.</p>
 
@@ -557,7 +557,7 @@ publishdir = &quot;public/ja&quot;
 
 <p>If you had more domains and languages, you would just create more config files. The standard <code>config.toml</code> is what Hugo will run as a default, but since we&rsquo;re creating language-specific ones, you&rsquo;ll need to specify each config file when running <code>hugo server</code> or just <code>hugo</code> before deploying.</p>
 
-<h2 id="prep-translation-strings-in-data:6339fe256213f20f20dcc34404e46a10">Prep Translation Strings in <code>/data</code></h2>
+<h2 id="prep-translation-strings-in-data">Prep Translation Strings in <code>/data</code></h2>
 
 <p>Create <code>.yaml</code> (or <code>.json</code> or <code>.toml</code>) files for each language, under <code>/data/translations</code>.</p>
 
@@ -577,7 +577,7 @@ topsubslogan: キット勝つぞ
 
 <p>In some cases, where there is more complex formatting within the strings you want to show, it might be better to employ some conditional logic in your template, to display a block of html per language.</p>
 
-<h2 id="reference-strings-in-templates:6339fe256213f20f20dcc34404e46a10">Reference Strings in templates</h2>
+<h2 id="reference-strings-in-templates">Reference Strings in templates</h2>
 
 <p>Now you can reference the strings in your templates. One way is to do it like in this <code>layouts/index.html</code>, leveraging the fact that you have the locale set:</p>
 
@@ -600,7 +600,7 @@ topsubslogan: キット勝つぞ
 
 <p>The above shows both techniques, using an <code>if eq</code> and <code>else if eq</code> to check the locale, and using <code>index</code> to pull strings from the data file that matches the locale set in the site&rsquo;s config file.</p>
 
-<h2 id="customize-dates:6339fe256213f20f20dcc34404e46a10">Customize Dates</h2>
+<h2 id="customize-dates">Customize Dates</h2>
 
 <p>At the time of this writing, Golang does not yet have support for internationalized locales, but if you do some work, you can simulate it. For example, if you want to use French month names, you can add a data file like <code>data/mois.yaml</code> with this content:</p>
 
@@ -627,11 +627,11 @@ topsubslogan: キット勝つぞ
 
 <p>This technique extracts the day, month and year by specifying <code>.Date.Day</code>, <code>.Date.Month</code>, and <code>.Date.Year</code>, and uses the month number as a key, when indexing the month name data file.</p>
 
-<h2 id="create-multilingual-content:6339fe256213f20f20dcc34404e46a10">Create Multilingual Content</h2>
+<h2 id="create-multilingual-content">Create Multilingual Content</h2>
 
 <p>Now you can create markdown content in your languages, in the <code>content/en</code> and <code>content/ja</code> folders. The frontmatter stays the same on the key side, but the values would be set in each of the languages.</p>
 
-<h2 id="run-hugo-server-or-deploy-commands:6339fe256213f20f20dcc34404e46a10">Run Hugo Server or Deploy Commands</h2>
+<h2 id="run-hugo-server-or-deploy-commands">Run Hugo Server or Deploy Commands</h2>
 
 <p>Once you have things set up, you can run <code>hugo server</code> or <code>hugo</code> before deploying. You can create scripts to do it, or as shell functions. Here are sample basic <code>zsh</code> functions:</p>
 

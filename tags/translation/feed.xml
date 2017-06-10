@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Translation on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/translation/</link>
+        <link>http://www.gohugo.org/tags/translation/feed/index.xml</link>
         <language>zh-CN</language>
         <author>CoderZh</author>
         <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Tue, 26 Aug 2014 19:40:00 -0400</updated>
+        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
         
     </channel>
 </rss>

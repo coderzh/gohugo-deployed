@@ -2,11 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Posts on Hugo中文文档</title>
-        <link>http://www.gohugo.org/post/</link>
+        <link>http://www.gohugo.org/post/feed/index.xml</link>
         <language>zh-CN</language>
         <author>CoderZh</author>
         <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Sat, 29 Aug 2015 16:52:15 CST</updated>
+        <updated>Sun, 30 Apr 2017 20:55:09 CST</updated>
+        
+        <item>
+            <title>使用Caddy和Hugo构建个人博客</title>
+            <link>http://www.gohugo.org/post/qhsong-host-hugo-blog-using-caddy/</link>
+            <pubDate>Sun, 30 Apr 2017 20:55:09 CST</pubDate>
+            <author>CoderZh</author>
+            <guid>http://www.gohugo.org/post/qhsong-host-hugo-blog-using-caddy/</guid>
+            <description>&lt;h2 id=&#34;介绍&#34;&gt;介绍&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;是一个强大的静态博客生成器，由spf13使用Golang开发。在性能和生成文章的速度上都不错。目前的版本是0.20.6，依然没有迈出1.0的大版本号。一直在用Hugo进行博客的写作。（半年多没有更新博客了，逃&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://caddyserver.com/&#34;&gt;Caddy&lt;/a&gt;同样也是一个由Golang开发的HTTP server，其最大的亮点就是内建了HTTPS和HTTP2的支持，同时自动能够向Let&amp;rsquo;s Encrypt申请证书。同时，支持Middleware的功能，使用Golang撰写的Middleware能够支持各种各样的功能，同时任何人都可以撰写自己的Middleware，个性化这个HTTP Server。  &lt;/p&gt;
+
+&lt;h2 id=&#34;使用背景&#34;&gt;使用背景&lt;/h2&gt;
+
+&lt;p&gt;我自己的博客项目是托管在Github上，每一次撰写完成后，需要Push到Github上，然后再到Host上Pull下来，然后本地Hugo自动更新。之前的证书呢是定期去Let&amp;rsquo;s Encrypt申请，一到证书过期日子就非常的麻烦。
+在学长的介绍下，认识了Caddy。Caddy有Hugo和Git插件，通过各种组合实现Hugo的自动更新和Github的webhook自动拉取，这样只要将博客文章push到了Github之后，剩下的事情就靠Caddy的中间件来完成，极大的自动化了这个过程。&lt;/p&gt;
+
+&lt;h2 id=&#34;过程&#34;&gt;过程&lt;/h2&gt;
+
+&lt;h3 id=&#34;安装caddy和hugo&#34;&gt;安装Caddy和Hugo&lt;/h3&gt;
+
+&lt;p&gt;Caddy和Hugo的安装参见对应的安装文档，因为都是Golang编译出来的，所以只要把二进制Down下来就能够运行。安装Caddy的时候，一定要选择http.git和http.hugo这两个Middleware，否则之后的功能都不能实现。&lt;br /&gt;
+Hugo安装后，一定要放在&lt;code&gt;$PATH&lt;/code&gt;中供Caddy调用。&lt;/p&gt;
+
+&lt;h3 id=&#34;设置caddy配置文件&#34;&gt;设置Caddy配置文件&lt;/h3&gt;
+
+&lt;p&gt;Caddy的配置文件比较简单，下面是我使用的一个配置文件&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;https://sqh.me {
+    tls you@example.com
+    gzip
+    root /home/qhsong/sqh.me/public
+    git github.com/qhsong/sqh.me {
+        path /home/qhsong/sqh.me
+        then hugo --destination=/home/qhsong/sqh.me/public
+        hook /webhook GitHubSecretKey
+        hook_type github
+        clone_args --recursive
+        pull_args --recurse-submodules
+    }
+    hugo
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;这个配置文件里面，tls设置了给Let&amp;rsquo;s Encrypt证书申请的Email，root设置Hugo生成后的静态网站网址。
+git 配置里面，填入了我的github地址。同时，指定了Clone的路径Path，使用then语句来指定克隆完成后做的事情。
+最后，在hook和hook_type中分别webhook的路径和type，这个一定要写，否则webhook不能正常调用。更详细的参数说明，详见&lt;a href=&#34;https://caddyserver.com/docs/http.git&#34;&gt;http.git&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h3 id=&#34;设置github的webhook&#34;&gt;设置Github的Webhook&lt;/h3&gt;
+
+&lt;p&gt;Github的WebHook设置比较简单，设置好你的SecretKey，同时选择Content-Type为&lt;code&gt;application/json&lt;/code&gt;，这样Caddy才能正常解析。&lt;/p&gt;
+
+&lt;h3 id=&#34;设置systemd自动开机启动&#34;&gt;设置Systemd自动开机启动&lt;/h3&gt;
+
+&lt;p&gt;Caddy同时提供了各种各样的启动脚本，见&lt;a href=&#34;https://github.com/mholt/caddy/tree/master/dist/init&#34;&gt;caddy/dist/init&lt;/a&gt;。选择一个适合你的系统的，然后复制到对应目录下，并进行修改就能使用。
+考虑使用Supervisord，Systemd的配置有点繁琐。。&lt;/p&gt;
+
+&lt;h3 id=&#34;done&#34;&gt;Done&lt;/h3&gt;
+
+&lt;p&gt;至此就可以完整的搞定这一切了&lt;/p&gt;
+
+&lt;h2 id=&#34;结束&#34;&gt;结束&lt;/h2&gt;
+
+&lt;p&gt;Golang催生了很多有意思的东西，貌似Caddy已经商业化了。Golang社区也在蓬勃发展当中,还是有一些有意思的事情等待我们去发现的~ 虽然现在还在写C++。。。&lt;/p&gt;</description>
+        </item>
         
         <item>
             <title>使用hugo搭建个人博客站点</title>
@@ -14,15 +80,15 @@
             <pubDate>Sat, 29 Aug 2015 16:52:15 CST</pubDate>
             <author>CoderZh</author>
             <guid>http://www.gohugo.org/post/coderzh-hugo/</guid>
-            <description>
+            <description>&lt;p&gt;Hugo是一个用Go语言编写的静态网站生成器，它使用起来非常简单，相对于Jekyll复杂的安装设置来说，Hugo仅需要一个二进制文件hugo(hugo.exe)即可轻松用于本地调试和生成静态页面。&lt;/p&gt;
 
-&lt;p&gt;Hugo是一个用Go语言编写的静态网站生成器，它使用起来非常简单，相对于Jekyll复杂的安装设置来说，Hugo仅需要一个二进制文件hugo(hugo.exe)即可轻松用于本地调试和生成静态页面。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;Hugo生成静态页面的效率很高，我的260多篇博客文章生成几乎是瞬间完成的，而之前用Jekyll需要等待10秒左右。&lt;/p&gt;
 
 &lt;p&gt;Hugo自带watch的调试模式，可以在我修改MarkDown文章之后切换到浏览器，页面会检测到更新并且自动刷新，呈现出最终效果，能极大的提高博客书写效率。再加上Hugo是使用Go语言编写，已经没有任何理由不使用Hugo来代替Jekyll作为我的个人博客站点生成器了。&lt;/p&gt;
 
-&lt;h3 id=&#34;静态网站生成器:de3dd58c86fa17097e3db47fe202533f&#34;&gt;静态网站生成器&lt;/h3&gt;
+&lt;h3 id=&#34;静态网站生成器&#34;&gt;静态网站生成器&lt;/h3&gt;
 
 &lt;p&gt;什么是静态网站生成器？如果追溯到最早的网站形式，那时候的网页都是静态的，即一个内容不变的html文件放在服务器上，人们通过互联网访问浏览的都是这个一成不变的页面。后来，人们发现，需要和网页进行交互，能根据用户的输入动态呈现出相应的内容，这就是动态网站。那，为什么现在又回归使用静态网站呢？特别是对于博客网站这种特殊的形式。我的理解是：&lt;/p&gt;
 
@@ -49,13 +115,13 @@
 
 &lt;p&gt;我的Hugo博客：&lt;a href=&#34;http://blog.coderzh.com/&#34;&gt;http://blog.coderzh.com/&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;github-pages:de3dd58c86fa17097e3db47fe202533f&#34;&gt;GitHub Pages&lt;/h3&gt;
+&lt;h3 id=&#34;github-pages&#34;&gt;GitHub Pages&lt;/h3&gt;
 
 &lt;p&gt;使用静态网站生成器生成好静态页面之后，需要把文件放到服务器上供别人浏览。比较传统的方式是租用VPS虚拟服务器，比如：linode、digitalocean。将生成好的静态页面手工上传到服务器上。如果你习惯这种方式部署，推荐你使用&lt;a href=&#34;https://www.digitalocean.com/?refcode=e131e2bba197&#34;&gt;digitalocean&lt;/a&gt;。&lt;/p&gt;
 
 &lt;p&gt;当然， 还有更好的方式，就是直接把网站托管到GitHub Pages。你只需要在GitHub上创建一个项目，然后将生成出来的静态页面文件push到这个项目的gh-pages分支，保证根目录有一个index.html文件即可。这样，一个免费、无限流量的博客系统就搭建完成了。同时，通过github你可以方便对博客文章进行管理和追踪。&lt;/p&gt;
 
-&lt;h3 id=&#34;hugo:de3dd58c86fa17097e3db47fe202533f&#34;&gt;Hugo&lt;/h3&gt;
+&lt;h3 id=&#34;hugo&#34;&gt;Hugo&lt;/h3&gt;
 
 &lt;p&gt;前面的铺垫介绍的差不多了，该主角上场了。Hugo是什么？它主要做了什么？&lt;/p&gt;
 
@@ -65,7 +131,7 @@
 &lt;li&gt;Hugo内置web服务器，可以方便的用于本地调试。&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;hello-hugo:de3dd58c86fa17097e3db47fe202533f&#34;&gt;Hello Hugo&lt;/h3&gt;
+&lt;h3 id=&#34;hello-hugo&#34;&gt;Hello Hugo&lt;/h3&gt;
 
 &lt;p&gt;Hugo官方主页：&lt;a href=&#34;https://gohugo.io/&#34;&gt;https://gohugo.io/&lt;/a&gt;&lt;/p&gt;
 
@@ -173,7 +239,7 @@ $ git clone https://github.com/spf13/hyde.git
 &lt;li&gt;&lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/&#34;&gt;Hosting on GitHub Pages&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;遇到的问题:de3dd58c86fa17097e3db47fe202533f&#34;&gt;遇到的问题&lt;/h3&gt;
+&lt;h3 id=&#34;遇到的问题&#34;&gt;遇到的问题&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;默认的ServerSide的代码着色会有问题，有些字的颜色会和背景色一样导致看不见。&lt;br /&gt;
@@ -191,7 +257,7 @@ rssuri: &amp;quot;feed.xml&amp;quot;
 &lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;jekyll迁移到hugo:de3dd58c86fa17097e3db47fe202533f&#34;&gt;Jekyll迁移到Hugo&lt;/h3&gt;
+&lt;h3 id=&#34;jekyll迁移到hugo&#34;&gt;Jekyll迁移到Hugo&lt;/h3&gt;
 
 &lt;p&gt;Jekyll的文章内容迁移到Hugo中，大部分内容是兼容的，但也有一些地方是不兼容的。主要有以下几个地方需要修改：&lt;/p&gt;
 
@@ -222,7 +288,7 @@ rssuri: &amp;quot;feed.xml&amp;quot;
 
 &lt;p&gt;将自动把你的Jekyll站点转换成Hugo的站点。欢迎试用并反馈。&lt;/p&gt;
 
-&lt;h3 id=&#34;关于部署:de3dd58c86fa17097e3db47fe202533f&#34;&gt;关于部署&lt;/h3&gt;
+&lt;h3 id=&#34;关于部署&#34;&gt;关于部署&lt;/h3&gt;
 
 &lt;p&gt;假设你需要部署在 &lt;code&gt;GitHub Pages&lt;/code&gt; 上，首先在GitHub上创建一个Repository，命名为：&lt;code&gt;coderzh.github.io&lt;/code&gt; （coderzh替换为你的github用户名）。&lt;/p&gt;
 
@@ -245,8 +311,7 @@ $ git push -u origin master
 
 &lt;p&gt;自动部署的脚本可以参考我的Repo里的&lt;code&gt;deploy.py&lt;/code&gt;脚本：&lt;a href=&#34;https://github.com/coderzh/coderzh-hugo-blog&#34;&gt;https://github.com/coderzh/coderzh-hugo-blog&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;全自动化部署到GitHub和GitCafe，见我的另一篇博客：&lt;a href=&#34;http://blog.coderzh.com/2015/09/13/use-webhook-automated-deploy-hugo/&#34;&gt;通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages&lt;/a&gt;&lt;/p&gt;
-</description>
+&lt;p&gt;全自动化部署到GitHub和GitCafe，见我的另一篇博客：&lt;a href=&#34;http://blog.coderzh.com/2015/09/13/use-webhook-automated-deploy-hugo/&#34;&gt;通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages&lt;/a&gt;&lt;/p&gt;</description>
         </item>
         
         <item>
@@ -255,9 +320,9 @@ $ git push -u origin master
             <pubDate>Sun, 11 Oct 2015 10:06:11 CST</pubDate>
             <author>CoderZh</author>
             <guid>http://www.gohugo.org/post/coderzh-hugo-import-from-jekyll/</guid>
-            <description>
+            <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/HugoImportJekyll.png-wt&#34; alt=&#34;HugoImportJekyll&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/HugoImportJekyll.png-wt&#34; alt=&#34;HugoImportJekyll&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;国庆长假期间，给Hugo提了几个PR，其中最主要的一个是给Hugo增加了内置的Jekyll迁移工具。这样之前的Jekyll用户可以通过一个简单的命令就可以将网站转化成Hugo站点：&lt;/p&gt;
 
@@ -266,7 +331,7 @@ $ git push -u origin master
 
 &lt;p&gt;得益于Hugo代码可读性非常好，原来计划需要几天来完成的功能1天左右的时间就完成了。完整的PR过程请见：&lt;a href=&#34;https://github.com/spf13/hugo/pull/1469&#34;&gt;https://github.com/spf13/hugo/pull/1469&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;hugo-import:c436e0c599735e5458236b6fbcd74190&#34;&gt;Hugo Import&lt;/h3&gt;
+&lt;h3 id=&#34;hugo-import&#34;&gt;Hugo Import&lt;/h3&gt;
 
 &lt;p&gt;主要实现了将原来的Jeklly网站一键转换为Hugo网站，具体实现了如下功能：&lt;/p&gt;
 
@@ -288,7 +353,7 @@ $ git push -u origin master
   $ hugo server -w --theme=herring-cove
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;markdown文章转换规则:c436e0c599735e5458236b6fbcd74190&#34;&gt;MarkDown文章转换规则&lt;/h3&gt;
+&lt;h3 id=&#34;markdown文章转换规则&#34;&gt;MarkDown文章转换规则&lt;/h3&gt;
 
 &lt;p&gt;Hugo和Jekyll都是使用MarkDown来写文章的，文章内容基本上是兼容的，除了一些FrontMatter的细节和局部细节。Hugo Import Jekyll主要的转换规则如下：&lt;/p&gt;
 
@@ -304,7 +369,7 @@ $ git push -u origin master
 &lt;li&gt;替换&lt;code&gt;{% highlight %}{% endhighlight %}&lt;/code&gt;标签为 {{&amp;lt; highlight &amp;gt;}}{{&amp;lt; / highlight &amp;gt;}}&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;代码:c436e0c599735e5458236b6fbcd74190&#34;&gt;代码&lt;/h3&gt;
+&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
 
 &lt;p&gt;import.go:&lt;/p&gt;
 
@@ -318,15 +383,14 @@ $ git push -u origin master
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/coderzh/hugo&#34;&gt;https://github.com/coderzh/hugo&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;最后:c436e0c599735e5458236b6fbcd74190&#34;&gt;最后&lt;/h3&gt;
+&lt;h3 id=&#34;最后&#34;&gt;最后&lt;/h3&gt;
 
 &lt;p&gt;这个功能将会在下个正式版推出，现在需要使用的同学自行pull最新的Hugo代码编译吧：&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ go get -u -v github.com/spf13/hugo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;欢迎试用，并且提出意见或建议！谢谢！&lt;/p&gt;
-</description>
+&lt;p&gt;欢迎试用，并且提出意见或建议！谢谢！&lt;/p&gt;</description>
         </item>
         
         <item>
@@ -335,13 +399,13 @@ $ git push -u origin master
             <pubDate>Sun, 13 Sep 2015 08:48:52 CST</pubDate>
             <author>CoderZh</author>
             <guid>http://www.gohugo.org/post/coderzh-automated-deploy-hugo/</guid>
-            <description>
+            <description>&lt;p&gt;本文的主要内容如标题所示，通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages。如果你正好有这个需求，看这篇文章正好，可以节省你不少时间。如果不是，了解一下也无妨。&lt;/p&gt;
 
-&lt;p&gt;本文的主要内容如标题所示，通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages。如果你正好有这个需求，看这篇文章正好，可以节省你不少时间。如果不是，了解一下也无妨。&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;首先，必须解释一下，为什么需要自动部署，以及为什么需要需要同时部署到GitHub Pages和GitCafe Pages。&lt;/p&gt;
 
-&lt;h3 id=&#34;为什么要自动部署:129785333cd5702aa2a72cbe3e24d903&#34;&gt;为什么要自动部署&lt;/h3&gt;
+&lt;h3 id=&#34;为什么要自动部署&#34;&gt;为什么要自动部署&lt;/h3&gt;
 
 &lt;p&gt;使用Hugo生成的静态页面是在public文件夹里，部署的时候需要把public文件夹里的内容push到GitHub的gh-pages分支里。每次写完文章，除了push markdown格式的文章，还需要单独push生成的public文件夹里的东西，步骤稍显麻烦。&lt;/p&gt;
 
@@ -349,7 +413,7 @@ $ git push -u origin master
 
 &lt;p&gt;Hugo生成静态页面和部署的过程应该让机器自动来完成。&lt;strong&gt;写作应该是一个相对单纯的事情，使用Hugo的人应该更专注于写作。&lt;/strong&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;为什么需要同时部署到github-pages和gitcafe-pages:129785333cd5702aa2a72cbe3e24d903&#34;&gt;为什么需要同时部署到GitHub Pages和GitCafe Pages&lt;/h3&gt;
+&lt;h3 id=&#34;为什么需要同时部署到github-pages和gitcafe-pages&#34;&gt;为什么需要同时部署到GitHub Pages和GitCafe Pages&lt;/h3&gt;
 
 &lt;p&gt;大公司很喜欢的一个词：容灾。GitHub出现不可访问的事情在国内也是常有的，而GitCafe作为国内的代码托管厂商，是否是一个稳定的存在也不好说。所以，将网站同时部署到这两个上面。通过DnsPod里CNAME设置线路“国内”和“国外”，不仅起到了任何一个挂掉，另一个可以继续工作的目的，还起到了CDN就近访问的作用。&lt;/p&gt;
 
@@ -364,7 +428,7 @@ http://gohugo.io/tutorials/automated-deployments/&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;由于Wercker还不支持GitCafe的部署，以及我需要使用特定的修改版本的Hugo来生成静态网页，并且希望这些步骤比较可控，所以，还是自己来折腾整个过程吧。&lt;/p&gt;
 
-&lt;h3 id=&#34;webhook:129785333cd5702aa2a72cbe3e24d903&#34;&gt;webhook&lt;/h3&gt;
+&lt;h3 id=&#34;webhook&#34;&gt;webhook&lt;/h3&gt;
 
 &lt;p&gt;webhook是GitHub上提供的Git的一种Hook机制，当代码发生变化时，比如代码被Push到GitHub的Repo时，GitHub会自动请求一个你指定的网页，并且把变更相关的参数都传递过来。入口在Repo的Settings - webhooks &amp;amp; services&lt;/p&gt;
 
@@ -409,7 +473,7 @@ http://gohugo.io/tutorials/automated-deployments/&lt;/a&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;http://yourserver:9876/hooks/redeploy-webhook
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;自动部署:129785333cd5702aa2a72cbe3e24d903&#34;&gt;自动部署&lt;/h3&gt;
+&lt;h3 id=&#34;自动部署&#34;&gt;自动部署&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/AutoDeploy.png-w&#34; alt=&#34;AutoDeploy&#34; /&gt;&lt;/p&gt;
 
@@ -470,8 +534,7 @@ gvm use go1.5.1 --default
 go version
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;最后，Good Luck！&lt;/p&gt;
-</description>
+&lt;p&gt;最后，Good Luck！&lt;/p&gt;</description>
         </item>
         
         <item>
@@ -481,6 +544,8 @@ go version
             <author>CoderZh</author>
             <guid>http://www.gohugo.org/post/coderzh-a-hugo-pull-request/</guid>
             <description>&lt;p&gt;给Hugo提交了一个Pull Request，并且通过了，记录一下。PR的内容是在config里增加了disablePathToLower选项，可以配置是否需要阻止Hugo自动将路径转换为小写。在站点从旧的系统里迁移到Hugo中时会非常有用。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;在上一篇博客&lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34;&gt;使用hugo搭建个人博客站点&lt;/a&gt;  里提到，Hugo强制将所有路径都变成了小写。小写路径虽好，但是如果之前你的网站路径不是全小写的，迁移过来路径发生变化，将会导致路径失效，是不可接受的。&lt;/p&gt;
 
@@ -538,8 +603,7 @@ disablePathToLower: true
 
 &lt;p&gt;commit: &lt;a href=&#34;https://github.com/spf13/hugo/commit/52d94fa67578f6b63035e73b236ca8abd40d0006&#34;&gt;https://github.com/spf13/hugo/commit/52d94fa67578f6b63035e73b236ca8abd40d0006&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;这就是开源项目的好处，开源社区的魅力所在：&lt;strong&gt;你可以使用它，修改它，贡献自己的代码，参与其中，让它变好，让所有人受益&lt;/strong&gt;。&lt;/p&gt;
-</description>
+&lt;p&gt;这就是开源项目的好处，开源社区的魅力所在：&lt;strong&gt;你可以使用它，修改它，贡献自己的代码，参与其中，让它变好，让所有人受益&lt;/strong&gt;。&lt;/p&gt;</description>
         </item>
         
         <item>
@@ -548,17 +612,17 @@ disablePathToLower: true
             <pubDate>Sat, 21 Nov 2015 17:48:04 CST</pubDate>
             <author>CoderZh</author>
             <guid>http://www.gohugo.org/2015/11/21/hugo-deploy-script/</guid>
-            <description>
-
-&lt;p&gt;之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。&lt;/p&gt;
+            <description>&lt;p&gt;之前我写了一个脚本用来自动部署我的 Hugo 博客，今天闲来无事完善了一下这个脚本，使这个脚本更加通用一些。&lt;/p&gt;
 
 &lt;p&gt;脚本路径：&lt;a href=&#34;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&#34;&gt;https://github.com/coderzh/coderzh-hugo-blog/blob/master/deploy.py&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;原理:6a170d4fd06501091e3c20d557c2e35c&#34;&gt;原理&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;原理&#34;&gt;原理&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;deploy.py&lt;/code&gt; 会自动执行 hugo 命令生成静态站点，然后将生成的文件拷贝到上层的一个目录里，然后，在那个目录里将文件 push 到你指定的 Git Repository 里。&lt;/p&gt;
 
-&lt;h3 id=&#34;使用方法:6a170d4fd06501091e3c20d557c2e35c&#34;&gt;使用方法&lt;/h3&gt;
+&lt;h3 id=&#34;使用方法&#34;&gt;使用方法&lt;/h3&gt;
 
 &lt;ol&gt;
 &lt;li&gt;将 &lt;code&gt;deploy.py&lt;/code&gt; 放到你的 Hugo 站点目录。（和 config.yaml 等文件放一起）&lt;/li&gt;
@@ -604,8 +668,7 @@ DEPLOY_DIR = &#39;gh-pages&#39;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;That&amp;rsquo;s all, 祝你好运！&lt;/p&gt;
-</description>
+&lt;p&gt;That&amp;rsquo;s all, 祝你好运！&lt;/p&gt;</description>
         </item>
         
         <item>

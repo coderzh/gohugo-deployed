@@ -3,7 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Hugo has a simple yet powerful menu system that permits content to be placed in menus with a good degree of control without a lot of work. TIP: If all you want is a simple menu for your sections, see Section Menu for &ldquo;the Lazy Blogger&rdquo;. Some of the features of Hugo Menus: Place content in one or many menus Handle nested menus with unlimited depth Create menu entries without being attached to any content Distinguish active element (and active branch) What is a menu?">
+        <meta name="description" content="Hugo has a simple yet powerful menu system that permits content to be placed in menus with a good degree of control without a lot of work.
+TIP: If all you want is a simple menu for your sections, see Section Menu for &ldquo;the Lazy Blogger&rdquo;.
+Some of the features of Hugo Menus:
+ Place content in one or many menus Handle nested menus with unlimited depth Create menu entries without being attached to any content Distinguish active element (and active branch)  What is a menu?">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Menus - Hugo中文文档</title>
@@ -520,7 +523,7 @@
 <p>Hugo has a simple yet powerful menu system that permits content to be
 placed in menus with a good degree of control without a lot of work.</p>
 
-<p><em>TIP:</em> If all you want is a simple menu for your sections, see <a href="#section-menu-for-the-lazy-blogger:e0fc18ceecd5cffcb796c3c4fb15cab1">Section Menu for &ldquo;the Lazy Blogger&rdquo;</a>.</p>
+<p><em>TIP:</em> If all you want is a simple menu for your sections, see <a href="#section-menu-for-the-lazy-blogger">Section Menu for &ldquo;the Lazy Blogger&rdquo;</a>.</p>
 
 <p>Some of the features of Hugo Menus:</p>
 
@@ -531,7 +534,7 @@ placed in menus with a good degree of control without a lot of work.</p>
 <li>Distinguish active element (and active branch)</li>
 </ul>
 
-<h2 id="what-is-a-menu:e0fc18ceecd5cffcb796c3c4fb15cab1">What is a menu?</h2>
+<h2 id="what-is-a-menu">What is a menu?</h2>
 
 <p>A menu is a named array of menu entries accessible on the site under
 <code>.Site.Menus</code> by name. For example, if I have a menu called <code>main</code>, I would
@@ -564,12 +567,12 @@ access it via <code>.Site.Menus.main</code>.</p>
 <li><strong>HasMenuCurrent</strong> (menu string, menuEntry *MenuEntry) bool</li>
 </ul>
 
-<h2 id="adding-content-to-menus:e0fc18ceecd5cffcb796c3c4fb15cab1">Adding content to menus</h2>
+<h2 id="adding-content-to-menus">Adding content to menus</h2>
 
 <p>Hugo supports a couple of different methods of adding a piece of content
 to the front matter.</p>
 
-<h3 id="simple:e0fc18ceecd5cffcb796c3c4fb15cab1">Simple</h3>
+<h3 id="simple">Simple</h3>
 
 <p>If all you need to do is add an entry to a menu, the simple form works
 well.</p>
@@ -588,7 +591,7 @@ menu: [&quot;main&quot;, &quot;footer&quot;]
 ---
 </code></pre>
 
-<h3 id="advanced:e0fc18ceecd5cffcb796c3c4fb15cab1">Advanced</h3>
+<h3 id="advanced">Advanced</h3>
 
 <p>If more control is required, then the advanced approach gives you the
 control you want. All of the menu entry properties listed above are
@@ -602,7 +605,7 @@ menu:
 ---
 </code></pre>
 
-<h2 id="adding-non-content-entries-to-a-menu:e0fc18ceecd5cffcb796c3c4fb15cab1">Adding (non-content) entries to a menu</h2>
+<h2 id="adding-non-content-entries-to-a-menu">Adding (non-content) entries to a menu</h2>
 
 <p>You can also add entries to menus that aren’t attached to a piece of
 content. This takes place in the sitewide <a href="http://www.gohugo.org/doc/overview/configuration/">config file</a>.</p>
@@ -641,7 +644,7 @@ menu:
 
 <p><strong>NOTE:</strong> The URLs must be relative to the context root. If the <code>BaseURL</code> is <code>http://example.com/mysite/</code>, then the URLs in the menu must not include the context root <code>mysite</code>.</p>
 
-<h2 id="nesting:e0fc18ceecd5cffcb796c3c4fb15cab1">Nesting</h2>
+<h2 id="nesting">Nesting</h2>
 
 <p>All nesting of content is done via the <code>parent</code> field.</p>
 
@@ -657,7 +660,7 @@ displayed and only used to structure relationships.</p>
 and all content entries are attached to one of these entries via the
 <code>parent</code> field.</p>
 
-<h2 id="rendering-menus:e0fc18ceecd5cffcb796c3c4fb15cab1">Rendering menus</h2>
+<h2 id="rendering-menus">Rendering menus</h2>
 
 <p>Hugo makes no assumptions about how your rendered HTML will be
 structured. Instead, it provides all of the functions you will need to be
@@ -703,7 +706,7 @@ able to build your menu however you want.</p>
 &lt;!--sidebar end--&gt;
 </code></pre>
 
-<h2 id="section-menu-for-the-lazy-blogger:e0fc18ceecd5cffcb796c3c4fb15cab1">Section Menu for &ldquo;the Lazy Blogger&rdquo;</h2>
+<h2 id="section-menu-for-the-lazy-blogger">Section Menu for &ldquo;the Lazy Blogger&rdquo;</h2>
 
 <p>To enable this menu, add this to your site config, i.e. <code>config.toml</code>:</p>
 

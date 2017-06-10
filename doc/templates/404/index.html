@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="When using Hugo with GitHub Pages, you can provide your own template for a custom 404 error page by creating a 404.html template file in your /layouts folder. When Hugo generates your site, the 404.html file will be placed in the root. 404 pages are of the type &ldquo;node&rdquo; and have all the node variables available to use in the templates. In addition to the standard node variables, the 404 page has access to all site content accessible from .Data.Pages.">
+        <meta name="description" content="When using Hugo with GitHub Pages, you can provide your own template for a custom 404 error page by creating a 404.html template file in your /layouts folder. When Hugo generates your site, the 404.html file will be placed in the root.
+404 pages are of the type &ldquo;node&rdquo; and have all the node variables available to use in the templates.
+In addition to the standard node variables, the 404 page has access to all site content accessible from .">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>404.html Templates - Hugo中文文档</title>
@@ -532,7 +534,7 @@ all site content accessible from <code>.Data.Pages</code>.</p>
     404.html
 </code></pre>
 
-<h2 id="404-html:ad51e5da25a9033d8e045d219725624f">404.html</h2>
+<h2 id="404-html">404.html</h2>
 
 <p>This is a basic example of a 404.html template:</p>
 
@@ -548,7 +550,7 @@ all site content accessible from <code>.Data.Pages</code>.</p>
 {{ partial &quot;footer.html&quot; . }}
 </code></pre>
 
-<h3 id="automatic-loading:ad51e5da25a9033d8e045d219725624f">Automatic Loading</h3>
+<h3 id="automatic-loading">Automatic Loading</h3>
 
 <p>Your 404.html file can be set to load automatically when a visitor enters a mistaken URL path, dependent upon the web serving environment you are using. For example:</p>
 

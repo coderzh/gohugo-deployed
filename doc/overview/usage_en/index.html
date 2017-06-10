@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Make sure either hugo is in your PATH or provide a path to it. $ hugo help Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go. Complete documentation is available at http://gohugo.io Usage: hugo [flags] hugo [command] Available Commands: server Hugo runs its own webserver to render the files version Print the version number of Hugo config Print the site configuration check Check content in the source directory benchmark Benchmark hugo by building a site a number of times new Create new content for your site undraft Undraft changes the content&#39;s draft status from &#39;True&#39; to &#39;False&#39; genautocomplete Generate shell autocompletion script for Hugo gendoc Generate Markdown documentation for the Hugo CLI.">
+        <meta name="description" content="Make sure either hugo is in your PATH or provide a path to it.
+$ hugo help Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go. Complete documentation is available at http://gohugo.io Usage: hugo [flags] hugo [command] Available Commands: server Hugo runs its own webserver to render the files version Print the version number of Hugo config Print the site configuration check Check content in the source directory benchmark Benchmark hugo by building a site a number of times new Create new content for your site undraft Undraft changes the content&#39;s draft status from &#39;True&#39; to &#39;False&#39; genautocomplete Generate shell autocompletion script for Hugo gendoc Generate Markdown documentation for the Hugo CLI.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Using Hugo - Hugo中文文档</title>
@@ -573,7 +574,7 @@ Use "hugo help [command]" for more information about a command.
 </code></pre>
 
 
-<h2 id="common-usage-example:4ff1829990c610956e7d73e7e41cf1fe">Common Usage Example</h2>
+<h2 id="common-usage-example">Common Usage Example</h2>
 
 <p>The most common use is probably to run <code>hugo</code> with your current directory being the input directory:</p>
 
@@ -591,7 +592,7 @@ in 120 ms
 <p>This generates your web site to the <code>public/</code> directory,
 ready to be deployed to your web server.</p>
 
-<h2 id="instant-feedback-as-you-develop-your-web-site:4ff1829990c610956e7d73e7e41cf1fe">Instant feedback as you develop your web site</h2>
+<h2 id="instant-feedback-as-you-develop-your-web-site">Instant feedback as you develop your web site</h2>
 
 <p>If you are working on things and want to see the changes immediately, tell Hugo to watch for changes.
 Hugo will watch the filesystem for changes, and rebuild your site as soon as a file is saved:</p>
@@ -629,7 +630,7 @@ Press Ctrl+C to stop
 </code></pre>
 
 
-<h2 id="deploying-your-web-site:4ff1829990c610956e7d73e7e41cf1fe">Deploying your web site</h2>
+<h2 id="deploying-your-web-site">Deploying your web site</h2>
 
 <p>After running <code>hugo server</code> for local web development,
 you need to do a final <code>hugo</code> run <strong>without the <code>server</code> command</strong> to rebuild your site. You may then <strong>deploy your site</strong> by copying the <code>public/</code> directory
@@ -642,7 +643,7 @@ static web hosting services.</p>
 
 <p><a href="http://httpd.apache.org/" title="Apache HTTP Server">Apache</a>, <a href="http://nginx.org/">nginx</a>, <a href="http://www.iis.net/">IIS</a>&hellip;  Any web server software would do!</p>
 
-<h3 id="a-note-about-deployment:4ff1829990c610956e7d73e7e41cf1fe">A note about deployment</h3>
+<h3 id="a-note-about-deployment">A note about deployment</h3>
 
 <p>Running <code>hugo</code> <em>does not</em> remove generated files before building. This means that you should delete your <code>public/</code> directory (or the directory you specified with <code>-d</code>/<code>--destination</code>) before running the <code>hugo</code> command, or you run the risk of the wrong files (e.g. drafts and/or future posts) being left in the generated site.</p>
 
@@ -650,19 +651,19 @@ static web hosting services.</p>
 
 <p>To start a server that builds draft content (helpful for editing), you can specify a different destination: the <code>dev/</code> dir.</p>
 
-<p><pre><code class="hljs nohighlight">$ hugo server -wDs ~/Code/hugo/docs -d dev
+<pre><code class="hljs nohighlight">$ hugo server -wDs ~/Code/hugo/docs -d dev
 </code></pre>
-</p>
+
 
 <p>When the content is ready for publishing, use the default <code>public/</code> dir:</p>
 
-<p><pre><code class="hljs nohighlight">$ hugo -s ~/Code/hugo/docs
+<pre><code class="hljs nohighlight">$ hugo -s ~/Code/hugo/docs
 </code></pre>
-</p>
+
 
 <p>This prevents content you&rsquo;re not ready to share yet from accidentally becoming available.</p>
 
-<h3 id="alternatively-serve-your-web-site-with-hugo:4ff1829990c610956e7d73e7e41cf1fe">Alternatively, serve your web site with Hugo!</h3>
+<h3 id="alternatively-serve-your-web-site-with-hugo">Alternatively, serve your web site with Hugo!</h3>
 
 <p>Yes, that&rsquo;s right!  Because Hugo is so blazingly fast both in web site creation
 <em>and</em> in web serving (thanks to its concurrent and multi-threaded design and
@@ -673,12 +674,12 @@ web site <em>on their production server</em>!</p>
 
 <p>Here is the command:</p>
 
-<p><pre><code class="hljs nohighlight">$ hugo server --baseURL=http://yoursite.org/ \
+<pre><code class="hljs nohighlight">$ hugo server --baseURL=http://yoursite.org/ \
               --port=80 \
               --appendPort=false \
               --bind=87.245.198.50
 </code></pre>
-</p>
+
 
 <p>Note the <code>bind</code> option, which is the interface to which the server will bind (defaults to <code>127.0.0.1</code>, which is fine for most development use cases). Some hosts, like Amazon Web Services, runs network address translation and it can sometimes be hard to figure out the actual IP address. Using <code>--bind=0.0.0.0</code> will bind to all interfaces.</p>
 

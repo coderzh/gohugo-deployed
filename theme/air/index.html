@@ -120,7 +120,7 @@
     <div class="content">
         
 
-<h1 id="air-theme-for-hugo:d24a8958531c812b1616d9380a6373a1">AIR theme for hugo</h1>
+<h1 id="air-theme-for-hugo">AIR theme for hugo</h1>
 
 <p>Air is a single-column theme for <a href="http://gohugo.io/">Hugo</a>.
 Ported from <a href="https://github.com/TryGhost/Casper">Casper theme for Ghost </a>, <a href="https://github.com/vjeantet/hugo-theme-casper">vjeantet/hugo-theme-casper</a></p>
@@ -146,7 +146,7 @@ $ hugo server
 $ curl 127.0.0.1:1313/hugo-theme-air 
 </code></pre>
 
-<h2 id="features:d24a8958531c812b1616d9380a6373a1">Features</h2>
+<h2 id="features">Features</h2>
 
 <ul>
 <li><a href="https://github.com/VincentGarreau/particles.js/">VincentGarreau/particles.js</a></li>
@@ -160,28 +160,28 @@ $ curl 127.0.0.1:1313/hugo-theme-air
 <li>Menu</li>
 </ul>
 
-<h1 id="theme-usage-and-asumptions:d24a8958531c812b1616d9380a6373a1">Theme usage and asumptions</h1>
+<h1 id="theme-usage-and-asumptions">Theme usage and asumptions</h1>
 
 <ul>
 <li>All blog posts are in the <code>post</code> folder (<code>content/post</code>)</li>
 <li>The homepage displays a paginated list of contents from the post Section (other contents may be added to main menu, see bellow)</li>
 </ul>
 
-<h1 id="installation:d24a8958531c812b1616d9380a6373a1">Installation</h1>
+<h1 id="installation">Installation</h1>
 
-<h2 id="installing-this-theme:d24a8958531c812b1616d9380a6373a1">Installing this theme</h2>
+<h2 id="installing-this-theme">Installing this theme</h2>
 
 <pre><code>mkdir themes
 cd themes
 git clone https://github.com/syui/hugo-theme-air
 </code></pre>
 
-<h2 id="build-your-website-with-this-theme:d24a8958531c812b1616d9380a6373a1">Build your website with this theme</h2>
+<h2 id="build-your-website-with-this-theme">Build your website with this theme</h2>
 
 <pre><code>hugo server -t hugo-theme-air
 </code></pre>
 
-<h1 id="configuration:d24a8958531c812b1616d9380a6373a1">Configuration</h1>
+<h1 id="configuration">Configuration</h1>
 
 <p><strong>config.toml</strong></p>
 
@@ -192,7 +192,7 @@ $ cp config.toml.backup config.toml
 
 <p>Example : <a href="https://github.com/syui/hugo-theme-air/blob/master/config.toml.backup">config.toml</a></p>
 
-<h2 id="multiple-authors-configuration:d24a8958531c812b1616d9380a6373a1">Multiple authors configuration</h2>
+<h2 id="multiple-authors-configuration">Multiple authors configuration</h2>
 
 <p>In addition to providing data for a single author as shown in the example above, multiple authors
 can be configured via data/authors/*.(yml, toml, json) entries. If the key provided in
@@ -228,7 +228,7 @@ Contents here
 
 </code></pre>
 
-<h2 id="metadata-on-each-content-file-example:d24a8958531c812b1616d9380a6373a1">Metadata on each content file, example</h2>
+<h2 id="metadata-on-each-content-file-example">Metadata on each content file, example</h2>
 
 <pre><code class="language-toml">+++
 author = &quot;&quot;
@@ -246,14 +246,14 @@ menu = &quot;&quot;           # set &quot;main&quot; to add this content to the 
 Contents here
 </code></pre>
 
-<h2 id="create-new-content-based-with-default-metadata-from-this-theme:d24a8958531c812b1616d9380a6373a1">Create new content based with default metadata from this theme</h2>
+<h2 id="create-new-content-based-with-default-metadata-from-this-theme">Create new content based with default metadata from this theme</h2>
 
 <p>You can easyly create a new content with all metadatas used by this theme, using this command</p>
 
 <pre><code>hugo new -t hugo-theme-air post/my-post.md
 </code></pre>
 
-<h2 id="hosting-for-github-pages:d24a8958531c812b1616d9380a6373a1">Hosting for GitHub Pages</h2>
+<h2 id="hosting-for-github-pages">Hosting for GitHub Pages</h2>
 
 <pre><code class="language-bash"># build
 $ hugo 
@@ -280,7 +280,7 @@ $ git push -u origin gh-pages
 $ curl user.github.io/repository
 </code></pre>
 
-<h2 id="costomize-for-particles-js:d24a8958531c812b1616d9380a6373a1">Costomize for particles.js</h2>
+<h2 id="costomize-for-particles-js">Costomize for particles.js</h2>
 
 <blockquote>
 <p>static/js/particles.js</p>
@@ -346,35 +346,35 @@ $ curl user.github.io/repository
 
 <p><a href="https://raw.githubusercontent.com/VincentGarreau/particles.js/master/README.md">VincentGarreau/particles.js</a></p>
 
-<h3 id="color-value-black:d24a8958531c812b1616d9380a6373a1">color value black</h3>
+<h3 id="color-value-black">color value black</h3>
 
 <pre><code class="language-json">    &quot;color&quot;: {
 -      &quot;value&quot;: &quot;#fff&quot;
 +      &quot;value&quot;: &quot;#000&quot;
 </code></pre>
 
-<h3 id="move-speed-3:d24a8958531c812b1616d9380a6373a1">move speed 3</h3>
+<h3 id="move-speed-3">move speed 3</h3>
 
 <pre><code class="language-json">    &quot;move&quot;: {
 -      &quot;speed&quot;: 1,
 -      &quot;speed&quot;: 3,
 </code></pre>
 
-<h3 id="shape-type-circle:d24a8958531c812b1616d9380a6373a1">shape type circle</h3>
+<h3 id="shape-type-circle">shape type circle</h3>
 
 <pre><code class="language-json">    &quot;shape&quot;: {
 -      &quot;type&quot;: &quot;edge&quot;,
 +      &quot;type&quot;: &quot;circle&quot;,
 </code></pre>
 
-<h3 id="onclick-mode-remove:d24a8958531c812b1616d9380a6373a1">onclick mode remove</h3>
+<h3 id="onclick-mode-remove">onclick mode remove</h3>
 
 <pre><code>      &quot;onclick&quot;: {
 -        &quot;mode&quot;: &quot;push&quot;
 +        &quot;mode&quot;: &quot;remove&quot;
 </code></pre>
 
-<h1 id="contact-me:d24a8958531c812b1616d9380a6373a1">Contact me</h1>
+<h1 id="contact-me">Contact me</h1>
 
 <dl>
 <dt>:beetle: open an issue in github</dt>

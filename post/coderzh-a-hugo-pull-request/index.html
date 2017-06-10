@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="Hugo">
         <meta name="description" content="给Hugo提交了一个Pull Request，并且通过了，记录一下。PR的内容是在config里增加了disablePathToLower选项，可以配置是否需要阻止Hugo自动将路径转换为小写。在站点从旧的系统里迁移到Hugo中时会非常有用。
+
 ">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
@@ -84,6 +85,8 @@
                 <section>
                     <p>给Hugo提交了一个Pull Request，并且通过了，记录一下。PR的内容是在config里增加了disablePathToLower选项，可以配置是否需要阻止Hugo自动将路径转换为小写。在站点从旧的系统里迁移到Hugo中时会非常有用。</p>
 
+<p></p>
+
 <p>在上一篇博客<a href="http://blog.coderzh.com/2015/08/29/hugo/">使用hugo搭建个人博客站点</a>  里提到，Hugo强制将所有路径都变成了小写。小写路径虽好，但是如果之前你的网站路径不是全小写的，迁移过来路径发生变化，将会导致路径失效，是不可接受的。</p>
 
 <p>上文提到，我硬改了Hugo代码，让它不要强制转换小写路径。这样的做法不够优雅，假如别人也和我有一样的需求怎么办？我们还是希望Hugo本身就能够提供这样的功能。于是，我决定把代码改的优雅一些，给Hugo作者提交一个Pull Request，将这个功能合并到Hugo代码里。</p>
@@ -141,7 +144,6 @@ disablePathToLower: true
 <p>commit: <a href="https://github.com/spf13/hugo/commit/52d94fa67578f6b63035e73b236ca8abd40d0006">https://github.com/spf13/hugo/commit/52d94fa67578f6b63035e73b236ca8abd40d0006</a></p>
 
 <p>这就是开源项目的好处，开源社区的魅力所在：<strong>你可以使用它，修改它，贡献自己的代码，参与其中，让它变好，让所有人受益</strong>。</p>
-
                 </section>
             </article>
         </main>

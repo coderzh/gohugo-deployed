@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Hugo uses files (see supported formats) with headers commonly called the front matter. Hugo respects the organization that you provide for your content to minimize any extra configuration, though this can be overridden by additional configuration in the front matter. Organization In Hugo, the content should be arranged in the same way they are intended for the rendered website. Without any additional configuration, the following will just work. Hugo supports content nested at any level.">
+        <meta name="description" content="Hugo uses files (see supported formats) with headers commonly called the front matter. Hugo respects the organization that you provide for your content to minimize any extra configuration, though this can be overridden by additional configuration in the front matter.
+Organization In Hugo, the content should be arranged in the same way they are intended for the rendered website. Without any additional configuration, the following will just work. Hugo supports content nested at any level.">
         <link rel="alternate" href="http://www.gohugo.org/feed.xml" type="application/rss+xml" title="Hugo中文文档">
         <link rel="icon" href="http://www.gohugo.org/favicon.ico">
         <title>Content Organization - Hugo中文文档</title>
@@ -522,7 +523,7 @@ respects the organization that you provide for your content to minimize any
 extra configuration, though this can be overridden by additional configuration
 in the front matter.</p>
 
-<h2 id="organization:2ea8d877cccd30ae1aec88af905749c6">Organization</h2>
+<h2 id="organization">Organization</h2>
 
 <p>In Hugo, the content should be arranged in the same way they are intended for
 the rendered website. Without any additional configuration, the following will
@@ -555,7 +556,7 @@ in Hugo and is used as the <a href="http://www.gohugo.org/doc/content/sections/"
         └── second.md      // &lt;- http://1.com/quote/second.html
 </code></pre>
 
-<h2 id="destinations:2ea8d877cccd30ae1aec88af905749c6">Destinations</h2>
+<h2 id="destinations">Destinations</h2>
 
 <p>Hugo believes that you organize your content with a purpose. The same structure
 that works to organize your source content is used to organize the rendered
@@ -569,45 +570,45 @@ to determine the destination of a specific piece of content.</p>
 <p>The following items are defined in order, latter items in the list will override
 earlier settings.</p>
 
-<h3 id="filename:2ea8d877cccd30ae1aec88af905749c6">filename</h3>
+<h3 id="filename">filename</h3>
 
 <p>This isn&rsquo;t in the front matter, but is the actual name of the file minus the
 extension. This will be the name of the file in the destination.</p>
 
-<h3 id="slug:2ea8d877cccd30ae1aec88af905749c6">slug</h3>
+<h3 id="slug">slug</h3>
 
 <p>Defined in the front matter, the <code>slug</code> can take the place of the filename for the
 destination.</p>
 
-<h3 id="filepath:2ea8d877cccd30ae1aec88af905749c6">filepath</h3>
+<h3 id="filepath">filepath</h3>
 
 <p>The actual path to the file on disk. Destination will create the destination
 with the same path. Includes <a href="http://www.gohugo.org/doc/content/sections/">section</a>.</p>
 
-<h3 id="section:2ea8d877cccd30ae1aec88af905749c6">section</h3>
+<h3 id="section">section</h3>
 
 <p><code>section</code> is determined by its location on disk and can <em>not</em> be specified in the front matter. See <a href="http://www.gohugo.org/doc/content/sections/">section</a>.</p>
 
-<h3 id="type:2ea8d877cccd30ae1aec88af905749c6">type</h3>
+<h3 id="type">type</h3>
 
 <p><code>type</code> is also determined by its location on disk but, unlike <code>section</code>, it <em>can</em> be specified in the front matter. See <a href="http://www.gohugo.org/doc/content/types/">type</a>.</p>
 
-<h3 id="path:2ea8d877cccd30ae1aec88af905749c6">path</h3>
+<h3 id="path">path</h3>
 
 <p><code>path</code> can be provided in the front matter. This will replace the actual
 path to the file on disk. Destination will create the destination with the same
 path. Includes <a href="http://www.gohugo.org/doc/content/sections/">section</a>.</p>
 
-<h3 id="url:2ea8d877cccd30ae1aec88af905749c6">url</h3>
+<h3 id="url">url</h3>
 
 <p>A complete URL can be provided. This will override all the above as it pertains
 to the end destination. This must be the path from the baseURL (starting with a &ldquo;/&rdquo;).
 When a <code>url</code> is provided, it will be used exactly. Using <code>url</code> will ignore the
 <code>--uglyURLs</code> setting.</p>
 
-<h2 id="path-breakdown-in-hugo:2ea8d877cccd30ae1aec88af905749c6">Path breakdown in Hugo</h2>
+<h2 id="path-breakdown-in-hugo">Path breakdown in Hugo</h2>
 
-<h3 id="content:2ea8d877cccd30ae1aec88af905749c6">Content</h3>
+<h3 id="content">Content</h3>
 
 <pre><code>.             path           slug
 .       ⊢-------^----⊣ ⊢------^-------⊣
@@ -624,7 +625,7 @@ doc/content/extras/indexes/category-example/index.html
 doc/content/extras/indexes/index.html
 </code></pre>
 
-<h3 id="destination:2ea8d877cccd30ae1aec88af905749c6">Destination</h3>
+<h3 id="destination">Destination</h3>
 
 <pre><code>           permalink
 ⊢--------------^-------------⊣

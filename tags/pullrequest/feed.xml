@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pullrequest on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/pullrequest/</link>
+        <link>http://www.gohugo.org/tags/pullrequest/feed/index.xml</link>
         <language>zh-CN</language>
         <author>CoderZh</author>
         <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Thu, 03 Sep 2015 08:55:31 CST</updated>
+        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
         
         <item>
             <title>给Hugo提交了一个PR</title>
@@ -15,6 +15,8 @@
             <author>CoderZh</author>
             <guid>http://www.gohugo.org/post/coderzh-a-hugo-pull-request/</guid>
             <description>&lt;p&gt;给Hugo提交了一个Pull Request，并且通过了，记录一下。PR的内容是在config里增加了disablePathToLower选项，可以配置是否需要阻止Hugo自动将路径转换为小写。在站点从旧的系统里迁移到Hugo中时会非常有用。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;p&gt;在上一篇博客&lt;a href=&#34;http://blog.coderzh.com/2015/08/29/hugo/&#34;&gt;使用hugo搭建个人博客站点&lt;/a&gt;  里提到，Hugo强制将所有路径都变成了小写。小写路径虽好，但是如果之前你的网站路径不是全小写的，迁移过来路径发生变化，将会导致路径失效，是不可接受的。&lt;/p&gt;
 
@@ -72,8 +74,7 @@ disablePathToLower: true
 
 &lt;p&gt;commit: &lt;a href=&#34;https://github.com/spf13/hugo/commit/52d94fa67578f6b63035e73b236ca8abd40d0006&#34;&gt;https://github.com/spf13/hugo/commit/52d94fa67578f6b63035e73b236ca8abd40d0006&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;这就是开源项目的好处，开源社区的魅力所在：&lt;strong&gt;你可以使用它，修改它，贡献自己的代码，参与其中，让它变好，让所有人受益&lt;/strong&gt;。&lt;/p&gt;
-</description>
+&lt;p&gt;这就是开源项目的好处，开源社区的魅力所在：&lt;strong&gt;你可以使用它，修改它，贡献自己的代码，参与其中，让它变好，让所有人受益&lt;/strong&gt;。&lt;/p&gt;</description>
         </item>
         
     </channel>

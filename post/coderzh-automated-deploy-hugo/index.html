@@ -81,13 +81,13 @@
                 </div>
                 
                 <section>
-                    
+                    <p>本文的主要内容如标题所示，通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages。如果你正好有这个需求，看这篇文章正好，可以节省你不少时间。如果不是，了解一下也无妨。</p>
 
-<p>本文的主要内容如标题所示，通过webhook将Hugo自动部署至GitHub Pages和GitCafe Pages。如果你正好有这个需求，看这篇文章正好，可以节省你不少时间。如果不是，了解一下也无妨。</p>
+<p></p>
 
 <p>首先，必须解释一下，为什么需要自动部署，以及为什么需要需要同时部署到GitHub Pages和GitCafe Pages。</p>
 
-<h3 id="为什么要自动部署:129785333cd5702aa2a72cbe3e24d903">为什么要自动部署</h3>
+<h3 id="为什么要自动部署">为什么要自动部署</h3>
 
 <p>使用Hugo生成的静态页面是在public文件夹里，部署的时候需要把public文件夹里的内容push到GitHub的gh-pages分支里。每次写完文章，除了push markdown格式的文章，还需要单独push生成的public文件夹里的东西，步骤稍显麻烦。</p>
 
@@ -95,7 +95,7 @@
 
 <p>Hugo生成静态页面和部署的过程应该让机器自动来完成。<strong>写作应该是一个相对单纯的事情，使用Hugo的人应该更专注于写作。</strong></p>
 
-<h3 id="为什么需要同时部署到github-pages和gitcafe-pages:129785333cd5702aa2a72cbe3e24d903">为什么需要同时部署到GitHub Pages和GitCafe Pages</h3>
+<h3 id="为什么需要同时部署到github-pages和gitcafe-pages">为什么需要同时部署到GitHub Pages和GitCafe Pages</h3>
 
 <p>大公司很喜欢的一个词：容灾。GitHub出现不可访问的事情在国内也是常有的，而GitCafe作为国内的代码托管厂商，是否是一个稳定的存在也不好说。所以，将网站同时部署到这两个上面。通过DnsPod里CNAME设置线路“国内”和“国外”，不仅起到了任何一个挂掉，另一个可以继续工作的目的，还起到了CDN就近访问的作用。</p>
 
@@ -110,7 +110,7 @@ http://gohugo.io/tutorials/automated-deployments/</a></p>
 
 <p>由于Wercker还不支持GitCafe的部署，以及我需要使用特定的修改版本的Hugo来生成静态网页，并且希望这些步骤比较可控，所以，还是自己来折腾整个过程吧。</p>
 
-<h3 id="webhook:129785333cd5702aa2a72cbe3e24d903">webhook</h3>
+<h3 id="webhook">webhook</h3>
 
 <p>webhook是GitHub上提供的Git的一种Hook机制，当代码发生变化时，比如代码被Push到GitHub的Repo时，GitHub会自动请求一个你指定的网页，并且把变更相关的参数都传递过来。入口在Repo的Settings - webhooks &amp; services</p>
 
@@ -155,7 +155,7 @@ http://gohugo.io/tutorials/automated-deployments/</a></p>
 <pre><code>http://yourserver:9876/hooks/redeploy-webhook
 </code></pre>
 
-<h3 id="自动部署:129785333cd5702aa2a72cbe3e24d903">自动部署</h3>
+<h3 id="自动部署">自动部署</h3>
 
 <p><img src="http://7xlx3k.com1.z0.glb.clouddn.com/AutoDeploy.png-w" alt="AutoDeploy" /></p>
 
@@ -217,7 +217,6 @@ go version
 </code></pre>
 
 <p>最后，Good Luck！</p>
-
                 </section>
             </article>
         </main>
@@ -236,10 +235,10 @@ go version
 <ul>
 <li>
 <ul>
-<li><a href="#为什么要自动部署:129785333cd5702aa2a72cbe3e24d903">为什么要自动部署</a></li>
-<li><a href="#为什么需要同时部署到github-pages和gitcafe-pages:129785333cd5702aa2a72cbe3e24d903">为什么需要同时部署到GitHub Pages和GitCafe Pages</a></li>
-<li><a href="#webhook:129785333cd5702aa2a72cbe3e24d903">webhook</a></li>
-<li><a href="#自动部署:129785333cd5702aa2a72cbe3e24d903">自动部署</a></li>
+<li><a href="#为什么要自动部署">为什么要自动部署</a></li>
+<li><a href="#为什么需要同时部署到github-pages和gitcafe-pages">为什么需要同时部署到GitHub Pages和GitCafe Pages</a></li>
+<li><a href="#webhook">webhook</a></li>
+<li><a href="#自动部署">自动部署</a></li>
 </ul></li>
 </ul></li>
 </ul>
