@@ -1,12 +1,833 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Blog on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/blog/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Blog on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/blog/</link>
+    <description>Recent content in Blog on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    <lastBuildDate>Sat, 13 Feb 2016 21:47:27 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.gohugo.org/tags/blog/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>gntech.se</title>
+      <link>https://www.gohugo.org/showcase/gntech/</link>
+      <pubDate>Sat, 13 Feb 2016 21:47:27 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/gntech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jorgennilsson.com</title>
+      <link>https://www.gohugo.org/showcase/jorgennilsson/</link>
+      <pubDate>Thu, 11 Feb 2016 23:41:27 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/jorgennilsson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shelan.org</title>
+      <link>https://www.gohugo.org/showcase/shelan/</link>
+      <pubDate>Sun, 07 Feb 2016 10:30:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/shelan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Pipeline Architect</title>
+      <link>https://www.gohugo.org/showcase/datapipelinearchitect/</link>
+      <pubDate>Thu, 04 Feb 2016 18:30:07 -0500</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/datapipelinearchitect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>David Allen</title>
+      <link>https://www.gohugo.org/showcase/davidrallen/</link>
+      <pubDate>Wed, 03 Feb 2016 11:49:07 -0500</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/davidrallen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rakuten Tech Blog</title>
+      <link>https://www.gohugo.org/showcase/rakutentech/</link>
+      <pubDate>Wed, 20 Jan 2016 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/rakutentech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emilyhorsman.com</title>
+      <link>https://www.gohugo.org/showcase/emilyhorsman.com/</link>
+      <pubDate>Sat, 09 Jan 2016 01:00:10 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/emilyhorsman.com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coding Journal</title>
+      <link>https://www.gohugo.org/showcase/coding-journal/</link>
+      <pubDate>Wed, 23 Dec 2015 11:42:00 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/coding-journal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camunda Blog</title>
+      <link>https://www.gohugo.org/showcase/camunda-blog/</link>
+      <pubDate>Tue, 01 Dec 2015 04:20:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/camunda-blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gadgetplayboy.com</title>
+      <link>https://www.gohugo.org/showcase/gadgetplayboy/</link>
+      <pubDate>Sun, 29 Nov 2015 07:16:53 -0500</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/gadgetplayboy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bugtrackers.io</title>
+      <link>https://www.gohugo.org/showcase/bugtrackers.io/</link>
+      <pubDate>Tue, 27 Oct 2015 09:02:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/bugtrackers.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ninjaducks.in</title>
+      <link>https://www.gohugo.org/showcase/ninjaducks.in/</link>
+      <pubDate>Sat, 24 Oct 2015 14:06:00 +0530</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/ninjaducks.in/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maximeguitare.com</title>
+      <link>https://www.gohugo.org/showcase/maximeguitare/</link>
+      <pubDate>Mon, 05 Oct 2015 17:15:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/maximeguitare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RIDING BYTES</title>
+      <link>https://www.gohugo.org/showcase/ridingbytes/</link>
+      <pubDate>Sun, 27 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/ridingbytes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>&lt;span lang=&#34;zh-CN&#34;&gt;语林灵&lt;/span&gt; (Yulinling)</title>
+      <link>https://www.gohugo.org/showcase/yulinling.net/</link>
+      <pubDate>Wed, 09 Sep 2015 21:42:00 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/yulinling.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Richard Sumilang - Top Secret Labs</title>
+      <link>https://www.gohugo.org/showcase/richardsumilang/</link>
+      <pubDate>Mon, 07 Sep 2015 00:12:00 -0700</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/richardsumilang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>humboldtux.net</title>
+      <link>https://www.gohugo.org/showcase/humboldtux/</link>
+      <pubDate>Sun, 06 Sep 2015 18:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/humboldtux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scottcwilson.com</title>
+      <link>https://www.gohugo.org/showcase/scottcwilson/</link>
+      <pubDate>Tue, 21 Jul 2015 10:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/scottcwilson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>szymonkatra.github.io</title>
+      <link>https://www.gohugo.org/showcase/szymonkatra/</link>
+      <pubDate>Fri, 10 Jul 2015 16:15:00 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/szymonkatra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sa.muel.be</title>
+      <link>https://www.gohugo.org/showcase/samuelbe/</link>
+      <pubDate>Wed, 08 Jul 2015 14:02:16 +0200</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/samuelbe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mariosanchez.org</title>
+      <link>https://www.gohugo.org/showcase/mariosanchez/</link>
+      <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/mariosanchez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grey Times</title>
+      <link>https://www.gohugo.org/showcase/kangkona/</link>
+      <pubDate>Thu, 04 Jun 2015 12:51:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/kangkona/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rick.cogley.info</title>
+      <link>https://www.gohugo.org/showcase/rick-cogley-info/</link>
+      <pubDate>Wed, 20 May 2015 04:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/rick-cogley-info/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>consequently.org</title>
+      <link>https://www.gohugo.org/showcase/consequently/</link>
+      <pubDate>Wed, 11 Feb 2015 13:21:27 +1100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/consequently/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arian&#39;s Portfolio</title>
+      <link>https://www.gohugo.org/showcase/arianv/</link>
+      <pubDate>Fri, 06 Feb 2015 12:51:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/arianv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thehome.dk</title>
+      <link>https://www.gohugo.org/showcase/thehome/</link>
+      <pubDate>Sat, 27 Dec 2014 20:00:00 +0700</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/thehome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stou.dk</title>
+      <link>https://www.gohugo.org/showcase/stou/</link>
+      <pubDate>Sun, 23 Nov 2014 01:28:16 +0700</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/stou/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>authenticgeek</title>
+      <link>https://www.gohugo.org/showcase/nickoneill/</link>
+      <pubDate>Tue, 26 Aug 2014 12:15:48 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/nickoneill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vurt.co.uk</title>
+      <link>https://www.gohugo.org/showcase/vurt.co/</link>
+      <pubDate>Tue, 26 Aug 2014 12:09:39 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/vurt.co/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>michaelwhatcott</title>
+      <link>https://www.gohugo.org/showcase/michaelwhatcott/</link>
+      <pubDate>Tue, 26 Aug 2014 11:47:11 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/michaelwhatcott/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>peteraba</title>
+      <link>https://www.gohugo.org/showcase/peteraba/</link>
+      <pubDate>Tue, 26 Aug 2014 11:30:57 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/peteraba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>&lt;span lang=&#34;zh-CN&#34;&gt;青砾&lt;/span&gt; (chingli)</title>
+      <link>https://www.gohugo.org/showcase/chingli/</link>
+      <pubDate>Tue, 26 Aug 2014 11:20:02 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/chingli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Danmux</title>
+      <link>https://www.gohugo.org/showcase/danmux/</link>
+      <pubDate>Tue, 26 Aug 2014 10:55:23 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/danmux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ninya.io</title>
+      <link>https://www.gohugo.org/showcase/ninya.io/</link>
+      <pubDate>Tue, 26 Aug 2014 09:47:00 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/ninya.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lk4d4.darth.io</title>
+      <link>https://www.gohugo.org/showcase/lk4d4.darth.io/</link>
+      <pubDate>Mon, 25 Aug 2014 18:59:30 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/lk4d4.darth.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>npf.io</title>
+      <link>https://www.gohugo.org/showcase/npf/</link>
+      <pubDate>Thu, 21 Aug 2014 12:21:18 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/npf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech Made Plain</title>
+      <link>https://www.gohugo.org/showcase/techmadeplain/</link>
+      <pubDate>Thu, 22 May 2014 19:54:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/techmadeplain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hey, it&#39;s Alex</title>
+      <link>https://www.gohugo.org/showcase/heyitsalex/</link>
+      <pubDate>Sun, 09 Mar 2014 06:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/heyitsalex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kieran Healy</title>
+      <link>https://www.gohugo.org/showcase/kieranhealy/</link>
+      <pubDate>Thu, 27 Feb 2014 20:35:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/kieranhealy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ant Zucaro</title>
+      <link>https://www.gohugo.org/showcase/antzucaro/</link>
+      <pubDate>Mon, 03 Feb 2014 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/antzucaro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ifup</title>
+      <link>https://www.gohugo.org/showcase/ifup/</link>
+      <pubDate>Sat, 02 Nov 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/ifup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Davide Petilli</title>
+      <link>https://www.gohugo.org/showcase/davidepetilli/</link>
+      <pubDate>Fri, 01 Nov 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/davidepetilli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bepsays.com</title>
+      <link>https://www.gohugo.org/showcase/bepsays/</link>
+      <pubDate>Fri, 01 Nov 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/bepsays/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spf13.com</title>
+      <link>https://www.gohugo.org/showcase/spf13/</link>
+      <pubDate>Mon, 01 Jul 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/spf13/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/aglaus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/aglaus/</guid>
+      <description>Aglaus Sorry, I do not have a good at English. It is naive English, but please acknowledge.  Aglaus is a single-column theme for Hugo.
+Features  Google Analytics Gravatar Profile Disqus SNS Links(Facebook, Twitter, GitHub) Share Button Eye-catching Image Tagging Related Post  Installation Referred from hugoThemes#Installing Themes.
+Installing with other all themes If you would like to install all of the available hugo themes, simply clone the entire repository from within your working directory.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/air/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/air/</guid>
+      <description>AIR theme for hugo Air is a single-column theme for Hugo. Ported from Casper theme for Ghost , vjeantet/hugo-theme-casper
+ blog demo : http://syui.github.io/hugo-theme-air
+ blog source : https://github.com/syui/hugo-theme-air
+  $ git clone https://github.com/syui/hugo-theme-air $ cd hugo-theme-air $ cp config.toml.backup config.toml $ hugo new post/foo.md $ hugo server --------------------------------- $ curl 127.0.0.1:1313/hugo-theme-air  Features  VincentGarreau/particles.js Google Analytics (optional) Disqus ( can disable comments by content) Share buttons on Facebook, Twitter, Google (can disable share by content) Big cover image (optional) Custom cover by content (optional) Tagging Pagination Menu  Theme usage and asumptions  All blog posts are in the post folder (content/post) The homepage displays a paginated list of contents from the post Section (other contents may be added to main menu, see bellow)  Installation Installing this theme mkdir themes cd themes git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/angels-ladder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/angels-ladder/</guid>
+      <description>Angel&amp;rsquo;s Ladder Overview Angel&amp;rsquo;s Ladder is a simple blog theme for Hugo.
+ Simple and clean design Responsive design Pagination Tagging Disqus Source code highlighting Google Analytics  Screenshot All of the display here.
+Installation Clone this repository to your hugo theme directory.
+cd themes git clone https://github.com/tanksuzuki/angels-ladder hugo server -t angels-ladder -D -w  Configuration To take full advantage of the features in this theme, you can add variables to your site config file.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/beg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/beg/</guid>
+      <description>Beg Beg is a double-column theme for Hugo.
+Inspired by kAworu/octostrap3.
+Features  Google Analytics Disqus SNS Links(Facebook, Twitter, GitHub) Share Button Tagging Related Post  Installation Referred from hugoThemes#Installing Themes.
+Installing with other all themes If you would like to install all of the available hugo themes, simply clone the entire repository from within your working directory.
+git clone --recursive https://github.com/spf13/hugoThemes.git themes  Installing a single theme mkdir themes cd themes git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/cactus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/cactus/</guid>
+      <description>Cactus Theme Cactus is a minimalistic theme for bloggers based on the default theme of the same-named Cactus static site generator written in Python and Nick Balestra&amp;rsquo;s Jekyll port. Noteworthy features of this Hugo theme are the integration of a comment-system powered by Disqus, a customizable about page, support for RSS feeds, syntax highlighting for source code and sharing options for blog posts.
+Contents  Installation The config file About page Disqus Nearly finished Contributing License Annotations  Installation Inside the folder of your Hugo site run:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/casper/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/casper/</guid>
+      <description>CASPER theme for hugo Casper is a single-column theme for Hugo. Ported from Casper theme for Ghost 
+blog demo : http://vjeantet.fr blog source : https://github.com/vjeantet/vjeantet.fr
+Features  Google Analytics (optional) Disqus ( can disable comments by content) Share buttons on Facebook, Twitter, Google (can disable share by content) Big cover image (optional) Custom cover by content (optional) Tagging Pagination Menu  Theme usage and asumptions  All blog posts are in the post folder (content/post) The homepage displays a paginated list of contents from the post Section (other contents may be added to main menu, see bellow)  Installation Installing this theme mkdir themes cd themes git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/detox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/detox/</guid>
+      <description>Detox Detox is a beautiful theme, originally created to work with Ghost. I wanted a copy of this theme for use with Hugo.
+The original can be downloaded from Blueberry.
+License MIT License</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/greyshade/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/greyshade/</guid>
+      <description>Greyshade Greyshade is a minimal, responsive theme ported from Octopress.
+For demo, check out websites from the wiki
+Features  Responsive design. Fancybox integration Gravatar support thanks to Zhigang Fang. Add your email id to _config.yml and your profile picture will appear in the left nav. If you don&amp;rsquo;t want your email to be visible in the HTML code, you can provide the MD5 hashed value of your email as expected by Gravatar with an email_md5 entry in _config.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/grid-side/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/grid-side/</guid>
+      <description>GridSide Theme The GridSide theme is a multi-page portfolio and blog utilizing the Materialize frontend framework. Comments can be added using Disqus.
+The theme contains a main page with a single grid of images representing different sections of the website. Sections can be post, gallery, or project for various rendering.
+ Current Materialize version is 0.97.0. Current Font Awesome version is 4.4.0. Current SideComments.js version is 0.0.3. Current Masonry.js version is 3.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/heather-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/heather-hugo/</guid>
+      <description>Heather for Hugo A Hyperminimal J̶e̶k̶y̶l̶l̶ Hugo Theme
+http://hbpasti.github.io/heather-hugo/
+About Heather Heather is hyperminimal theme for Jekyll created by Brent Jackson (jxnblk).
+About J̶e̶k̶y̶l̶l̶ Hugo Hugo is a (very) fast static site generator written in Go.
+Get Started Once you have Hugo set up, create your blog with hugo new and then add the heather-hugo theme to the themes directory.
+You can just download and extract it there or add it as a submodule with:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/herring-cove/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/herring-cove/</guid>
+      <description>Herring Cove Herring Cove is a clean and responsive Hugo theme based on the Jekyll theme of the same name.
+Overview  Fixed Sidebar with social links Minimal design Comments by Disqus Social Sharing abilities Easy to configure Based on Bootstrap  Screenshots Setup  Install Hugo Fork or download this theme repo Edit the config file in the root directory of your site  Download download
+License  MIT  Author Ravi Patel - https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hikari/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hikari/</guid>
+      <description>Hikari theme Hikari is a simple theme for bloggers, whose minimalism tries to focus readers on the content. It&amp;rsquo;s a port of Mathieu Mayer-Mazzoli&amp;rsquo;s orignal Hikari theme made for Jekyll. Noteworthy features are the integration of a comment-system powered by Disqus, optional statistics via Google Analytics, support for RSS and syntax highlighting for source code in blog posts.
+Contents  Installation Setup  The config file Disqus Google Analytics Nearly finished  Contributing License Annotations  Installation Inside the folder of your Hugo site run:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-mdl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-mdl/</guid>
+      <description>HugoMDL HugoMDL is a multipage responsibe blog/portfolio theme for Hugo. The theme is based on the Material Design Lite sample blog layout.
+At present it suits my needs, but feel free to help improve this theme by forking a copy and submitting a pull request.
+Installation Inside the folder of your Hugo site run:
+$ mkdir themes $ cd themes $ git clone https://github.com/jchatkinson/HugoMDL  For more information read the official setup guide of Hugo.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-zen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-zen/</guid>
+      <description>Hugo Zen Hugo Zen is a minimal hugo theme with Skeleton and has ~100 lines of custom CSS.
+Installation &amp;amp; Usage Clone this repository to your hugo theme directory.
+$ git clone https://github.com/rakuishi/hugo-zen.git themes/hugo-zen $ hugo server --theme=hugo-zen --buildDrafts --watch  Configuration In this theme you can add variables to your site config file. The following is the example config:
+baseurl = &amp;quot;http://rakuishi.com/&amp;quot; languageCode = &amp;quot;ja&amp;quot; title = &amp;quot;rakuishi.com&amp;quot; author = &amp;quot;rakuishi&amp;quot; [params] logo = &amp;quot;/images/logo.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hurock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hurock/</guid>
+      <description>hurock A classic sidebar Hugo theme
+My personnal Hugo blog
+Screenshots index.html:
+List view:
+Content view:
+404 error page:
+Concept  No external ressources (js/css/fonts) Easy to add stuff in header/footer Syntax highlight on client side using highlight.js Shortcodes for vimeo/youtube/gist W3C valid  Clean HTML Sidebar after content CSS in head, JS before end of body   Theme mostly insipred on theme nofancy but also: hyde-x, lanyon, liquorice, purehugo, redlounge.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hyde-x/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hyde-x/</guid>
+      <description>Hyde-X Enhanced port of the Jekyll &amp;ldquo;Hyde&amp;rdquo; theme to the Hugo site generator. Check below for a list of enhancements.
+You can find a live site using this theme here and the corresponding source code here.
+ Installation Usage Configuration Built-in colour themes Tips Changes and enhancements from the original theme Attribution Questions, ideas, bugs, pull requests? License  Installation $ cd your_site_repo/ $ mkdir themes $ cd themes $ git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hyde-y/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hyde-y/</guid>
+      <description>Hyde-Y Forked from Hyde-X
+You can find a live site using this theme here and the corresponding source code here.
+Screenshot Installation $ cd your_site_repo/ $ mkdir themes $ cd themes $ git clone https://github.com/enten/hyde-y  See the official Hugo themes documentation for more info.
+Usage This theme expects a relatively standard Hugo blog/personal site layout:
+. └── content ├── post | ├── post1.md | └── post2.md ├── code | ├── project1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hyde/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hyde/</guid>
+      <description>Hyde Hyde is a brazen two-column hugo theme based on the Jekyll theme of the same name. It pairs a prominent sidebar with uncomplicated content.
+Contents  Options  Sidebar menu Sticky sidebar content Themes Reverse layout Disqus  Author Ported by License  Options Hyde includes some customizable options, typically applied via classes on the &amp;lt;body&amp;gt; element.
+Sidebar menu Create a list of nav links in the sidebar by assigning &amp;ldquo;menu=main&amp;rdquo; in the front matter.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/lanyon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/lanyon/</guid>
+      <description>Lanyon for Hugo Lanyon is a great theme for Jekyll. This is a port of that theme, but to another static site generator, Hugo. I&amp;rsquo;m aiming to get the same look and interactions as the original Lanyon.
+Hugo and Jekyll are similar in that, out of the box, you can&amp;rsquo;t make a presentable website out of them. You need some kind of theme first, or otherwise your site will be really bare-bones.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/material-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/material-design/</guid>
+      <description>Material-Design Material-Design is a simple material design theme for Hugo.
+demo : http://pdevty.github.io/blog/
+Features  Simple Material Design by Materialize Google Analytics (optional) Pagination Disqus (optional) Twitter, Facebook, GitHub, Google+, LinkedIn links (optional) Tags Categories Cover image (optional) Highlighting source code  Installation $ mkdir themes $ cd themes $ git clone https://github.com/pdevty/material-design  Usage $ hugo server -t material-design -w -D  Configuration config.toml
+theme=&amp;quot;material-design&amp;quot; baseurl = &amp;quot;Your Site URL&amp;quot; languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;Your Site Title&amp;quot; MetaDataFormat = &amp;quot;toml&amp;quot; paginate = 9 # To specify a multiple of 3 disqusShortname = &amp;quot;Your Disqus Name&amp;quot; # optional copyright = &amp;quot;© 2015 Copyright Text&amp;quot; [params] description = &amp;quot;Your Site Description&amp;quot; # optional twitter = &amp;quot;Your Twitter Name&amp;quot; # optional github = &amp;quot;Your Github Name&amp;quot; # optional facebook = &amp;quot;Your facebook Name&amp;quot; # optional gplus = &amp;quot;Your Google+ profile name&amp;quot; # optional linkedin = &amp;quot;Your LinkedIn Name&amp;quot; # optional headerCover = &amp;quot;images/headerCover.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/nofancy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/nofancy/</guid>
+      <description>Nofancy Yet another Hugo blog theme made by love. It tries to use less design to provide full functionalities.
+Snapshots List view:
+Content view:
+Mobile devices
+Basic ideas Are you tired of all that emerging design concepts like flat or material? Are you sick of getting distracted when pages filled up with those fancy nonsense? Here I brought up a new distraction-free theme: nofancy.
+Some ideas behind this:
+ Do subtraction instead of addition.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/pixyll/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/pixyll/</guid>
+      <description> Pixyll Pixyll is a simple, beautiful theme for Hugo. Based on Pixyll for Jekyll
+Features  Basic tag support. Disqus comments supported. Google Analytics supported. Social links (currently only for twitter). Formspree for contanct form. Pagination support.  Example config:
+languageCode = &amp;quot;en-us&amp;quot; contentdir = &amp;quot;content&amp;quot; publishdir = &amp;quot;public&amp;quot; builddrafts = false baseUrl = &amp;quot;&amp;quot; canonifyurls = true title = &amp;quot;Pixyll&amp;quot; author = &amp;quot;admin&amp;quot; theme = &amp;quot;pixyll&amp;quot; [indexes] category = &amp;quot;categories&amp;quot; tag = &amp;quot;tags&amp;quot; [params] search_engine = true google_analytics_id = &amp;quot;XX-XXXXXXXX-X&amp;quot; twitter_username = &amp;quot;username&amp;quot; disqus_shortname = &amp;quot;sitename&amp;quot; paginate = true  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/polymer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/polymer/</guid>
+      <description>Polymer Polymer is a web components material design theme for Hugo.
+Features  Material Design by polymer Google Analytics (optional) Pagination Disqus (optional) Twitter, Facebook, GitHub, Google+, LinkedIn links (optional) Tags Categories Cover, Photo, Profile image (optional) Highlighting source code  Installation $ mkdir themes $ cd themes $ git clone https://github.com/pdevty/polymer  Usage $ hugo server -t polymer -w -D  Configuration config.toml
+theme=&amp;quot;polymer&amp;quot; baseurl = &amp;quot;Your Site URL&amp;quot; languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;Your Site Title&amp;quot; MetaDataFormat = &amp;quot;toml&amp;quot; paginate = 10 # optional disqusShortname = &amp;quot;Your Disqus Name&amp;quot; # optional copyright = &amp;quot;© 2015 Copyright Text&amp;quot; [params] author = &amp;quot;Your Name&amp;quot; photo = &amp;quot;images/photo.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/poopshow/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/poopshow/</guid>
+      <description>The theme formerly know as s***show, re-branded to be more family friendly.
+None of the existing hugo themes fit what I wanted so I created my own. I feel this is a very lightweight theme without being super boring.
+This theme uses the Skeleton CSS framework
+Configuration This theme will not work (well, it won&amp;rsquo;t work correctly) out of the box, there are a few parameters you&amp;rsquo;ll have to add/set in your main hugo config file.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/purehugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/purehugo/</guid>
+      <description>purehugo Hugo theme based on purecss from Yahoo. The theme is based on the purecss blog layout example, is responsive and has a few more features: pagination (if enabled), responsive images (through a shortcode), google analytics, disqus comments and even a mini-asset-pipeline using gulp. If you end up using it, I&amp;rsquo;d love to see what you do with it so please give me a shout on twitter.
+Config file The config file for the demo site looks like this:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/redlounge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/redlounge/</guid>
+      <description>Red Lounge This is an open-source Hugo theme designed by @shift8creative to be responsive and clean. It uses Pure.css and contains a few web fonts from Google as well as Font Awesome icons. So despite it being simple, it has a lot of flexibility in terms of typography and design elements. It&amp;rsquo;s also quite configurable as it has a few variables to change the appearance and features of the pages.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/robust/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/robust/</guid>
+      <description>Robust Robust is a theme for Hugo.
+Features  Google Analytics Gravatar Profile Disqus SNS Links(Facebook, Twitter, GitHub) Share Button Eye-catching Image Tagging Related Post  Installation Referred from hugoThemes#Installing Themes.
+Installing with other all themes If you would like to install all of the available hugo themes, simply clone the entire repository from within your working directory.
+git clone --recursive https://github.com/spf13/hugoThemes.git themes  Installing a single theme mkdir themes cd themes git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/shiori/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/shiori/</guid>
+      <description>Shiori Partial port of Shiori theme to Hugo.
+Changed from the Original  To customize the theme, modify Sass files under static_src and run gulp build. Removed &amp;ldquo;you can customize this section&amp;rdquo; messages. Removed prev/post navigation on each post (can&amp;rsquo;t be implemented until this feature is implemented.  Example Config ... title = &amp;quot;Shiori&amp;quot; author = &amp;quot;Shu Uesugi&amp;quot; [params] author_name = &amp;quot;Shu Uesugi&amp;quot; twitter_username = &amp;quot;chibicode&amp;quot; gravatar_id = &amp;quot;d747ad92018acd87a77899704fc6693d&amp;quot;  License MIT License</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/simple-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/simple-hugo/</guid>
+      <description> Alert Work in progress.
+Simple Hugo A simple hugo theme.
+Params  For add new links on navbar see [params.links]. toml [params] github = &amp;quot;username&amp;quot; twitter = &amp;quot;username&amp;quot; email = &amp;quot;email&amp;quot; shortDescription = &amp;quot;yada yada yada&amp;quot; [params.links] [params.links.About] &amp;quot;url&amp;quot; = &amp;quot;/about/&amp;quot; &amp;quot;title&amp;quot; = &amp;quot;About&amp;quot; [params.links.ContactMe] &amp;quot;url&amp;quot; = &amp;quot;/contact/&amp;quot; &amp;quot;title&amp;quot; = &amp;quot;Contact Me&amp;quot;   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/slim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/slim/</guid>
+      <description>Slim Slim is a minimal, clean and beautiful theme for Hugo.
+Demo.
+Installation mkdir themes cd themes git clone https://github.com/zhe/hugo-theme-slim slim  See the official docs for more information.
+Configuration You could add params into your site&amp;rsquo;s config.toml file:
+[params] Subtitle = &amp;quot;Your site&#39;s subtitle/tagline&amp;quot; GithubID = &amp;quot;Your Github ID&amp;quot; TwitterID = &amp;quot;Your Twitter ID&amp;quot; AnalyticsID = &amp;quot;Your Google Analytics tracking code&amp;quot; Summary = true # takes true or false Content = false # takes true or false # if both are set to true, summary is shown.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/startbootstrap-clean-blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/startbootstrap-clean-blog/</guid>
+      <description>About Hugo theme based on Start Bootstrap Clean Blog.
+Setup As is You can use the site as is, it will work. You can for example use it with HugoBasicExample.
+full features If you want to have all the features and pages of the original theme, you will need a similar config.toml:
+baseurl = &amp;quot;http://humboldtux.github.io/sbcb-demo&amp;quot; title = &amp;quot;Start Bootstrap Clean Blog&amp;quot; canonifyurls = true paginate = 10 theme = &amp;quot;startbootstrap-clean-blog&amp;quot; languageCode = &amp;quot;en-us&amp;quot; copyright = &amp;quot;Code released under the Apache 2.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/steam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/steam/</guid>
+      <description>Steam Steam is a minimal and customizable theme for bloggers and was developed by Tommaso Barbato. He created it as a slightly adapted version of the Vapor Ghost theme by Seth Lilly. Noteworthy features of this Hugo port are the integration of a comment-system either powered by Disqus or Google Plus, the customizable appearance by changing theme colors, support for RSS feeds, syntax highlighting for source code and the optional use of Google Analytics.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/tachyons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/tachyons/</guid>
+      <description>Tachyons Tachyons is a responsive &amp;amp; fast Hugo theme made with the amazing TACHYONS CSS framework &amp;amp; GEOMICONS.
+Please see a demo site here and another example here.
+Contents  Usage Options  Header Footer Icon Reference Table  Author Credits License  Usage From Hugo Quickstart:
+ Install Hugo  Go to Hugo Releases and download the appropriate version for your OS and architecture. Save the main executable as hugo (or hugo.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/tinyce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/tinyce/</guid>
+      <description>Tinyce Tinyce is a general-purpose Hugo theme.
+You can check the live version here.
+Getting started Once you have Hugo up and running, you must:
+Create a Hugo project:
+$ hugo new site my-site  And then install tinyce:
+$ cd themes $ git clone https://github.com/roperzh/tinyce-hugo-theme  If you are using Hugo v0.11 or below, please read this
+Now you can set tinyce as the default theme for your site by adding this line in the config file:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/twentyfourteen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/twentyfourteen/</guid>
+      <description>Twenty Fourteen Twenty Fourteen is a responsive, two-column hugo theme based on the Wordpress theme of the same name.
+It features a dark color scheme and a left sidebar.
+Features A few features specific to this theme.
+Figure shortcode Example:
+{{% figure src=&amp;quot;/images/snow.jpg&amp;quot; alt=&amp;quot;A snowy day&amp;quot; caption=&amp;quot;Snowy day&amp;quot; %}}
+Menu Put pages in the top navigation bar by adding menu=main in the page&amp;rsquo;s front matter.
+Author wordpressdotorg - https://wordpress.org/themes/twentyfourteen - https://themes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/vienna/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/vienna/</guid>
+      <description>Vienna Overview Vienna is a simple and clean blog theme for Hugo. Notable features are:
+ Simple and clean design Client side source code highlighting Social links (Twitter, Facebook, GitHub, LinkedIn, Instagram, Keybase) Support for tags Analytics with Google Analytics or Mixpanel Responsive design Font Awesome icons  Installation In your hugo site directory, run:
+$ mkdir themes $ cd themes $ git clone https://github.com/keichi/vienna  Vienna is also included in the spf13/hugoThemes repository.</description>
+    </item>
+    
+  </channel>
 </rss>

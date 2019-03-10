@@ -1,12 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Disqus on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/disqus/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Disqus on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/disqus/</link>
+    <description>Recent content in Disqus on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/disqus/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/cactus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/cactus/</guid>
+      <description>Cactus Theme Cactus is a minimalistic theme for bloggers based on the default theme of the same-named Cactus static site generator written in Python and Nick Balestra&amp;rsquo;s Jekyll port. Noteworthy features of this Hugo theme are the integration of a comment-system powered by Disqus, a customizable about page, support for RSS feeds, syntax highlighting for source code and sharing options for blog posts.
+Contents  Installation The config file About page Disqus Nearly finished Contributing License Annotations  Installation Inside the folder of your Hugo site run:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hikari/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hikari/</guid>
+      <description>Hikari theme Hikari is a simple theme for bloggers, whose minimalism tries to focus readers on the content. It&amp;rsquo;s a port of Mathieu Mayer-Mazzoli&amp;rsquo;s orignal Hikari theme made for Jekyll. Noteworthy features are the integration of a comment-system powered by Disqus, optional statistics via Google Analytics, support for RSS and syntax highlighting for source code in blog posts.
+Contents  Installation Setup  The config file Disqus Google Analytics Nearly finished  Contributing License Annotations  Installation Inside the folder of your Hugo site run:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-minimalist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-minimalist/</guid>
+      <description>Minimalist Minimalist is a responsive theme with a focus on blogging based on the Minimalistic Ghost theme made by Raphael Riegger . Noteworthy features of this Hugo theme are the integration of a comment-system powered by Disqus, easy localization (l10n), support for RSS feeds, syntax highlighting for source code and sharing options in the blog posts.
+
+Contents  Installation The config file Localization (l10n) Nearly finished Contributing License Annotations  Installation Inside the folder of your Hugo site run:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/steam/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/steam/</guid>
+      <description>Steam Steam is a minimal and customizable theme for bloggers and was developed by Tommaso Barbato. He created it as a slightly adapted version of the Vapor Ghost theme by Seth Lilly. Noteworthy features of this Hugo port are the integration of a comment-system either powered by Disqus or Google Plus, the customizable appearance by changing theme colors, support for RSS feeds, syntax highlighting for source code and the optional use of Google Analytics.</description>
+    </item>
+    
+  </channel>
 </rss>

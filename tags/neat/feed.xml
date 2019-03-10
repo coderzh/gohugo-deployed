@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Neat on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/neat/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Neat on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/neat/</link>
+    <description>Recent content in Neat on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/neat/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/slim/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/slim/</guid>
+      <description>Slim Slim is a minimal, clean and beautiful theme for Hugo.
+Demo.
+Installation mkdir themes cd themes git clone https://github.com/zhe/hugo-theme-slim slim  See the official docs for more information.
+Configuration You could add params into your site&amp;rsquo;s config.toml file:
+[params] Subtitle = &amp;quot;Your site&#39;s subtitle/tagline&amp;quot; GithubID = &amp;quot;Your Github ID&amp;quot; TwitterID = &amp;quot;Your Twitter ID&amp;quot; AnalyticsID = &amp;quot;Your Google Analytics tracking code&amp;quot; Summary = true # takes true or false Content = false # takes true or false # if both are set to true, summary is shown.</description>
+    </item>
+    
+  </channel>
 </rss>

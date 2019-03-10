@@ -1,12 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Technical on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/technical/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Technical on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/technical/</link>
+    <description>Recent content in Technical on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    <lastBuildDate>Sun, 15 Nov 2015 11:20:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://www.gohugo.org/tags/technical/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>LosslessLife</title>
+      <link>https://www.gohugo.org/showcase/losslesslife/</link>
+      <pubDate>Sun, 15 Nov 2015 11:20:00 -0800</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/losslesslife/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Richard Sumilang - Top Secret Labs</title>
+      <link>https://www.gohugo.org/showcase/richardsumilang/</link>
+      <pubDate>Mon, 07 Sep 2015 00:12:00 -0700</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/richardsumilang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hyde-x/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hyde-x/</guid>
+      <description>Hyde-X Enhanced port of the Jekyll &amp;ldquo;Hyde&amp;rdquo; theme to the Hugo site generator. Check below for a list of enhancements.
+You can find a live site using this theme here and the corresponding source code here.
+ Installation Usage Configuration Built-in colour themes Tips Changes and enhancements from the original theme Attribution Questions, ideas, bugs, pull requests? License  Installation $ cd your_site_repo/ $ mkdir themes $ cd themes $ git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hyde-y/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hyde-y/</guid>
+      <description>Hyde-Y Forked from Hyde-X
+You can find a live site using this theme here and the corresponding source code here.
+Screenshot Installation $ cd your_site_repo/ $ mkdir themes $ cd themes $ git clone https://github.com/enten/hyde-y  See the official Hugo themes documentation for more info.
+Usage This theme expects a relatively standard Hugo blog/personal site layout:
+. └── content ├── post | ├── post1.md | └── post2.md ├── code | ├── project1.</description>
+    </item>
+    
+  </channel>
 </rss>

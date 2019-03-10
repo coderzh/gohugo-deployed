@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Category on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/category/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Category on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/category/</link>
+    <description>Recent content in Category on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/category/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-multi-bootswatch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-multi-bootswatch/</guid>
+      <description>Hugo Multi Bootswatch Theme Hugo Multi BootSwatch Theme is a single column theme for hugo based on Twitter Bootstrap and a css styling from Bootswatch.
+It is a simple template containing a nice header menu bar and content area. Default the theme support 2 types of content.
+ pages (used for About/Resume pages) posts (used for standard blogposts)   Installation Usage Configuration Built-in colour themes Screenshots Themed screenshots</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/journal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/journal/</guid>
+      <description>Journal Journal is a single column theme for hugo based on Twitter Bootstrap and a css styling from Bootswatch the Journal theme.
+It is a simple template containing a nice header menu bar and content area. Default the theme support 2 types of content.
+ pages (used for About/Resume pages) posts (used for standard blogposts)  Screenshots Index Page Post Page List Page How to use  Download the repository and extract to your hugo working directory (/themes/  Or read more on the main Hugo site -&amp;gt; Installing Hugo Themes</description>
+    </item>
+    
+  </channel>
 </rss>

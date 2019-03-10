@@ -1,12 +1,682 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Showcases on Hugo中文文档</title>
-        <link>http://www.gohugo.org/showcase/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Wed, 17 Feb 2016 15:19:08 &#43;0100</updated>
-        
-    </channel>
+  <channel>
+    <title>Showcases on Hugo中文文档</title>
+    <link>https://www.gohugo.org/showcase/</link>
+    <description>Recent content in Showcases on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    <lastBuildDate>Wed, 17 Feb 2016 15:19:08 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.gohugo.org/showcase/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cdnoverview.com</title>
+      <link>https://www.gohugo.org/showcase/cdnoverview/</link>
+      <pubDate>Wed, 17 Feb 2016 15:19:08 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/cdnoverview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gntech.se</title>
+      <link>https://www.gohugo.org/showcase/gntech/</link>
+      <pubDate>Sat, 13 Feb 2016 21:47:27 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/gntech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jorgennilsson.com</title>
+      <link>https://www.gohugo.org/showcase/jorgennilsson/</link>
+      <pubDate>Thu, 11 Feb 2016 23:41:27 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/jorgennilsson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shelan.org</title>
+      <link>https://www.gohugo.org/showcase/shelan/</link>
+      <pubDate>Sun, 07 Feb 2016 10:30:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/shelan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Pipeline Architect</title>
+      <link>https://www.gohugo.org/showcase/datapipelinearchitect/</link>
+      <pubDate>Thu, 04 Feb 2016 18:30:07 -0500</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/datapipelinearchitect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>David Allen</title>
+      <link>https://www.gohugo.org/showcase/davidrallen/</link>
+      <pubDate>Wed, 03 Feb 2016 11:49:07 -0500</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/davidrallen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lee Penney</title>
+      <link>https://www.gohugo.org/showcase/leepenney/</link>
+      <pubDate>Sun, 24 Jan 2016 16:10:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/leepenney/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web Study List</title>
+      <link>https://www.gohugo.org/showcase/webstudylist/</link>
+      <pubDate>Thu, 21 Jan 2016 23:33:01 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/webstudylist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rakuten Tech Blog</title>
+      <link>https://www.gohugo.org/showcase/rakutentech/</link>
+      <pubDate>Wed, 20 Jan 2016 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/rakutentech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java Union</title>
+      <link>https://www.gohugo.org/showcase/javaunion/</link>
+      <pubDate>Wed, 20 Jan 2016 01:28:16 +0800</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/javaunion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emilyhorsman.com</title>
+      <link>https://www.gohugo.org/showcase/emilyhorsman.com/</link>
+      <pubDate>Sat, 09 Jan 2016 01:00:10 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/emilyhorsman.com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coding Journal</title>
+      <link>https://www.gohugo.org/showcase/coding-journal/</link>
+      <pubDate>Wed, 23 Dec 2015 11:42:00 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/coding-journal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camunda Blog</title>
+      <link>https://www.gohugo.org/showcase/camunda-blog/</link>
+      <pubDate>Tue, 01 Dec 2015 04:20:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/camunda-blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camunda Docs</title>
+      <link>https://www.gohugo.org/showcase/camunda-docs/</link>
+      <pubDate>Tue, 01 Dec 2015 04:20:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/camunda-docs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gadgetplayboy.com</title>
+      <link>https://www.gohugo.org/showcase/gadgetplayboy/</link>
+      <pubDate>Sun, 29 Nov 2015 07:16:53 -0500</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/gadgetplayboy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go in 5 minutes</title>
+      <link>https://www.gohugo.org/showcase/goin5minutes/</link>
+      <pubDate>Fri, 20 Nov 2015 20:46:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/goin5minutes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arresteddevops</title>
+      <link>https://www.gohugo.org/showcase/arresteddevops/</link>
+      <pubDate>Fri, 20 Nov 2015 01:46:33 -0600</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/arresteddevops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ReadText</title>
+      <link>https://www.gohugo.org/showcase/readtext/</link>
+      <pubDate>Mon, 16 Nov 2015 08:36:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/readtext/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LosslessLife</title>
+      <link>https://www.gohugo.org/showcase/losslesslife/</link>
+      <pubDate>Sun, 15 Nov 2015 11:20:00 -0800</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/losslesslife/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bugtrackers.io</title>
+      <link>https://www.gohugo.org/showcase/bugtrackers.io/</link>
+      <pubDate>Tue, 27 Oct 2015 09:02:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/bugtrackers.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ninjaducks.in</title>
+      <link>https://www.gohugo.org/showcase/ninjaducks.in/</link>
+      <pubDate>Sat, 24 Oct 2015 14:06:00 +0530</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/ninjaducks.in/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>maximeguitare.com</title>
+      <link>https://www.gohugo.org/showcase/maximeguitare/</link>
+      <pubDate>Mon, 05 Oct 2015 17:15:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/maximeguitare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RIDING BYTES</title>
+      <link>https://www.gohugo.org/showcase/ridingbytes/</link>
+      <pubDate>Sun, 27 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/ridingbytes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>&lt;span lang=&#34;zh-CN&#34;&gt;语林灵&lt;/span&gt; (Yulinling)</title>
+      <link>https://www.gohugo.org/showcase/yulinling.net/</link>
+      <pubDate>Wed, 09 Sep 2015 21:42:00 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/yulinling.net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Richard Sumilang - Top Secret Labs</title>
+      <link>https://www.gohugo.org/showcase/richardsumilang/</link>
+      <pubDate>Mon, 07 Sep 2015 00:12:00 -0700</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/richardsumilang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>humboldtux.net</title>
+      <link>https://www.gohugo.org/showcase/humboldtux/</link>
+      <pubDate>Sun, 06 Sep 2015 18:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/humboldtux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodesk.co</title>
+      <link>https://www.gohugo.org/showcase/nodesk/</link>
+      <pubDate>Wed, 26 Aug 2015 22:33:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/nodesk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>greenitglobe.com</title>
+      <link>https://www.gohugo.org/showcase/gig/</link>
+      <pubDate>Mon, 24 Aug 2015 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/gig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chinese Grammar</title>
+      <link>https://www.gohugo.org/showcase/chinese-grammar/</link>
+      <pubDate>Sun, 23 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/chinese-grammar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arqueart.com</title>
+      <link>https://www.gohugo.org/showcase/arqueart/</link>
+      <pubDate>Sat, 01 Aug 2015 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/arqueart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scottcwilson.com</title>
+      <link>https://www.gohugo.org/showcase/scottcwilson/</link>
+      <pubDate>Tue, 21 Jul 2015 10:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/scottcwilson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>szymonkatra.github.io</title>
+      <link>https://www.gohugo.org/showcase/szymonkatra/</link>
+      <pubDate>Fri, 10 Jul 2015 16:15:00 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/szymonkatra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sa.muel.be</title>
+      <link>https://www.gohugo.org/showcase/samuelbe/</link>
+      <pubDate>Wed, 08 Jul 2015 14:02:16 +0200</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/samuelbe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eSolia.com</title>
+      <link>https://www.gohugo.org/showcase/esolia-com/</link>
+      <pubDate>Tue, 07 Jul 2015 04:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/esolia-com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eSolia.pro</title>
+      <link>https://www.gohugo.org/showcase/esolia-pro/</link>
+      <pubDate>Tue, 07 Jul 2015 04:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/esolia-pro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mariosanchez.org</title>
+      <link>https://www.gohugo.org/showcase/mariosanchez/</link>
+      <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/mariosanchez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LearnOverpass</title>
+      <link>https://www.gohugo.org/showcase/learnoverpass/</link>
+      <pubDate>Sat, 06 Jun 2015 12:51:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/learnoverpass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grey Times</title>
+      <link>https://www.gohugo.org/showcase/kangkona/</link>
+      <pubDate>Thu, 04 Jun 2015 12:51:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/kangkona/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rick.cogley.info</title>
+      <link>https://www.gohugo.org/showcase/rick-cogley-info/</link>
+      <pubDate>Wed, 20 May 2015 04:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/rick-cogley-info/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>consequently.org</title>
+      <link>https://www.gohugo.org/showcase/consequently/</link>
+      <pubDate>Wed, 11 Feb 2015 13:21:27 +1100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/consequently/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arian&#39;s Portfolio</title>
+      <link>https://www.gohugo.org/showcase/arianv/</link>
+      <pubDate>Fri, 06 Feb 2015 12:51:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/arianv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thehome.dk</title>
+      <link>https://www.gohugo.org/showcase/thehome/</link>
+      <pubDate>Sat, 27 Dec 2014 20:00:00 +0700</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/thehome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stou.dk</title>
+      <link>https://www.gohugo.org/showcase/stou/</link>
+      <pubDate>Sun, 23 Nov 2014 01:28:16 +0700</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/stou/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Launchcode Software Studios</title>
+      <link>https://www.gohugo.org/showcase/launchcode5/</link>
+      <pubDate>Sat, 01 Nov 2014 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/launchcode5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Firefox Site Compatibility</title>
+      <link>https://www.gohugo.org/showcase/fxsitecompat/</link>
+      <pubDate>Tue, 26 Aug 2014 19:40:00 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/fxsitecompat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ucsb</title>
+      <link>https://www.gohugo.org/showcase/ucsb/</link>
+      <pubDate>Tue, 26 Aug 2014 14:12:55 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/ucsb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>authenticgeek</title>
+      <link>https://www.gohugo.org/showcase/nickoneill/</link>
+      <pubDate>Tue, 26 Aug 2014 12:15:48 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/nickoneill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vurt.co.uk</title>
+      <link>https://www.gohugo.org/showcase/vurt.co/</link>
+      <pubDate>Tue, 26 Aug 2014 12:09:39 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/vurt.co/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>michaelwhatcott</title>
+      <link>https://www.gohugo.org/showcase/michaelwhatcott/</link>
+      <pubDate>Tue, 26 Aug 2014 11:47:11 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/michaelwhatcott/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devmonk</title>
+      <link>https://www.gohugo.org/showcase/devmonk/</link>
+      <pubDate>Tue, 26 Aug 2014 11:31:02 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/devmonk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>peteraba</title>
+      <link>https://www.gohugo.org/showcase/peteraba/</link>
+      <pubDate>Tue, 26 Aug 2014 11:30:57 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/peteraba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>&lt;span lang=&#34;zh-CN&#34;&gt;青砾&lt;/span&gt; (chingli)</title>
+      <link>https://www.gohugo.org/showcase/chingli/</link>
+      <pubDate>Tue, 26 Aug 2014 11:20:02 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/chingli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Danmux</title>
+      <link>https://www.gohugo.org/showcase/danmux/</link>
+      <pubDate>Tue, 26 Aug 2014 10:55:23 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/danmux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ninya.io</title>
+      <link>https://www.gohugo.org/showcase/ninya.io/</link>
+      <pubDate>Tue, 26 Aug 2014 09:47:00 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/ninya.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tendermint</title>
+      <link>https://www.gohugo.org/showcase/tendermint/</link>
+      <pubDate>Tue, 26 Aug 2014 09:34:42 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/tendermint/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lk4d4.darth.io</title>
+      <link>https://www.gohugo.org/showcase/lk4d4.darth.io/</link>
+      <pubDate>Mon, 25 Aug 2014 18:59:30 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/lk4d4.darth.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hackmeeting</title>
+      <link>https://www.gohugo.org/showcase/hackmeeting/</link>
+      <pubDate>Mon, 25 Aug 2014 18:30:40 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/hackmeeting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>npf.io</title>
+      <link>https://www.gohugo.org/showcase/npf/</link>
+      <pubDate>Thu, 21 Aug 2014 12:21:18 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/npf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vamp.io</title>
+      <link>https://www.gohugo.org/showcase/vamp/</link>
+      <pubDate>Thu, 26 Jun 2014 15:45:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/vamp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech Made Plain</title>
+      <link>https://www.gohugo.org/showcase/techmadeplain/</link>
+      <pubDate>Thu, 22 May 2014 19:54:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/techmadeplain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>YSlow Rules</title>
+      <link>https://www.gohugo.org/showcase/yslow-rules/</link>
+      <pubDate>Mon, 07 Apr 2014 10:45:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/yslow-rules/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CloudShark</title>
+      <link>https://www.gohugo.org/showcase/cloudshark/</link>
+      <pubDate>Thu, 27 Mar 2014 09:45:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/cloudshark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hey, it&#39;s Alex</title>
+      <link>https://www.gohugo.org/showcase/heyitsalex/</link>
+      <pubDate>Sun, 09 Mar 2014 06:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/heyitsalex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kieran Healy</title>
+      <link>https://www.gohugo.org/showcase/kieranhealy/</link>
+      <pubDate>Thu, 27 Feb 2014 20:35:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/kieranhealy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ant Zucaro</title>
+      <link>https://www.gohugo.org/showcase/antzucaro/</link>
+      <pubDate>Mon, 03 Feb 2014 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/antzucaro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Andrew S Codispoti</title>
+      <link>https://www.gohugo.org/showcase/asc/</link>
+      <pubDate>Wed, 22 Jan 2014 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/asc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ifup</title>
+      <link>https://www.gohugo.org/showcase/ifup/</link>
+      <pubDate>Sat, 02 Nov 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/ifup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Davide Petilli</title>
+      <link>https://www.gohugo.org/showcase/davidepetilli/</link>
+      <pubDate>Fri, 01 Nov 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/davidepetilli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GoGB</title>
+      <link>https://www.gohugo.org/showcase/gogb/</link>
+      <pubDate>Fri, 01 Nov 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/gogb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bepsays.com</title>
+      <link>https://www.gohugo.org/showcase/bepsays/</link>
+      <pubDate>Fri, 01 Nov 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/bepsays/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chimera Art Space</title>
+      <link>https://www.gohugo.org/showcase/chimera-art-space/</link>
+      <pubDate>Wed, 02 Oct 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/chimera-art-space/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GopherCon</title>
+      <link>https://www.gohugo.org/showcase/gophercon/</link>
+      <pubDate>Tue, 01 Oct 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/gophercon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://www.gohugo.org/showcase/hugo/</link>
+      <pubDate>Mon, 01 Jul 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spf13.com</title>
+      <link>https://www.gohugo.org/showcase/spf13/</link>
+      <pubDate>Mon, 01 Jul 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/spf13/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>

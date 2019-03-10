@@ -1,12 +1,106 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Portfolio on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/portfolio/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Portfolio on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/portfolio/</link>
+    <description>Recent content in Portfolio on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    <lastBuildDate>Wed, 17 Feb 2016 15:19:08 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.gohugo.org/tags/portfolio/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cdnoverview.com</title>
+      <link>https://www.gohugo.org/showcase/cdnoverview/</link>
+      <pubDate>Wed, 17 Feb 2016 15:19:08 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/cdnoverview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Coding Journal</title>
+      <link>https://www.gohugo.org/showcase/coding-journal/</link>
+      <pubDate>Wed, 23 Dec 2015 11:42:00 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/coding-journal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Davide Petilli</title>
+      <link>https://www.gohugo.org/showcase/davidepetilli/</link>
+      <pubDate>Fri, 01 Nov 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/davidepetilli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/agency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/agency/</guid>
+      <description>Agency Theme Agency Theme is a one page portfolio for companies and freelancers based on the original Bootstrap theme by David Miller. This Hugo theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a timeline, and a contact form.
+Contents  Installation Getting started  The config file Change the hero background Present your skills Create your portfolio Show what happened Introduce your team List your clients Make the contact form working Nearly finished  Contributing License Annotations  Installation Inside the folder of your Hugo site run:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/artists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/artists/</guid>
+      <description>Artists Theme The Artists Theme is a one page portfolio for freelancers based on the original Jekyll theme by Travis Neilson aka DevTips and his many contributors. It&amp;rsquo;s the result of a longer video series made by him that is showing the whole developement process from the first designs to the final Jekyll theme. Consider to subscribe to his YouTube channel.
+This Hugo theme features several content sections, like an about section showing the level of your skills, a responsive portfolio with hover effects, a gallery to present your client&amp;rsquo;s opinions and a contact form.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/creative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/creative/</guid>
+      <description>Creative Theme Creative Theme is a one page portfolio for creatives based on the original Bootstrap theme by David Miller. Noteworthy features of this Hugo theme are several content sections and a responsive portfolio grid with hover effects and full page portfolio item modals.
+Contents  Installation Getting started  The config file Change the hero background Add your services Create your portfolio Nearly finished  Contributing License Annotations  Installation Inside the folder of your Hugo site run:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/freelancer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/freelancer/</guid>
+      <description>Freelancer Theme Freelancer Theme is a one page freelancer portfolio based on the original Bootstrap theme by David Miller and on Jerome Lachaud&amp;rsquo;s Jekyll theme. This Hugo theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals and a contact form.
+Contents  Installation Getting started  The config file Make the contact form working Add social networks Create your portfolio Nearly finished  Contributing License Annotations  Installation Inside the folder of your Hugo site run:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/grid-side/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/grid-side/</guid>
+      <description>GridSide Theme The GridSide theme is a multi-page portfolio and blog utilizing the Materialize frontend framework. Comments can be added using Disqus.
+The theme contains a main page with a single grid of images representing different sections of the website. Sections can be post, gallery, or project for various rendering.
+ Current Materialize version is 0.97.0. Current Font Awesome version is 4.4.0. Current SideComments.js version is 0.0.3. Current Masonry.js version is 3.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-mdl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-mdl/</guid>
+      <description>HugoMDL HugoMDL is a multipage responsibe blog/portfolio theme for Hugo. The theme is based on the Material Design Lite sample blog layout.
+At present it suits my needs, but feel free to help improve this theme by forking a copy and submitting a pull request.
+Installation Inside the folder of your Hugo site run:
+$ mkdir themes $ cd themes $ git clone https://github.com/jchatkinson/HugoMDL  For more information read the official setup guide of Hugo.</description>
+    </item>
+    
+  </channel>
 </rss>

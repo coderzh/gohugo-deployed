@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Material Design on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/material-design/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Material Design on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/material-design/</link>
+    <description>Recent content in Material Design on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/material-design/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-mdl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-mdl/</guid>
+      <description>HugoMDL HugoMDL is a multipage responsibe blog/portfolio theme for Hugo. The theme is based on the Material Design Lite sample blog layout.
+At present it suits my needs, but feel free to help improve this theme by forking a copy and submitting a pull request.
+Installation Inside the folder of your Hugo site run:
+$ mkdir themes $ cd themes $ git clone https://github.com/jchatkinson/HugoMDL  For more information read the official setup guide of Hugo.</description>
+    </item>
+    
+  </channel>
 </rss>

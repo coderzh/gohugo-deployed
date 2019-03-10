@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Document on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/document/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Document on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/document/</link>
+    <description>Recent content in Document on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/document/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/bootie-docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/bootie-docs/</guid>
+      <description>Bootie Docs Bootie Docs is a simple hugo theme for documentation.
+The name &amp;ldquo;bootie&amp;rdquo; comes from Bootstrap CSS.
+You can see demo and full documentation at http://key-amb.github.io/bootie-docs-demo/ .
+CONTENTS  QUICKSTART OPTIONS LIMITATION DEPENDENCIES LICENSE  QUICKSTART  hugo new _index.md Edit content/_index.md  Then the content appears on top page.
+OPTIONS You can customize the menu items in the header navigation bar by configuring params.mainMenu in your config.toml (or config.</description>
+    </item>
+    
+  </channel>
 </rss>

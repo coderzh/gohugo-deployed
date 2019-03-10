@@ -1,12 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Awesome Fonts on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/awesome-fonts/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Awesome Fonts on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/awesome-fonts/</link>
+    <description>Recent content in Awesome Fonts on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/awesome-fonts/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-uno/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-uno/</guid>
+      <description>hugo-uno A responsive hugo theme with awesome font&amp;rsquo;s, charts and light-box galleries, the theme is based on Uno for ghost. A example site is available at fredrikloch.me
+A Swedish translation is available in the branch feature/swedish
+Usage The following is a short tutorial on the usage of some features in the theme.
+Configuration To take full advantage of the features in this theme you can add variables to your site config file, the following is the example config from the example site:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugoscroll/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugoscroll/</guid>
+      <description>Hugo Scroll A live example of this theme is running at this site hugoscroll.fredrikloch.me
+Using scroll To get started with hugo you first need to download the binaries, whith these in place it is easy to get started.
+# Init site hugo new site My_New_Cool_Venture cd My_New_Cool_Venture # Get this cool theme git clone https://github.com/SenjinDarashiva/hugoscroll themes/hugoscroll # Start the watching your folder hugo --buildDrafts --theme=&amp;quot;hugoscroll&amp;quot; --watch server  With this done you can start creating posts, for this theme theme there is some specific information that needs to be added to your post header.</description>
+    </item>
+    
+  </channel>
 </rss>

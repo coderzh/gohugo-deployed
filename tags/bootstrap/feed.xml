@@ -1,12 +1,129 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Bootstrap on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/bootstrap/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Bootstrap on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/bootstrap/</link>
+    <description>Recent content in Bootstrap on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    <lastBuildDate>Wed, 17 Feb 2016 15:19:08 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.gohugo.org/tags/bootstrap/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cdnoverview.com</title>
+      <link>https://www.gohugo.org/showcase/cdnoverview/</link>
+      <pubDate>Wed, 17 Feb 2016 15:19:08 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/cdnoverview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arresteddevops</title>
+      <link>https://www.gohugo.org/showcase/arresteddevops/</link>
+      <pubDate>Fri, 20 Nov 2015 01:46:33 -0600</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/arresteddevops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Launchcode Software Studios</title>
+      <link>https://www.gohugo.org/showcase/launchcode5/</link>
+      <pubDate>Sat, 01 Nov 2014 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/launchcode5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Andrew S Codispoti</title>
+      <link>https://www.gohugo.org/showcase/asc/</link>
+      <pubDate>Wed, 22 Jan 2014 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/asc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chimera Art Space</title>
+      <link>https://www.gohugo.org/showcase/chimera-art-space/</link>
+      <pubDate>Wed, 02 Oct 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/chimera-art-space/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://www.gohugo.org/showcase/hugo/</link>
+      <pubDate>Mon, 01 Jul 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/beg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/beg/</guid>
+      <description>Beg Beg is a double-column theme for Hugo.
+Inspired by kAworu/octostrap3.
+Features  Google Analytics Disqus SNS Links(Facebook, Twitter, GitHub) Share Button Tagging Related Post  Installation Referred from hugoThemes#Installing Themes.
+Installing with other all themes If you would like to install all of the available hugo themes, simply clone the entire repository from within your working directory.
+git clone --recursive https://github.com/spf13/hugoThemes.git themes  Installing a single theme mkdir themes cd themes git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/bootie-docs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/bootie-docs/</guid>
+      <description>Bootie Docs Bootie Docs is a simple hugo theme for documentation.
+The name &amp;ldquo;bootie&amp;rdquo; comes from Bootstrap CSS.
+You can see demo and full documentation at http://key-amb.github.io/bootie-docs-demo/ .
+CONTENTS  QUICKSTART OPTIONS LIMITATION DEPENDENCIES LICENSE  QUICKSTART  hugo new _index.md Edit content/_index.md  Then the content appears on top page.
+OPTIONS You can customize the menu items in the header navigation bar by configuring params.mainMenu in your config.toml (or config.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-bootswatch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-bootswatch/</guid>
+      <description>Hugo-bootswatch Hugo-bootswatch is a Hugo theme based on Bootswatch, which themes Bootstrap 3. As such, Hugo-bootswatch will work as a Bootstrap theme, and also allows simple updating to support any Bootswatch customizations. Hugo-bootswatch comes with Bootstrap 3.3.2 and the bootswatch.js is already included. Customizing the Bootswatch theme is as easy as downloading the Bootswatch-customized bootstrap.min.css file (details below).
+Hugo-bootswatch expects section organization, which are loaded as navbar links in the header, and placed in a &amp;ldquo;Sections&amp;rdquo; dropdown.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/startbootstrap-clean-blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/startbootstrap-clean-blog/</guid>
+      <description>About Hugo theme based on Start Bootstrap Clean Blog.
+Setup As is You can use the site as is, it will work. You can for example use it with HugoBasicExample.
+full features If you want to have all the features and pages of the original theme, you will need a similar config.toml:
+baseurl = &amp;quot;http://humboldtux.github.io/sbcb-demo&amp;quot; title = &amp;quot;Start Bootstrap Clean Blog&amp;quot; canonifyurls = true paginate = 10 theme = &amp;quot;startbootstrap-clean-blog&amp;quot; languageCode = &amp;quot;en-us&amp;quot; copyright = &amp;quot;Code released under the Apache 2.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/vienna/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/vienna/</guid>
+      <description>Vienna Overview Vienna is a simple and clean blog theme for Hugo. Notable features are:
+ Simple and clean design Client side source code highlighting Social links (Twitter, Facebook, GitHub, LinkedIn, Instagram, Keybase) Support for tags Analytics with Google Analytics or Mixpanel Responsive design Font Awesome icons  Installation In your hugo site directory, run:
+$ mkdir themes $ cd themes $ git clone https://github.com/keichi/vienna  Vienna is also included in the spf13/hugoThemes repository.</description>
+    </item>
+    
+  </channel>
 </rss>

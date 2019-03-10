@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Tags on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/tags/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Tags on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/tags/</link>
+    <description>Recent content in Tags on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/tags/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/vienna/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/vienna/</guid>
+      <description>Vienna Overview Vienna is a simple and clean blog theme for Hugo. Notable features are:
+ Simple and clean design Client side source code highlighting Social links (Twitter, Facebook, GitHub, LinkedIn, Instagram, Keybase) Support for tags Analytics with Google Analytics or Mixpanel Responsive design Font Awesome icons  Installation In your hugo site directory, run:
+$ mkdir themes $ cd themes $ git clone https://github.com/keichi/vienna  Vienna is also included in the spf13/hugoThemes repository.</description>
+    </item>
+    
+  </channel>
 </rss>

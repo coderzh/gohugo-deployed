@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Dev on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/dev/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Dev on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/dev/</link>
+    <description>Recent content in Dev on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/dev/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/simple-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/simple-hugo/</guid>
+      <description> Alert Work in progress.
+Simple Hugo A simple hugo theme.
+Params  For add new links on navbar see [params.links]. toml [params] github = &amp;quot;username&amp;quot; twitter = &amp;quot;username&amp;quot; email = &amp;quot;email&amp;quot; shortDescription = &amp;quot;yada yada yada&amp;quot; [params.links] [params.links.About] &amp;quot;url&amp;quot; = &amp;quot;/about/&amp;quot; &amp;quot;title&amp;quot; = &amp;quot;About&amp;quot; [params.links.ContactMe] &amp;quot;url&amp;quot; = &amp;quot;/contact/&amp;quot; &amp;quot;title&amp;quot; = &amp;quot;Contact Me&amp;quot;   </description>
+    </item>
+    
+  </channel>
 </rss>

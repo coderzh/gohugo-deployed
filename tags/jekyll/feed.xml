@@ -1,91 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Jekyll on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/jekyll/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-        <item>
-            <title>使用Hugo Import一键迁移Jekyll</title>
-            <link>http://www.gohugo.org/post/coderzh-hugo-import-from-jekyll/</link>
-            <pubDate>Sun, 11 Oct 2015 10:06:11 CST</pubDate>
-            <author>CoderZh</author>
-            <guid>http://www.gohugo.org/post/coderzh-hugo-import-from-jekyll/</guid>
-            <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/HugoImportJekyll.png-wt&#34; alt=&#34;HugoImportJekyll&#34; /&gt;&lt;/p&gt;
+  <channel>
+    <title>Jekyll on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/jekyll/</link>
+    <description>Recent content in Jekyll on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    <lastBuildDate>Sun, 11 Oct 2015 10:06:11 +0800</lastBuildDate>
+    
+	<atom:link href="https://www.gohugo.org/tags/jekyll/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>使用Hugo Import一键迁移Jekyll</title>
+      <link>https://www.gohugo.org/post/coderzh-hugo-import-from-jekyll/</link>
+      <pubDate>Sun, 11 Oct 2015 10:06:11 +0800</pubDate>
+      
+      <guid>https://www.gohugo.org/post/coderzh-hugo-import-from-jekyll/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;http://7xlx3k.com1.z0.glb.clouddn.com/HugoImportJekyll.png-wt&#34; alt=&#34;HugoImportJekyll&#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;国庆长假期间，给Hugo提了几个PR，其中最主要的一个是给Hugo增加了内置的Jekyll迁移工具。这样之前的Jekyll用户可以通过一个简单的命令就可以将网站转化成Hugo站点：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo import jekyll your-jekyll-dir target-dir
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;得益于Hugo代码可读性非常好，原来计划需要几天来完成的功能1天左右的时间就完成了。完整的PR过程请见：&lt;a href=&#34;https://github.com/spf13/hugo/pull/1469&#34;&gt;https://github.com/spf13/hugo/pull/1469&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;hugo-import&#34;&gt;Hugo Import&lt;/h3&gt;
-
-&lt;p&gt;主要实现了将原来的Jeklly网站一键转换为Hugo网站，具体实现了如下功能：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;生成新的Hugo站点结构。(hugo new site)&lt;/li&gt;
-&lt;li&gt;读取Jeklly的_config.yml，相应内容转化到Hugo的config.yaml。&lt;/li&gt;
-&lt;li&gt;转换所有MarkDown的文章。（具体转换规则见下文）&lt;/li&gt;
-&lt;li&gt;拷贝Jekyll其他目录及文件到Hugo的static目录。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;@bep在他的OS X上做了一些测试：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo import jekyll qrush.github.com qr2
-  Importing...
-  Congratulations! 72 posts imported!
-  Now, start Hugo by yourself:
-  $ git clone https://github.com/spf13/herring-cove.git qr2/themes/herring-cove
-  $ cd qr2
-  $ hugo server -w --theme=herring-cove
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;markdown文章转换规则&#34;&gt;MarkDown文章转换规则&lt;/h3&gt;
-
-&lt;p&gt;Hugo和Jekyll都是使用MarkDown来写文章的，文章内容基本上是兼容的，除了一些FrontMatter的细节和局部细节。Hugo Import Jekyll主要的转换规则如下：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;保持原Jekyll文章目录结构及文件名不变，将文章拷贝到了content/post目录下。&lt;/li&gt;
-&lt;li&gt;尽量保持原Jekyll文章链接地址不变，在文章的FrontMatter自动填入url字段。&lt;/li&gt;
-&lt;li&gt;date字段转换成Hugo要求的time.RFC3339格式。&lt;/li&gt;
-&lt;li&gt;draft字段自动生成。&lt;/li&gt;
-&lt;li&gt;删除layout字段。&lt;/li&gt;
-&lt;li&gt;category字段转换成categories字段。&lt;/li&gt;
-&lt;li&gt;excerpt_separator智能替换。(比如： &amp;lt;!--more--&amp;gt;)&lt;/li&gt;
-&lt;li&gt;删除&lt;code&gt;{% raw %}{% endraw %}&lt;/code&gt;标签。&lt;/li&gt;
-&lt;li&gt;替换&lt;code&gt;{% highlight %}{% endhighlight %}&lt;/code&gt;标签为 {{&amp;lt; highlight &amp;gt;}}{{&amp;lt; / highlight &amp;gt;}}&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;代码&#34;&gt;代码&lt;/h3&gt;
-
-&lt;p&gt;import.go:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/spf13/hugo/blob/master/commands/import.go&#34;&gt;https://github.com/spf13/hugo/blob/master/commands/import.go&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;import_test.go:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/spf13/hugo/blob/master/commands/import_test.go&#34;&gt;https://github.com/spf13/hugo/blob/master/commands/import_test.go&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;我fork的Hugo Repo（我的最新改动都在这里）：&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/coderzh/hugo&#34;&gt;https://github.com/coderzh/hugo&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;最后&#34;&gt;最后&lt;/h3&gt;
-
-&lt;p&gt;这个功能将会在下个正式版推出，现在需要使用的同学自行pull最新的Hugo代码编译吧：&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ go get -u -v github.com/spf13/hugo
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;欢迎试用，并且提出意见或建议！谢谢！&lt;/p&gt;</description>
-        </item>
-        
-    </channel>
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
 </rss>

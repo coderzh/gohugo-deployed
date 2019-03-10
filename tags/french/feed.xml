@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>French on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/french/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>French on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/french/</link>
+    <description>Recent content in French on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    <lastBuildDate>Mon, 05 Oct 2015 17:15:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.gohugo.org/tags/french/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>maximeguitare.com</title>
+      <link>https://www.gohugo.org/showcase/maximeguitare/</link>
+      <pubDate>Mon, 05 Oct 2015 17:15:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/maximeguitare/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>

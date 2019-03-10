@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Showcase on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/showcase/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Showcase on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/showcase/</link>
+    <description>Recent content in Showcase on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/showcase/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/artists/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/artists/</guid>
+      <description>Artists Theme The Artists Theme is a one page portfolio for freelancers based on the original Jekyll theme by Travis Neilson aka DevTips and his many contributors. It&amp;rsquo;s the result of a longer video series made by him that is showing the whole developement process from the first designs to the final Jekyll theme. Consider to subscribe to his YouTube channel.
+This Hugo theme features several content sections, like an about section showing the level of your skills, a responsive portfolio with hover effects, a gallery to present your client&amp;rsquo;s opinions and a contact form.</description>
+    </item>
+    
+  </channel>
 </rss>

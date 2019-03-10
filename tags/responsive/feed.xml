@@ -1,12 +1,83 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Responsive on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/responsive/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Responsive on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/responsive/</link>
+    <description>Recent content in Responsive on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/responsive/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-h5bp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-h5bp/</guid>
+      <description>hugo-h5bp-simple Simple responsive theme for Go Hugo</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-icarus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-icarus/</guid>
+      <description>Icarus Icarus is a responsive and customizable theme for bloggers. It&amp;rsquo;s a port of the same-named theme for Hexo made by Ruipeng Zhang. Noteworthy features of this Hugo theme are the integration of a comment-system powered by Disqus, localization (l10n) support, syntax highlighting for source code, optional widgets for the sidebar and a handful shortcodes to make your life easier.
+Get the theme I assume you&amp;rsquo;ve Git installed. Inside the folder of your Hugo site run</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-minimalist/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-minimalist/</guid>
+      <description>Minimalist Minimalist is a responsive theme with a focus on blogging based on the Minimalistic Ghost theme made by Raphael Riegger . Noteworthy features of this Hugo theme are the integration of a comment-system powered by Disqus, easy localization (l10n), support for RSS feeds, syntax highlighting for source code and sharing options in the blog posts.
+
+Contents  Installation The config file Localization (l10n) Nearly finished Contributing License Annotations  Installation Inside the folder of your Hugo site run:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-uno/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-uno/</guid>
+      <description>hugo-uno A responsive hugo theme with awesome font&amp;rsquo;s, charts and light-box galleries, the theme is based on Uno for ghost. A example site is available at fredrikloch.me
+A Swedish translation is available in the branch feature/swedish
+Usage The following is a short tutorial on the usage of some features in the theme.
+Configuration To take full advantage of the features in this theme you can add variables to your site config file, the following is the example config from the example site:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugoscroll/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugoscroll/</guid>
+      <description>Hugo Scroll A live example of this theme is running at this site hugoscroll.fredrikloch.me
+Using scroll To get started with hugo you first need to download the binaries, whith these in place it is easy to get started.
+# Init site hugo new site My_New_Cool_Venture cd My_New_Cool_Venture # Get this cool theme git clone https://github.com/SenjinDarashiva/hugoscroll themes/hugoscroll # Start the watching your folder hugo --buildDrafts --theme=&amp;quot;hugoscroll&amp;quot; --watch server  With this done you can start creating posts, for this theme theme there is some specific information that needs to be added to your post header.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/tinyce/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/tinyce/</guid>
+      <description>Tinyce Tinyce is a general-purpose Hugo theme.
+You can check the live version here.
+Getting started Once you have Hugo up and running, you must:
+Create a Hugo project:
+$ hugo new site my-site  And then install tinyce:
+$ cd themes $ git clone https://github.com/roperzh/tinyce-hugo-theme  If you are using Hugo v0.11 or below, please read this
+Now you can set tinyce as the default theme for your site by adding this line in the config file:</description>
+    </item>
+    
+  </channel>
 </rss>

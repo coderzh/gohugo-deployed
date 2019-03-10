@@ -1,12 +1,427 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Personal on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/personal/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Personal on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/personal/</link>
+    <description>Recent content in Personal on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    <lastBuildDate>Sat, 13 Feb 2016 21:47:27 +0100</lastBuildDate>
+    
+	<atom:link href="https://www.gohugo.org/tags/personal/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>gntech.se</title>
+      <link>https://www.gohugo.org/showcase/gntech/</link>
+      <pubDate>Sat, 13 Feb 2016 21:47:27 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/gntech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jorgennilsson.com</title>
+      <link>https://www.gohugo.org/showcase/jorgennilsson/</link>
+      <pubDate>Thu, 11 Feb 2016 23:41:27 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/jorgennilsson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shelan.org</title>
+      <link>https://www.gohugo.org/showcase/shelan/</link>
+      <pubDate>Sun, 07 Feb 2016 10:30:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/shelan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>David Allen</title>
+      <link>https://www.gohugo.org/showcase/davidrallen/</link>
+      <pubDate>Wed, 03 Feb 2016 11:49:07 -0500</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/davidrallen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lee Penney</title>
+      <link>https://www.gohugo.org/showcase/leepenney/</link>
+      <pubDate>Sun, 24 Jan 2016 16:10:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/leepenney/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>emilyhorsman.com</title>
+      <link>https://www.gohugo.org/showcase/emilyhorsman.com/</link>
+      <pubDate>Sat, 09 Jan 2016 01:00:10 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/emilyhorsman.com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>gadgetplayboy.com</title>
+      <link>https://www.gohugo.org/showcase/gadgetplayboy/</link>
+      <pubDate>Sun, 29 Nov 2015 07:16:53 -0500</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/gadgetplayboy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ninjaducks.in</title>
+      <link>https://www.gohugo.org/showcase/ninjaducks.in/</link>
+      <pubDate>Sat, 24 Oct 2015 14:06:00 +0530</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/ninjaducks.in/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Richard Sumilang - Top Secret Labs</title>
+      <link>https://www.gohugo.org/showcase/richardsumilang/</link>
+      <pubDate>Mon, 07 Sep 2015 00:12:00 -0700</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/richardsumilang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>humboldtux.net</title>
+      <link>https://www.gohugo.org/showcase/humboldtux/</link>
+      <pubDate>Sun, 06 Sep 2015 18:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/humboldtux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scottcwilson.com</title>
+      <link>https://www.gohugo.org/showcase/scottcwilson/</link>
+      <pubDate>Tue, 21 Jul 2015 10:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/scottcwilson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>szymonkatra.github.io</title>
+      <link>https://www.gohugo.org/showcase/szymonkatra/</link>
+      <pubDate>Fri, 10 Jul 2015 16:15:00 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/szymonkatra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sa.muel.be</title>
+      <link>https://www.gohugo.org/showcase/samuelbe/</link>
+      <pubDate>Wed, 08 Jul 2015 14:02:16 +0200</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/samuelbe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mariosanchez.org</title>
+      <link>https://www.gohugo.org/showcase/mariosanchez/</link>
+      <pubDate>Sat, 20 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/mariosanchez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Grey Times</title>
+      <link>https://www.gohugo.org/showcase/kangkona/</link>
+      <pubDate>Thu, 04 Jun 2015 12:51:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/kangkona/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rick.cogley.info</title>
+      <link>https://www.gohugo.org/showcase/rick-cogley-info/</link>
+      <pubDate>Wed, 20 May 2015 04:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/rick-cogley-info/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arian&#39;s Portfolio</title>
+      <link>https://www.gohugo.org/showcase/arianv/</link>
+      <pubDate>Fri, 06 Feb 2015 12:51:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/arianv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thehome.dk</title>
+      <link>https://www.gohugo.org/showcase/thehome/</link>
+      <pubDate>Sat, 27 Dec 2014 20:00:00 +0700</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/thehome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stou.dk</title>
+      <link>https://www.gohugo.org/showcase/stou/</link>
+      <pubDate>Sun, 23 Nov 2014 01:28:16 +0700</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/stou/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>authenticgeek</title>
+      <link>https://www.gohugo.org/showcase/nickoneill/</link>
+      <pubDate>Tue, 26 Aug 2014 12:15:48 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/nickoneill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vurt.co.uk</title>
+      <link>https://www.gohugo.org/showcase/vurt.co/</link>
+      <pubDate>Tue, 26 Aug 2014 12:09:39 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/vurt.co/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>michaelwhatcott</title>
+      <link>https://www.gohugo.org/showcase/michaelwhatcott/</link>
+      <pubDate>Tue, 26 Aug 2014 11:47:11 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/michaelwhatcott/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>peteraba</title>
+      <link>https://www.gohugo.org/showcase/peteraba/</link>
+      <pubDate>Tue, 26 Aug 2014 11:30:57 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/peteraba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>&lt;span lang=&#34;zh-CN&#34;&gt;青砾&lt;/span&gt; (chingli)</title>
+      <link>https://www.gohugo.org/showcase/chingli/</link>
+      <pubDate>Tue, 26 Aug 2014 11:20:02 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/chingli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Danmux</title>
+      <link>https://www.gohugo.org/showcase/danmux/</link>
+      <pubDate>Tue, 26 Aug 2014 10:55:23 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/danmux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>lk4d4.darth.io</title>
+      <link>https://www.gohugo.org/showcase/lk4d4.darth.io/</link>
+      <pubDate>Mon, 25 Aug 2014 18:59:30 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/lk4d4.darth.io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>npf.io</title>
+      <link>https://www.gohugo.org/showcase/npf/</link>
+      <pubDate>Thu, 21 Aug 2014 12:21:18 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/npf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech Made Plain</title>
+      <link>https://www.gohugo.org/showcase/techmadeplain/</link>
+      <pubDate>Thu, 22 May 2014 19:54:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/techmadeplain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hey, it&#39;s Alex</title>
+      <link>https://www.gohugo.org/showcase/heyitsalex/</link>
+      <pubDate>Sun, 09 Mar 2014 06:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/heyitsalex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kieran Healy</title>
+      <link>https://www.gohugo.org/showcase/kieranhealy/</link>
+      <pubDate>Thu, 27 Feb 2014 20:35:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/kieranhealy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ant Zucaro</title>
+      <link>https://www.gohugo.org/showcase/antzucaro/</link>
+      <pubDate>Mon, 03 Feb 2014 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/antzucaro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Andrew S Codispoti</title>
+      <link>https://www.gohugo.org/showcase/asc/</link>
+      <pubDate>Wed, 22 Jan 2014 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/asc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ifup</title>
+      <link>https://www.gohugo.org/showcase/ifup/</link>
+      <pubDate>Sat, 02 Nov 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/ifup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Davide Petilli</title>
+      <link>https://www.gohugo.org/showcase/davidepetilli/</link>
+      <pubDate>Fri, 01 Nov 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/davidepetilli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bepsays.com</title>
+      <link>https://www.gohugo.org/showcase/bepsays/</link>
+      <pubDate>Fri, 01 Nov 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/bepsays/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spf13.com</title>
+      <link>https://www.gohugo.org/showcase/spf13/</link>
+      <pubDate>Mon, 01 Jul 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/spf13/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hurock/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hurock/</guid>
+      <description>hurock A classic sidebar Hugo theme
+My personnal Hugo blog
+Screenshots index.html:
+List view:
+Content view:
+404 error page:
+Concept  No external ressources (js/css/fonts) Easy to add stuff in header/footer Syntax highlight on client side using highlight.js Shortcodes for vimeo/youtube/gist W3C valid  Clean HTML Sidebar after content CSS in head, JS before end of body   Theme mostly insipred on theme nofancy but also: hyde-x, lanyon, liquorice, purehugo, redlounge.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hyde-x/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hyde-x/</guid>
+      <description>Hyde-X Enhanced port of the Jekyll &amp;ldquo;Hyde&amp;rdquo; theme to the Hugo site generator. Check below for a list of enhancements.
+You can find a live site using this theme here and the corresponding source code here.
+ Installation Usage Configuration Built-in colour themes Tips Changes and enhancements from the original theme Attribution Questions, ideas, bugs, pull requests? License  Installation $ cd your_site_repo/ $ mkdir themes $ cd themes $ git clone https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hyde-y/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hyde-y/</guid>
+      <description>Hyde-Y Forked from Hyde-X
+You can find a live site using this theme here and the corresponding source code here.
+Screenshot Installation $ cd your_site_repo/ $ mkdir themes $ cd themes $ git clone https://github.com/enten/hyde-y  See the official Hugo themes documentation for more info.
+Usage This theme expects a relatively standard Hugo blog/personal site layout:
+. └── content ├── post | ├── post1.md | └── post2.md ├── code | ├── project1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/nofancy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/nofancy/</guid>
+      <description>Nofancy Yet another Hugo blog theme made by love. It tries to use less design to provide full functionalities.
+Snapshots List view:
+Content view:
+Mobile devices
+Basic ideas Are you tired of all that emerging design concepts like flat or material? Are you sick of getting distracted when pages filled up with those fancy nonsense? Here I brought up a new distraction-free theme: nofancy.
+Some ideas behind this:
+ Do subtraction instead of addition.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/pixyll/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/pixyll/</guid>
+      <description> Pixyll Pixyll is a simple, beautiful theme for Hugo. Based on Pixyll for Jekyll
+Features  Basic tag support. Disqus comments supported. Google Analytics supported. Social links (currently only for twitter). Formspree for contanct form. Pagination support.  Example config:
+languageCode = &amp;quot;en-us&amp;quot; contentdir = &amp;quot;content&amp;quot; publishdir = &amp;quot;public&amp;quot; builddrafts = false baseUrl = &amp;quot;&amp;quot; canonifyurls = true title = &amp;quot;Pixyll&amp;quot; author = &amp;quot;admin&amp;quot; theme = &amp;quot;pixyll&amp;quot; [indexes] category = &amp;quot;categories&amp;quot; tag = &amp;quot;tags&amp;quot; [params] search_engine = true google_analytics_id = &amp;quot;XX-XXXXXXXX-X&amp;quot; twitter_username = &amp;quot;username&amp;quot; disqus_shortname = &amp;quot;sitename&amp;quot; paginate = true  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/shiori/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/shiori/</guid>
+      <description>Shiori Partial port of Shiori theme to Hugo.
+Changed from the Original  To customize the theme, modify Sass files under static_src and run gulp build. Removed &amp;ldquo;you can customize this section&amp;rdquo; messages. Removed prev/post navigation on each post (can&amp;rsquo;t be implemented until this feature is implemented.  Example Config ... title = &amp;quot;Shiori&amp;quot; author = &amp;quot;Shu Uesugi&amp;quot; [params] author_name = &amp;quot;Shu Uesugi&amp;quot; twitter_username = &amp;quot;chibicode&amp;quot; gravatar_id = &amp;quot;d747ad92018acd87a77899704fc6693d&amp;quot;  License MIT License</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/tachyons/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/tachyons/</guid>
+      <description>Tachyons Tachyons is a responsive &amp;amp; fast Hugo theme made with the amazing TACHYONS CSS framework &amp;amp; GEOMICONS.
+Please see a demo site here and another example here.
+Contents  Usage Options  Header Footer Icon Reference Table  Author Credits License  Usage From Hugo Quickstart:
+ Install Hugo  Go to Hugo Releases and download the appropriate version for your OS and architecture. Save the main executable as hugo (or hugo.</description>
+    </item>
+    
+  </channel>
 </rss>

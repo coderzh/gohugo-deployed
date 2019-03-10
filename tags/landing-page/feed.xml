@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Landing Page on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/landing-page/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Landing Page on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/landing-page/</link>
+    <description>Recent content in Landing Page on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/landing-page/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-base-theme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-base-theme/</guid>
+      <description>Hugo base theme Hugo theme based on gohugo
+How to use  Place a image in static/img/ Create posts to display your services. Use the follow as an example:  post +++ date = 2014-10-13T20:07:19Z draft = true title = &amp;quot;First&amp;quot; description = &amp;quot;Ceci est mon premier post \n bla bla bla&amp;quot; weight = 1 icon = &amp;quot;pacman&amp;quot; +++ Hello first post  carrousel +++ date = 2014-10-13T19:54:21Z draft = true title = &amp;quot;About&amp;quot; weight = 5 icon = &amp;quot;circlestar&amp;quot; [[carousel]] quote = &amp;quot;First quote&amp;quot; author =&amp;quot;John Do&amp;quot; url = &amp;quot;&amp;quot; quote_date = &amp;quot;13 August&amp;quot; [[carousel]] quote = &amp;quot;Second quote&amp;quot; author =&amp;quot;Nhoj Od&amp;quot; url = &amp;quot;&amp;quot; quote_date = &amp;quot;14 August&amp;quot; +++  Demo View gohugo.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/landing-page-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/landing-page-hugo/</guid>
+      <description>Landing Page Theme for Hugo Hugo theme based on the landing-page theme for Jekyll
+How to use Background Images Override the default intro and contact backgrounds by putting images in these files:
+ img/intro-bg.jpg img/contact-bg.jpg  About Section Create a markdown file named content/services/about/about.md
+--- Title: About Us Draft: false --- WidgetCo is the world leader in widget production.  Services Section Create a markdown file describing a service you offer in content/services/ - e.</description>
+    </item>
+    
+  </channel>
 </rss>

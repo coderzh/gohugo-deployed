@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Wordpress on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/wordpress/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Wordpress on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/wordpress/</link>
+    <description>Recent content in Wordpress on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/wordpress/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/twentyfourteen/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/twentyfourteen/</guid>
+      <description>Twenty Fourteen Twenty Fourteen is a responsive, two-column hugo theme based on the Wordpress theme of the same name.
+It features a dark color scheme and a left sidebar.
+Features A few features specific to this theme.
+Figure shortcode Example:
+{{% figure src=&amp;quot;/images/snow.jpg&amp;quot; alt=&amp;quot;A snowy day&amp;quot; caption=&amp;quot;Snowy day&amp;quot; %}}
+Menu Put pages in the top navigation bar by adding menu=main in the page&amp;rsquo;s front matter.
+Author wordpressdotorg - https://wordpress.org/themes/twentyfourteen - https://themes.</description>
+    </item>
+    
+  </channel>
 </rss>

@@ -1,12 +1,1159 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title> on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Tags on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/</link>
+    <description>Recent content in Tags on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    <lastBuildDate>Wed, 11 Feb 2015 13:21:27 +1100</lastBuildDate>
+    
+	<atom:link href="https://www.gohugo.org/tags/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Academic</title>
+      <link>https://www.gohugo.org/tags/academic/</link>
+      <pubDate>Wed, 11 Feb 2015 13:21:27 +1100</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/academic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alexfinn</title>
+      <link>https://www.gohugo.org/tags/alexfinn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/alexfinn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Api</title>
+      <link>https://www.gohugo.org/tags/api/</link>
+      <pubDate>Thu, 26 Jun 2014 15:45:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Articles</title>
+      <link>https://www.gohugo.org/tags/articles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/articles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Audiophile</title>
+      <link>https://www.gohugo.org/tags/audiophile/</link>
+      <pubDate>Sun, 15 Nov 2015 11:20:00 -0800</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/audiophile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Awesome Fonts</title>
+      <link>https://www.gohugo.org/tags/awesome-fonts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/awesome-fonts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Black White</title>
+      <link>https://www.gohugo.org/tags/black-white/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/black-white/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://www.gohugo.org/tags/blog/</link>
+      <pubDate>Sat, 13 Feb 2016 21:47:27 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bootstrap</title>
+      <link>https://www.gohugo.org/tags/bootstrap/</link>
+      <pubDate>Wed, 17 Feb 2016 15:19:08 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/bootstrap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bootswatch</title>
+      <link>https://www.gohugo.org/tags/bootswatch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/bootswatch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Business</title>
+      <link>https://www.gohugo.org/tags/business/</link>
+      <pubDate>Sat, 01 Aug 2015 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/business/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Category</title>
+      <link>https://www.gohugo.org/tags/category/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/category/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chart.js</title>
+      <link>https://www.gohugo.org/tags/chart.js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/chart.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clean</title>
+      <link>https://www.gohugo.org/tags/clean/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/clean/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clear</title>
+      <link>https://www.gohugo.org/tags/clear/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/clear/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clients</title>
+      <link>https://www.gohugo.org/tags/clients/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/clients/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Community</title>
+      <link>https://www.gohugo.org/tags/community/</link>
+      <pubDate>Tue, 27 Oct 2015 09:02:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/community/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Company</title>
+      <link>https://www.gohugo.org/tags/company/</link>
+      <pubDate>Thu, 04 Feb 2016 18:30:07 -0500</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/company/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conference</title>
+      <link>https://www.gohugo.org/tags/conference/</link>
+      <pubDate>Mon, 25 Aug 2014 18:30:40 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/conference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contact Form</title>
+      <link>https://www.gohugo.org/tags/contact-form/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/contact-form/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Corporate</title>
+      <link>https://www.gohugo.org/tags/corporate/</link>
+      <pubDate>Sat, 01 Aug 2015 09:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/corporate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Courses</title>
+      <link>https://www.gohugo.org/tags/courses/</link>
+      <pubDate>Thu, 21 Jan 2016 23:33:01 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/courses/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Creative</title>
+      <link>https://www.gohugo.org/tags/creative/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/creative/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Custom Themes</title>
+      <link>https://www.gohugo.org/tags/custom-themes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/custom-themes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Customizable</title>
+      <link>https://www.gohugo.org/tags/customizable/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/customizable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dev</title>
+      <link>https://www.gohugo.org/tags/dev/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Digital Nomad</title>
+      <link>https://www.gohugo.org/tags/digital-nomad/</link>
+      <pubDate>Wed, 26 Aug 2015 22:33:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/digital-nomad/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Discuss</title>
+      <link>https://www.gohugo.org/tags/discuss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/discuss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Disqus</title>
+      <link>https://www.gohugo.org/tags/disqus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/disqus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Document</title>
+      <link>https://www.gohugo.org/tags/document/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/document/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Documentation</title>
+      <link>https://www.gohugo.org/tags/documentation/</link>
+      <pubDate>Tue, 01 Dec 2015 04:20:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/documentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Drawings</title>
+      <link>https://www.gohugo.org/tags/drawings/</link>
+      <pubDate>Sat, 13 Feb 2016 21:47:27 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/drawings/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Education</title>
+      <link>https://www.gohugo.org/tags/education/</link>
+      <pubDate>Thu, 21 Jan 2016 23:33:01 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/education/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Educational</title>
+      <link>https://www.gohugo.org/tags/educational/</link>
+      <pubDate>Tue, 26 Aug 2014 11:31:02 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/educational/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Electronics</title>
+      <link>https://www.gohugo.org/tags/electronics/</link>
+      <pubDate>Sun, 15 Nov 2015 11:20:00 -0800</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/electronics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Esolia</title>
+      <link>https://www.gohugo.org/tags/esolia/</link>
+      <pubDate>Tue, 07 Jul 2015 04:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/esolia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eyecatch</title>
+      <link>https://www.gohugo.org/tags/eyecatch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/eyecatch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Flat</title>
+      <link>https://www.gohugo.org/tags/flat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/flat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Foundation</title>
+      <link>https://www.gohugo.org/tags/foundation/</link>
+      <pubDate>Sat, 06 Jun 2015 12:51:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/foundation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Foundation5</title>
+      <link>https://www.gohugo.org/tags/foundation5/</link>
+      <pubDate>Mon, 25 Aug 2014 18:30:40 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/foundation5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freenlancer</title>
+      <link>https://www.gohugo.org/tags/freenlancer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/freenlancer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>French</title>
+      <link>https://www.gohugo.org/tags/french/</link>
+      <pubDate>Mon, 05 Oct 2015 17:15:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/french/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gallery</title>
+      <link>https://www.gohugo.org/tags/gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/gallery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ghost</title>
+      <link>https://www.gohugo.org/tags/ghost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/ghost/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google</title>
+      <link>https://www.gohugo.org/tags/google/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/google/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Analytics</title>
+      <link>https://www.gohugo.org/tags/google-analytics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/google-analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Glus</title>
+      <link>https://www.gohugo.org/tags/google-glus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/google-glus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Headphones</title>
+      <link>https://www.gohugo.org/tags/headphones/</link>
+      <pubDate>Sun, 15 Nov 2015 11:20:00 -0800</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/headphones/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Html5</title>
+      <link>https://www.gohugo.org/tags/html5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/html5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://www.gohugo.org/tags/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image Gallery</title>
+      <link>https://www.gohugo.org/tags/image-gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/image-gallery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Interviews</title>
+      <link>https://www.gohugo.org/tags/interviews/</link>
+      <pubDate>Tue, 27 Oct 2015 09:02:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/interviews/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Japan</title>
+      <link>https://www.gohugo.org/tags/japan/</link>
+      <pubDate>Tue, 07 Jul 2015 04:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/japan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://www.gohugo.org/tags/java/</link>
+      <pubDate>Wed, 20 Jan 2016 01:28:16 +0800</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jekyll</title>
+      <link>https://www.gohugo.org/tags/jekyll/</link>
+      <pubDate>Sun, 11 Oct 2015 10:06:11 +0800</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kube</title>
+      <link>https://www.gohugo.org/tags/kube/</link>
+      <pubDate>Wed, 11 Feb 2015 13:21:27 +1100</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/kube/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>L10n</title>
+      <link>https://www.gohugo.org/tags/l10n/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/l10n/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Landing Page</title>
+      <link>https://www.gohugo.org/tags/landing-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/landing-page/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learn</title>
+      <link>https://www.gohugo.org/tags/learn/</link>
+      <pubDate>Thu, 21 Jan 2016 23:33:01 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/learn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Learning</title>
+      <link>https://www.gohugo.org/tags/learning/</link>
+      <pubDate>Sun, 23 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Libre Baskerville</title>
+      <link>https://www.gohugo.org/tags/libre-baskerville/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/libre-baskerville/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lightbox</title>
+      <link>https://www.gohugo.org/tags/lightbox/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/lightbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lightweight</title>
+      <link>https://www.gohugo.org/tags/lightweight/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/lightweight/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>List</title>
+      <link>https://www.gohugo.org/tags/list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/list/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lite</title>
+      <link>https://www.gohugo.org/tags/lite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/lite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Low Latency</title>
+      <link>https://www.gohugo.org/tags/low-latency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/low-latency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Many Examples</title>
+      <link>https://www.gohugo.org/tags/many-examples/</link>
+      <pubDate>Wed, 20 Jan 2016 01:28:16 +0800</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/many-examples/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Material</title>
+      <link>https://www.gohugo.org/tags/material/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/material/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Material Design</title>
+      <link>https://www.gohugo.org/tags/material-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/material-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Material Design Lite</title>
+      <link>https://www.gohugo.org/tags/material-design-lite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/material-design-lite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maxthjax</title>
+      <link>https://www.gohugo.org/tags/maxthjax/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/maxthjax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mdl</title>
+      <link>https://www.gohugo.org/tags/mdl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/mdl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Minimal</title>
+      <link>https://www.gohugo.org/tags/minimal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/minimal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Minimalistic</title>
+      <link>https://www.gohugo.org/tags/minimalistic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/minimalistic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mobile</title>
+      <link>https://www.gohugo.org/tags/mobile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Music</title>
+      <link>https://www.gohugo.org/tags/music/</link>
+      <pubDate>Sat, 13 Feb 2016 21:47:27 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neat</title>
+      <link>https://www.gohugo.org/tags/neat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/neat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Octopress</title>
+      <link>https://www.gohugo.org/tags/octopress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/octopress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Online Compile and Run</title>
+      <link>https://www.gohugo.org/tags/online-compile-and-run/</link>
+      <pubDate>Wed, 20 Jan 2016 01:28:16 +0800</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/online-compile-and-run/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Personal</title>
+      <link>https://www.gohugo.org/tags/personal/</link>
+      <pubDate>Sat, 13 Feb 2016 21:47:27 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/personal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Photography</title>
+      <link>https://www.gohugo.org/tags/photography/</link>
+      <pubDate>Fri, 01 Nov 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/photography/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Podcast</title>
+      <link>https://www.gohugo.org/tags/podcast/</link>
+      <pubDate>Fri, 20 Nov 2015 01:46:33 -0600</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/podcast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Portfolio</title>
+      <link>https://www.gohugo.org/tags/portfolio/</link>
+      <pubDate>Wed, 17 Feb 2016 15:19:08 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/portfolio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Post</title>
+      <link>https://www.gohugo.org/tags/post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Product</title>
+      <link>https://www.gohugo.org/tags/product/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/product/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Products</title>
+      <link>https://www.gohugo.org/tags/products/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/products/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>https://www.gohugo.org/tags/project/</link>
+      <pubDate>Tue, 26 Aug 2014 09:47:00 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projecthub</title>
+      <link>https://www.gohugo.org/tags/projecthub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/projecthub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://www.gohugo.org/tags/projects/</link>
+      <pubDate>Sat, 13 Feb 2016 21:47:27 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proxima Nova</title>
+      <link>https://www.gohugo.org/tags/proxima-nova/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/proxima-nova/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pullrequest</title>
+      <link>https://www.gohugo.org/tags/pullrequest/</link>
+      <pubDate>Thu, 03 Sep 2015 08:55:31 +0800</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/pullrequest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Purecss</title>
+      <link>https://www.gohugo.org/tags/purecss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/purecss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Raleway</title>
+      <link>https://www.gohugo.org/tags/raleway/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/raleway/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reading</title>
+      <link>https://www.gohugo.org/tags/reading/</link>
+      <pubDate>Mon, 16 Nov 2015 08:36:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/reading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Red</title>
+      <link>https://www.gohugo.org/tags/red/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/red/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redlounge</title>
+      <link>https://www.gohugo.org/tags/redlounge/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/redlounge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resources</title>
+      <link>https://www.gohugo.org/tags/resources/</link>
+      <pubDate>Thu, 21 Jan 2016 23:33:01 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/resources/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Responsive</title>
+      <link>https://www.gohugo.org/tags/responsive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/responsive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reviews</title>
+      <link>https://www.gohugo.org/tags/reviews/</link>
+      <pubDate>Sun, 15 Nov 2015 11:20:00 -0800</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/reviews/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rickcogley</title>
+      <link>https://www.gohugo.org/tags/rickcogley/</link>
+      <pubDate>Tue, 07 Jul 2015 04:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/rickcogley/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rss</title>
+      <link>https://www.gohugo.org/tags/rss/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/rss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Screencasts</title>
+      <link>https://www.gohugo.org/tags/screencasts/</link>
+      <pubDate>Fri, 20 Nov 2015 20:46:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/screencasts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Showcase</title>
+      <link>https://www.gohugo.org/tags/showcase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/showcase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simple</title>
+      <link>https://www.gohugo.org/tags/simple/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/simple/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Single Column</title>
+      <link>https://www.gohugo.org/tags/single-column/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/single-column/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Single Page</title>
+      <link>https://www.gohugo.org/tags/single-page/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/single-page/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Skills</title>
+      <link>https://www.gohugo.org/tags/skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/skills/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Study</title>
+      <link>https://www.gohugo.org/tags/study/</link>
+      <pubDate>Thu, 21 Jan 2016 23:33:01 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/study/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Syntax Highlighting</title>
+      <link>https://www.gohugo.org/tags/syntax-highlighting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/syntax-highlighting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>https://www.gohugo.org/tags/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Team</title>
+      <link>https://www.gohugo.org/tags/team/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/team/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tech</title>
+      <link>https://www.gohugo.org/tags/tech/</link>
+      <pubDate>Wed, 17 Feb 2016 15:19:08 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/tech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Technical</title>
+      <link>https://www.gohugo.org/tags/technical/</link>
+      <pubDate>Sun, 15 Nov 2015 11:20:00 -0800</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/technical/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Textfiles</title>
+      <link>https://www.gohugo.org/tags/textfiles/</link>
+      <pubDate>Mon, 16 Nov 2015 08:36:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/textfiles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Timeline</title>
+      <link>https://www.gohugo.org/tags/timeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/timeline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Translation</title>
+      <link>https://www.gohugo.org/tags/translation/</link>
+      <pubDate>Tue, 26 Aug 2014 19:40:00 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/translation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorials</title>
+      <link>https://www.gohugo.org/tags/tutorials/</link>
+      <pubDate>Wed, 20 Jan 2016 01:28:16 +0800</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/tutorials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Useful Shortcodes</title>
+      <link>https://www.gohugo.org/tags/useful-shortcodes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/useful-shortcodes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Video</title>
+      <link>https://www.gohugo.org/tags/video/</link>
+      <pubDate>Tue, 26 Aug 2014 11:31:02 -0400</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/video/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>https://www.gohugo.org/tags/web/</link>
+      <pubDate>Wed, 26 Aug 2015 22:33:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Website</title>
+      <link>https://www.gohugo.org/tags/website/</link>
+      <pubDate>Thu, 04 Feb 2016 18:30:07 -0500</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/website/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>White</title>
+      <link>https://www.gohugo.org/tags/white/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/white/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Widgets</title>
+      <link>https://www.gohugo.org/tags/widgets/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/widgets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wordpress</title>
+      <link>https://www.gohugo.org/tags/wordpress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>入门</title>
+      <link>https://www.gohugo.org/tags/%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sun, 30 Apr 2017 20:55:09 +0800</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/%E5%85%A5%E9%97%A8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>迁移</title>
+      <link>https://www.gohugo.org/tags/%E8%BF%81%E7%A7%BB/</link>
+      <pubDate>Sun, 11 Oct 2015 10:06:11 +0800</pubDate>
+      
+      <guid>https://www.gohugo.org/tags/%E8%BF%81%E7%A7%BB/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
 </rss>

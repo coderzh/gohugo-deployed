@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Product on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/product/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Product on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/product/</link>
+    <description>Recent content in Product on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/product/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-incorporated/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-incorporated/</guid>
+      <description>Hugo Incorporated Modern Hugo based blog, based entirely on jekyll-incorporated. Great for companies, products or anything. See jekyll-incorporated live at blog.sendtoinc.com. See hugo-incorporated live at blog.nilproductions.com.
+Installation &amp;amp; Usage Hugo-incorporated requires Hugo 0.12-DEV or newer. If your content is not displaying after running hugo server, be sure that your version (hugo version) is at least 0.12-DEV.
+Markdown Content goes in content/post/title.md. Then:
+hugo server -w  The stylesheet is included in static/css.</description>
+    </item>
+    
+  </channel>
 </rss>

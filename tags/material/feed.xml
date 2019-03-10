@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Material on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/material/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Material on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/material/</link>
+    <description>Recent content in Material on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/material/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/material-lite/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/material-lite/</guid>
+      <description>Material Design Lite inspired theme for hugo This is a theme for hugo, a static site generator. It is based on the blog template of Google&amp;rsquo;s Material Design Lite.
+
+License Like the original template, this theme&amp;rsquo;s license is Apache 2.0.
+Usage Content organization &amp;amp; features This theme does currently not support lists, categories, tags&amp;hellip;
+This theme is optimized to use 2 content types: posts and pages. Pages are automatically displayed in the dropdown list beneath the author and posts are displayed on the homepage.</description>
+    </item>
+    
+  </channel>
 </rss>

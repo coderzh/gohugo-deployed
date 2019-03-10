@@ -1,12 +1,171 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Company on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/company/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Company on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/company/</link>
+    <description>Recent content in Company on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    <lastBuildDate>Thu, 04 Feb 2016 18:30:07 -0500</lastBuildDate>
+    
+	<atom:link href="https://www.gohugo.org/tags/company/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Pipeline Architect</title>
+      <link>https://www.gohugo.org/showcase/datapipelinearchitect/</link>
+      <pubDate>Thu, 04 Feb 2016 18:30:07 -0500</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/datapipelinearchitect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rakuten Tech Blog</title>
+      <link>https://www.gohugo.org/showcase/rakutentech/</link>
+      <pubDate>Wed, 20 Jan 2016 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/rakutentech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camunda Blog</title>
+      <link>https://www.gohugo.org/showcase/camunda-blog/</link>
+      <pubDate>Tue, 01 Dec 2015 04:20:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/camunda-blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Camunda Docs</title>
+      <link>https://www.gohugo.org/showcase/camunda-docs/</link>
+      <pubDate>Tue, 01 Dec 2015 04:20:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/camunda-docs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RIDING BYTES</title>
+      <link>https://www.gohugo.org/showcase/ridingbytes/</link>
+      <pubDate>Sun, 27 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/ridingbytes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>greenitglobe.com</title>
+      <link>https://www.gohugo.org/showcase/gig/</link>
+      <pubDate>Mon, 24 Aug 2015 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/gig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eSolia.com</title>
+      <link>https://www.gohugo.org/showcase/esolia-com/</link>
+      <pubDate>Tue, 07 Jul 2015 04:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/esolia-com/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eSolia.pro</title>
+      <link>https://www.gohugo.org/showcase/esolia-pro/</link>
+      <pubDate>Tue, 07 Jul 2015 04:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/esolia-pro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vamp.io</title>
+      <link>https://www.gohugo.org/showcase/vamp/</link>
+      <pubDate>Thu, 26 Jun 2014 15:45:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/vamp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CloudShark</title>
+      <link>https://www.gohugo.org/showcase/cloudshark/</link>
+      <pubDate>Thu, 27 Mar 2014 09:45:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/cloudshark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chimera Art Space</title>
+      <link>https://www.gohugo.org/showcase/chimera-art-space/</link>
+      <pubDate>Wed, 02 Oct 2013 07:32:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/showcase/chimera-art-space/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/agency/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/agency/</guid>
+      <description>Agency Theme Agency Theme is a one page portfolio for companies and freelancers based on the original Bootstrap theme by David Miller. This Hugo theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a timeline, and a contact form.
+Contents  Installation Getting started  The config file Change the hero background Present your skills Create your portfolio Show what happened Introduce your team List your clients Make the contact form working Nearly finished  Contributing License Annotations  Installation Inside the folder of your Hugo site run:</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/herring-cove/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/herring-cove/</guid>
+      <description>Herring Cove Herring Cove is a clean and responsive Hugo theme based on the Jekyll theme of the same name.
+Overview  Fixed Sidebar with social links Minimal design Comments by Disqus Social Sharing abilities Easy to configure Based on Bootstrap  Screenshots Setup  Install Hugo Fork or download this theme repo Edit the config file in the root directory of your site  Download download
+License  MIT  Author Ravi Patel - https://github.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hugo-incorporated/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hugo-incorporated/</guid>
+      <description>Hugo Incorporated Modern Hugo based blog, based entirely on jekyll-incorporated. Great for companies, products or anything. See jekyll-incorporated live at blog.sendtoinc.com. See hugo-incorporated live at blog.nilproductions.com.
+Installation &amp;amp; Usage Hugo-incorporated requires Hugo 0.12-DEV or newer. If your content is not displaying after running hugo server, be sure that your version (hugo version) is at least 0.12-DEV.
+Markdown Content goes in content/post/title.md. Then:
+hugo server -w  The stylesheet is included in static/css.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/hyde/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/hyde/</guid>
+      <description>Hyde Hyde is a brazen two-column hugo theme based on the Jekyll theme of the same name. It pairs a prominent sidebar with uncomplicated content.
+Contents  Options  Sidebar menu Sticky sidebar content Themes Reverse layout Disqus  Author Ported by License  Options Hyde includes some customizable options, typically applied via classes on the &amp;lt;body&amp;gt; element.
+Sidebar menu Create a list of nav links in the sidebar by assigning &amp;ldquo;menu=main&amp;rdquo; in the front matter.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/landing-page-hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/landing-page-hugo/</guid>
+      <description>Landing Page Theme for Hugo Hugo theme based on the landing-page theme for Jekyll
+How to use Background Images Override the default intro and contact backgrounds by putting images in these files:
+ img/intro-bg.jpg img/contact-bg.jpg  About Section Create a markdown file named content/services/about/about.md
+--- Title: About Us Draft: false --- WidgetCo is the world leader in widget production.  Services Section Create a markdown file describing a service you offer in content/services/ - e.</description>
+    </item>
+    
+  </channel>
 </rss>

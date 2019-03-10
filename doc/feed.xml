@@ -1,12 +1,2255 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Docs on Hugo中文文档</title>
-        <link>http://www.gohugo.org/doc/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Wed, 25 Nov 2015 23:10:39 &#43;0100</updated>
-        
-    </channel>
+  <channel>
+    <title>Docs on Hugo中文文档</title>
+    <link>https://www.gohugo.org/doc/</link>
+    <description>Recent content in Docs on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    <lastBuildDate>Thu, 08 Jan 2015 16:11:23 -0700</lastBuildDate>
+    
+	<atom:link href="https://www.gohugo.org/doc/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Strange EOF error</title>
+      <link>https://www.gohugo.org/doc/troubleshooting/strange-eof-error/</link>
+      <pubDate>Thu, 08 Jan 2015 16:11:23 -0700</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/troubleshooting/strange-eof-error/</guid>
+      <description>Trouble: hugo new aborts with cryptic EOF error  I&amp;rsquo;m running into an issue where I cannot get archetypes working, when running hugo new doc/showcase/test.md, for example, I see an EOF error thrown by Hugo.
+I have set up this test repository to show exactly what I&amp;rsquo;ve done, but it is essentially a vanilla installation of Hugo. https://github.com/polds/hugo-archetypes-test
+When in that repository, using Hugo v0.12 to run hugo new -v doc/showcase/test.</description>
+    </item>
+    
+    <item>
+      <title>Strange EOF error</title>
+      <link>https://www.gohugo.org/doc/troubleshooting/strange-eof-error_en/</link>
+      <pubDate>Thu, 08 Jan 2015 16:11:23 -0700</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/troubleshooting/strange-eof-error_en/</guid>
+      <description>Trouble: hugo new aborts with cryptic EOF error  I&amp;rsquo;m running into an issue where I cannot get archetypes working, when running hugo new doc/showcase/test.md, for example, I see an EOF error thrown by Hugo.
+I have set up this test repository to show exactly what I&amp;rsquo;ve done, but it is essentially a vanilla installation of Hugo. https://github.com/polds/hugo-archetypes-test
+When in that repository, using Hugo v0.12 to run hugo new -v doc/showcase/test.</description>
+    </item>
+    
+    <item>
+      <title>关于 Hugo</title>
+      <link>https://www.gohugo.org/doc/overview/introduction/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/overview/introduction/</guid>
+      <description>Hugo 介绍 spf13 对于 Hugo 的英文原版介绍地址在这，就不另行翻译了：https://gohugo.io/overview/introduction/ 原文大</description>
+    </item>
+    
+    <item>
+      <title>Introduction to Hugo</title>
+      <link>https://www.gohugo.org/doc/overview/introduction_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/overview/introduction_en/</guid>
+      <description>What is Hugo? Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike other systems which dynamically build a page every time a visitor requests one, Hugo does the building when you create your content. Since websites are viewed far more often than they are edited, Hugo is optimized for website viewing while providing a great writing experience.
+Sites built with Hugo are extremely fast and very secure.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://www.gohugo.org/doc/tutorials/creating-a-new-theme/</link>
+      <pubDate>Thu, 26 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://www.gohugo.org/doc/tutorials/creating-a-new-theme_en/</link>
+      <pubDate>Thu, 26 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/creating-a-new-theme_en/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>Create a Multilingual Site</title>
+      <link>https://www.gohugo.org/doc/tutorials/create-a-multilingual-site/</link>
+      <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/create-a-multilingual-site/</guid>
+      <description>Introduction Hugo allows you to create a multilingual site from its built-in tools. This tutorial will show one way to do it, and assumes: You already know the basics about creating a Hugo site You have a separate domain name for each language You&amp;rsquo;ll use /data files for some translation strings You&amp;rsquo;ll use single, combined layout and static folders You&amp;rsquo;ll use a subfolder for each language under content and public</description>
+    </item>
+    
+    <item>
+      <title>Create a Multilingual Site</title>
+      <link>https://www.gohugo.org/doc/tutorials/create-a-multilingual-site_en/</link>
+      <pubDate>Wed, 08 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/create-a-multilingual-site_en/</guid>
+      <description>Introduction Hugo allows you to create a multilingual site from its built-in tools. This tutorial will show one way to do it, and assumes: You already know the basics about creating a Hugo site You have a separate domain name for each language You&amp;rsquo;ll use /data files for some translation strings You&amp;rsquo;ll use single, combined layout and static folders You&amp;rsquo;ll use a subfolder for each language under content and public</description>
+    </item>
+    
+    <item>
+      <title>Installing on Windows</title>
+      <link>https://www.gohugo.org/doc/tutorials/installing-on-windows/</link>
+      <pubDate>Mon, 30 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/installing-on-windows/</guid>
+      <description>在 Windows 上安装 Hugo 本篇教程的目标是详细讲解在 Windows 电脑上安装 Hugo 的方法。 假设 你知道如何打开一个命令提示窗口。 你运行的是一个现代64位的 Windows。 你</description>
+    </item>
+    
+    <item>
+      <title>Installing on Windows</title>
+      <link>https://www.gohugo.org/doc/tutorials/installing-on-windows_en/</link>
+      <pubDate>Mon, 30 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/installing-on-windows_en/</guid>
+      <description>Installing Hugo on Windows This tutorial aims to be a complete guide to installing Hugo on your Windows computer.
+Assumptions  You know how to open a command prompt window. You&amp;rsquo;re running a 64-bit version of Windows. Your website is example.com. You will use D:\Hugo\Sites as the starting point for your site. You will use D:\Hugo\bin to store executable files.  Setup Your Directories You will need a place to store the Hugo executable, your content (the files that you build), and the generated files (the HTML that Hugo builds for you).</description>
+    </item>
+    
+    <item>
+      <title>Installing on a Mac</title>
+      <link>https://www.gohugo.org/doc/tutorials/installing-on-mac/</link>
+      <pubDate>Sun, 22 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/installing-on-mac/</guid>
+      <description>在 Mac 上安装 Hugo 本篇教程的目标是详细讲解在 Mac 电脑上安装 Hugo 的方法。 假设 你知道如何打开一个终端窗口。 你运行的是一个现代64位的 Mac。 你将把 ~/Sites 作为网</description>
+    </item>
+    
+    <item>
+      <title>Installing on a Mac</title>
+      <link>https://www.gohugo.org/doc/tutorials/installing-on-mac_en/</link>
+      <pubDate>Sun, 22 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/installing-on-mac_en/</guid>
+      <description>Installing Hugo on a Mac This tutorial aims to be a complete guide to installing Hugo on your Mac computer.
+Assumptions  You know how to open a terminal window. You&amp;rsquo;re running a modern 64-bit Mac. You will use ~/Sites as the starting point for your site.  Pick Your Method There are three ways to install Hugo on your Mac computer: the brew utility, from the distribution, or from source.</description>
+    </item>
+    
+    <item>
+      <title>Automated deployments with Wercker</title>
+      <link>https://www.gohugo.org/doc/tutorials/automated-deployments/</link>
+      <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/automated-deployments/</guid>
+      <description>Automated deployments with Wercker In this tutorial we will set up a basic Hugo project and then configure a free tool called Wercker to automatically deploy the generated site any time we add an article. We will deploy it to GitHub pages as that is easiest to set up, but you will see that we can use anything. This tutorial takes you through every step of the process, complete with screenshots and is fairly long.</description>
+    </item>
+    
+    <item>
+      <title>Automated deployments with Wercker</title>
+      <link>https://www.gohugo.org/doc/tutorials/automated-deployments_en/</link>
+      <pubDate>Mon, 12 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/automated-deployments_en/</guid>
+      <description>Automated deployments with Wercker In this tutorial we will set up a basic Hugo project and then configure a free tool called Wercker to automatically deploy the generated site any time we add an article. We will deploy it to GitHub pages as that is easiest to set up, but you will see that we can use anything. This tutorial takes you through every step of the process, complete with screenshots and is fairly long.</description>
+    </item>
+    
+    <item>
+      <title>Accented Categories</title>
+      <link>https://www.gohugo.org/doc/troubleshooting/categories-with-accented-characters/</link>
+      <pubDate>Thu, 08 Jan 2015 16:32:00 -0700</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/troubleshooting/categories-with-accented-characters/</guid>
+      <description>Trouble: Categories with accented characters One of my categories is named &amp;ldquo;Le-carré,&amp;rdquo; but the link ends up being generated like this: categories/le-carr%C3%A9 And not working. Is there an easy fix for this that I&amp;rsquo;m overlooking? Solution Mac OS X user? If so, you are likely a victim of</description>
+    </item>
+    
+    <item>
+      <title>Accented Categories</title>
+      <link>https://www.gohugo.org/doc/troubleshooting/categories-with-accented-characters_en/</link>
+      <pubDate>Thu, 08 Jan 2015 16:32:00 -0700</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/troubleshooting/categories-with-accented-characters_en/</guid>
+      <description>Trouble: Categories with accented characters One of my categories is named &amp;ldquo;Le-carré,&amp;rdquo; but the link ends up being generated like this: categories/le-carr%C3%A9 And not working. Is there an easy fix for this that I&amp;rsquo;m overlooking? Solution Mac OS X user? If so, you are likely a victim of</description>
+    </item>
+    
+    <item>
+      <title>Themes Overview</title>
+      <link>https://www.gohugo.org/doc/themes/overview/</link>
+      <pubDate>Mon, 12 May 2014 10:03:52 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/themes/overview/</guid>
+      <description>Hugo provides a robust theming system which is simple, yet capable of producing even the most complicated websites.
+The Hugo community has created a wide variety of beautiful themes, as demoed at themes.gohugo.io, ready for using in your own site.
+Hugo themes have been designed to be the perfect balance between simplicity and functionality. Hugo themes are powered by the excellent Go template library. If you are new to Go templates, see our primer on Go templates.</description>
+    </item>
+    
+    <item>
+      <title>Themes Overview</title>
+      <link>https://www.gohugo.org/doc/themes/overview_en/</link>
+      <pubDate>Mon, 12 May 2014 10:03:52 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/themes/overview_en/</guid>
+      <description>Hugo provides a robust theming system which is simple, yet capable of producing even the most complicated websites.
+The Hugo community has created a wide variety of beautiful themes, as demoed at themes.gohugo.io, ready for using in your own site.
+Hugo themes have been designed to be the perfect balance between simplicity and functionality. Hugo themes are powered by the excellent Go template library. If you are new to Go templates, see our primer on Go templates.</description>
+    </item>
+    
+    <item>
+      <title>Hosting on GitHub Pages</title>
+      <link>https://www.gohugo.org/doc/tutorials/github-pages-blog/</link>
+      <pubDate>Fri, 21 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/github-pages-blog/</guid>
+      <description>This tutorial was contributed by Spencer Lyon. 简介 很多 Hugo 用户表示希望看到关于如何把 Hugo 生成的博客托管在 GitHub Pages 上的教程。这就是本篇教程的目的。我们仅仅需要读者已经正确安装了 Hug</description>
+    </item>
+    
+    <item>
+      <title>Hosting on GitHub Pages</title>
+      <link>https://www.gohugo.org/doc/tutorials/github-pages-blog_en/</link>
+      <pubDate>Fri, 21 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/github-pages-blog_en/</guid>
+      <description>This tutorial was contributed by Spencer Lyon.
+ Introduction Many Hugo users have expressed interest in seeing a tutorial for how to set up a blog that is generated by Hugo and hosted on GitHub Pages. This tutorial will do just that. We only require that the reader has Hugo installed correctly and is comfortable with git and GitHub.
+During this tutorial, I will walk you through the main steps I took to create an example blog available at http://spencerlyon2.</description>
+    </item>
+    
+    <item>
+      <title>MathJax Support</title>
+      <link>https://www.gohugo.org/doc/tutorials/mathjax/</link>
+      <pubDate>Thu, 20 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/mathjax/</guid>
+      <description>什么是 MathJax? MathJax 是一个 JavaScript 库，可以让你使用 LaTeX 风格的语法，在网页的 HTML （或者 Markdown）的源码中显示数学表达式。因为它是一个纯 Javascript 的库，在 Hugo 中是可以</description>
+    </item>
+    
+    <item>
+      <title>MathJax Support</title>
+      <link>https://www.gohugo.org/doc/tutorials/mathjax_en/</link>
+      <pubDate>Thu, 20 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/mathjax_en/</guid>
+      <description>What is MathJax? MathJax is a JavaScript library that allows the display of mathematical expressions described via a LaTeX-style syntax in the HTML (or Markdown) source of a web page. As it is a pure a JavaScript library, getting it to work within Hugo is fairly straightforward, but does have some oddities that will be discussed here.
+This is not an introduction into actually using MathJax to render typeset mathematics on your website.</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://www.gohugo.org/doc/tutorials/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/migrate-from-jekyll/</guid>
+      <description>说明 Hugo 0.15 支持 hugo import jekyll 命令，详见：import from Jekyll. 移动静态内容到 static 文件夹 Jekyll 有一条规则，任何不以 _ 开始的文件夹都会被原样复制到 _site 文件夹中。Hugo</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://www.gohugo.org/doc/tutorials/migrate-from-jekyll_en/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tutorials/migrate-from-jekyll_en/</guid>
+      <description>Note: Hugo 0.15 comes with a hugo import jekyll command, see import from Jekyll.
+Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.</description>
+    </item>
+    
+    <item>
+      <title>Aliases</title>
+      <link>https://www.gohugo.org/doc/extras/aliases/</link>
+      <pubDate>Tue, 09 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/aliases/</guid>
+      <description>For people migrating existing published content to Hugo, there&amp;rsquo;s a good chance you need a mechanism to handle redirecting old URLs.
+Luckily, redirects can be handled easily with aliases in Hugo.
+Example Given a post on your current Hugo site, with a path of:
+content/posts/my-awesome-blog-post.md
+&amp;hellip; you create an &amp;ldquo;aliases&amp;rdquo; section in the frontmatter of your post, and add previous paths to that.
+TOML frontmatter +++ ... aliases = [ &amp;quot;/posts/my-original-url/&amp;quot;, &amp;quot;/2010/01/01/even-earlier-url.</description>
+    </item>
+    
+    <item>
+      <title>Aliases</title>
+      <link>https://www.gohugo.org/doc/extras/aliases_en/</link>
+      <pubDate>Tue, 09 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/aliases_en/</guid>
+      <description>For people migrating existing published content to Hugo, there&amp;rsquo;s a good chance you need a mechanism to handle redirecting old URLs.
+Luckily, redirects can be handled easily with aliases in Hugo.
+Example Given a post on your current Hugo site, with a path of:
+content/posts/my-awesome-blog-post.md
+&amp;hellip; you create an &amp;ldquo;aliases&amp;rdquo; section in the frontmatter of your post, and add previous paths to that.
+TOML frontmatter +++ ... aliases = [ &amp;quot;/posts/my-original-url/&amp;quot;, &amp;quot;/2010/01/01/even-earlier-url.</description>
+    </item>
+    
+    <item>
+      <title>Mailing List</title>
+      <link>https://www.gohugo.org/doc/community/mailing-list/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/community/mailing-list/</guid>
+      <description>Discussion Forum Hugo has its own discussion forum powered by Discourse.
+Please use this for all discussions, questions, etc.
+Mailing List Hugo has two mailing lists:
+Announcements Very low traffic. Only releases will be emailed here.
+https://groups.google.com/forum/#!forum/hugo-announce
+Discussion (Archive) This has been replaced with the Hugo discussion forum.
+It is available for archival purposes.
+https://groups.google.com/forum/#!forum/hugo-discuss
+Other Resources GoNuts For general Go questions or discussion please refer to the Go mailing list.</description>
+    </item>
+    
+    <item>
+      <title>Mailing List</title>
+      <link>https://www.gohugo.org/doc/community/mailing-list_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/community/mailing-list_en/</guid>
+      <description>Discussion Forum Hugo has its own discussion forum powered by Discourse.
+Please use this for all discussions, questions, etc.
+Mailing List Hugo has two mailing lists:
+Announcements Very low traffic. Only releases will be emailed here.
+https://groups.google.com/forum/#!forum/hugo-announce
+Discussion (Archive) This has been replaced with the Hugo discussion forum.
+It is available for archival purposes.
+https://groups.google.com/forum/#!forum/hugo-discuss
+Other Resources GoNuts For general Go questions or discussion please refer to the Go mailing list.</description>
+    </item>
+    
+    <item>
+      <title>Content Organization</title>
+      <link>https://www.gohugo.org/doc/content/organization/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/organization/</guid>
+      <description>Hugo uses files (see supported formats) with headers commonly called the front matter. Hugo respects the organization that you provide for your content to minimize any extra configuration, though this can be overridden by additional configuration in the front matter.
+Organization In Hugo, the content should be arranged in the same way they are intended for the rendered website. Without any additional configuration, the following will just work. Hugo supports content nested at any level.</description>
+    </item>
+    
+    <item>
+      <title>Content Organization</title>
+      <link>https://www.gohugo.org/doc/content/organization_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/organization_en/</guid>
+      <description>Hugo uses files (see supported formats) with headers commonly called the front matter. Hugo respects the organization that you provide for your content to minimize any extra configuration, though this can be overridden by additional configuration in the front matter.
+Organization In Hugo, the content should be arranged in the same way they are intended for the rendered website. Without any additional configuration, the following will just work. Hugo supports content nested at any level.</description>
+    </item>
+    
+    <item>
+      <title>Taxonomy Overview</title>
+      <link>https://www.gohugo.org/doc/taxonomies/overview/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/taxonomies/overview/</guid>
+      <description>Hugo includes support for user-defined groupings of content called taxonomies.1 Taxonomies give us a way to classify our content so we can demonstrate relationships in a variety of logical ways.
+The default taxonomies for Hugo are tags and categories. These taxonomies are common to many website systems (e.g. WordPress, Drupal, Jekyll). Unlike all of those systems, Hugo makes it trivial to customize the taxonomies you will be using for your site however you wish.</description>
+    </item>
+    
+    <item>
+      <title>Taxonomy Overview</title>
+      <link>https://www.gohugo.org/doc/taxonomies/overview_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/taxonomies/overview_en/</guid>
+      <description>Hugo includes support for user-defined groupings of content called taxonomies.1 Taxonomies give us a way to classify our content so we can demonstrate relationships in a variety of logical ways.
+The default taxonomies for Hugo are tags and categories. These taxonomies are common to many website systems (e.g. WordPress, Drupal, Jekyll). Unlike all of those systems, Hugo makes it trivial to customize the taxonomies you will be using for your site however you wish.</description>
+    </item>
+    
+    <item>
+      <title>Hugo Templates</title>
+      <link>https://www.gohugo.org/doc/templates/overview/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/overview/</guid>
+      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience it is just the right amount of logic to be able to create a good static website.
+While Hugo has a number of different template roles, most complete websites can be built using just a small number of template files. Please don’t be afraid of the variety of different template roles.</description>
+    </item>
+    
+    <item>
+      <title>Hugo Templates</title>
+      <link>https://www.gohugo.org/doc/templates/overview_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/overview_en/</guid>
+      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience it is just the right amount of logic to be able to create a good static website.
+While Hugo has a number of different template roles, most complete websites can be built using just a small number of template files. Please don’t be afraid of the variety of different template roles.</description>
+    </item>
+    
+    <item>
+      <title>Hugo 快速开始指引</title>
+      <link>https://www.gohugo.org/doc/overview/quickstart/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/overview/quickstart/</guid>
+      <description>注意：这篇文章依赖 Hugo v0.11 版本的功能。如果你的 Hugo 是早期版本，你需要在此之前 升级 你的版本。 第一步 安装 Hugo 到 Hugo Releases 下载适合你的操作系统的版本。 把 hugo （或者</description>
+    </item>
+    
+    <item>
+      <title>Hugo Quickstart Guide</title>
+      <link>https://www.gohugo.org/doc/overview/quickstart_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/overview/quickstart_en/</guid>
+      <description>Note: This quickstart depends on features introduced in Hugo v0.11. If you have an earlier version of Hugo, you will need to upgrade before proceeding.
+  Step 1. Install Hugo Go to Hugo Releases and download the appropriate version for your OS and architecture.
+Save the main executable as hugo (or hugo.exe on Windows) somewhere in your PATH as we will be using it in the next step.</description>
+    </item>
+    
+    <item>
+      <title>Release Notes</title>
+      <link>https://www.gohugo.org/doc/meta/release-notes/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/meta/release-notes/</guid>
+      <description>0.15.0 November 25, 2015 The v0.15.0 Hugo release brings a lot of polish to Hugo. Exactly 6 months after the 0.14 release, Hugo has seen massive growth and changes. Most notably, this is Hugo&amp;rsquo;s first release under the Apache 2.0 license. With this license change we hope to expand the great community around Hugo and make it easier for our many users to contribute. This release represents over 377 contributions by 87 contributors to the main Hugo repo and hundreds of improvements to the libraries Hugo uses.</description>
+    </item>
+    
+    <item>
+      <title>Release Notes</title>
+      <link>https://www.gohugo.org/doc/meta/release-notes_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/meta/release-notes_en/</guid>
+      <description>0.15.0 November 25, 2015 The v0.15.0 Hugo release brings a lot of polish to Hugo. Exactly 6 months after the 0.14 release, Hugo has seen massive growth and changes. Most notably, this is Hugo&amp;rsquo;s first release under the Apache 2.0 license. With this license change we hope to expand the great community around Hugo and make it easier for our many users to contribute. This release represents over 377 contributions by 87 contributors to the main Hugo repo and hundreds of improvements to the libraries Hugo uses.</description>
+    </item>
+    
+    <item>
+      <title>Analytics in Hugo</title>
+      <link>https://www.gohugo.org/doc/extras/analytics/</link>
+      <pubDate>Sat, 06 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/analytics/</guid>
+      <description> Hugo ships with prebuilt internal templates for Google Analytics tracking, including both synchronous and asynchronous tracking codes.
+Configuring Google Analytics Provide your tracking id in your configuration file, e.g. config.yaml.
+googleAnalytics = &amp;quot;UA-123-45&amp;quot;  Example Include the internal template in your templates like so:
+{{ template &amp;quot;_internal/google_analytics.html&amp;quot; . }}  For async include the async template:
+{{ template &amp;quot;_internal/google_analytics_async.html&amp;quot; . }}  </description>
+    </item>
+    
+    <item>
+      <title>Analytics in Hugo</title>
+      <link>https://www.gohugo.org/doc/extras/analytics_en/</link>
+      <pubDate>Sat, 06 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/analytics_en/</guid>
+      <description> Hugo ships with prebuilt internal templates for Google Analytics tracking, including both synchronous and asynchronous tracking codes.
+Configuring Google Analytics Provide your tracking id in your configuration file, e.g. config.yaml.
+googleAnalytics = &amp;quot;UA-123-45&amp;quot;  Example Include the internal template in your templates like so:
+{{ template &amp;quot;_internal/google_analytics.html&amp;quot; . }}  For async include the async template:
+{{ template &amp;quot;_internal/google_analytics_async.html&amp;quot; . }}  </description>
+    </item>
+    
+    <item>
+      <title>Supported Formats</title>
+      <link>https://www.gohugo.org/doc/content/supported-formats/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/supported-formats/</guid>
+      <description>Since 0.14, Hugo has defined a new concept called external helpers. It means that you can write your content using Asciidoc[tor], or reStructuredText. If you have files with associated extensions (details), then Hugo will call external commands to generate the content.
+This means that you will have to install the associated tool on your machine to be able to use those formats.
+For example, for Asciidoc files, Hugo will try to call asciidoctor or asciidoc command.</description>
+    </item>
+    
+    <item>
+      <title>Supported Formats</title>
+      <link>https://www.gohugo.org/doc/content/supported-formats_en/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/supported-formats_en/</guid>
+      <description>Since 0.14, Hugo has defined a new concept called external helpers. It means that you can write your content using Asciidoc[tor], or reStructuredText. If you have files with associated extensions (details), then Hugo will call external commands to generate the content.
+This means that you will have to install the associated tool on your machine to be able to use those formats.
+For example, for Asciidoc files, Hugo will try to call asciidoctor or asciidoc command.</description>
+    </item>
+    
+    <item>
+      <title>Using Taxonomies</title>
+      <link>https://www.gohugo.org/doc/taxonomies/usage/</link>
+      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/taxonomies/usage/</guid>
+      <description>Defining taxonomies for a site Taxonomies must be defined in the site configuration before they can be used throughout the site. You need to provide both the plural and singular labels for each taxonomy.
+Here is an example configuration in TOML and YAML that specifies three taxonomies (the default two, plus series).
+Notice the format is singular key = &amp;quot;plural value&amp;quot; for TOML, or singular key: &amp;quot;plural value&amp;quot; for YAML:</description>
+    </item>
+    
+    <item>
+      <title>Using Taxonomies</title>
+      <link>https://www.gohugo.org/doc/taxonomies/usage_en/</link>
+      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/taxonomies/usage_en/</guid>
+      <description>Defining taxonomies for a site Taxonomies must be defined in the site configuration before they can be used throughout the site. You need to provide both the plural and singular labels for each taxonomy.
+Here is an example configuration in TOML and YAML that specifies three taxonomies (the default two, plus series).
+Notice the format is singular key = &amp;quot;plural value&amp;quot; for TOML, or singular key: &amp;quot;plural value&amp;quot; for YAML:</description>
+    </item>
+    
+    <item>
+      <title>Go Template Primer</title>
+      <link>https://www.gohugo.org/doc/templates/go-templates/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/go-templates/</guid>
+      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks, you will find a lot of similarities in Go templates.
+This document is a brief primer on using Go templates.</description>
+    </item>
+    
+    <item>
+      <title>Go Template Primer</title>
+      <link>https://www.gohugo.org/doc/templates/go-templates_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/go-templates_en/</guid>
+      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks, you will find a lot of similarities in Go templates.
+This document is a brief primer on using Go templates.</description>
+    </item>
+    
+    <item>
+      <title>Ace Templates</title>
+      <link>https://www.gohugo.org/doc/templates/ace/</link>
+      <pubDate>Sun, 20 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/ace/</guid>
+      <description>In addition to Go templates and Amber templates, Hugo supports the powerful Ace templates.
+For template documentation, follow the links from the Ace project.
+ Ace templates must be named with the ace-suffix, e.g. list.ace It&amp;rsquo;s possible to use both Go templates and Ace templates side-by-side, and include one into the other Full Go template syntax support, including all the useful helper funcs Partials can be included both with the Ace and the Go template syntax:  = include partials/foo.</description>
+    </item>
+    
+    <item>
+      <title>Ace Templates</title>
+      <link>https://www.gohugo.org/doc/templates/ace_en/</link>
+      <pubDate>Sun, 20 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/ace_en/</guid>
+      <description>In addition to Go templates and Amber templates, Hugo supports the powerful Ace templates.
+For template documentation, follow the links from the Ace project.
+ Ace templates must be named with the ace-suffix, e.g. list.ace It&amp;rsquo;s possible to use both Go templates and Ace templates side-by-side, and include one into the other Full Go template syntax support, including all the useful helper funcs Partials can be included both with the Ace and the Go template syntax:  = include partials/foo.</description>
+    </item>
+    
+    <item>
+      <title>Amber Templates</title>
+      <link>https://www.gohugo.org/doc/templates/amber/</link>
+      <pubDate>Mon, 20 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/amber/</guid>
+      <description>Amber templates are another template type which Hugo supports, in addition to Go templates and Ace templates templates.
+For template documentation, follow the links from the Amber project
+ Amber templates must be named with the amber-suffix, e.g. list.amber Partials in Amber or HTML can be included with the Amber template syntax:  import ../partials/test.html import ../partials/test_a.amber   </description>
+    </item>
+    
+    <item>
+      <title>Amber Templates</title>
+      <link>https://www.gohugo.org/doc/templates/amber_en/</link>
+      <pubDate>Mon, 20 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/amber_en/</guid>
+      <description>Amber templates are another template type which Hugo supports, in addition to Go templates and Ace templates templates.
+For template documentation, follow the links from the Amber project
+ Amber templates must be named with the amber-suffix, e.g. list.amber Partials in Amber or HTML can be included with the Amber template syntax:  import ../partials/test.html import ../partials/test_a.amber   </description>
+    </item>
+    
+    <item>
+      <title>Hugo Builders</title>
+      <link>https://www.gohugo.org/doc/extras/builders/</link>
+      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/builders/</guid>
+      <description>Hugo provides the functionality to quickly get a site, theme or page started.
+New Site Want to get a site built quickly?
+$ hugo new site path/to/site  Hugo will create all the needed directories and files to get started quickly.
+Hugo will only touch the files and create the directories (in the right places), configuration and content are up to you&amp;hellip; but luckily we have builders for content (see below).</description>
+    </item>
+    
+    <item>
+      <title>Hugo Builders</title>
+      <link>https://www.gohugo.org/doc/extras/builders_en/</link>
+      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/builders_en/</guid>
+      <description>Hugo provides the functionality to quickly get a site, theme or page started.
+New Site Want to get a site built quickly?
+$ hugo new site path/to/site  Hugo will create all the needed directories and files to get started quickly.
+Hugo will only touch the files and create the directories (in the right places), configuration and content are up to you&amp;hellip; but luckily we have builders for content (see below).</description>
+    </item>
+    
+    <item>
+      <title>Installing Themes</title>
+      <link>https://www.gohugo.org/doc/themes/installing/</link>
+      <pubDate>Mon, 12 May 2014 10:09:49 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/themes/installing/</guid>
+      <description> Community-contributed Hugo themes, showcased at themes.gohugo.io, are hosted in a centralized GitHub repository. The Hugo Themes Repo itself at github.com/spf13/hugoThemes is really a meta repository which contains pointers to set of contributed themes.
+Installing all themes If you would like to install all of the available Hugo themes, simply clone the entire repository from within your working directory:
+$ git clone --recursive https://github.com/spf13/hugoThemes.git themes  Installing a specific theme $ mkdir themes $ cd themes $ git clone URL_TO_THEME  </description>
+    </item>
+    
+    <item>
+      <title>Installing Themes</title>
+      <link>https://www.gohugo.org/doc/themes/installing_en/</link>
+      <pubDate>Mon, 12 May 2014 10:09:49 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/themes/installing_en/</guid>
+      <description> Community-contributed Hugo themes, showcased at themes.gohugo.io, are hosted in a centralized GitHub repository. The Hugo Themes Repo itself at github.com/spf13/hugoThemes is really a meta repository which contains pointers to set of contributed themes.
+Installing all themes If you would like to install all of the available Hugo themes, simply clone the entire repository from within your working directory:
+$ git clone --recursive https://github.com/spf13/hugoThemes.git themes  Installing a specific theme $ mkdir themes $ cd themes $ git clone URL_TO_THEME  </description>
+    </item>
+    
+    <item>
+      <title>Press, Blogs and Media Coverage</title>
+      <link>https://www.gohugo.org/doc/community/press/</link>
+      <pubDate>Mon, 24 Mar 2014 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/community/press/</guid>
+      <description>Help keep this list up to date Know of a post, article or tutorial on Hugo? Add it to this list. Press and Articles Hugo has been featured in the following Blog Posts, Press and Media. Title Author Date CDNOverview: A CDN comparison site made with Hugo Thijs de Zoete 23 Feb 2016 Hugo: A Modern WebSite Engine That Just Works Shekhar Gulati 14 Feb 2016 Minify Hugo Generated HTML</description>
+    </item>
+    
+    <item>
+      <title>Press, Blogs and Media Coverage</title>
+      <link>https://www.gohugo.org/doc/community/press_en/</link>
+      <pubDate>Mon, 24 Mar 2014 20:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/community/press_en/</guid>
+      <description>Help keep this list up to date Know of a post, article or tutorial on Hugo? Add it to this list. Press and Articles Hugo has been featured in the following Blog Posts, Press and Media. Title Author Date CDNOverview: A CDN comparison site made with Hugo Thijs de Zoete 23 Feb 2016 Hugo: A Modern WebSite Engine That Just Works Shekhar Gulati 14 Feb 2016 Minify Hugo Generated HTML</description>
+    </item>
+    
+    <item>
+      <title>Displaying Taxonomies</title>
+      <link>https://www.gohugo.org/doc/taxonomies/displaying/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/taxonomies/displaying/</guid>
+      <description>There are four common ways you can display the data in your taxonomies in addition to the automatic taxonomy pages created by hugo using the list templates:
+ For a given piece of content, you can list the terms attached For a given piece of content, you can list other content with the same term You can list all terms for a taxonomy You can list all taxonomies (with their terms)  1.</description>
+    </item>
+    
+    <item>
+      <title>Displaying Taxonomies</title>
+      <link>https://www.gohugo.org/doc/taxonomies/displaying_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/taxonomies/displaying_en/</guid>
+      <description>There are four common ways you can display the data in your taxonomies in addition to the automatic taxonomy pages created by hugo using the list templates:
+ For a given piece of content, you can list the terms attached For a given piece of content, you can list other content with the same term You can list all terms for a taxonomy You can list all taxonomies (with their terms)  1.</description>
+    </item>
+    
+    <item>
+      <title>Front Matter</title>
+      <link>https://www.gohugo.org/doc/content/front-matter/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/front-matter/</guid>
+      <description>The front matter is one of the features that gives Hugo its strength. It enables you to include the meta data of the content right with it. Hugo supports a few different formats, each with their own identifying tokens.
+Supported formats:
+ TOML, identified by &amp;lsquo;+++&amp;rsquo;. YAML, identified by &amp;lsquo;---&amp;rsquo;. JSON, a single JSON object which is surrounded by &amp;lsquo;{&amp;rsquo; and &amp;lsquo;}&amp;rsquo;, each on their own line.  TOML Example +++ title = &#34;</description>
+    </item>
+    
+    <item>
+      <title>Front Matter</title>
+      <link>https://www.gohugo.org/doc/content/front-matter_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/front-matter_en/</guid>
+      <description>The front matter is one of the features that gives Hugo its strength. It enables you to include the meta data of the content right with it. Hugo supports a few different formats, each with their own identifying tokens.
+Supported formats:
+ TOML, identified by &amp;lsquo;+++&amp;rsquo;. YAML, identified by &amp;lsquo;---&amp;rsquo;. JSON, a single JSON object which is surrounded by &amp;lsquo;{&amp;rsquo; and &amp;lsquo;}&amp;rsquo;, each on their own line.  TOML Example +++ title = &#34;</description>
+    </item>
+    
+    <item>
+      <title>Hugo Template Functions</title>
+      <link>https://www.gohugo.org/doc/templates/functions/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/functions/</guid>
+      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience, it is just the right amount of logic to be able to create a good static website.
+Go templates are lightweight but extensible. Hugo has added the following functions to the basic template logic.
+(Go itself supplies built-in functions, including comparison operators and other basic tools; these are listed in the Go template documentation.</description>
+    </item>
+    
+    <item>
+      <title>Hugo Template Functions</title>
+      <link>https://www.gohugo.org/doc/templates/functions_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/functions_en/</guid>
+      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience, it is just the right amount of logic to be able to create a good static website.
+Go templates are lightweight but extensible. Hugo has added the following functions to the basic template logic.
+(Go itself supplies built-in functions, including comparison operators and other basic tools; these are listed in the Go template documentation.</description>
+    </item>
+    
+    <item>
+      <title>Hugo Roadmap</title>
+      <link>https://www.gohugo.org/doc/meta/roadmap/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/meta/roadmap/</guid>
+      <description>In no particular order, here is what we are working on:
+ Intelligently Related Posts Even easier deployment to S3, SSH, GitHub, rsync Import from other website systems  from Drupal (See https://bitbucket.org/rickb777/drupal2hugo by Rick Beton (@rickb777)) from WordPress (See #100, especially https://github.com/SchumacherFM/wordpress-to-hugo-exporter by Cyrill Schumacher (@SchumacherFM), but volunteers are needed to make it work with latest versions of WordPress.) from Jekyll (See #101)  An interactive web based editor (See http://discuss.</description>
+    </item>
+    
+    <item>
+      <title>Hugo Roadmap</title>
+      <link>https://www.gohugo.org/doc/meta/roadmap_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/meta/roadmap_en/</guid>
+      <description>In no particular order, here is what we are working on:
+ Intelligently Related Posts Even easier deployment to S3, SSH, GitHub, rsync Import from other website systems  from Drupal (See https://bitbucket.org/rickb777/drupal2hugo by Rick Beton (@rickb777)) from WordPress (See #100, especially https://github.com/SchumacherFM/wordpress-to-hugo-exporter by Cyrill Schumacher (@SchumacherFM), but volunteers are needed to make it work with latest versions of WordPress.) from Jekyll (See #101)  An interactive web based editor (See http://discuss.</description>
+    </item>
+    
+    <item>
+      <title>安装 Hugo</title>
+      <link>https://www.gohugo.org/doc/overview/installing/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/overview/installing/</guid>
+      <description>Hugo 是用 Go 语言写的，支持多个平台。 最新的 release 版本可以在 Hugo Releases 找到。 我们提供预构建好的二进制包括 &amp;nbsp;Windows, &amp;nbsp;Linux, &amp;nbsp;FreeBSD 和 &amp;nbsp;OS&amp;nbsp;X (Darwin) for x64, i386 和 ARM architectures. 你可以使用 Go 编译器工具链源码</description>
+    </item>
+    
+    <item>
+      <title>Installing Hugo</title>
+      <link>https://www.gohugo.org/doc/overview/installing_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/overview/installing_en/</guid>
+      <description>Hugo is written in Go with support for multiple platforms.
+The latest release can be found at Hugo Releases. We currently provide pre-built binaries for &amp;nbsp;Windows, &amp;nbsp;Linux, &amp;nbsp;FreeBSD and &amp;nbsp;OS&amp;nbsp;X (Darwin) for x64, i386 and ARM architectures.
+Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan&amp;nbsp;9 and Solaris. See http://golang.org/doc/install/source for the full set of supported combinations of target operating systems and compilation architectures.</description>
+    </item>
+    
+    <item>
+      <title>Template Variables</title>
+      <link>https://www.gohugo.org/doc/templates/variables/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/variables/</guid>
+      <description>Hugo makes a set of values available to the templates. Go templates are context based. The following are available in the context for the templates.
+Page Variables The following is a list of most of the accessible variables which can be defined for a piece of content. Many of these will be defined in the front matter, content or derived from file location.
+See also: Scratch for page-scoped writable variables.</description>
+    </item>
+    
+    <item>
+      <title>Template Variables</title>
+      <link>https://www.gohugo.org/doc/templates/variables_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/variables_en/</guid>
+      <description>Hugo makes a set of values available to the templates. Go templates are context based. The following are available in the context for the templates.
+Page Variables The following is a list of most of the accessible variables which can be defined for a piece of content. Many of these will be defined in the front matter, content or derived from file location.
+See also: Scratch for page-scoped writable variables.</description>
+    </item>
+    
+    <item>
+      <title>Comments in Hugo</title>
+      <link>https://www.gohugo.org/doc/extras/comments/</link>
+      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/comments/</guid>
+      <description>As Hugo is a static site generator, the content produced is static and doesn’t interact with the users. The most common interaction people ask for is comment capability. Hugo ships with support for Disqus, a third-party service that provides comment and community capabilities to website via JavaScript. Your theme may already support Disqus, but even it if doesn’t</description>
+    </item>
+    
+    <item>
+      <title>Comments in Hugo</title>
+      <link>https://www.gohugo.org/doc/extras/comments_en/</link>
+      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/comments_en/</guid>
+      <description>As Hugo is a static site generator, the content produced is static and doesn’t interact with the users. The most common interaction people ask for is comment capability. Hugo ships with support for Disqus, a third-party service that provides comment and community capabilities to website via JavaScript. Your theme may already support Disqus, but even it if doesn’t</description>
+    </item>
+    
+    <item>
+      <title>Using a Theme</title>
+      <link>https://www.gohugo.org/doc/themes/usage/</link>
+      <pubDate>Mon, 12 May 2014 10:09:27 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/themes/usage/</guid>
+      <description>Please make certain you have installed the themes you want to use in the /themes directory.
+To use a theme for a site:
+hugo -t ThemeName  The ThemeName must match the name of the directory inside /themes.
+Hugo will then apply the theme first, then apply anything that is in the local directory. To learn more, go to customizing themes.</description>
+    </item>
+    
+    <item>
+      <title>Using a Theme</title>
+      <link>https://www.gohugo.org/doc/themes/usage_en/</link>
+      <pubDate>Mon, 12 May 2014 10:09:27 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/themes/usage_en/</guid>
+      <description>Please make certain you have installed the themes you want to use in the /themes directory.
+To use a theme for a site:
+hugo -t ThemeName  The ThemeName must match the name of the directory inside /themes.
+Hugo will then apply the theme first, then apply anything that is in the local directory. To learn more, go to customizing themes.</description>
+    </item>
+    
+    <item>
+      <title>Contributing to Hugo</title>
+      <link>https://www.gohugo.org/doc/community/contributing/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/community/contributing/</guid>
+      <description>All contributions to Hugo are welcome. Whether you want to scratch an itch, or simply contribute to the project, feel free to pick something from the roadmap or contact spf13 about what may make sense to do next.
+You should fork the project and make your changes. We encourage pull requests to discuss code changes.
+When you&amp;rsquo;re ready to create a pull request, be sure to:
+ Have test cases for the new code.</description>
+    </item>
+    
+    <item>
+      <title>Contributing to Hugo</title>
+      <link>https://www.gohugo.org/doc/community/contributing_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/community/contributing_en/</guid>
+      <description>All contributions to Hugo are welcome. Whether you want to scratch an itch, or simply contribute to the project, feel free to pick something from the roadmap or contact spf13 about what may make sense to do next.
+You should fork the project and make your changes. We encourage pull requests to discuss code changes.
+When you&amp;rsquo;re ready to create a pull request, be sure to:
+ Have test cases for the new code.</description>
+    </item>
+    
+    <item>
+      <title>Sections</title>
+      <link>https://www.gohugo.org/doc/content/sections/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/sections/</guid>
+      <description>Hugo believes that you organize your content with a purpose. The same structure that works to organize your source content is used to organize the rendered site (see Organization). Following this pattern Hugo uses the top level of your content organization as the Section.
+The following example site uses two sections, &amp;ldquo;post&amp;rdquo; and &amp;ldquo;quote&amp;rdquo;.
+. └── content ├── post | ├── firstpost.md //  Section Lists Hugo will automatically create pages for each section root that list all of the content in that section.</description>
+    </item>
+    
+    <item>
+      <title>Sections</title>
+      <link>https://www.gohugo.org/doc/content/sections_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/sections_en/</guid>
+      <description>Hugo believes that you organize your content with a purpose. The same structure that works to organize your source content is used to organize the rendered site (see Organization). Following this pattern Hugo uses the top level of your content organization as the Section.
+The following example site uses two sections, &amp;ldquo;post&amp;rdquo; and &amp;ldquo;quote&amp;rdquo;.
+. └── content ├── post | ├── firstpost.md //  Section Lists Hugo will automatically create pages for each section root that list all of the content in that section.</description>
+    </item>
+    
+    <item>
+      <title>Single Content Template</title>
+      <link>https://www.gohugo.org/doc/templates/content/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/content/</guid>
+      <description>The primary view of content in Hugo is the single view. Hugo, for every Markdown file provided, will render it with a single template.
+Which Template will be rendered? Hugo uses a set of rules to figure out which template to use when rendering a specific page.
+Hugo will use the following prioritized list. If a file isn’t present, then the next one in the list will be used. This enables you to craft specific layouts when you want to without creating more templates than necessary.</description>
+    </item>
+    
+    <item>
+      <title>Single Content Template</title>
+      <link>https://www.gohugo.org/doc/templates/content_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/content_en/</guid>
+      <description>The primary view of content in Hugo is the single view. Hugo, for every Markdown file provided, will render it with a single template.
+Which Template will be rendered? Hugo uses a set of rules to figure out which template to use when rendering a specific page.
+Hugo will use the following prioritized list. If a file isn’t present, then the next one in the list will be used. This enables you to craft specific layouts when you want to without creating more templates than necessary.</description>
+    </item>
+    
+    <item>
+      <title>Taxonomy Templates</title>
+      <link>https://www.gohugo.org/doc/taxonomies/templates/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/taxonomies/templates/</guid>
+      <description>There are two different templates that the use of taxonomies will require you to provide.
+Both templates are covered in detail in the templates section.
+A list template is any template that will be used to render multiple pieces of content in a single html page. This template will be used to generate all the automatically created taxonomy pages.
+A taxonomy terms template is a template used to generate the list of terms for a given template.</description>
+    </item>
+    
+    <item>
+      <title>Taxonomy Templates</title>
+      <link>https://www.gohugo.org/doc/taxonomies/templates_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/taxonomies/templates_en/</guid>
+      <description>There are two different templates that the use of taxonomies will require you to provide.
+Both templates are covered in detail in the templates section.
+A list template is any template that will be used to render multiple pieces of content in a single html page. This template will be used to generate all the automatically created taxonomy pages.
+A taxonomy terms template is a template used to generate the list of terms for a given template.</description>
+    </item>
+    
+    <item>
+      <title>Using Hugo</title>
+      <link>https://www.gohugo.org/doc/overview/usage/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/overview/usage/</guid>
+      <description>确保 Hugo 在你的 PATH 路径下或者提供一个它的路径。 $ hugo help Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go. Complete documentation is available at http://gohugo.io Usage: hugo [flags] hugo [command] Available Commands: server Hugo runs its own webserver to render the files version Print the version number</description>
+    </item>
+    
+    <item>
+      <title>Using Hugo</title>
+      <link>https://www.gohugo.org/doc/overview/usage_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/overview/usage_en/</guid>
+      <description>Make sure either hugo is in your PATH or provide a path to it.
+$ hugo help Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go. Complete documentation is available at http://gohugo.io Usage: hugo [flags] hugo [command] Available Commands: server Hugo runs its own webserver to render the files version Print the version number of Hugo config Print the site configuration check Check content in the source directory benchmark Benchmark hugo by building a site a number of times new Create new content for your site undraft Undraft changes the content&#39;s draft status from &#39;True&#39; to &#39;False&#39; genautocomplete Generate shell autocompletion script for Hugo gendoc Generate Markdown documentation for the Hugo CLI.</description>
+    </item>
+    
+    <item>
+      <title>Cross-References</title>
+      <link>https://www.gohugo.org/doc/extras/crossreferences/</link>
+      <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/crossreferences/</guid>
+      <description>Hugo makes it easy to link documents together with the ref and relref shortcodes. These shortcodes are also used to safely provide links to headings inside of your content, whether across documents or within a document. The only difference between ref and relref is whether the resulting URL is absolute (http://1.com/about/) or relative (/about/).
+Using ref and relref {{&amp;lt; ref &amp;quot;document&amp;quot; &amp;gt;}} {{&amp;lt; ref &amp;quot;#anchor&amp;quot; &amp;gt;}} {{&amp;lt; ref &amp;quot;document#anchor&amp;quot; &amp;gt;}} {{&amp;lt; relref &amp;quot;document&amp;quot; &amp;gt;}} {{&amp;lt; relref &amp;quot;#anchor&amp;quot; &amp;gt;}} {{&amp;lt; relref &amp;quot;document#anchor&amp;quot; &amp;gt;}}  The single parameter to ref is a string with a content document name (about.</description>
+    </item>
+    
+    <item>
+      <title>Cross-References</title>
+      <link>https://www.gohugo.org/doc/extras/crossreferences_en/</link>
+      <pubDate>Tue, 25 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/crossreferences_en/</guid>
+      <description>Hugo makes it easy to link documents together with the ref and relref shortcodes. These shortcodes are also used to safely provide links to headings inside of your content, whether across documents or within a document. The only difference between ref and relref is whether the resulting URL is absolute (http://1.com/about/) or relative (/about/).
+Using ref and relref {{&amp;lt; ref &amp;quot;document&amp;quot; &amp;gt;}} {{&amp;lt; ref &amp;quot;#anchor&amp;quot; &amp;gt;}} {{&amp;lt; ref &amp;quot;document#anchor&amp;quot; &amp;gt;}} {{&amp;lt; relref &amp;quot;document&amp;quot; &amp;gt;}} {{&amp;lt; relref &amp;quot;#anchor&amp;quot; &amp;gt;}} {{&amp;lt; relref &amp;quot;document#anchor&amp;quot; &amp;gt;}}  The single parameter to ref is a string with a content document name (about.</description>
+    </item>
+    
+    <item>
+      <title>Customizing a Theme</title>
+      <link>https://www.gohugo.org/doc/themes/customizing/</link>
+      <pubDate>Mon, 12 May 2014 10:09:34 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/themes/customizing/</guid>
+      <description>The following are key concepts for Hugo site customization. Hugo permits you to supplement or override any theme template or static file, with files in your working directory.
+When you use a theme cloned from its git repository, you do not edit the theme&amp;rsquo;s files directly. Rather, you override them as per the following:
+Replace Static Files For including a different file than what the theme ships with. For example, if you would like to use a more recent version of jQuery than what the theme happens to include, simply place an identically-named file in the same relative location but in your working directory.</description>
+    </item>
+    
+    <item>
+      <title>Customizing a Theme</title>
+      <link>https://www.gohugo.org/doc/themes/customizing_en/</link>
+      <pubDate>Mon, 12 May 2014 10:09:34 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/themes/customizing_en/</guid>
+      <description>The following are key concepts for Hugo site customization. Hugo permits you to supplement or override any theme template or static file, with files in your working directory.
+When you use a theme cloned from its git repository, you do not edit the theme&amp;rsquo;s files directly. Rather, you override them as per the following:
+Replace Static Files For including a different file than what the theme ships with. For example, if you would like to use a more recent version of jQuery than what the theme happens to include, simply place an identically-named file in the same relative location but in your working directory.</description>
+    </item>
+    
+    <item>
+      <title>配置 Hugo</title>
+      <link>https://www.gohugo.org/doc/overview/configuration/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/overview/configuration/</guid>
+      <description>通常的使用情况下，一个网站并不需要一个配置文件，因为它的目录结构和模板就提供了主要的配置。 Hugo 需要在源目录查找一个 config.toml 的配置文件。如果这个文件不</description>
+    </item>
+    
+    <item>
+      <title>Configuring Hugo</title>
+      <link>https://www.gohugo.org/doc/overview/configuration_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/overview/configuration_en/</guid>
+      <description>The directory structure and templates provide the majority of the configuration for a site. In fact, a config file isn&amp;rsquo;t even needed for many websites since the defaults follow commonly used patterns.
+Hugo expects to find the config file in the root of the source directory and will look there first for a config.toml file. If none is present, it will then look for a config.yaml file, followed by a config.</description>
+    </item>
+    
+    <item>
+      <title>Content List Template</title>
+      <link>https://www.gohugo.org/doc/templates/list/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/list/</guid>
+      <description>A list template is any template that will be used to render multiple pieces of content in a single HTML page (with the exception of the homepage which has a dedicated template).
+We are using the term list in its truest sense, a sequential arrangement of material, especially in alphabetical or numerical order. Hugo uses list templates to render anyplace where content is being listed such as taxonomies and sections.</description>
+    </item>
+    
+    <item>
+      <title>Content List Template</title>
+      <link>https://www.gohugo.org/doc/templates/list_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/list_en/</guid>
+      <description>A list template is any template that will be used to render multiple pieces of content in a single HTML page (with the exception of the homepage which has a dedicated template).
+We are using the term list in its truest sense, a sequential arrangement of material, especially in alphabetical or numerical order. Hugo uses list templates to render anyplace where content is being listed such as taxonomies and sections.</description>
+    </item>
+    
+    <item>
+      <title>Content Types</title>
+      <link>https://www.gohugo.org/doc/content/types/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/types/</guid>
+      <description>Hugo has full support for different types of content. A content type can have a unique set of meta data, template and can be automatically created by the hugo new command through using content archetypes.
+A good example of when multiple types are needed is to look at Tumblr. A piece of content could be a photo, quote or post, each with different meta data and rendered differently.
+Assigning a content type Hugo assumes that your site will be organized into sections and each section will use the corresponding type.</description>
+    </item>
+    
+    <item>
+      <title>Content Types</title>
+      <link>https://www.gohugo.org/doc/content/types_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/types_en/</guid>
+      <description>Hugo has full support for different types of content. A content type can have a unique set of meta data, template and can be automatically created by the hugo new command through using content archetypes.
+A good example of when multiple types are needed is to look at Tumblr. A piece of content could be a photo, quote or post, each with different meta data and rendered differently.
+Assigning a content type Hugo assumes that your site will be organized into sections and each section will use the corresponding type.</description>
+    </item>
+    
+    <item>
+      <title>LiveReload</title>
+      <link>https://www.gohugo.org/doc/extras/livereload/</link>
+      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/livereload/</guid>
+      <description>Hugo may not be the first static site generator to utilize LiveReload technology, but it’s the first to do it right.
+The combination of Hugo’s insane build speed and LiveReload make crafting your content pure joy. Virtually instantly after you hit save your rebuilt content will appear in your browser.
+Using LiveReload Hugo comes with LiveReload built in. There are no additional packages to install. A common way to use Hugo while developing a site is to have Hugo run a server and watch for changes:</description>
+    </item>
+    
+    <item>
+      <title>LiveReload</title>
+      <link>https://www.gohugo.org/doc/extras/livereload_en/</link>
+      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/livereload_en/</guid>
+      <description>Hugo may not be the first static site generator to utilize LiveReload technology, but it’s the first to do it right.
+The combination of Hugo’s insane build speed and LiveReload make crafting your content pure joy. Virtually instantly after you hit save your rebuilt content will appear in your browser.
+Using LiveReload Hugo comes with LiveReload built in. There are no additional packages to install. A common way to use Hugo while developing a site is to have Hugo run a server and watch for changes:</description>
+    </item>
+    
+    <item>
+      <title>Archetypes</title>
+      <link>https://www.gohugo.org/doc/content/archetypes/</link>
+      <pubDate>Wed, 14 May 2014 02:13:50 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/archetypes/</guid>
+      <description>Hugo v0.11 introduced the concept of a content builder. Using the command: hugo new [relative new content path], you can start a content file with the date and title automatically set. While this is a welcome feature, active writers need more.
+Hugo presents the concept of archetypes, which are archetypal content files with pre-configured front matter which will populate each new content file whenever you run the hugo new command.</description>
+    </item>
+    
+    <item>
+      <title>Archetypes</title>
+      <link>https://www.gohugo.org/doc/content/archetypes_en/</link>
+      <pubDate>Wed, 14 May 2014 02:13:50 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/archetypes_en/</guid>
+      <description>Hugo v0.11 introduced the concept of a content builder. Using the command: hugo new [relative new content path], you can start a content file with the date and title automatically set. While this is a welcome feature, active writers need more.
+Hugo presents the concept of archetypes, which are archetypal content files with pre-configured front matter which will populate each new content file whenever you run the hugo new command.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Theme</title>
+      <link>https://www.gohugo.org/doc/themes/creation/</link>
+      <pubDate>Mon, 12 May 2014 10:09:17 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/themes/creation/</guid>
+      <description>Hugo has the ability to create a new theme in your themes directory for you using the hugo new command.
+hugo new theme [name]
+This command will initialize all of the files and directories a basic theme would need. Hugo themes are written in the Go template language. If you are new to Go, the Go template primer will help you get started.
+Theme Components A theme consists of templates and static assets such as javascript and css files.</description>
+    </item>
+    
+    <item>
+      <title>Creating a Theme</title>
+      <link>https://www.gohugo.org/doc/themes/creation_en/</link>
+      <pubDate>Mon, 12 May 2014 10:09:17 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/themes/creation_en/</guid>
+      <description>Hugo has the ability to create a new theme in your themes directory for you using the hugo new command.
+hugo new theme [name]
+This command will initialize all of the files and directories a basic theme would need. Hugo themes are written in the Go template language. If you are new to Go, the Go template primer will help you get started.
+Theme Components A theme consists of templates and static assets such as javascript and css files.</description>
+    </item>
+    
+    <item>
+      <title>Homepage</title>
+      <link>https://www.gohugo.org/doc/templates/homepage/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/homepage/</guid>
+      <description>The home page of a website is often formatted differently than the other pages. In Hugo you can define your own homepage template.
+Homepage is of the type &amp;ldquo;node&amp;rdquo; and have all the node variables and site variables available to use in the templates.
+This is the only required template for building a site and useful when bootstrapping a new site and template. It is also the only required template when using a single page site.</description>
+    </item>
+    
+    <item>
+      <title>Homepage</title>
+      <link>https://www.gohugo.org/doc/templates/homepage_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/homepage_en/</guid>
+      <description>The home page of a website is often formatted differently than the other pages. In Hugo you can define your own homepage template.
+Homepage is of the type &amp;ldquo;node&amp;rdquo; and have all the node variables and site variables available to use in the templates.
+This is the only required template for building a site and useful when bootstrapping a new site and template. It is also the only required template when using a single page site.</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>https://www.gohugo.org/doc/meta/license/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/meta/license/</guid>
+      <description>Hugo v0.15 and later are released under the Apache 2.0 license. Earlier releases were under the Simple Public License.
+Apache License Version 2.0, January 2004 &amp;lt;http://www.apache.org/licenses/&amp;gt;
+Terms and Conditions for use, reproduction, and distribution 1. Definitions “License” shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
+“Licensor” shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.</description>
+    </item>
+    
+    <item>
+      <title>License</title>
+      <link>https://www.gohugo.org/doc/meta/license_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/meta/license_en/</guid>
+      <description>Hugo v0.15 and later are released under the Apache 2.0 license. Earlier releases were under the Simple Public License.
+Apache License Version 2.0, January 2004 &amp;lt;http://www.apache.org/licenses/&amp;gt;
+Terms and Conditions for use, reproduction, and distribution 1. Definitions “License” shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.
+“Licensor” shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.</description>
+    </item>
+    
+    <item>
+      <title>Source Organization</title>
+      <link>https://www.gohugo.org/doc/overview/source-directory/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/overview/source-directory/</guid>
+      <description>Hugo 使用一个单一的目录用来生成完整的站点。 源目录的顶层一般有以下一些元素： ▸ archetypes/ ▸ content/ ▸ data/ ▸ layouts/ ▸ static/ ▸ themes/ config.toml 学习更多这些不同的目录和他们的目的： config data archetypes</description>
+    </item>
+    
+    <item>
+      <title>Source Organization</title>
+      <link>https://www.gohugo.org/doc/overview/source-directory_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/overview/source-directory_en/</guid>
+      <description>Hugo takes a single directory and uses it as the input for creating a complete website.
+The top level of a source directory will typically have the following elements:
+▸ archetypes/ ▸ content/ ▸ data/ ▸ layouts/ ▸ static/ ▸ themes/ config.toml  Learn more about the different directories and what their purpose is:
+ config data archetypes content layouts static themes  Example An example directory may look like:</description>
+    </item>
+    
+    <item>
+      <title>Taxonomy Terms Template</title>
+      <link>https://www.gohugo.org/doc/templates/terms/</link>
+      <pubDate>Wed, 21 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/terms/</guid>
+      <description>A unique template is needed to create a list of the terms for a given taxonomy. This is different from the list template as that template is a list of content, whereas this is a list of meta data.
+Which Template will be rendered? Hugo uses a set of rules to figure out which template to use when rendering a specific page.
+A Taxonomy Terms List will be rendered at /PLURAL/ (e.</description>
+    </item>
+    
+    <item>
+      <title>Taxonomy Terms Template</title>
+      <link>https://www.gohugo.org/doc/templates/terms_en/</link>
+      <pubDate>Wed, 21 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/terms_en/</guid>
+      <description>A unique template is needed to create a list of the terms for a given taxonomy. This is different from the list template as that template is a list of content, whereas this is a list of meta data.
+Which Template will be rendered? Hugo uses a set of rules to figure out which template to use when rendering a specific page.
+A Taxonomy Terms List will be rendered at /PLURAL/ (e.</description>
+    </item>
+    
+    <item>
+      <title>Menus</title>
+      <link>https://www.gohugo.org/doc/extras/menus/</link>
+      <pubDate>Wed, 14 May 2014 02:36:37 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/menus/</guid>
+      <description>Hugo has a simple yet powerful menu system that permits content to be placed in menus with a good degree of control without a lot of work.
+TIP: If all you want is a simple menu for your sections, see Section Menu for &amp;ldquo;the Lazy Blogger&amp;rdquo;.
+Some of the features of Hugo Menus:
+ Place content in one or many menus Handle nested menus with unlimited depth Create menu entries without being attached to any content Distinguish active element (and active branch)  What is a menu?</description>
+    </item>
+    
+    <item>
+      <title>Menus</title>
+      <link>https://www.gohugo.org/doc/extras/menus_en/</link>
+      <pubDate>Wed, 14 May 2014 02:36:37 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/menus_en/</guid>
+      <description>Hugo has a simple yet powerful menu system that permits content to be placed in menus with a good degree of control without a lot of work.
+TIP: If all you want is a simple menu for your sections, see Section Menu for &amp;ldquo;the Lazy Blogger&amp;rdquo;.
+Some of the features of Hugo Menus:
+ Place content in one or many menus Handle nested menus with unlimited depth Create menu entries without being attached to any content Distinguish active element (and active branch)  What is a menu?</description>
+    </item>
+    
+    <item>
+      <title>Ordering Content</title>
+      <link>https://www.gohugo.org/doc/content/ordering/</link>
+      <pubDate>Thu, 06 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/ordering/</guid>
+      <description>Hugo provides you with all the flexibility you need to organize how your content is ordered.
+By default, content is ordered by weight, then by date with the most recent date first, but alternative sorting (by title and linktitle) is also available. The order the content would appear is specified in the list template.
+Both the date and weight fields are optional.
+Unweighted pages appear at the end of the list.</description>
+    </item>
+    
+    <item>
+      <title>Ordering Content</title>
+      <link>https://www.gohugo.org/doc/content/ordering_en/</link>
+      <pubDate>Thu, 06 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/ordering_en/</guid>
+      <description>Hugo provides you with all the flexibility you need to organize how your content is ordered.
+By default, content is ordered by weight, then by date with the most recent date first, but alternative sorting (by title and linktitle) is also available. The order the content would appear is specified in the list template.
+Both the date and weight fields are optional.
+Unweighted pages appear at the end of the list.</description>
+    </item>
+    
+    <item>
+      <title>Ordering Taxonomies</title>
+      <link>https://www.gohugo.org/doc/taxonomies/ordering/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/taxonomies/ordering/</guid>
+      <description>Hugo provides the ability to both:
+ Order the way the keys for a taxonomy are displayed Order the way taxonomyed content appears  Ordering Taxonomies Taxonomies can be ordered by either alphabetical key or by the number of content pieces assigned to that key.
+Order Alphabetically Example &amp;lt;ul&amp;gt; {{ $data := .Data }} {{ range $key, $value := .Data.Taxonomy.Alphabetical }} &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{{ $data.Plural }}/{{ $value.Name | urlize }}&amp;quot;&amp;gt; {{ $value.</description>
+    </item>
+    
+    <item>
+      <title>Ordering Taxonomies</title>
+      <link>https://www.gohugo.org/doc/taxonomies/ordering_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/taxonomies/ordering_en/</guid>
+      <description>Hugo provides the ability to both:
+ Order the way the keys for a taxonomy are displayed Order the way taxonomyed content appears  Ordering Taxonomies Taxonomies can be ordered by either alphabetical key or by the number of content pieces assigned to that key.
+Order Alphabetically Example &amp;lt;ul&amp;gt; {{ $data := .Data }} {{ range $key, $value := .Data.Taxonomy.Alphabetical }} &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{{ $data.Plural }}/{{ $value.Name | urlize }}&amp;quot;&amp;gt; {{ $value.</description>
+    </item>
+    
+    <item>
+      <title>Summaries</title>
+      <link>https://www.gohugo.org/doc/content/summaries/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/summaries/</guid>
+      <description>With the use of the .Summary page variable, Hugo can generate summaries of content for easily showing snippets in summary views. The summary view snippets are automatically generated by Hugo. Where a piece of content is split for the content summary depends on whether the split is Hugo-defined or user-defined.
+Content summaries may also provide links to the original content, usually in the form of a &amp;ldquo;Read More&amp;hellip;&amp;rdquo; link, with the help of the .</description>
+    </item>
+    
+    <item>
+      <title>Summaries</title>
+      <link>https://www.gohugo.org/doc/content/summaries_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/summaries_en/</guid>
+      <description>With the use of the .Summary page variable, Hugo can generate summaries of content for easily showing snippets in summary views. The summary view snippets are automatically generated by Hugo. Where a piece of content is split for the content summary depends on whether the split is Hugo-defined or user-defined.
+Content summaries may also provide links to the original content, usually in the form of a &amp;ldquo;Read More&amp;hellip;&amp;rdquo; link, with the help of the .</description>
+    </item>
+    
+    <item>
+      <title>Permalinks</title>
+      <link>https://www.gohugo.org/doc/extras/permalinks/</link>
+      <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/permalinks/</guid>
+      <description>By default, content is laid out into the target publishdir (public) namespace matching its layout within the contentdir hierarchy. The permalinks site configuration option allows you to adjust this on a per-section basis. This will change where the files are written to and will change the page&amp;rsquo;s internal &amp;ldquo;canonical&amp;rdquo; location, such that template references to .RelPermalink will honour the adjustments made as a result of the mappings in this option.</description>
+    </item>
+    
+    <item>
+      <title>Permalinks</title>
+      <link>https://www.gohugo.org/doc/extras/permalinks_en/</link>
+      <pubDate>Mon, 18 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/permalinks_en/</guid>
+      <description>By default, content is laid out into the target publishdir (public) namespace matching its layout within the contentdir hierarchy. The permalinks site configuration option allows you to adjust this on a per-section basis. This will change where the files are written to and will change the page&amp;rsquo;s internal &amp;ldquo;canonical&amp;rdquo; location, such that template references to .RelPermalink will honour the adjustments made as a result of the mappings in this option.</description>
+    </item>
+    
+    <item>
+      <title>Content Views</title>
+      <link>https://www.gohugo.org/doc/templates/views/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/views/</guid>
+      <description>In addition to the single content template, Hugo can render alternative views of your content. These are especially useful in list templates.
+For example you may want content of every type to be shown on the homepage, but only a summary view of it there. Perhaps on a taxonomy list page you would only want a bulleted list of your content. Views make this very straightforward by delegating the rendering of each different type of content to the content itself.</description>
+    </item>
+    
+    <item>
+      <title>Content Views</title>
+      <link>https://www.gohugo.org/doc/templates/views_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/views_en/</guid>
+      <description>In addition to the single content template, Hugo can render alternative views of your content. These are especially useful in list templates.
+For example you may want content of every type to be shown on the homepage, but only a summary view of it there. Perhaps on a taxonomy list page you would only want a bulleted list of your content. Views make this very straightforward by delegating the rendering of each different type of content to the content itself.</description>
+    </item>
+    
+    <item>
+      <title>Example Content File</title>
+      <link>https://www.gohugo.org/doc/content/example/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/example/</guid>
+      <description>Some things are better shown than explained. The following is a very basic example of a content file written in Markdown:
+mysite/content/project/nitro.md → http://mysite.com/project/nitro.html
+With TOML front matter:
++++ date = &#34;2013-06-21T11:27:27-04:00&#34; title = &#34;Nitro: A quick and simple profiler for Go&#34; description = &#34;Nitro is a simple profiler for your Golang applications&#34; tags = [ &#34;Development&#34;, &#34;Go&#34;, &#34;profiling&#34; ] topics = [ &#34;Development&#34;, &#34;Go&#34; ] slug = &#34;nitro&#34; project_url = &#34;</description>
+    </item>
+    
+    <item>
+      <title>Example Content File</title>
+      <link>https://www.gohugo.org/doc/content/example_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/content/example_en/</guid>
+      <description>Some things are better shown than explained. The following is a very basic example of a content file written in Markdown:
+mysite/content/project/nitro.md → http://mysite.com/project/nitro.html
+With TOML front matter:
++++ date = &#34;2013-06-21T11:27:27-04:00&#34; title = &#34;Nitro: A quick and simple profiler for Go&#34; description = &#34;Nitro is a simple profiler for your Golang applications&#34; tags = [ &#34;Development&#34;, &#34;Go&#34;, &#34;profiling&#34; ] topics = [ &#34;Development&#34;, &#34;Go&#34; ] slug = &#34;nitro&#34; project_url = &#34;</description>
+    </item>
+    
+    <item>
+      <title>Using Taxonomies</title>
+      <link>https://www.gohugo.org/doc/taxonomies/methods/</link>
+      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/taxonomies/methods/</guid>
+      <description>Hugo makes a set of values and methods available on the various Taxonomy structures.
+Taxonomy Methods A Taxonomy is a map[string]WeightedPages.
+ .Get(term) Returns the WeightedPages for a term. .Count(term) The number of pieces of content assigned to this term. .Alphabetical Returns an OrderedTaxonomy (slice) ordered by Term. .ByCount Returns an OrderedTaxonomy (slice) ordered by number of entries.  OrderedTaxonomy Since Maps are unordered, an OrderedTaxonomy is a special structure that has a defined order.</description>
+    </item>
+    
+    <item>
+      <title>Using Taxonomies</title>
+      <link>https://www.gohugo.org/doc/taxonomies/methods_en/</link>
+      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/taxonomies/methods_en/</guid>
+      <description>Hugo makes a set of values and methods available on the various Taxonomy structures.
+Taxonomy Methods A Taxonomy is a map[string]WeightedPages.
+ .Get(term) Returns the WeightedPages for a term. .Count(term) The number of pieces of content assigned to this term. .Alphabetical Returns an OrderedTaxonomy (slice) ordered by Term. .ByCount Returns an OrderedTaxonomy (slice) ordered by number of entries.  OrderedTaxonomy Since Maps are unordered, an OrderedTaxonomy is a special structure that has a defined order.</description>
+    </item>
+    
+    <item>
+      <title>Scratch</title>
+      <link>https://www.gohugo.org/doc/extras/scratch/</link>
+      <pubDate>Thu, 22 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/scratch/</guid>
+      <description>Scratch &amp;ndash; a &amp;ldquo;scratchpad&amp;rdquo; for your node- or page-scoped variables. In most cases you can do well without Scratch, but there are some use cases that aren&amp;rsquo;t solvable with Go&amp;rsquo;s templates without Scratch&amp;rsquo;s help, due to scoping issues.
+Scratch is added to both Node and Page &amp;ndash; with following methods: * Set and Add takes a key and the value to add. * Get returns the value for the key given.</description>
+    </item>
+    
+    <item>
+      <title>Scratch</title>
+      <link>https://www.gohugo.org/doc/extras/scratch_en/</link>
+      <pubDate>Thu, 22 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/scratch_en/</guid>
+      <description>Scratch &amp;ndash; a &amp;ldquo;scratchpad&amp;rdquo; for your node- or page-scoped variables. In most cases you can do well without Scratch, but there are some use cases that aren&amp;rsquo;t solvable with Go&amp;rsquo;s templates without Scratch&amp;rsquo;s help, due to scoping issues.
+Scratch is added to both Node and Page &amp;ndash; with following methods: * Set and Add takes a key and the value to add. * Get returns the value for the key given.</description>
+    </item>
+    
+    <item>
+      <title>Pagination</title>
+      <link>https://www.gohugo.org/doc/extras/pagination/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/pagination/</guid>
+      <description>Hugo supports pagination for the home page, sections and taxonomies. It&amp;rsquo;s built to be easy use, but with loads of flexibility when needed. The real power shines when you combine it with where, with its SQL-like operators, first and others &amp;mdash; you can even order the content the way you&amp;rsquo;ve become used to with Hugo.
+Configuration Pagination can be configured in the site configuration (e.g. config.toml):
+ Paginate (default 10) (this setting can be overridden in the template) PaginatePath (default page)  Setting Paginate to a positive value will split the list pages for the home page, sections and taxonomies into chunks of that size.</description>
+    </item>
+    
+    <item>
+      <title>Pagination</title>
+      <link>https://www.gohugo.org/doc/extras/pagination_en/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/pagination_en/</guid>
+      <description>Hugo supports pagination for the home page, sections and taxonomies. It&amp;rsquo;s built to be easy use, but with loads of flexibility when needed. The real power shines when you combine it with where, with its SQL-like operators, first and others &amp;mdash; you can even order the content the way you&amp;rsquo;ve become used to with Hugo.
+Configuration Pagination can be configured in the site configuration (e.g. config.toml):
+ Paginate (default 10) (this setting can be overridden in the template) PaginatePath (default page)  Setting Paginate to a positive value will split the list pages for the home page, sections and taxonomies into chunks of that size.</description>
+    </item>
+    
+    <item>
+      <title>Partial Templates</title>
+      <link>https://www.gohugo.org/doc/templates/partials/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/partials/</guid>
+      <description>In practice, it&amp;rsquo;s very convenient to split out common template portions into a partial template that can be included anywhere. As you create the rest of your templates, you will include templates from the /layout/partials directory, or from arbitrary subdirectories like /layout/partials/post/tag.
+Partials are especially important for themes as it gives users an opportunity to overwrite just a small part of your theme, while maintaining future compatibility.
+Theme developers may want to include a few partials with empty HTML files in the theme just so end users have an easy place to inject their customized content.</description>
+    </item>
+    
+    <item>
+      <title>Partial Templates</title>
+      <link>https://www.gohugo.org/doc/templates/partials_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/partials_en/</guid>
+      <description>In practice, it&amp;rsquo;s very convenient to split out common template portions into a partial template that can be included anywhere. As you create the rest of your templates, you will include templates from the /layout/partials directory, or from arbitrary subdirectories like /layout/partials/post/tag.
+Partials are especially important for themes as it gives users an opportunity to overwrite just a small part of your theme, while maintaining future compatibility.
+Theme developers may want to include a few partials with empty HTML files in the theme just so end users have an easy place to inject their customized content.</description>
+    </item>
+    
+    <item>
+      <title>Shortcodes</title>
+      <link>https://www.gohugo.org/doc/extras/shortcodes/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/shortcodes/</guid>
+      <description>Hugo uses Markdown for its simple content format. However, there are a lot of things that Markdown doesn’t support well.
+We are unwilling to accept being constrained by our simple format. Also unacceptable is writing raw HTML in our Markdown every time we want to include unsupported content such as a video. To do so is in complete opposition to the intent of using a bare-bones format for our content and utilizing templates to apply styling for display.</description>
+    </item>
+    
+    <item>
+      <title>Shortcodes</title>
+      <link>https://www.gohugo.org/doc/extras/shortcodes_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/shortcodes_en/</guid>
+      <description>Hugo uses Markdown for its simple content format. However, there are a lot of things that Markdown doesn’t support well.
+We are unwilling to accept being constrained by our simple format. Also unacceptable is writing raw HTML in our Markdown every time we want to include unsupported content such as a video. To do so is in complete opposition to the intent of using a bare-bones format for our content and utilizing templates to apply styling for display.</description>
+    </item>
+    
+    <item>
+      <title>RSS (feed) Templates</title>
+      <link>https://www.gohugo.org/doc/templates/rss/</link>
+      <pubDate>Tue, 19 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/rss/</guid>
+      <description>Like all other templates, you can use a single RSS template to generate all of your RSS feeds, or you can create a specific template for each individual feed.
+Unlike other Hugo templates, Hugo ships with its own RSS 2.0 template. In most cases this will be sufficient, and an RSS template will not need to be provided by the user. But you can provide an rss template if you like, as you can see in the next section.</description>
+    </item>
+    
+    <item>
+      <title>RSS (feed) Templates</title>
+      <link>https://www.gohugo.org/doc/templates/rss_en/</link>
+      <pubDate>Tue, 19 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/rss_en/</guid>
+      <description>Like all other templates, you can use a single RSS template to generate all of your RSS feeds, or you can create a specific template for each individual feed.
+Unlike other Hugo templates, Hugo ships with its own RSS 2.0 template. In most cases this will be sufficient, and an RSS template will not need to be provided by the user. But you can provide an rss template if you like, as you can see in the next section.</description>
+    </item>
+    
+    <item>
+      <title>Data Files</title>
+      <link>https://www.gohugo.org/doc/extras/datafiles/</link>
+      <pubDate>Thu, 22 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/datafiles/</guid>
+      <description>In addition to the built-in variables available from Hugo, you can specify your own custom data that can be accessed via templates or shortcodes.
+Hugo supports loading data from YAML, JSON, and TOML files located in the data directory.
+It even works with LiveReload.
+Data Files can also be used in themes, but note: If the same key is used in both the main data folder and in the theme&amp;rsquo;s data folder, the main one will win.</description>
+    </item>
+    
+    <item>
+      <title>Data Files</title>
+      <link>https://www.gohugo.org/doc/extras/datafiles_en/</link>
+      <pubDate>Thu, 22 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/datafiles_en/</guid>
+      <description>In addition to the built-in variables available from Hugo, you can specify your own custom data that can be accessed via templates or shortcodes.
+Hugo supports loading data from YAML, JSON, and TOML files located in the data directory.
+It even works with LiveReload.
+Data Files can also be used in themes, but note: If the same key is used in both the main data folder and in the theme&amp;rsquo;s data folder, the main one will win.</description>
+    </item>
+    
+    <item>
+      <title>Syntax Highlighting</title>
+      <link>https://www.gohugo.org/doc/extras/highlighting/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/highlighting/</guid>
+      <description>Hugo provides the ability for you to highlight source code in two different ways &amp;mdash; either pre-processed server side from your content, or to defer the processing to the client side, using a JavaScript library.
+The advantage of server side is that it doesn’t depend on a JavaScript library and consequently works very well when read from an RSS feed.
+The advantage of client side is that it doesn’t cost anything when building your site and some of the highlighting scripts available cover more languages than Pygments does.</description>
+    </item>
+    
+    <item>
+      <title>Syntax Highlighting</title>
+      <link>https://www.gohugo.org/doc/extras/highlighting_en/</link>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/highlighting_en/</guid>
+      <description>Hugo provides the ability for you to highlight source code in two different ways &amp;mdash; either pre-processed server side from your content, or to defer the processing to the client side, using a JavaScript library.
+The advantage of server side is that it doesn’t depend on a JavaScript library and consequently works very well when read from an RSS feed.
+The advantage of client side is that it doesn’t cost anything when building your site and some of the highlighting scripts available cover more languages than Pygments does.</description>
+    </item>
+    
+    <item>
+      <title>Data-driven Content</title>
+      <link>https://www.gohugo.org/doc/extras/datadrivencontent/</link>
+      <pubDate>Sat, 14 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/datadrivencontent/</guid>
+      <description>Data-driven content with a static site generator? Yes, it is possible!
+In addition to the data files feature, we have also implemented the feature &amp;ldquo;Data-driven Content&amp;rdquo;, which lets you load any JSON or CSV file from nearly any resource.
+&amp;ldquo;Data-driven Content&amp;rdquo; currently consists of two functions, getJSON and getCSV, which are available in all template files.
+Implementation details Calling the functions with an URL In any HTML template or Markdown document, call the functions like this:</description>
+    </item>
+    
+    <item>
+      <title>Data-driven Content</title>
+      <link>https://www.gohugo.org/doc/extras/datadrivencontent_en/</link>
+      <pubDate>Sat, 14 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/datadrivencontent_en/</guid>
+      <description>Data-driven content with a static site generator? Yes, it is possible!
+In addition to the data files feature, we have also implemented the feature &amp;ldquo;Data-driven Content&amp;rdquo;, which lets you load any JSON or CSV file from nearly any resource.
+&amp;ldquo;Data-driven Content&amp;rdquo; currently consists of two functions, getJSON and getCSV, which are available in all template files.
+Implementation details Calling the functions with an URL In any HTML template or Markdown document, call the functions like this:</description>
+    </item>
+    
+    <item>
+      <title>Sitemap Template</title>
+      <link>https://www.gohugo.org/doc/templates/sitemap/</link>
+      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/sitemap/</guid>
+      <description>A single Sitemap template is used to generate the sitemap.xml file. Hugo automatically comes with this template file. No work is needed on the users&amp;rsquo; part unless they want to customize sitemap.xml.
+This page is of the type &amp;ldquo;node&amp;rdquo; and have all the node variables available to use in this template along with Sitemap-specific ones:
+.Sitemap.ChangeFreq The page change frequency
+.Sitemap.Priority The priority of the page
+In addition to the standard node variables, the homepage has access to all site pages through .</description>
+    </item>
+    
+    <item>
+      <title>Sitemap Template</title>
+      <link>https://www.gohugo.org/doc/templates/sitemap_en/</link>
+      <pubDate>Wed, 07 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/sitemap_en/</guid>
+      <description>A single Sitemap template is used to generate the sitemap.xml file. Hugo automatically comes with this template file. No work is needed on the users&amp;rsquo; part unless they want to customize sitemap.xml.
+This page is of the type &amp;ldquo;node&amp;rdquo; and have all the node variables available to use in this template along with Sitemap-specific ones:
+.Sitemap.ChangeFreq The page change frequency
+.Sitemap.Priority The priority of the page
+In addition to the standard node variables, the homepage has access to all site pages through .</description>
+    </item>
+    
+    <item>
+      <title>404.html Templates</title>
+      <link>https://www.gohugo.org/doc/templates/404/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/404/</guid>
+      <description>When using Hugo with GitHub Pages, you can provide your own template for a custom 404 error page by creating a 404.html template file in your /layouts folder. When Hugo generates your site, the 404.html file will be placed in the root.
+404 pages are of the type &amp;ldquo;node&amp;rdquo; and have all the node variables available to use in the templates.
+In addition to the standard node variables, the 404 page has access to all site content accessible from .</description>
+    </item>
+    
+    <item>
+      <title>404.html Templates</title>
+      <link>https://www.gohugo.org/doc/templates/404_en/</link>
+      <pubDate>Wed, 21 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/404_en/</guid>
+      <description>When using Hugo with GitHub Pages, you can provide your own template for a custom 404 error page by creating a 404.html template file in your /layouts folder. When Hugo generates your site, the 404.html file will be placed in the root.
+404 pages are of the type &amp;ldquo;node&amp;rdquo; and have all the node variables available to use in the templates.
+In addition to the standard node variables, the 404 page has access to all site content accessible from .</description>
+    </item>
+    
+    <item>
+      <title>Table of Contents</title>
+      <link>https://www.gohugo.org/doc/extras/toc/</link>
+      <pubDate>Tue, 09 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/toc/</guid>
+      <description>Hugo will automatically parse the Markdown for your content and create a Table of Contents you can use to guide readers to the sections within your content.
+Usage Simply create content like you normally would with the appropriate headers.
+Hugo will take this Markdown and create a table of contents stored in the content variable .TableOfContents
+Template Example This is example code of a single.html template.
+{{ partial &amp;quot;header.html&amp;quot; .</description>
+    </item>
+    
+    <item>
+      <title>Table of Contents</title>
+      <link>https://www.gohugo.org/doc/extras/toc_en/</link>
+      <pubDate>Tue, 09 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/toc_en/</guid>
+      <description>Hugo will automatically parse the Markdown for your content and create a Table of Contents you can use to guide readers to the sections within your content.
+Usage Simply create content like you normally would with the appropriate headers.
+Hugo will take this Markdown and create a table of contents stored in the content variable .TableOfContents
+Template Example This is example code of a single.html template.
+{{ partial &amp;quot;header.html&amp;quot; .</description>
+    </item>
+    
+    <item>
+      <title>Traversing Local Files</title>
+      <link>https://www.gohugo.org/doc/extras/localfiles/</link>
+      <pubDate>Fri, 12 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/localfiles/</guid>
+      <description>Traversing Local Files Hugo includes a way to traverse local files. This is done using the &amp;lsquo;readDir&amp;rsquo; function.
+Using readDir readDir takes a single string input that is relative to the root directory of the site. It returns an array of os.FileInfo
+Let&amp;rsquo;s create a shortcode to build a file index with links using readDir.
+&amp;lsquo;fileindex.html&amp;rsquo;
+&amp;lt;table style=&amp;quot;width=100%&amp;quot;&amp;gt; &amp;lt;th&amp;gt;Size in bytes&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Name&amp;lt;/th&amp;gt; {{$dir := .Get &amp;quot;dir&amp;quot;}} {{ $url := .</description>
+    </item>
+    
+    <item>
+      <title>Traversing Local Files</title>
+      <link>https://www.gohugo.org/doc/extras/localfiles_en/</link>
+      <pubDate>Fri, 12 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/localfiles_en/</guid>
+      <description>Traversing Local Files Hugo includes a way to traverse local files. This is done using the &amp;lsquo;readDir&amp;rsquo; function.
+Using readDir readDir takes a single string input that is relative to the root directory of the site. It returns an array of os.FileInfo
+Let&amp;rsquo;s create a shortcode to build a file index with links using readDir.
+&amp;lsquo;fileindex.html&amp;rsquo;
+&amp;lt;table style=&amp;quot;width=100%&amp;quot;&amp;gt; &amp;lt;th&amp;gt;Size in bytes&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;Name&amp;lt;/th&amp;gt; {{$dir := .Get &amp;quot;dir&amp;quot;}} {{ $url := .</description>
+    </item>
+    
+    <item>
+      <title>Template Debugging</title>
+      <link>https://www.gohugo.org/doc/templates/debugging/</link>
+      <pubDate>Fri, 22 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/debugging/</guid>
+      <description>Template Debugging Here are some snippets you can add to your template to answer some common questions. These snippets use the printf function available in all Go templates. This function is an alias to the Go function, fmt.Printf.
+What type of page is this? Does Hugo consider this page to be a &amp;ldquo;Node&amp;rdquo; or a &amp;ldquo;Page&amp;rdquo;? (Put this snippet at the top level of your template. Don&amp;rsquo;t use it inside of a range loop.</description>
+    </item>
+    
+    <item>
+      <title>Template Debugging</title>
+      <link>https://www.gohugo.org/doc/templates/debugging_en/</link>
+      <pubDate>Fri, 22 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/templates/debugging_en/</guid>
+      <description>Template Debugging Here are some snippets you can add to your template to answer some common questions. These snippets use the printf function available in all Go templates. This function is an alias to the Go function, fmt.Printf.
+What type of page is this? Does Hugo consider this page to be a &amp;ldquo;Node&amp;rdquo; or a &amp;ldquo;Page&amp;rdquo;? (Put this snippet at the top level of your template. Don&amp;rsquo;t use it inside of a range loop.</description>
+    </item>
+    
+    <item>
+      <title>URLs</title>
+      <link>https://www.gohugo.org/doc/extras/urls/</link>
+      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/urls/</guid>
+      <description>Pretty URLs By default, Hugo creates content with &amp;lsquo;pretty&amp;rsquo; URLs. For example, content created at /content/extras/urls.md will be rendered at /public/extras/urls/index.html, thus accessible from the browser at http://example.com/extras/urls/. No non-standard server-side configuration is required for these pretty URLs to work.
+If you would like to have what we call &amp;ldquo;ugly URLs&amp;rdquo;, e.g.&amp;nbsp;http://example.com/extras/urls.html, you are in luck. Hugo supports the ability to create your entire site with ugly URLs. Simply add uglyurls = true to your site-wide config.</description>
+    </item>
+    
+    <item>
+      <title>URLs</title>
+      <link>https://www.gohugo.org/doc/extras/urls_en/</link>
+      <pubDate>Fri, 03 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/extras/urls_en/</guid>
+      <description>Pretty URLs By default, Hugo creates content with &amp;lsquo;pretty&amp;rsquo; URLs. For example, content created at /content/extras/urls.md will be rendered at /public/extras/urls/index.html, thus accessible from the browser at http://example.com/extras/urls/. No non-standard server-side configuration is required for these pretty URLs to work.
+If you would like to have what we call &amp;ldquo;ugly URLs&amp;rdquo;, e.g.&amp;nbsp;http://example.com/extras/urls.html, you are in luck. Hugo supports the ability to create your entire site with ugly URLs. Simply add uglyurls = true to your site-wide config.</description>
+    </item>
+    
+    <item>
+      <title>Tools</title>
+      <link>https://www.gohugo.org/doc/tools/</link>
+      <pubDate>Sat, 12 Sep 2015 10:40:31 +0200</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/tools/</guid>
+      <description>This section highlights some projects around Hugo that are independently developed. These tools try to extend the functionality of our static site generator or help you to get started.
+Migration Take a look at this list of migration tools if you currently use other blogging tools like Jekyll or WordPress but intend to switch to Hugo instead. They&amp;rsquo;ll take care to export your content into Hugo-friendly formats.
+Jekyll Alternatively, you can follow the manual migration guide or use the new Jekyll import command.</description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://www.gohugo.org/doc/commands/hugo/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo/</guid>
+      <description>hugo 使用 hugo 构建你的网站 大纲 hugo 是主要的命令，用来构建你的网站。 hugo 是一个速度快同时扩展性很好的静态网站生成器， 由 spf13 和他的朋友们用 Go 语言实现。 完整的</description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_en/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_en/</guid>
+      <description>hugo hugo builds your site
+Synopsis hugo is the main command, used to build your Hugo site.
+Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go.
+Complete documentation is available at http://gohugo.io/.
+hugo  Options  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory.</description>
+    </item>
+    
+    <item>
+      <title>hugo benchmark</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_benchmark/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_benchmark/</guid>
+      <description>hugo benchmark Benchmark hugo by building a site a number of times.
+Synopsis Hugo can build a site many times over and analyze the running process creating a benchmark.
+hugo benchmark  Options  -n, --count=13: number of times to build the site --cpuprofile=&amp;quot;&amp;quot;: path/filename for the CPU profile file --memprofile=&amp;quot;&amp;quot;: path/filename for the memory profile file  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.</description>
+    </item>
+    
+    <item>
+      <title>hugo benchmark</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_benchmark/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_benchmark/</guid>
+      <description>hugo benchmark Benchmark hugo by building a site a number of times.
+Synopsis Hugo can build a site many times over and analyze the running process creating a benchmark.
+hugo benchmark  Options  -n, --count=13: number of times to build the site --cpuprofile=&amp;quot;&amp;quot;: path/filename for the CPU profile file --memprofile=&amp;quot;&amp;quot;: path/filename for the memory profile file  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.</description>
+    </item>
+    
+    <item>
+      <title>hugo check</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_check/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_check/</guid>
+      <description>hugo check Check content in the source directory
+Synopsis Hugo will perform some basic analysis on the content provided and will give feedback.
+hugo check  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo check</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_check/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_check/</guid>
+      <description>hugo check Check content in the source directory
+Synopsis Hugo will perform some basic analysis on the content provided and will give feedback.
+hugo check  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo check ulimit</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_check_ulimit/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_check_ulimit/</guid>
+      <description>hugo check ulimit Check system ulimit settings
+Synopsis Hugo will inspect the current ulimit settings on the system. This is primarily to ensure that Hugo can watch enough files on some OSs
+hugo check ulimit  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory.</description>
+    </item>
+    
+    <item>
+      <title>hugo check ulimit</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_check_ulimit/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_check_ulimit/</guid>
+      <description>hugo check ulimit Check system ulimit settings
+Synopsis Hugo will inspect the current ulimit settings on the system. This is primarily to ensure that Hugo can watch enough files on some OSs
+hugo check ulimit  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory.</description>
+    </item>
+    
+    <item>
+      <title>hugo config</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_config/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_config/</guid>
+      <description>hugo config Print the site configuration
+Synopsis Print the site configuration, both default and custom settings.
+hugo config  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo config</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_config/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_config/</guid>
+      <description>hugo config Print the site configuration
+Synopsis Print the site configuration, both default and custom settings.
+hugo config  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo convert</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_convert/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_convert/</guid>
+      <description>hugo convert Convert your content to different formats
+Synopsis Convert your content (e.g. front matter) to different formats.
+See convert&amp;rsquo;s subcommands toJSON, toTOML and toYAML for more information.
+Options  -o, --output=&amp;quot;&amp;quot;: filesystem path to write files to --unsafe[=false]: enable less safe operations, please backup first  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory.</description>
+    </item>
+    
+    <item>
+      <title>hugo convert</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_convert/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_convert/</guid>
+      <description>hugo convert Convert your content to different formats
+Synopsis Convert your content (e.g. front matter) to different formats.
+See convert&amp;rsquo;s subcommands toJSON, toTOML and toYAML for more information.
+Options  -o, --output=&amp;quot;&amp;quot;: filesystem path to write files to --unsafe[=false]: enable less safe operations, please backup first  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory.</description>
+    </item>
+    
+    <item>
+      <title>hugo convert toJSON</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_convert_tojson/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_convert_tojson/</guid>
+      <description>hugo convert toJSON Convert front matter to JSON
+Synopsis toJSON converts all front matter in the content directory to use JSON for the front matter.
+hugo convert toJSON  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo convert toJSON</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_convert_tojson/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_convert_tojson/</guid>
+      <description>hugo convert toJSON Convert front matter to JSON
+Synopsis toJSON converts all front matter in the content directory to use JSON for the front matter.
+hugo convert toJSON  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo convert toTOML</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_convert_totoml/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_convert_totoml/</guid>
+      <description>hugo convert toTOML Convert front matter to TOML
+Synopsis toTOML converts all front matter in the content directory to use TOML for the front matter.
+hugo convert toTOML  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo convert toTOML</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_convert_totoml/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_convert_totoml/</guid>
+      <description>hugo convert toTOML Convert front matter to TOML
+Synopsis toTOML converts all front matter in the content directory to use TOML for the front matter.
+hugo convert toTOML  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo convert toYAML</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_convert_toyaml/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_convert_toyaml/</guid>
+      <description>hugo convert toYAML Convert front matter to YAML
+Synopsis toYAML converts all front matter in the content directory to use YAML for the front matter.
+hugo convert toYAML  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo convert toYAML</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_convert_toyaml/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_convert_toyaml/</guid>
+      <description>hugo convert toYAML Convert front matter to YAML
+Synopsis toYAML converts all front matter in the content directory to use YAML for the front matter.
+hugo convert toYAML  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo gen</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_gen/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_gen/</guid>
+      <description>hugo gen A collection of several useful generators.
+Synopsis A collection of several useful generators.
+Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo gen</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_gen/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_gen/</guid>
+      <description>hugo gen A collection of several useful generators.
+Synopsis A collection of several useful generators.
+Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo gen autocomplete</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_gen_autocomplete/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_gen_autocomplete/</guid>
+      <description>hugo gen autocomplete Generate shell autocompletion script for Hugo
+Synopsis Generates a shell autocompletion script for Hugo.
+NOTE: The current version supports Bash only. This should work for *nix systems with Bash installed.
+By default, the file is written directly to /etc/bash_completion.d for convenience, and the command may need superuser rights, e.g.:
+$ sudo hugo genautocomplete  Add --completionfile=/path/to/file flag to set alternative file-path and name.
+Logout and in again to reload the completion scripts, or just source them in directly:</description>
+    </item>
+    
+    <item>
+      <title>hugo gen autocomplete</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_gen_autocomplete/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_gen_autocomplete/</guid>
+      <description>hugo gen autocomplete Generate shell autocompletion script for Hugo
+Synopsis Generates a shell autocompletion script for Hugo.
+NOTE: The current version supports Bash only. This should work for *nix systems with Bash installed.
+By default, the file is written directly to /etc/bash_completion.d for convenience, and the command may need superuser rights, e.g.:
+$ sudo hugo genautocomplete  Add --completionfile=/path/to/file flag to set alternative file-path and name.
+Logout and in again to reload the completion scripts, or just source them in directly:</description>
+    </item>
+    
+    <item>
+      <title>hugo gen doc</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_gen_doc/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_gen_doc/</guid>
+      <description>hugo gen doc Generate Markdown documentation for the Hugo CLI.
+Synopsis Generate Markdown documentation for the Hugo CLI.
+This command is, mostly, used to create up-to-date documentation of Hugo&amp;rsquo;s command-line interface for http://gohugo.io/.
+It creates one Markdown file per command with front matter suitable for rendering in Hugo.
+hugo gen doc  Options  --dir=&amp;quot;/tmp/hugodoc/&amp;quot;: the directory to write the doc.  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.</description>
+    </item>
+    
+    <item>
+      <title>hugo gen doc</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_gen_doc/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_gen_doc/</guid>
+      <description>hugo gen doc Generate Markdown documentation for the Hugo CLI.
+Synopsis Generate Markdown documentation for the Hugo CLI.
+This command is, mostly, used to create up-to-date documentation of Hugo&amp;rsquo;s command-line interface for http://gohugo.io/.
+It creates one Markdown file per command with front matter suitable for rendering in Hugo.
+hugo gen doc  Options  --dir=&amp;quot;/tmp/hugodoc/&amp;quot;: the directory to write the doc.  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.</description>
+    </item>
+    
+    <item>
+      <title>hugo gen man</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_gen_man/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_gen_man/</guid>
+      <description>hugo gen man Generate man pages for the Hugo CLI
+Synopsis This command automatically generates up-to-date man pages of Hugo&amp;rsquo;s command-line interface. By default, it creates the man page files in the &amp;ldquo;man&amp;rdquo; directory under the current directory.
+hugo gen man  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory.</description>
+    </item>
+    
+    <item>
+      <title>hugo gen man</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_gen_man/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_gen_man/</guid>
+      <description>hugo gen man Generate man pages for the Hugo CLI
+Synopsis This command automatically generates up-to-date man pages of Hugo&amp;rsquo;s command-line interface. By default, it creates the man page files in the &amp;ldquo;man&amp;rdquo; directory under the current directory.
+hugo gen man  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory.</description>
+    </item>
+    
+    <item>
+      <title>hugo import</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_import/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_import/</guid>
+      <description>hugo import Import your site from others.
+Synopsis Import your site from other web site generators like Jekyll.
+Import requires a subcommand, e.g. hugo import jekyll jekyll_root_path target_path.
+Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo import</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_import/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_import/</guid>
+      <description>hugo import Import your site from others.
+Synopsis Import your site from other web site generators like Jekyll.
+Import requires a subcommand, e.g. hugo import jekyll jekyll_root_path target_path.
+Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo import jekyll</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_import_jekyll/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_import_jekyll/</guid>
+      <description>hugo import jekyll hugo import from Jekyll
+Synopsis hugo import from Jekyll.
+Import from Jekyll requires two paths, e.g. hugo import jekyll jekyll_root_path target_path.
+hugo import jekyll  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo import jekyll</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_import_jekyll/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_import_jekyll/</guid>
+      <description>hugo import jekyll hugo import from Jekyll
+Synopsis hugo import from Jekyll.
+Import from Jekyll requires two paths, e.g. hugo import jekyll jekyll_root_path target_path.
+hugo import jekyll  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo list</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_list/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_list/</guid>
+      <description>hugo list Listing out various types of content
+Synopsis Listing out various types of content.
+List requires a subcommand, e.g. hugo list drafts.
+Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo list</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_list/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_list/</guid>
+      <description>hugo list Listing out various types of content
+Synopsis Listing out various types of content.
+List requires a subcommand, e.g. hugo list drafts.
+Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo list drafts</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_list_drafts/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_list_drafts/</guid>
+      <description>hugo list drafts List all drafts
+Synopsis List all of the drafts in your content directory.
+hugo list drafts  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo list drafts</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_list_drafts/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_list_drafts/</guid>
+      <description>hugo list drafts List all drafts
+Synopsis List all of the drafts in your content directory.
+hugo list drafts  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo list future</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_list_future/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_list_future/</guid>
+      <description>hugo list future List all posts dated in the future
+Synopsis List all of the posts in your content directory which will be posted in the future.
+hugo list future  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo list future</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_list_future/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_list_future/</guid>
+      <description>hugo list future List all posts dated in the future
+Synopsis List all of the posts in your content directory which will be posted in the future.
+hugo list future  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo new</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_new/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_new/</guid>
+      <description>hugo new Create new content for your site
+Synopsis Create a new content file and automatically set the date and title. It will guess which kind of file to create based on the path provided.
+You can also specify the kind with -k KIND.
+If archetypes are provided in your theme or site, they will be used.
+hugo new [path]  Options  -f, --format=&amp;quot;toml&amp;quot;: frontmatter format -k, --kind=&amp;quot;&amp;quot;: Content type to create  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.</description>
+    </item>
+    
+    <item>
+      <title>hugo new</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_new/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_new/</guid>
+      <description>hugo new Create new content for your site
+Synopsis Create a new content file and automatically set the date and title. It will guess which kind of file to create based on the path provided.
+You can also specify the kind with -k KIND.
+If archetypes are provided in your theme or site, they will be used.
+hugo new [path]  Options  -f, --format=&amp;quot;toml&amp;quot;: frontmatter format -k, --kind=&amp;quot;&amp;quot;: Content type to create  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.</description>
+    </item>
+    
+    <item>
+      <title>hugo new site</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_new_site/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_new_site/</guid>
+      <description>hugo new site Create a new site (skeleton)
+Synopsis Create a new site in the provided directory. The new site will have the correct structure, but no content or theme yet. Use hugo new [contentPath] to create new content.
+hugo new site [path]  Options  --force[=false]: Init inside non-empty directory -f, --format=&amp;quot;toml&amp;quot;: config &amp;amp; frontmatter format  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.</description>
+    </item>
+    
+    <item>
+      <title>hugo new site</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_new_site/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_new_site/</guid>
+      <description>hugo new site Create a new site (skeleton)
+Synopsis Create a new site in the provided directory. The new site will have the correct structure, but no content or theme yet. Use hugo new [contentPath] to create new content.
+hugo new site [path]  Options  --force[=false]: Init inside non-empty directory -f, --format=&amp;quot;toml&amp;quot;: config &amp;amp; frontmatter format  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.</description>
+    </item>
+    
+    <item>
+      <title>hugo new theme</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_new_theme/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_new_theme/</guid>
+      <description>hugo new theme Create a new theme
+Synopsis Create a new theme (skeleton) called [name] in the current directory. New theme is a skeleton. Please add content to the touched files. Add your name to the copyright line in the license and adjust the theme.toml file as you see fit.
+hugo new theme [name]  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.</description>
+    </item>
+    
+    <item>
+      <title>hugo new theme</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_new_theme/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_new_theme/</guid>
+      <description>hugo new theme Create a new theme
+Synopsis Create a new theme (skeleton) called [name] in the current directory. New theme is a skeleton. Please add content to the touched files. Add your name to the copyright line in the license and adjust the theme.toml file as you see fit.
+hugo new theme [name]  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.</description>
+    </item>
+    
+    <item>
+      <title>hugo server</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_server/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_server/</guid>
+      <description>hugo server A high performance webserver
+Synopsis Hugo provides its own webserver which builds and serves the site. While hugo server is high performance, it is a webserver with limited options. Many run it in production, but the standard behavior is for people to use it in development and use a more full featured server such as Nginx or Caddy.
+&amp;lsquo;hugo server&amp;rsquo; will avoid writing the rendered and served content to disk, preferring to store it in memory.</description>
+    </item>
+    
+    <item>
+      <title>hugo server</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_server/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_server/</guid>
+      <description>hugo server A high performance webserver
+Synopsis Hugo provides its own webserver which builds and serves the site. While hugo server is high performance, it is a webserver with limited options. Many run it in production, but the standard behavior is for people to use it in development and use a more full featured server such as Nginx or Caddy.
+&amp;lsquo;hugo server&amp;rsquo; will avoid writing the rendered and served content to disk, preferring to store it in memory.</description>
+    </item>
+    
+    <item>
+      <title>hugo undraft</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_undraft/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_undraft/</guid>
+      <description>hugo undraft Undraft changes the content&amp;rsquo;s draft status from &amp;lsquo;True&amp;rsquo; to &amp;lsquo;False&amp;rsquo;
+Synopsis Undraft changes the content&amp;rsquo;s draft status from &amp;lsquo;True&amp;rsquo; to &amp;lsquo;False&amp;rsquo; and updates the date to the current date and time. If the content&amp;rsquo;s draft status is &amp;lsquo;False&amp;rsquo;, nothing is done.
+hugo undraft path/to/content  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory.</description>
+    </item>
+    
+    <item>
+      <title>hugo undraft</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_undraft/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_undraft/</guid>
+      <description>hugo undraft Undraft changes the content&amp;rsquo;s draft status from &amp;lsquo;True&amp;rsquo; to &amp;lsquo;False&amp;rsquo;
+Synopsis Undraft changes the content&amp;rsquo;s draft status from &amp;lsquo;True&amp;rsquo; to &amp;lsquo;False&amp;rsquo; and updates the date to the current date and time. If the content&amp;rsquo;s draft status is &amp;lsquo;False&amp;rsquo;, nothing is done.
+hugo undraft path/to/content  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory.</description>
+    </item>
+    
+    <item>
+      <title>hugo version</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_version/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_version/</guid>
+      <description>hugo version Print the version number of Hugo
+Synopsis All software has versions. This is Hugo&amp;rsquo;s.
+hugo version  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo version</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_version/</link>
+      <pubDate>Wed, 25 Nov 2015 23:10:39 +0100</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_version/</guid>
+      <description>hugo version Print the version number of Hugo
+Synopsis All software has versions. This is Hugo&amp;rsquo;s.
+hugo version  Options inherited from parent commands  -b, --baseURL=&amp;quot;&amp;quot;: hostname (and path) to the root, e.g. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory. Defaults: $TMPDIR/hugo_cache/ --canonifyURLs[=false]: if true, all relative URLs will be canonicalized using baseURL --config=&amp;quot;&amp;quot;: config file (default is path/config.</description>
+    </item>
+    
+    <item>
+      <title>hugo genautocomplete</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_genautocomplete/</link>
+      <pubDate>Tue, 04 Aug 2015 03:11:10 -0600</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_genautocomplete/</guid>
+      <description>hugo genautocomplete Generate shell autocompletion script for Hugo
+Synopsis Generates a shell autocompletion script for Hugo.
+NOTE: The current version supports Bash only. This should work for *nix systems with Bash installed.
+By default, the file is written directly to /etc/bash_completion.d for convenience, and the command may need superuser rights, e.g.:
+$ sudo hugo genautocomplete  Add --completionfile=/path/to/file flag to set alternative file-path and name.
+Logout and in again to reload the completion scripts, or just source them in directly:</description>
+    </item>
+    
+    <item>
+      <title>hugo gendoc</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_gendoc/</link>
+      <pubDate>Tue, 04 Aug 2015 03:11:10 -0600</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_gendoc/</guid>
+      <description>hugo gendoc Generate Markdown documentation for the Hugo CLI.
+Synopsis Generate Markdown documentation for the Hugo CLI.
+This command is, mostly, used to create up-to-date documentation of Hugo&amp;rsquo;s command-line interface for http://gohugo.io/.
+It creates one Markdown file per command with front matter suitable for rendering in Hugo.
+hugo gendoc  Options  --dir=&amp;quot;/tmp/hugodoc/&amp;quot;: the directory to write the doc. -h, --help[=false]: help for gendoc  Options inherited from parent commands  -b, --baseUrl=&amp;quot;&amp;quot;: hostname (and path) to the root eg.</description>
+    </item>
+    
+    <item>
+      <title>hugo help</title>
+      <link>https://www.gohugo.org/doc/commands/hugo_help/</link>
+      <pubDate>Tue, 04 Aug 2015 03:11:10 -0600</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/commands/hugo_help/</guid>
+      <description>hugo help Help about any command
+Synopsis Help provides help for any command in the application. Simply type hugo help [path to command] for full details.
+hugo help [command]  Options  -h, --help[=false]: help for help  Options inherited from parent commands  -b, --baseUrl=&amp;quot;&amp;quot;: hostname (and path) to the root eg. http://spf13.com/ -D, --buildDrafts[=false]: include content marked as draft -F, --buildFuture[=false]: include content with publishdate in the future --cacheDir=&amp;quot;&amp;quot;: filesystem path to cache directory.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting Overview</title>
+      <link>https://www.gohugo.org/doc/troubleshooting/overview/</link>
+      <pubDate>Sun, 18 Jan 2015 02:41:52 -0700</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/troubleshooting/overview/</guid>
+      <description>Got stuck? Worry not! Chances are other users have encountered the exact same problem as you have, brought it up for discussion, and have likely found a solution through the collective wisdom of our vibrant Hugo community!
+Here are some examples:
+ hugo new aborts with cryptic EOF error (affects v0.12 and lower) Categories with accented characters inaccessible (affects Mac OS&amp;nbsp;X users) My CSS files aren&amp;rsquo;t loaded! How do I include an image gallery on my website?</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting Overview</title>
+      <link>https://www.gohugo.org/doc/troubleshooting/overview_en/</link>
+      <pubDate>Sun, 18 Jan 2015 02:41:52 -0700</pubDate>
+      
+      <guid>https://www.gohugo.org/doc/troubleshooting/overview_en/</guid>
+      <description>Got stuck? Worry not! Chances are other users have encountered the exact same problem as you have, brought it up for discussion, and have likely found a solution through the collective wisdom of our vibrant Hugo community!
+Here are some examples:
+ hugo new aborts with cryptic EOF error (affects v0.12 and lower) Categories with accented characters inaccessible (affects Mac OS&amp;nbsp;X users) My CSS files aren&amp;rsquo;t loaded! How do I include an image gallery on my website?</description>
+    </item>
+    
+  </channel>
 </rss>

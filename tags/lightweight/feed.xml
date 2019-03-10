@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Lightweight on Hugo中文文档</title>
-        <link>http://www.gohugo.org/tags/lightweight/feed/index.xml</link>
-        <language>zh-CN</language>
-        <author>CoderZh</author>
-        <rights>Copyright (c) 2015, CoderZh; all rights reserved.</rights>
-        <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
-        
-    </channel>
+  <channel>
+    <title>Lightweight on Hugo中文文档</title>
+    <link>https://www.gohugo.org/tags/lightweight/</link>
+    <description>Recent content in Lightweight on Hugo中文文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright © &lt;a href=&#34;https://blog.coderzh.com/&#34;&gt;CoderZh&lt;/a&gt; 2015.</copyright>
+    
+	<atom:link href="https://www.gohugo.org/tags/lightweight/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://www.gohugo.org/theme/gindoro/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.gohugo.org/theme/gindoro/</guid>
+      <description>gindoro a minimalistic Hugo blogging theme in &amp;lt; 6K example site
+only two pages – index and post
+no syntax highlighting (but code blocks do look nice regardless!)
+LaTeX support built in (using KaTeX via CDN for fast rendering)
+installation configuration
+config.toml can include the following parameters (below is a complete example that will function as-is.) The example results in the above site with footer links to github and contact:</description>
+    </item>
+    
+  </channel>
 </rss>
